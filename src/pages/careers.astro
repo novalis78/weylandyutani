@@ -10,177 +10,202 @@ import Footer from '../components/Footer.astro';
 >
   <Header />
 
-  <main class="pt-24">
-    <section class="relative py-32 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
-      <div class="grid-background absolute inset-0 opacity-20"></div>
-      <div class="relative container mx-auto px-6 text-center">
-        <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
-          Build the <span class="gradient-text-gold">Future</span> With Us
+  <main class="bg-black">
+    <!-- Hero -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center pt-40 pb-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          RECRUITMENT ACTIVE
+        </div>
+
+        <h1 class="text-6xl md:text-8xl font-black text-white mb-8 leading-none uppercase">
+          BUILD THE <span class="text-[#FFC600] text-glow-yellow">FUTURE</span><br/>WITH US
         </h1>
-        <p class="text-xl text-[#a0a0a0] max-w-3xl mx-auto">
-          Join the brightest minds in the galaxy. Shape humanity's destiny across the stars.
+
+        <div class="h-1 w-64 bg-[#FFC600] mx-auto mb-8"></div>
+
+        <p class="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto uppercase tracking-wide font-mono">
+          JOIN THE BRIGHTEST MINDS IN THE GALAXY. SHAPE HUMANITY'S DESTINY ACROSS THE STARS.
         </p>
       </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
     </section>
 
-    <section class="py-20 bg-[#0a0a0a]">
-      <div class="container mx-auto px-6">
-        <div class="max-w-4xl mx-auto">
-          <!-- Why Join -->
-          <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-white mb-6">
-              Why <span class="gradient-text-blue">Weyland-Yutani</span>?
-            </h2>
-            <p class="text-lg text-[#a0a0a0] mb-12">
-              We offer more than just a job - we offer a chance to be part of humanity's greatest adventure.
+    <!-- Why Join -->
+    <section class="relative py-32 bg-[#0a0a0a] border-b-4 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="text-center mb-16">
+          <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6">
+            WHY WEYLAND-YUTANI
+          </div>
+          <p class="text-xl text-gray-400 uppercase font-mono tracking-wider">
+            MORE THAN JUST A JOB - A CHANCE TO BE PART OF HUMANITY'S GREATEST ADVENTURE
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="corp-card p-8 text-center">
+            <div class="w-16 h-16 bg-black border-4 border-[#FFC600] clip-corner flex items-center justify-center mx-auto mb-6 glow-yellow">
+              <span class="text-[#FFC600] text-3xl font-black">I</span>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-4 uppercase">Innovation</h3>
+            <p class="text-gray-400 font-mono text-sm uppercase">
+              WORK ON TECHNOLOGIES THAT ARE LITERALLY TRANSFORMING WORLDS
             </p>
           </div>
 
-          <div class="grid md:grid-cols-3 gap-8 mb-20">
-            <div class="card text-center">
-              <div class="w-16 h-16 rounded-full bg-[#00a6d6]/10 flex items-center justify-center mx-auto mb-4">
-                <svg class="w-8 h-8 text-[#00a6d6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-white mb-2">Innovation</h3>
-              <p class="text-[#a0a0a0] text-sm">
-                Work on technologies that are literally transforming worlds
-              </p>
+          <div class="corp-card p-8 text-center">
+            <div class="w-16 h-16 bg-black border-4 border-[#FFC600] clip-corner flex items-center justify-center mx-auto mb-6 glow-yellow">
+              <span class="text-[#FFC600] text-3xl font-black">E</span>
             </div>
-
-            <div class="card text-center">
-              <div class="w-16 h-16 rounded-full bg-[#00a6d6]/10 flex items-center justify-center mx-auto mb-4">
-                <svg class="w-8 h-8 text-[#00a6d6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-white mb-2">Exploration</h3>
-              <p class="text-[#a0a0a0] text-sm">
-                Opportunities across 300+ colonized worlds and growing
-              </p>
-            </div>
-
-            <div class="card text-center">
-              <div class="w-16 h-16 rounded-full bg-[#d4af37]/10 flex items-center justify-center mx-auto mb-4">
-                <svg class="w-8 h-8 text-[#d4af37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold text-white mb-2">Compensation</h3>
-              <p class="text-[#a0a0a0] text-sm">
-                Industry-leading pay and benefits package
-              </p>
-            </div>
+            <h3 class="text-2xl font-black text-white mb-4 uppercase">Exploration</h3>
+            <p class="text-gray-400 font-mono text-sm uppercase">
+              OPPORTUNITIES ACROSS 300+ COLONIZED WORLDS AND GROWING
+            </p>
           </div>
 
-          <!-- Open Positions -->
-          <div class="mb-16">
-            <h2 class="text-3xl font-bold text-white mb-8 text-center">Open Positions</h2>
-            <div class="space-y-4">
-              <!-- Position 1 -->
-              <div class="card hover:border-[#00a6d6]/50 transition-all cursor-pointer">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                  <div class="mb-4 md:mb-0">
-                    <h3 class="text-xl font-bold text-white mb-2">Terraforming Engineer</h3>
-                    <p class="text-[#a0a0a0] text-sm mb-2">Lead atmospheric processor installations on new colony worlds</p>
-                    <div class="flex flex-wrap gap-2">
-                      <span class="px-3 py-1 rounded-full bg-[#00a6d6]/10 text-[#00a6d6] text-xs">Terraforming</span>
-                      <span class="px-3 py-1 rounded-full bg-[#00a6d6]/10 text-[#00a6d6] text-xs">Off-World</span>
-                      <span class="px-3 py-1 rounded-full bg-[#00a6d6]/10 text-[#00a6d6] text-xs">Senior Level</span>
-                    </div>
-                  </div>
-                  <a href="/contact" class="btn-secondary text-sm px-6 py-2 inline-block">
-                    Apply Now
-                  </a>
-                </div>
-              </div>
+          <div class="corp-card p-8 text-center">
+            <div class="w-16 h-16 bg-black border-4 border-[#FFC600] clip-corner flex items-center justify-center mx-auto mb-6 glow-yellow">
+              <span class="text-[#FFC600] text-3xl font-black">$</span>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-4 uppercase">Compensation</h3>
+            <p class="text-gray-400 font-mono text-sm uppercase">
+              INDUSTRY-LEADING PAY AND BENEFITS PACKAGE
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-              <!-- Position 2 -->
-              <div class="card hover:border-[#00a6d6]/50 transition-all cursor-pointer">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                  <div class="mb-4 md:mb-0">
-                    <h3 class="text-xl font-bold text-white mb-2">Synthetic Systems Specialist</h3>
-                    <p class="text-[#a0a0a0] text-sm mb-2">Work on next-gen synthetic human development and maintenance</p>
-                    <div class="flex flex-wrap gap-2">
-                      <span class="px-3 py-1 rounded-full bg-[#8b5cf6]/10 text-[#8b5cf6] text-xs">Cybernetics</span>
-                      <span class="px-3 py-1 rounded-full bg-[#8b5cf6]/10 text-[#8b5cf6] text-xs">Research</span>
-                      <span class="px-3 py-1 rounded-full bg-[#8b5cf6]/10 text-[#8b5cf6] text-xs">Mid Level</span>
-                    </div>
-                  </div>
-                  <a href="/contact" class="btn-secondary text-sm px-6 py-2 inline-block">
-                    Apply Now
-                  </a>
-                </div>
-              </div>
+    <!-- Open Positions -->
+    <section class="relative py-32 bg-black">
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
 
-              <!-- Position 3 -->
-              <div class="card hover:border-[#00a6d6]/50 transition-all cursor-pointer">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                  <div class="mb-4 md:mb-0">
-                    <h3 class="text-xl font-bold text-white mb-2">Xenobiologist</h3>
-                    <p class="text-[#a0a0a0] text-sm mb-2">Study alien life forms and ecosystems - classified research</p>
-                    <div class="flex flex-wrap gap-2">
-                      <span class="px-3 py-1 rounded-full bg-[#10b981]/10 text-[#10b981] text-xs">Bio-Research</span>
-                      <span class="px-3 py-1 rounded-full bg-[#ef4444]/10 text-[#ef4444] text-xs">Classified</span>
-                      <span class="px-3 py-1 rounded-full bg-[#10b981]/10 text-[#10b981] text-xs">Senior Level</span>
-                    </div>
-                  </div>
-                  <a href="/contact" class="btn-secondary text-sm px-6 py-2 inline-block">
-                    Apply Now
-                  </a>
-                </div>
-              </div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <h2 class="text-5xl font-black text-white mb-12 text-center uppercase">
+            OPEN <span class="text-[#FFC600] text-glow-yellow">POSITIONS</span>
+          </h2>
 
-              <!-- Position 4 -->
-              <div class="card hover:border-[#00a6d6]/50 transition-all cursor-pointer">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                  <div class="mb-4 md:mb-0">
-                    <h3 class="text-xl font-bold text-white mb-2">FTL Propulsion Scientist</h3>
-                    <p class="text-[#a0a0a0] text-sm mb-2">Advance faster-than-light travel technology</p>
-                    <div class="flex flex-wrap gap-2">
-                      <span class="px-3 py-1 rounded-full bg-[#f59e0b]/10 text-[#f59e0b] text-xs">Energy Systems</span>
-                      <span class="px-3 py-1 rounded-full bg-[#f59e0b]/10 text-[#f59e0b] text-xs">R&D</span>
-                      <span class="px-3 py-1 rounded-full bg-[#f59e0b]/10 text-[#f59e0b] text-xs">PhD Required</span>
-                    </div>
+          <div class="space-y-6">
+            <!-- Position 1 -->
+            <div class="corp-card p-8 hover:border-[#FFC600]/50 transition-all">
+              <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div class="flex-1">
+                  <h3 class="text-2xl font-black text-white mb-3 uppercase">TERRAFORMING ENGINEER</h3>
+                  <p class="text-gray-400 font-mono text-sm mb-4 uppercase">
+                    LEAD ATMOSPHERIC PROCESSOR INSTALLATIONS ON NEW COLONY WORLDS
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-black border-2 border-[#FFC600] clip-corner text-[#FFC600] text-xs font-bold">TERRAFORMING</span>
+                    <span class="px-4 py-2 bg-black border-2 border-[#FFC600] clip-corner text-[#FFC600] text-xs font-bold">OFF-WORLD</span>
+                    <span class="px-4 py-2 bg-black border-2 border-[#FFC600] clip-corner text-[#FFC600] text-xs font-bold">SENIOR LEVEL</span>
                   </div>
-                  <a href="/contact" class="btn-secondary text-sm px-6 py-2 inline-block">
-                    Apply Now
-                  </a>
                 </div>
+                <a href="/contact" class="btn-primary text-sm px-8 py-3 whitespace-nowrap">
+                  APPLY NOW
+                </a>
               </div>
+            </div>
 
-              <!-- Position 5 -->
-              <div class="card hover:border-[#00a6d6]/50 transition-all cursor-pointer">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-                  <div class="mb-4 md:mb-0">
-                    <h3 class="text-xl font-bold text-white mb-2">Security Systems Analyst</h3>
-                    <p class="text-[#a0a0a0] text-sm mb-2">Design next-generation defense systems and protocols</p>
-                    <div class="flex flex-wrap gap-2">
-                      <span class="px-3 py-1 rounded-full bg-[#ef4444]/10 text-[#ef4444] text-xs">Security</span>
-                      <span class="px-3 py-1 rounded-full bg-[#ef4444]/10 text-[#ef4444] text-xs">Earth-Based</span>
-                      <span class="px-3 py-1 rounded-full bg-[#ef4444]/10 text-[#ef4444] text-xs">Mid Level</span>
-                    </div>
+            <!-- Position 2 -->
+            <div class="corp-card p-8 hover:border-[#FFC600]/50 transition-all">
+              <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div class="flex-1">
+                  <h3 class="text-2xl font-black text-white mb-3 uppercase">SYNTHETIC SYSTEMS SPECIALIST</h3>
+                  <p class="text-gray-400 font-mono text-sm mb-4 uppercase">
+                    WORK ON NEXT-GEN SYNTHETIC HUMAN DEVELOPMENT AND MAINTENANCE
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-black border-2 border-[#FFC600] clip-corner text-[#FFC600] text-xs font-bold">CYBERNETICS</span>
+                    <span class="px-4 py-2 bg-black border-2 border-[#FFC600] clip-corner text-[#FFC600] text-xs font-bold">RESEARCH</span>
+                    <span class="px-4 py-2 bg-black border-2 border-[#FFC600] clip-corner text-[#FFC600] text-xs font-bold">MID LEVEL</span>
                   </div>
-                  <a href="/contact" class="btn-secondary text-sm px-6 py-2 inline-block">
-                    Apply Now
-                  </a>
                 </div>
+                <a href="/contact" class="btn-primary text-sm px-8 py-3 whitespace-nowrap">
+                  APPLY NOW
+                </a>
+              </div>
+            </div>
+
+            <!-- Position 3 -->
+            <div class="corp-card p-8 hover:border-[#FF0000]/50 transition-all border-[#FF0000]/30">
+              <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div class="flex-1">
+                  <h3 class="text-2xl font-black text-white mb-3 uppercase">XENOBIOLOGIST</h3>
+                  <p class="text-gray-400 font-mono text-sm mb-4 uppercase">
+                    STUDY ALIEN LIFE FORMS AND ECOSYSTEMS - CLASSIFIED RESEARCH
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-black border-2 border-[#FF0000] clip-corner text-[#FF0000] text-xs font-bold">BIO-WEAPONS</span>
+                    <span class="px-4 py-2 bg-black border-2 border-[#FF0000] clip-corner text-[#FF0000] text-xs font-bold">CLASSIFIED</span>
+                    <span class="px-4 py-2 bg-black border-2 border-[#FF0000] clip-corner text-[#FF0000] text-xs font-bold">SENIOR LEVEL</span>
+                  </div>
+                </div>
+                <a href="/contact" class="btn-danger text-sm px-8 py-3 whitespace-nowrap">
+                  APPLY NOW
+                </a>
+              </div>
+            </div>
+
+            <!-- Position 4 -->
+            <div class="corp-card p-8 hover:border-[#FFC600]/50 transition-all">
+              <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div class="flex-1">
+                  <h3 class="text-2xl font-black text-white mb-3 uppercase">FTL PROPULSION SCIENTIST</h3>
+                  <p class="text-gray-400 font-mono text-sm mb-4 uppercase">
+                    ADVANCE FASTER-THAN-LIGHT TRAVEL TECHNOLOGY
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-black border-2 border-[#FFC600] clip-corner text-[#FFC600] text-xs font-bold">ENERGY SYSTEMS</span>
+                    <span class="px-4 py-2 bg-black border-2 border-[#FFC600] clip-corner text-[#FFC600] text-xs font-bold">R&D</span>
+                    <span class="px-4 py-2 bg-black border-2 border-[#FFC600] clip-corner text-[#FFC600] text-xs font-bold">PHD REQUIRED</span>
+                  </div>
+                </div>
+                <a href="/contact" class="btn-primary text-sm px-8 py-3 whitespace-nowrap">
+                  APPLY NOW
+                </a>
+              </div>
+            </div>
+
+            <!-- Position 5 -->
+            <div class="corp-card p-8 hover:border-[#FFC600]/50 transition-all">
+              <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div class="flex-1">
+                  <h3 class="text-2xl font-black text-white mb-3 uppercase">SECURITY SYSTEMS ANALYST</h3>
+                  <p class="text-gray-400 font-mono text-sm mb-4 uppercase">
+                    DESIGN NEXT-GENERATION DEFENSE SYSTEMS AND PROTOCOLS
+                  </p>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-black border-2 border-[#FFC600] clip-corner text-[#FFC600] text-xs font-bold">SECURITY</span>
+                    <span class="px-4 py-2 bg-black border-2 border-[#FFC600] clip-corner text-[#FFC600] text-xs font-bold">EARTH-BASED</span>
+                    <span class="px-4 py-2 bg-black border-2 border-[#FFC600] clip-corner text-[#FFC600] text-xs font-bold">MID LEVEL</span>
+                  </div>
+                </div>
+                <a href="/contact" class="btn-primary text-sm px-8 py-3 whitespace-nowrap">
+                  APPLY NOW
+                </a>
               </div>
             </div>
           </div>
 
           <!-- CTA -->
-          <div class="card p-12 text-center bg-gradient-to-br from-[#00a6d6]/5 to-[#d4af37]/5 border-[#00a6d6]/30">
-            <h2 class="text-3xl font-bold text-white mb-4">
-              Don't See Your Perfect Role?
-            </h2>
-            <p class="text-lg text-[#a0a0a0] mb-8">
-              We're always looking for exceptional talent. Send us your resume and let's talk about your future.
-            </p>
-            <a href="/contact" class="btn-primary text-lg">
-              Contact Recruitment
-            </a>
+          <div class="terminal mt-16">
+            <div class="terminal-content text-center">
+              <h2 class="text-3xl font-black text-white mb-6 uppercase">&gt; DON'T SEE YOUR PERFECT ROLE?</h2>
+              <p class="text-lg text-[#FFC600] mb-8 font-mono uppercase">
+                WE'RE ALWAYS LOOKING FOR EXCEPTIONAL TALENT. SEND US YOUR RESUME AND LET'S TALK ABOUT YOUR FUTURE.
+              </p>
+              <a href="/contact" class="btn-primary text-lg">
+                CONTACT RECRUITMENT
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -189,3 +214,9 @@ import Footer from '../components/Footer.astro';
 
   <Footer />
 </Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

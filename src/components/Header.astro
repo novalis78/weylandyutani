@@ -2,26 +2,33 @@
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 glass-strong border-b border-[#00a6d6]/20">
+<header class="fixed top-0 left-0 right-0 z-50 bg-black border-b-4 border-[#FFC600]">
+  <div class="hazard-stripes h-2"></div>
+
   <nav class="container mx-auto px-6 py-4">
     <div class="flex items-center justify-between">
       <!-- Logo -->
-      <a href="/" class="flex items-center space-x-3 group">
-        <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-[#00a6d6] to-[#0088b3] flex items-center justify-center glow-blue-sm">
-          <span class="text-white font-bold text-xl">W-Y</span>
+      <a href="/" class="flex items-center space-x-4 group">
+        <div class="relative">
+          <div class="w-14 h-14 bg-[#FFC600] clip-corner flex items-center justify-center glow-yellow">
+            <span class="text-black font-black text-2xl">W</span>
+          </div>
+          <div class="absolute -bottom-1 -right-1 w-8 h-8 bg-black border-2 border-[#FFC600] clip-corner flex items-center justify-center">
+            <span class="text-[#FFC600] font-black text-sm">Y</span>
+          </div>
         </div>
         <div class="flex flex-col">
-          <span class="text-lg font-bold text-white group-hover:text-[#00d4ff] transition-colors">WEYLAND-YUTANI</span>
-          <span class="text-xs text-[#a0a0a0] tracking-wider">BUILDING BETTER WORLDS</span>
+          <span class="text-xl font-black text-white tracking-tighter">WEYLAND-YUTANI</span>
+          <span class="text-xs text-[#FFC600] font-bold tracking-widest">"BUILDING BETTER WORLDS"</span>
         </div>
       </a>
 
       <!-- Desktop Navigation -->
-      <ul class="hidden md:flex items-center space-x-8">
+      <ul class="hidden lg:flex items-center space-x-1">
         <li>
           <a
             href="/"
-            class={`text-sm font-semibold transition-colors ${currentPath === '/' ? 'text-[#00a6d6]' : 'text-[#e8e8e8] hover:text-[#00d4ff]'}`}
+            class={`px-6 py-3 text-sm font-bold uppercase tracking-wider transition-all ${currentPath === '/' ? 'bg-[#FFC600] text-black' : 'text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600]'}`}
           >
             Home
           </a>
@@ -29,7 +36,7 @@ const currentPath = Astro.url.pathname;
         <li>
           <a
             href="/about"
-            class={`text-sm font-semibold transition-colors ${currentPath === '/about' ? 'text-[#00a6d6]' : 'text-[#e8e8e8] hover:text-[#00d4ff]'}`}
+            class={`px-6 py-3 text-sm font-bold uppercase tracking-wider transition-all ${currentPath === '/about' ? 'bg-[#FFC600] text-black' : 'text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600]'}`}
           >
             About
           </a>
@@ -37,7 +44,7 @@ const currentPath = Astro.url.pathname;
         <li>
           <a
             href="/divisions"
-            class={`text-sm font-semibold transition-colors ${currentPath === '/divisions' ? 'text-[#00a6d6]' : 'text-[#e8e8e8] hover:text-[#00d4ff]'}`}
+            class={`px-6 py-3 text-sm font-bold uppercase tracking-wider transition-all ${currentPath === '/divisions' ? 'bg-[#FFC600] text-black' : 'text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600]'}`}
           >
             Divisions
           </a>
@@ -45,7 +52,7 @@ const currentPath = Astro.url.pathname;
         <li>
           <a
             href="/technology"
-            class={`text-sm font-semibold transition-colors ${currentPath === '/technology' ? 'text-[#00a6d6]' : 'text-[#e8e8e8] hover:text-[#00d4ff]'}`}
+            class={`px-6 py-3 text-sm font-bold uppercase tracking-wider transition-all ${currentPath === '/technology' ? 'bg-[#FFC600] text-black' : 'text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600]'}`}
           >
             Technology
           </a>
@@ -53,7 +60,7 @@ const currentPath = Astro.url.pathname;
         <li>
           <a
             href="/careers"
-            class={`text-sm font-semibold transition-colors ${currentPath === '/careers' ? 'text-[#00a6d6]' : 'text-[#e8e8e8] hover:text-[#00d4ff]'}`}
+            class={`px-6 py-3 text-sm font-bold uppercase tracking-wider transition-all ${currentPath === '/careers' ? 'bg-[#FFC600] text-black' : 'text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600]'}`}
           >
             Careers
           </a>
@@ -61,7 +68,7 @@ const currentPath = Astro.url.pathname;
         <li>
           <a
             href="/contact"
-            class="btn-primary text-sm px-6 py-2"
+            class="ml-4 px-8 py-3 bg-[#FFC600] text-black text-sm font-black uppercase tracking-wider clip-corner hover:glow-yellow transition-all"
           >
             Contact
           </a>
@@ -71,45 +78,45 @@ const currentPath = Astro.url.pathname;
       <!-- Mobile Menu Button -->
       <button
         id="mobile-menu-button"
-        class="md:hidden text-white p-2 hover:text-[#00d4ff] transition-colors"
+        class="lg:hidden text-[#FFC600] p-2 border-2 border-[#FFC600] clip-corner hover:bg-[#FFC600]/10"
         aria-label="Toggle menu"
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
-      <ul class="flex flex-col space-y-4">
+    <div id="mobile-menu" class="hidden lg:hidden mt-6 pb-4 border-t-2 border-[#FFC600]/20">
+      <ul class="flex flex-col space-y-2 mt-4">
         <li>
-          <a href="/" class="block text-sm font-semibold text-[#e8e8e8] hover:text-[#00d4ff] transition-colors">
+          <a href="/" class="block px-4 py-3 text-sm font-bold uppercase tracking-wider text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600] transition-all">
             Home
           </a>
         </li>
         <li>
-          <a href="/about" class="block text-sm font-semibold text-[#e8e8e8] hover:text-[#00d4ff] transition-colors">
+          <a href="/about" class="block px-4 py-3 text-sm font-bold uppercase tracking-wider text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600] transition-all">
             About
           </a>
         </li>
         <li>
-          <a href="/divisions" class="block text-sm font-semibold text-[#e8e8e8] hover:text-[#00d4ff] transition-colors">
+          <a href="/divisions" class="block px-4 py-3 text-sm font-bold uppercase tracking-wider text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600] transition-all">
             Divisions
           </a>
         </li>
         <li>
-          <a href="/technology" class="block text-sm font-semibold text-[#e8e8e8] hover:text-[#00d4ff] transition-colors">
+          <a href="/technology" class="block px-4 py-3 text-sm font-bold uppercase tracking-wider text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600] transition-all">
             Technology
           </a>
         </li>
         <li>
-          <a href="/careers" class="block text-sm font-semibold text-[#e8e8e8] hover:text-[#00d4ff] transition-colors">
+          <a href="/careers" class="block px-4 py-3 text-sm font-bold uppercase tracking-wider text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600] transition-all">
             Careers
           </a>
         </li>
         <li>
-          <a href="/contact" class="btn-primary text-sm inline-block">
+          <a href="/contact" class="block px-4 py-3 bg-[#FFC600] text-black text-sm font-black uppercase tracking-wider text-center clip-corner">
             Contact
           </a>
         </li>
@@ -119,7 +126,6 @@ const currentPath = Astro.url.pathname;
 </header>
 
 <script>
-  // Mobile menu toggle
   const button = document.getElementById('mobile-menu-button');
   const menu = document.getElementById('mobile-menu');
 
@@ -129,18 +135,7 @@ const currentPath = Astro.url.pathname;
 </script>
 
 <style>
-  header {
-    animation: slideDown 0.5s ease-out;
-  }
-
-  @keyframes slideDown {
-    from {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
   }
 </style>

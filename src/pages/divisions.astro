@@ -10,247 +10,266 @@ import Footer from '../components/Footer.astro';
 >
   <Header />
 
-  <main class="pt-24">
+  <main class="bg-black">
     <!-- Hero -->
-    <section class="relative py-32 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] overflow-hidden">
-      <div class="grid-background absolute inset-0 opacity-20"></div>
-      <div class="relative container mx-auto px-6 text-center">
-        <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
-          Our <span class="gradient-text-blue">Divisions</span>
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center pt-40 pb-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          OPERATIONAL DIVISIONS
+        </div>
+
+        <h1 class="text-6xl md:text-8xl font-black text-white mb-8 leading-none uppercase">
+          SIX PILLARS OF<br/><span class="text-[#FFC600] text-glow-yellow">DOMINANCE</span>
         </h1>
-        <p class="text-xl text-[#a0a0a0] max-w-3xl mx-auto">
-          Six specialized divisions working together to build humanity's future across the stars
+
+        <div class="h-1 w-64 bg-[#FFC600] mx-auto mb-8"></div>
+
+        <p class="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto uppercase tracking-wide font-mono">
+          SPECIALIZED DIVISIONS WORKING TOGETHER TO BUILD HUMANITY'S FUTURE ACROSS THE STARS
         </p>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Terraforming -->
+    <section id="terraforming" class="relative py-32 bg-[#0a0a0a] border-b-4 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-start">
+          <div>
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-20 h-20 bg-black border-4 border-[#FFC600] clip-corner flex items-center justify-center glow-yellow">
+                <span class="text-[#FFC600] text-4xl font-black">T</span>
+              </div>
+              <div>
+                <div class="status-active text-xs font-mono text-[#FFC600] mb-2">ACTIVE</div>
+                <h2 class="text-4xl font-black text-white uppercase">TERRAFORMING OPERATIONS</h2>
+              </div>
+            </div>
+
+            <p class="text-gray-400 font-mono text-sm leading-relaxed mb-8 uppercase">
+              <span class="text-[#FFC600]">&gt;</span> OUR REVOLUTIONARY ATMOSPHERE PROCESSING PLANTS HAVE TRANSFORMED OVER <span class="text-[#FFC600] font-bold">300 HOSTILE WORLDS</span> INTO HABITABLE COLONIES. USING CUTTING-EDGE TECHNOLOGY, WE CONVERT TOXIC ATMOSPHERES INTO BREATHABLE AIR, MAKING THE IMPOSSIBLE POSSIBLE.
+            </p>
+
+            <div class="space-y-4">
+              <div class="flex items-start gap-3 text-gray-400 font-mono text-sm">
+                <span class="text-[#FFC600] font-black">&gt;</span>
+                <span class="uppercase">ATMOSPHERIC PROCESSING AND CONVERSION TECHNOLOGY</span>
+              </div>
+              <div class="flex items-start gap-3 text-gray-400 font-mono text-sm">
+                <span class="text-[#FFC600] font-black">&gt;</span>
+                <span class="uppercase">COLONY INFRASTRUCTURE DEVELOPMENT</span>
+              </div>
+              <div class="flex items-start gap-3 text-gray-400 font-mono text-sm">
+                <span class="text-[#FFC600] font-black">&gt;</span>
+                <span class="uppercase">LONG-TERM ECOSYSTEM SUSTAINABILITY</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="corp-card p-8">
+            <h3 class="text-2xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">KEY TECHNOLOGIES</h3>
+            <div class="space-y-4">
+              <div class="p-4 bg-black border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600]/50 transition-all">
+                <h4 class="font-black text-[#FFC600] mb-2 uppercase text-sm">ATMOSPHERE PROCESSORS</h4>
+                <p class="text-xs text-gray-500 font-mono uppercase">INDUSTRIAL-SCALE ATMOSPHERIC CONVERSION SYSTEMS</p>
+              </div>
+              <div class="p-4 bg-black border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600]/50 transition-all">
+                <h4 class="font-black text-[#FFC600] mb-2 uppercase text-sm">CLIMATE CONTROL</h4>
+                <p class="text-xs text-gray-500 font-mono uppercase">WEATHER MANAGEMENT AND TEMPERATURE REGULATION</p>
+              </div>
+              <div class="p-4 bg-black border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600]/50 transition-all">
+                <h4 class="font-black text-[#FFC600] mb-2 uppercase text-sm">BIOSPHERE ENGINEERING</h4>
+                <p class="text-xs text-gray-500 font-mono uppercase">CREATING SUSTAINABLE PLANETARY ECOSYSTEMS</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Divisions Details -->
-    <div class="bg-[#0a0a0a]">
-      <!-- Terraforming -->
-      <section id="terraforming" class="relative py-24 border-b border-[#ffffff]/5">
-        <div class="container mx-auto px-6">
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <div class="inline-flex items-center gap-3 mb-6">
-                <div class="w-16 h-16 rounded-lg bg-gradient-to-br from-[#00a6d6] to-[#0088b3] flex items-center justify-center glow-blue">
-                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                </div>
-                <h2 class="text-4xl font-bold text-white">Terraforming Operations</h2>
+    <!-- Cybernetics -->
+    <section id="cybernetics" class="relative py-32 bg-black border-b-4 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-start">
+          <div class="order-2 md:order-1 corp-card p-8">
+            <h3 class="text-2xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">SYNTHETIC MODELS</h3>
+            <div class="space-y-4">
+              <div class="p-4 bg-black border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600]/50 transition-all">
+                <h4 class="font-black text-[#FFC600] mb-2 uppercase text-sm">BISHOP SERIES</h4>
+                <p class="text-xs text-gray-500 font-mono uppercase">ADVANCED SYNTHETIC HUMANS FOR COLONY SUPPORT</p>
               </div>
-              <p class="text-lg text-[#a0a0a0] mb-6">
-                Our revolutionary Atmosphere Processing Plants have transformed over 300 hostile worlds into habitable colonies. Using cutting-edge technology, we convert toxic atmospheres into breathable air, making the impossible possible.
-              </p>
-              <ul class="space-y-3">
-                <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-[#00a6d6] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                  </svg>
-                  <span class="text-[#a0a0a0]">Atmospheric processing and conversion technology</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-[#00a6d6] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                  </svg>
-                  <span class="text-[#a0a0a0]">Colony infrastructure development</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-[#00a6d6] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                  </svg>
-                  <span class="text-[#a0a0a0]">Long-term ecosystem sustainability</span>
-                </li>
-              </ul>
+              <div class="p-4 bg-black border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600]/50 transition-all">
+                <h4 class="font-black text-[#FFC600] mb-2 uppercase text-sm">WALTER MODEL</h4>
+                <p class="text-xs text-gray-500 font-mono uppercase">LATEST GENERATION WITH ENHANCED CAPABILITIES</p>
+              </div>
+              <div class="p-4 bg-black border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600]/50 transition-all">
+                <h4 class="font-black text-[#FFC600] mb-2 uppercase text-sm">DAVID SERIES</h4>
+                <p class="text-xs text-gray-500 font-mono uppercase">SPECIALIZED RESEARCH AND EXPLORATION UNITS</p>
+              </div>
             </div>
-            <div class="card p-8">
-              <h3 class="text-2xl font-bold text-white mb-6">Key Technologies</h3>
-              <div class="space-y-4">
-                <div class="p-4 rounded-lg bg-[#00a6d6]/5 border border-[#00a6d6]/20">
-                  <h4 class="font-semibold text-white mb-2">Atmosphere Processors</h4>
-                  <p class="text-sm text-[#a0a0a0]">Industrial-scale atmospheric conversion systems</p>
-                </div>
-                <div class="p-4 rounded-lg bg-[#00a6d6]/5 border border-[#00a6d6]/20">
-                  <h4 class="font-semibold text-white mb-2">Climate Control</h4>
-                  <p class="text-sm text-[#a0a0a0]">Weather management and temperature regulation</p>
-                </div>
-                <div class="p-4 rounded-lg bg-[#00a6d6]/5 border border-[#00a6d6]/20">
-                  <h4 class="font-semibold text-white mb-2">Biosphere Engineering</h4>
-                  <p class="text-sm text-[#a0a0a0]">Creating sustainable planetary ecosystems</p>
-                </div>
+          </div>
+
+          <div class="order-1 md:order-2">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-20 h-20 bg-black border-4 border-[#FFC600] clip-corner flex items-center justify-center glow-yellow">
+                <span class="text-[#FFC600] text-4xl font-black">C</span>
+              </div>
+              <div>
+                <div class="status-active text-xs font-mono text-[#FFC600] mb-2">ACTIVE</div>
+                <h2 class="text-4xl font-black text-white uppercase">CYBERNETICS & SYNTHETICS</h2>
+              </div>
+            </div>
+
+            <p class="text-gray-400 font-mono text-sm leading-relaxed mb-8 uppercase">
+              <span class="text-[#FFC600]">&gt;</span> OUR SYNTHETIC HUMAN PROGRAM REPRESENTS THE PINNACLE OF ARTIFICIAL INTELLIGENCE AND BIOMECHANICAL ENGINEERING. <span class="text-[#FFC600] font-bold">INDISTINGUISHABLE FROM HUMANS</span>, OUR SYNTHETICS SERVE IN EVERY CAPACITY FROM SCIENTIFIC RESEARCH TO COLONY MANAGEMENT.
+            </p>
+
+            <div class="space-y-4">
+              <div class="flex items-start gap-3 text-gray-400 font-mono text-sm">
+                <span class="text-[#FFC600] font-black">&gt;</span>
+                <span class="uppercase">FULLY AUTONOMOUS SYNTHETIC HUMANS</span>
+              </div>
+              <div class="flex items-start gap-3 text-gray-400 font-mono text-sm">
+                <span class="text-[#FFC600] font-black">&gt;</span>
+                <span class="uppercase">ADVANCED AI AND LEARNING SYSTEMS</span>
+              </div>
+              <div class="flex items-start gap-3 text-gray-400 font-mono text-sm">
+                <span class="text-[#FFC600] font-black">&gt;</span>
+                <span class="uppercase">CYBERNETIC ENHANCEMENT RESEARCH</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Cybernetics -->
-      <section id="cybernetics" class="relative py-24 border-b border-[#ffffff]/5 bg-gradient-to-b from-transparent to-[#1a1a1a]/30">
-        <div class="container mx-auto px-6">
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div class="order-2 md:order-1 card p-8">
-              <h3 class="text-2xl font-bold text-white mb-6">Synthetic Models</h3>
-              <div class="space-y-4">
-                <div class="p-4 rounded-lg bg-[#8b5cf6]/5 border border-[#8b5cf6]/20">
-                  <h4 class="font-semibold text-white mb-2">Bishop Series</h4>
-                  <p class="text-sm text-[#a0a0a0]">Advanced synthetic humans for colony support</p>
-                </div>
-                <div class="p-4 rounded-lg bg-[#8b5cf6]/5 border border-[#8b5cf6]/20">
-                  <h4 class="font-semibold text-white mb-2">Walter Model</h4>
-                  <p class="text-sm text-[#a0a0a0]">Latest generation with enhanced capabilities</p>
-                </div>
-                <div class="p-4 rounded-lg bg-[#8b5cf6]/5 border border-[#8b5cf6]/20">
-                  <h4 class="font-semibold text-white mb-2">David Series</h4>
-                  <p class="text-sm text-[#a0a0a0]">Specialized research and exploration units</p>
-                </div>
+    <!-- Bio-Research -->
+    <section id="bio-research" class="relative py-32 bg-[#0a0a0a] border-b-4 border-[#FF0000]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#FF0000]/5 to-transparent"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-start">
+          <div>
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-20 h-20 bg-black border-4 border-[#FF0000] clip-corner flex items-center justify-center shadow-[0_0_30px_rgba(255,0,0,0.5)]">
+                <span class="text-[#FF0000] text-4xl font-black">B</span>
+              </div>
+              <div>
+                <div class="status-classified text-xs font-mono text-[#FF0000] mb-2">CLASSIFIED</div>
+                <h2 class="text-4xl font-black text-white uppercase">BIO-WEAPONS DIVISION</h2>
               </div>
             </div>
-            <div class="order-1 md:order-2">
-              <div class="inline-flex items-center gap-3 mb-6">
-                <div class="w-16 h-16 rounded-lg bg-gradient-to-br from-[#8b5cf6] to-[#6d28d9] flex items-center justify-center shadow-[0_0_30px_rgba(139,92,246,0.3)]">
-                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                  </svg>
-                </div>
-                <h2 class="text-4xl font-bold text-white">Cybernetics & Synthetics</h2>
+
+            <p class="text-gray-400 font-mono text-sm leading-relaxed mb-8 uppercase">
+              <span class="text-[#FF0000]">&gt;</span> OUR CLASSIFIED BIO-RESEARCH PROGRAMS PUSH THE BOUNDARIES OF BIOLOGICAL SCIENCE. FROM GENETIC ENGINEERING TO <span class="text-[#FF0000] font-bold">XENOBIOLOGY</span>, WE'RE UNLOCKING THE SECRETS OF LIFE ITSELF TO BENEFIT HUMANITY'S FUTURE.
+            </p>
+
+            <div class="space-y-4">
+              <div class="flex items-start gap-3 text-gray-400 font-mono text-sm">
+                <span class="text-[#FF0000] font-black">&gt;</span>
+                <span class="uppercase">GENETIC ENGINEERING AND MODIFICATION</span>
               </div>
-              <p class="text-lg text-[#a0a0a0] mb-6">
-                Our synthetic human program represents the pinnacle of artificial intelligence and biomechanical engineering. Indistinguishable from humans, our synthetics serve in every capacity from scientific research to colony management.
-              </p>
-              <ul class="space-y-3">
-                <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-[#8b5cf6] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                  </svg>
-                  <span class="text-[#a0a0a0]">Fully autonomous synthetic humans</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-[#8b5cf6] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                  </svg>
-                  <span class="text-[#a0a0a0]">Advanced AI and learning systems</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-[#8b5cf6] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                  </svg>
-                  <span class="text-[#a0a0a0]">Cybernetic enhancement research</span>
-                </li>
-              </ul>
+              <div class="flex items-start gap-3 text-gray-400 font-mono text-sm">
+                <span class="text-[#FF0000] font-black">&gt;</span>
+                <span class="uppercase">XENOBIOLOGY AND EXOBIOLOGY STUDIES</span>
+              </div>
+              <div class="flex items-start gap-3 text-gray-400 font-mono text-sm">
+                <span class="text-[#FF0000] font-black">&gt;</span>
+                <span class="uppercase">BIOMATERIAL APPLICATIONS</span>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Bio-Research -->
-      <section id="bio-research" class="relative py-24 border-b border-[#ffffff]/5">
-        <div class="container mx-auto px-6">
-          <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <div class="inline-flex items-center gap-3 mb-6">
-                <div class="w-16 h-16 rounded-lg bg-gradient-to-br from-[#10b981] to-[#059669] flex items-center justify-center shadow-[0_0_30px_rgba(16,185,129,0.3)]">
-                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
-                  </svg>
-                </div>
-                <h2 class="text-4xl font-bold text-white">Bio-Research Division</h2>
+          <div class="corp-card p-8 border-[#FF0000]/30">
+            <div class="text-center mb-6">
+              <div class="inline-block px-6 py-2 bg-[#FF0000] text-black font-black text-xs uppercase tracking-widest mb-4">
+                ★ CLASSIFIED ★
               </div>
-              <p class="text-lg text-[#a0a0a0] mb-6">
-                Our classified bio-research programs push the boundaries of biological science. From genetic engineering to xenobiology, we're unlocking the secrets of life itself to benefit humanity's future.
-              </p>
-              <ul class="space-y-3">
-                <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-[#10b981] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                  </svg>
-                  <span class="text-[#a0a0a0]">Genetic engineering and modification</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-[#10b981] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                  </svg>
-                  <span class="text-[#a0a0a0]">Xenobiology and exobiology studies</span>
-                </li>
-                <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-[#10b981] mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                  </svg>
-                  <span class="text-[#a0a0a0]">Biomaterial applications</span>
-                </li>
-              </ul>
+              <h3 class="text-2xl font-black text-white mb-2 uppercase">RESEARCH PROGRAMS</h3>
+              <p class="text-gray-500 text-xs font-mono uppercase">ACCESS RESTRICTED TO AUTHORIZED PERSONNEL</p>
             </div>
-            <div class="card p-8">
-              <div class="text-center mb-6">
-                <div class="inline-block px-4 py-2 rounded-full bg-[#ef4444]/20 text-[#ef4444] text-sm font-semibold mb-4">
-                  CLASSIFIED
-                </div>
-                <h3 class="text-2xl font-bold text-white mb-2">Research Programs</h3>
-                <p class="text-[#a0a0a0] text-sm">Access restricted to authorized personnel</p>
+            <div class="space-y-3">
+              <div class="p-4 bg-black border-2 border-[#FF0000]/50 clip-corner text-center">
+                <span class="text-[#FF0000] font-black uppercase text-sm">BIOWEAPON DEVELOPMENT</span>
               </div>
-              <div class="space-y-3">
-                <div class="p-3 rounded-lg bg-[#10b981]/5 border border-[#10b981]/20 text-center">
-                  <span class="text-white">Bioweapon Development</span>
-                </div>
-                <div class="p-3 rounded-lg bg-[#10b981]/5 border border-[#10b981]/20 text-center">
-                  <span class="text-white">Xenomorph Studies</span>
-                </div>
-                <div class="p-3 rounded-lg bg-[#10b981]/5 border border-[#10b981]/20 text-center">
-                  <span class="text-white">Human Enhancement</span>
-                </div>
+              <div class="p-4 bg-black border-2 border-[#FF0000]/50 clip-corner text-center">
+                <span class="text-[#FF0000] font-black uppercase text-sm">XENOMORPH STUDIES</span>
+              </div>
+              <div class="p-4 bg-black border-2 border-[#FF0000]/50 clip-corner text-center">
+                <span class="text-[#FF0000] font-black uppercase text-sm">HUMAN ENHANCEMENT</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Remaining divisions in compact cards -->
-      <section class="py-24">
-        <div class="container mx-auto px-6">
-          <div class="grid md:grid-cols-3 gap-8">
-            <!-- Security -->
-            <div class="card card-glow">
-              <div class="w-16 h-16 rounded-lg bg-gradient-to-br from-[#ef4444] to-[#dc2626] flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(239,68,68,0.3)]">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                </svg>
-              </div>
-              <h3 class="text-2xl font-bold text-white mb-3" id="security">Security Solutions</h3>
-              <p class="text-[#a0a0a0] mb-4">
-                Advanced weapons systems and security technologies protecting human interests across the galaxy. Primary supplier to the USCM.
-              </p>
-            </div>
+    <!-- Remaining Divisions -->
+    <section class="relative py-32 bg-black">
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
 
-            <!-- Energy -->
-            <div class="card card-glow">
-              <div class="w-16 h-16 rounded-lg bg-gradient-to-br from-[#f59e0b] to-[#d97706] flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(245,158,11,0.3)]">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                </svg>
+      <div class="relative container mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Security -->
+          <div class="corp-card p-8 group">
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-16 h-16 bg-black border-4 border-[#FFC600] clip-corner flex items-center justify-center">
+                <span class="text-[#FFC600] text-3xl font-black">S</span>
               </div>
-              <h3 class="text-2xl font-bold text-white mb-3" id="energy">Energy Systems</h3>
-              <p class="text-[#a0a0a0] mb-4">
-                Next-generation power generation and FTL propulsion systems. Powering humanity's expansion across the stars.
-              </p>
+              <div class="status-active text-xs font-mono text-[#FFC600]">ACTIVE</div>
             </div>
+            <h3 class="text-2xl font-black text-white mb-4 uppercase" id="security">Security<br/>Solutions</h3>
+            <p class="text-gray-400 font-mono text-sm leading-relaxed uppercase">
+              ADVANCED WEAPONS SYSTEMS AND DEFENSE TECHNOLOGIES. PRIMARY SUPPLIER TO <span class="text-[#FFC600] font-bold">USCM</span> AND PRIVATE SECURITY.
+            </p>
+          </div>
 
-            <!-- Reverse Engineering -->
-            <div class="card card-glow">
-              <div class="w-16 h-16 rounded-lg bg-gradient-to-br from-[#d4af37] to-[#b8941f] flex items-center justify-center mb-6 glow-gold">
-                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
+          <!-- Energy -->
+          <div class="corp-card p-8 group">
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-16 h-16 bg-black border-4 border-[#FFC600] clip-corner flex items-center justify-center">
+                <span class="text-[#FFC600] text-3xl font-black">E</span>
               </div>
-              <h3 class="text-2xl font-bold text-white mb-3" id="reverse-engineering">Reverse Engineering</h3>
-              <p class="text-[#a0a0a0] mb-4">
-                Classified research into alien technologies. Adapting unknown systems to serve humanity's advancement.
-              </p>
+              <div class="status-active text-xs font-mono text-[#FFC600]">ACTIVE</div>
             </div>
+            <h3 class="text-2xl font-black text-white mb-4 uppercase" id="energy">Energy<br/>Systems</h3>
+            <p class="text-gray-400 font-mono text-sm leading-relaxed uppercase">
+              <span class="text-[#FFC600] font-bold">FTL PROPULSION</span> AND NEXT-GENERATION POWER GENERATION. POWERING HUMANITY'S EXPANSION ACROSS THE STARS.
+            </p>
+          </div>
+
+          <!-- Reverse Engineering -->
+          <div class="corp-card p-8 group">
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-16 h-16 bg-black border-4 border-[#FF0000] clip-corner flex items-center justify-center">
+                <span class="text-[#FF0000] text-3xl font-black">R</span>
+              </div>
+              <div class="status-classified text-xs font-mono text-[#FF0000]">CLASSIFIED</div>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-4 uppercase" id="reverse-engineering">Reverse<br/>Engineering</h3>
+            <p class="text-gray-400 font-mono text-sm leading-relaxed uppercase">
+              CLASSIFIED RESEARCH INTO <span class="text-[#FF0000] font-bold">ALIEN TECHNOLOGIES</span>. ADAPTING THE UNKNOWN FOR HUMAN ADVANCEMENT.
+            </p>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
   <Footer />
 </Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>
