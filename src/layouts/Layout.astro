@@ -5,74 +5,226 @@ interface Props {
   title: string;
   description?: string;
   keywords?: string;
+  image?: string;
+  type?: string;
 }
 
 const {
   title,
-  description = "Weyland-Yutani Corporation - Building Better Worlds. Leading innovation in terraforming, cybernetics, bio-research, and advanced technologies since 2012.",
-  keywords = "Weyland-Yutani, terraforming, cybernetics, synthetic humans, bio-research, space exploration, atmospheric processors, FTL technology"
+  description = "Weyland-Yutani Corporation - Building Better Worlds. Leading innovation in terraforming, cybernetics, synthetic humans, bio-weapons research, and advanced technologies. Pioneering humanity's expansion across 300+ colonized worlds since 2012.",
+  keywords = "Weyland-Yutani, Weyland Corp, terraforming, cybernetics, synthetic humans, androids, bio-research, bio-weapons, xenobiology, space exploration, atmospheric processors, FTL technology, space colonization, Peter Weyland, megacorporation, building better worlds, alien technology, reverse engineering, USCM, colonial marines, deep space, interstellar travel, hypersleep, nanotechnology, energy systems",
+  image,
+  type = "website"
 } = Astro.props;
 
 const siteUrl = Astro.site || new URL('https://weylandyu.com');
 const canonicalURL = new URL(Astro.url.pathname, siteUrl);
-const ogImageURL = new URL('/og-image.jpg', siteUrl);
+const ogImageURL = new URL(image || '/og-image.jpg', siteUrl);
 const logoURL = new URL('/favicon.svg', siteUrl);
+const siteName = "Weyland-Yutani Corporation";
+const fullTitle = `${title} | ${siteName}`;
+const twitterHandle = "@weylandyutani";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- SEO Meta Tags -->
-    <title>{title} | Weyland-Yutani Corporation</title>
+    <!-- Primary SEO Meta Tags -->
+    <title>{fullTitle}</title>
+    <meta name="title" content={fullTitle} />
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
     <link rel="canonical" href={canonicalURL} />
 
+    <!-- Additional SEO Tags -->
+    <meta name="author" content="Weyland-Yutani Corporation" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="general" />
+    <meta name="distribution" content="global" />
+
+    <!-- Theme & Brand Colors -->
+    <meta name="theme-color" content="#FFC600" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-navbutton-color" content="#FFC600" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={type} />
     <meta property="og:url" content={canonicalURL} />
-    <meta property="og:title" content={`${title} | Weyland-Yutani Corporation`} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:secure_url" content={ogImageURL} />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${siteName} - ${title}`} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="en_GB" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={canonicalURL} />
-    <meta property="twitter:title" content={`${title} | Weyland-Yutani Corporation`} />
-    <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={ogImageURL} />
+    <!-- Article-specific (for blog posts) -->
+    {type === "article" && (
+      <>
+        <meta property="article:publisher" content={siteName} />
+        <meta property="article:author" content={siteName} />
+      </>
+    )}
 
-    <!-- Favicon -->
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content={twitterHandle} />
+    <meta name="twitter:creator" content={twitterHandle} />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL} />
+    <meta name="twitter:image:alt" content={`${siteName} - ${title}`} />
+    <meta name="twitter:domain" content="weylandyu.com" />
+
+    <!-- Additional Twitter Tags -->
+    <meta name="twitter:app:name:iphone" content={siteName} />
+    <meta name="twitter:app:name:ipad" content={siteName} />
+    <meta name="twitter:app:name:googleplay" content={siteName} />
+
+    <!-- LinkedIn -->
+    <meta property="linkedin:owner" content={siteName} />
+
+    <!-- Favicon & Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Fonts -->
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 
-    <!-- Structured Data -->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Alternate Languages (if needed) -->
+    <link rel="alternate" hreflang="en" href={canonicalURL} />
+    <link rel="alternate" hreflang="x-default" href={siteUrl} />
+
+    <!-- Enhanced Structured Data - Organization -->
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Weyland-Yutani Corporation",
-      "alternateName": "Weyland Corp",
+      "@id": `${siteUrl}#organization`,
+      "name": siteName,
+      "alternateName": ["Weyland Corp", "Yutani Corporation", "W-Y Corp"],
       "url": siteUrl.toString(),
-      "logo": logoURL.toString(),
+      "logo": {
+        "@type": "ImageObject",
+        "url": logoURL.toString(),
+        "width": "512",
+        "height": "512"
+      },
+      "image": ogImageURL.toString(),
       "description": description,
       "foundingDate": "2012-10-11",
+      "foundingLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "San Francisco",
+          "addressRegion": "CA",
+          "postalCode": "94111",
+          "addressCountry": "US"
+        }
+      },
       "founder": {
         "@type": "Person",
-        "name": "Peter Weyland"
+        "name": "Peter Weyland",
+        "birthDate": "1990-10-01",
+        "birthPlace": "Mumbai, India"
+      },
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": "500000"
+      },
+      "slogan": "Building Better Worlds",
+      "knowsAbout": [
+        "Terraforming",
+        "Cybernetics",
+        "Synthetic Humans",
+        "Bio-Research",
+        "Space Exploration",
+        "FTL Technology",
+        "Nanotechnology"
+      ],
+      "areaServed": {
+        "@type": "Place",
+        "name": "300+ Colonized Worlds"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-555-9392",
+        "contactType": "Customer Service",
+        "email": "info@weylandyutani.com",
+        "availableLanguage": ["English"]
       },
       "sameAs": [
         "https://twitter.com/weylandyutani",
-        "https://linkedin.com/company/weyland-yutani"
+        "https://linkedin.com/company/weyland-yutani",
+        "https://github.com/weyland-yutani"
       ]
     })} />
+
+    <!-- Structured Data - WebSite -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": `${siteUrl}#website`,
+      "url": siteUrl.toString(),
+      "name": siteName,
+      "description": description,
+      "publisher": {
+        "@id": `${siteUrl}#organization`
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": `${siteUrl}/search?q={search_term_string}`
+        },
+        "query-input": "required name=search_term_string"
+      }
+    })} />
+
+    <!-- Structured Data - BreadcrumbList (for inner pages) -->
+    {Astro.url.pathname !== '/' && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": siteUrl.toString()
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": title,
+            "item": canonicalURL.toString()
+          }
+        ]
+      })} />
+    )}
   </head>
   <body>
     <slot />
