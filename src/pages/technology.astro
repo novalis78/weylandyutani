@@ -1,0 +1,167 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Technology"
+  description="Explore Weyland-Yutani's revolutionary technologies: FTL drives, atmospheric processors, synthetic humans, and more."
+>
+  <Header />
+
+  <main class="pt-24">
+    <section class="relative py-32 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
+      <div class="grid-background absolute inset-0 opacity-20"></div>
+      <div class="relative container mx-auto px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+          Our <span class="gradient-text-dual">Technology</span>
+        </h1>
+        <p class="text-xl text-[#a0a0a0] max-w-3xl mx-auto">
+          Pioneering innovations that are transforming humanity's reach across the galaxy
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20 bg-[#0a0a0a]">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <!-- FTL Technology -->
+          <div class="card card-glow p-8">
+            <div class="w-20 h-20 rounded-lg bg-gradient-to-br from-[#00a6d6] to-[#0088b3] flex items-center justify-center mb-6 mx-auto glow-blue">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white text-center mb-4">FTL Propulsion</h3>
+            <p class="text-[#a0a0a0] text-center mb-6">
+              Faster-than-light technology enabling interstellar travel. Our FTL drives power the colonization of distant worlds.
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2 text-[#a0a0a0]">
+                <svg class="w-5 h-5 text-[#00a6d6]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Superluminal travel capability
+              </li>
+              <li class="flex items-center gap-2 text-[#a0a0a0]">
+                <svg class="w-5 h-5 text-[#00a6d6]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Hypersleep integration
+              </li>
+              <li class="flex items-center gap-2 text-[#a0a0a0]">
+                <svg class="w-5 h-5 text-[#00a6d6]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Long-duration deep space travel
+              </li>
+            </ul>
+          </div>
+
+          <!-- Atmospheric Processors -->
+          <div class="card card-glow p-8">
+            <div class="w-20 h-20 rounded-lg bg-gradient-to-br from-[#10b981] to-[#059669] flex items-center justify-center mb-6 mx-auto shadow-[0_0_30px_rgba(16,185,129,0.3)]">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white text-center mb-4">Atmospheric Processors</h3>
+            <p class="text-[#a0a0a0] text-center mb-6">
+              Revolutionary technology that transforms hostile planetary atmospheres into breathable air for human colonization.
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2 text-[#a0a0a0]">
+                <svg class="w-5 h-5 text-[#10b981]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Planetary-scale conversion
+              </li>
+              <li class="flex items-center gap-2 text-[#a0a0a0]">
+                <svg class="w-5 h-5 text-[#10b981]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Decades-long operation cycles
+              </li>
+              <li class="flex items-center gap-2 text-[#a0a0a0]">
+                <svg class="w-5 h-5 text-[#10b981]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Automated maintenance systems
+              </li>
+            </ul>
+          </div>
+
+          <!-- Synthetic Humans -->
+          <div class="card card-glow p-8">
+            <div class="w-20 h-20 rounded-lg bg-gradient-to-br from-[#8b5cf6] to-[#6d28d9] flex items-center justify-center mb-6 mx-auto shadow-[0_0_30px_rgba(139,92,246,0.3)]">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white text-center mb-4">Synthetic Humans</h3>
+            <p class="text-[#a0a0a0] text-center mb-6">
+              Advanced artificial beings indistinguishable from humans, serving in research, exploration, and colony support roles.
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2 text-[#a0a0a0]">
+                <svg class="w-5 h-5 text-[#8b5cf6]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Human-equivalent intelligence
+              </li>
+              <li class="flex items-center gap-2 text-[#a0a0a0]">
+                <svg class="w-5 h-5 text-[#8b5cf6]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Self-learning capabilities
+              </li>
+              <li class="flex items-center gap-2 text-[#a0a0a0]">
+                <svg class="w-5 h-5 text-[#8b5cf6]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Biomechanical construction
+              </li>
+            </ul>
+          </div>
+
+          <!-- Nanotechnology -->
+          <div class="card card-glow p-8">
+            <div class="w-20 h-20 rounded-lg bg-gradient-to-br from-[#d4af37] to-[#b8941f] flex items-center justify-center mb-6 mx-auto glow-gold">
+              <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white text-center mb-4">Nanotechnology</h3>
+            <p class="text-[#a0a0a0] text-center mb-6">
+              Molecular-scale engineering enabling medical breakthroughs, materials science, and advanced manufacturing.
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2 text-[#a0a0a0]">
+                <svg class="w-5 h-5 text-[#d4af37]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Medical nanobots
+              </li>
+              <li class="flex items-center gap-2 text-[#a0a0a0]">
+                <svg class="w-5 h-5 text-[#d4af37]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Self-assembling materials
+              </li>
+              <li class="flex items-center gap-2 text-[#a0a0a0]">
+                <svg class="w-5 h-5 text-[#d4af37]" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Precision manufacturing
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

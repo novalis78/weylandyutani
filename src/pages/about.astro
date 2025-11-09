@@ -1,0 +1,221 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="About"
+  description="Learn about Weyland-Yutani Corporation's history, from Peter Weyland's founding vision in 2012 to our merger with Yutani Corporation and beyond."
+>
+  <Header />
+
+  <main class="pt-24">
+    <!-- Hero Section -->
+    <section class="relative py-32 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] overflow-hidden">
+      <div class="grid-background absolute inset-0 opacity-20"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="text-center mb-16">
+          <div class="inline-block mb-6">
+            <span class="px-4 py-2 rounded-full border border-[#00a6d6]/30 bg-[#00a6d6]/10 text-[#00d4ff] text-sm font-semibold tracking-wide">
+              OUR STORY
+            </span>
+          </div>
+          <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+            Building the <span class="gradient-text-dual">Future</span>
+          </h1>
+          <p class="text-xl text-[#a0a0a0] max-w-3xl mx-auto">
+            From a visionary entrepreneur's dream to the most powerful corporation in human history
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Peter Weyland Section -->
+    <section id="founder" class="relative py-20 bg-[#0a0a0a]">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-4xl font-bold text-white mb-6">
+              Peter <span class="gradient-text-blue">Weyland</span>
+            </h2>
+            <div class="space-y-4 text-[#a0a0a0]">
+              <p>
+                <strong class="text-white">Born October 1, 1990</strong> in Mumbai, India, Peter Weyland would become one of the most influential figures in human history.
+              </p>
+              <p>
+                A child prodigy and visionary entrepreneur, Weyland founded his first technology company at age 17. By 2012, he had incorporated all his enterprises under one roof as <strong class="text-white">Weyland Industries</strong>.
+              </p>
+              <p>
+                His legendary <strong class="text-[#00a6d6]">TED 2023 speech</strong> at Wembley Stadium captivated the world, outlining humanity's destiny among the stars and the technologies that would make it possible.
+              </p>
+              <p>
+                Under his leadership, Weyland Corp pioneered breakthroughs in <strong class="text-white">nanotechnology, FTL travel, terraforming, and synthetic life</strong> - technologies that would transform humanity's future.
+              </p>
+            </div>
+          </div>
+          <div class="card p-8">
+            <div class="text-center mb-6">
+              <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-[#00a6d6] to-[#0088b3] flex items-center justify-center mb-4 glow-blue">
+                <span class="text-6xl text-white font-bold">P</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white">Peter Weyland</h3>
+              <p class="text-[#a0a0a0]">Founder & Visionary</p>
+            </div>
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between border-b border-[#ffffff]/10 pb-2">
+                <span class="text-[#a0a0a0]">Born</span>
+                <span class="text-white">October 1, 1990</span>
+              </div>
+              <div class="flex justify-between border-b border-[#ffffff]/10 pb-2">
+                <span class="text-[#a0a0a0]">Birthplace</span>
+                <span class="text-white">Mumbai, India</span>
+              </div>
+              <div class="flex justify-between border-b border-[#ffffff]/10 pb-2">
+                <span class="text-[#a0a0a0]">Founded</span>
+                <span class="text-white">Weyland Corp (2012)</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-[#a0a0a0]">Legacy</span>
+                <span class="text-white">Changed Humanity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="history" class="relative py-32 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
+      <div class="hex-pattern absolute inset-0 opacity-20"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="text-center mb-20">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+            Our <span class="gradient-text-gold">Timeline</span>
+          </h2>
+          <p class="text-xl text-[#a0a0a0]">A century of innovation and transformation</p>
+        </div>
+
+        <div class="max-w-4xl mx-auto space-y-16">
+          <!-- 2012 - Founding -->
+          <div class="relative pl-8 border-l-2 border-[#00a6d6]/50">
+            <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-[#00a6d6] glow-blue-sm"></div>
+            <div class="mb-2">
+              <span class="px-3 py-1 rounded-full bg-[#00a6d6]/20 text-[#00d4ff] text-sm font-semibold">
+                October 11, 2012
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">The Beginning</h3>
+            <p class="text-[#a0a0a0]">
+              Peter Weyland incorporates all his enterprises under one roof as <strong class="text-white">Weyland Corporation</strong>. The company begins pioneering work in nanotechnology, FTL travel, and synthetic life.
+            </p>
+          </div>
+
+          <!-- 2023 - TED Talk -->
+          <div class="relative pl-8 border-l-2 border-[#00a6d6]/50">
+            <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-[#00a6d6] glow-blue-sm"></div>
+            <div class="mb-2">
+              <span class="px-3 py-1 rounded-full bg-[#00a6d6]/20 text-[#00d4ff] text-sm font-semibold">
+                2023
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">The TED 2023 Speech</h3>
+            <p class="text-[#a0a0a0]">
+              Peter Weyland delivers his legendary speech at Wembley Stadium, outlining humanity's future and Weyland Corp's ambitious plans to transform the species.
+            </p>
+          </div>
+
+          <!-- 2074 - Yutani Founded -->
+          <div class="relative pl-8 border-l-2 border-[#d4af37]/50">
+            <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-[#d4af37] glow-gold"></div>
+            <div class="mb-2">
+              <span class="px-3 py-1 rounded-full bg-[#d4af37]/20 text-[#ffd700] text-sm font-semibold">
+                2074
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">Yutani Corporation Founded</h3>
+            <p class="text-[#a0a0a0]">
+              In Japan, the Yutani Corporation is officially founded, specializing in <strong class="text-white">cybernetics and advanced technology</strong>. They gain a competitive edge through acquisition of alien technology.
+            </p>
+          </div>
+
+          <!-- 2099 - Merger -->
+          <div class="relative pl-8 border-l-2 border-[#d4af37]/50">
+            <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-gradient-to-br from-[#00a6d6] to-[#d4af37] animate-pulse-glow"></div>
+            <div class="mb-2">
+              <span class="px-3 py-1 rounded-full bg-gradient-to-r from-[#00a6d6]/20 to-[#d4af37]/20 text-white text-sm font-semibold">
+                2099
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">
+              The <span class="gradient-text-dual">Merger</span>
+            </h3>
+            <p class="text-[#a0a0a0]">
+              Following Peter Weyland's death, Yutani Corporation acquires Weyland Corp's assets, creating <strong class="text-white gradient-text-dual">Weyland-Yutani Corporation</strong> - a British-Japanese conglomerate worth over <strong class="text-[#d4af37]">$200 trillion</strong>.
+            </p>
+          </div>
+
+          <!-- 2100s - Expansion -->
+          <div class="relative pl-8 border-l-2 border-[#00a6d6]/50">
+            <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-[#00a6d6] glow-blue-sm"></div>
+            <div class="mb-2">
+              <span class="px-3 py-1 rounded-full bg-[#00a6d6]/20 text-[#00d4ff] text-sm font-semibold">
+                2100 - 2300
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">The Golden Age</h3>
+            <p class="text-[#a0a0a0]">
+              Weyland-Yutani becomes the most powerful corporation in existence, colonizing worlds, developing synthetic humans, and pushing the boundaries of human knowledge. Over <strong class="text-white">300 worlds</strong> are terraformed and colonized.
+            </p>
+          </div>
+
+          <!-- Today -->
+          <div class="relative pl-8">
+            <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-gradient-to-br from-[#00a6d6] to-[#d4af37] animate-pulse-glow"></div>
+            <div class="mb-2">
+              <span class="px-3 py-1 rounded-full bg-gradient-to-r from-[#00a6d6]/20 to-[#d4af37]/20 text-white text-sm font-semibold">
+                Today
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">Building Better Worlds</h3>
+            <p class="text-[#a0a0a0]">
+              We continue Peter Weyland's vision, leading humanity's expansion across the stars and pioneering the technologies that will define our species' future.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="relative py-20 bg-[#0a0a0a]">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="card p-12 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Our Mission</h2>
+            <p class="text-xl text-[#a0a0a0] leading-relaxed mb-8">
+              "To transform the future of humanity through revolutionary technologies, pioneering the colonization of new worlds, and pushing the boundaries of what's possible."
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 text-sm">
+              <div class="px-6 py-3 rounded-lg bg-[#00a6d6]/10 border border-[#00a6d6]/30 text-[#00d4ff]">
+                Innovation
+              </div>
+              <div class="px-6 py-3 rounded-lg bg-[#00a6d6]/10 border border-[#00a6d6]/30 text-[#00d4ff]">
+                Exploration
+              </div>
+              <div class="px-6 py-3 rounded-lg bg-[#00a6d6]/10 border border-[#00a6d6]/30 text-[#00d4ff]">
+                Excellence
+              </div>
+              <div class="px-6 py-3 rounded-lg bg-[#d4af37]/10 border border-[#d4af37]/30 text-[#ffd700]">
+                Progress
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

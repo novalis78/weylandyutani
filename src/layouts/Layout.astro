@@ -1,0 +1,80 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+}
+
+const {
+  title,
+  description = "Weyland-Yutani Corporation - Building Better Worlds. Leading innovation in terraforming, cybernetics, bio-research, and advanced technologies since 2012.",
+  keywords = "Weyland-Yutani, terraforming, cybernetics, synthetic humans, bio-research, space exploration, atmospheric processors, FTL technology"
+} = Astro.props;
+
+const siteUrl = Astro.site || new URL('https://weylandyu.com');
+const canonicalURL = new URL(Astro.url.pathname, siteUrl);
+const ogImageURL = new URL('/og-image.jpg', siteUrl);
+const logoURL = new URL('/favicon.svg', siteUrl);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO Meta Tags -->
+    <title>{title} | Weyland-Yutani Corporation</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={`${title} | Weyland-Yutani Corporation`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageURL} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={`${title} | Weyland-Yutani Corporation`} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImageURL} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Weyland-Yutani Corporation",
+      "alternateName": "Weyland Corp",
+      "url": siteUrl.toString(),
+      "logo": logoURL.toString(),
+      "description": description,
+      "foundingDate": "2012-10-11",
+      "founder": {
+        "@type": "Person",
+        "name": "Peter Weyland"
+      },
+      "sameAs": [
+        "https://twitter.com/weylandyutani",
+        "https://linkedin.com/company/weyland-yutani"
+      ]
+    })} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,146 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 glass-strong border-b border-[#00a6d6]/20">
+  <nav class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-3 group">
+        <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-[#00a6d6] to-[#0088b3] flex items-center justify-center glow-blue-sm">
+          <span class="text-white font-bold text-xl">W-Y</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-lg font-bold text-white group-hover:text-[#00d4ff] transition-colors">WEYLAND-YUTANI</span>
+          <span class="text-xs text-[#a0a0a0] tracking-wider">BUILDING BETTER WORLDS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex items-center space-x-8">
+        <li>
+          <a
+            href="/"
+            class={`text-sm font-semibold transition-colors ${currentPath === '/' ? 'text-[#00a6d6]' : 'text-[#e8e8e8] hover:text-[#00d4ff]'}`}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="/about"
+            class={`text-sm font-semibold transition-colors ${currentPath === '/about' ? 'text-[#00a6d6]' : 'text-[#e8e8e8] hover:text-[#00d4ff]'}`}
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="/divisions"
+            class={`text-sm font-semibold transition-colors ${currentPath === '/divisions' ? 'text-[#00a6d6]' : 'text-[#e8e8e8] hover:text-[#00d4ff]'}`}
+          >
+            Divisions
+          </a>
+        </li>
+        <li>
+          <a
+            href="/technology"
+            class={`text-sm font-semibold transition-colors ${currentPath === '/technology' ? 'text-[#00a6d6]' : 'text-[#e8e8e8] hover:text-[#00d4ff]'}`}
+          >
+            Technology
+          </a>
+        </li>
+        <li>
+          <a
+            href="/careers"
+            class={`text-sm font-semibold transition-colors ${currentPath === '/careers' ? 'text-[#00a6d6]' : 'text-[#e8e8e8] hover:text-[#00d4ff]'}`}
+          >
+            Careers
+          </a>
+        </li>
+        <li>
+          <a
+            href="/contact"
+            class="btn-primary text-sm px-6 py-2"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-button"
+        class="md:hidden text-white p-2 hover:text-[#00d4ff] transition-colors"
+        aria-label="Toggle menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+      <ul class="flex flex-col space-y-4">
+        <li>
+          <a href="/" class="block text-sm font-semibold text-[#e8e8e8] hover:text-[#00d4ff] transition-colors">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="/about" class="block text-sm font-semibold text-[#e8e8e8] hover:text-[#00d4ff] transition-colors">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="/divisions" class="block text-sm font-semibold text-[#e8e8e8] hover:text-[#00d4ff] transition-colors">
+            Divisions
+          </a>
+        </li>
+        <li>
+          <a href="/technology" class="block text-sm font-semibold text-[#e8e8e8] hover:text-[#00d4ff] transition-colors">
+            Technology
+          </a>
+        </li>
+        <li>
+          <a href="/careers" class="block text-sm font-semibold text-[#e8e8e8] hover:text-[#00d4ff] transition-colors">
+            Careers
+          </a>
+        </li>
+        <li>
+          <a href="/contact" class="btn-primary text-sm inline-block">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+
+  button?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>
+
+<style>
+  header {
+    animation: slideDown 0.5s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+</style>
