@@ -1,0 +1,157 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Press Release: Defense Sector Consolidation"
+  description="Weyland Corporation completes the acquisition of Boeing, Lockheed Martin, Northrop Grumman, and BAE Systems, becoming the world's premier defense and aerospace company."
+  type="article"
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- ARTICLE HEADER -->
+    <section class="relative py-20 border-b border-[#1a1a1a]">
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <a href="/news" class="inline-flex items-center gap-2 text-[#FFC600] text-xs font-bold uppercase tracking-wider mb-8 hover:text-white transition-colors">
+            &larr; BACK TO NEWSROOM
+          </a>
+
+          <div class="flex items-center gap-4 mb-6">
+            <span class="text-[10px] font-mono text-[#FFC600] tracking-widest bg-[#FFC600]/10 px-3 py-1 clip-corner">CORPORATE</span>
+            <span class="text-[10px] font-mono text-gray-600 tracking-wider">PRESS RELEASE</span>
+          </div>
+
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase leading-none mb-6">
+            WEYLAND CORPORATION COMPLETES ACQUISITION OF <span class="text-[#FFC600]">BOEING, LOCKHEED MARTIN, NORTHROP GRUMMAN, AND BAE SYSTEMS</span>
+          </h1>
+
+          <div class="flex flex-wrap items-center gap-6 text-sm text-gray-500 font-mono">
+            <span>AUGUST 14, 2032</span>
+            <span class="text-[#FFC600]">|</span>
+            <span>SAN FRANCISCO, CA</span>
+            <span class="text-[#FFC600]">|</span>
+            <span>FOR IMMEDIATE RELEASE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-0 left-0 right-0 hazard-stripes-thin h-1"></div>
+    </section>
+
+    <!-- ARTICLE BODY -->
+    <section class="relative py-16 bg-black">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-gray-300 leading-relaxed space-y-6 text-base">
+            <p class="text-lg text-white font-semibold">
+              <strong>SAN FRANCISCO --</strong> Weyland Corporation (NASDAQ: WYLD) today announced the completion of its acquisitions of The Boeing Company, Lockheed Martin Corporation, Northrop Grumman Corporation, and BAE Systems plc. The four transactions, collectively valued at $374.6 billion, received final regulatory clearance from the United States Department of Justice, the United Kingdom Competition and Markets Authority, and the European Commission on August 1, 2032, following a comprehensive 14-month review process.
+            </p>
+
+            <p>
+              The acquisitions consolidate the world's four largest independent defense and aerospace companies under the Weyland Corporation umbrella, creating an integrated defense, aerospace, and security enterprise without parallel in human history. The combined operations encompass military aircraft, naval systems, missile defense, satellite communications, space launch systems, cybersecurity, and advanced weapons development.
+            </p>
+
+            <p>
+              "The threats facing humanity are evolving at a pace that fragmented defense capabilities cannot match," said Sir Peter Weyland, Founder and CEO of Weyland Corporation. "As our civilization expands into space, the scale and complexity of our security requirements grow exponentially. These acquisitions ensure that one organization possesses the full spectrum of capabilities necessary to protect human interests, whether on Earth, in orbit, or on the frontier of colonized space."
+            </p>
+
+            <!-- TRANSACTION DATA -->
+            <div class="my-12 corp-card p-8">
+              <h3 class="text-lg font-black text-[#FFC600] uppercase mb-6">ACQUISITION SUMMARY</h3>
+              <div class="space-y-4">
+                <div class="grid grid-cols-3 gap-4 text-center border-b border-[#1a1a1a] pb-4">
+                  <div class="text-[#FFC600] font-black text-xs uppercase">ENTITY</div>
+                  <div class="text-[#FFC600] font-black text-xs uppercase">TRANSACTION VALUE</div>
+                  <div class="text-[#FFC600] font-black text-xs uppercase">EMPLOYEES INTEGRATED</div>
+                </div>
+                <div class="grid grid-cols-3 gap-4 text-center border-b border-[#1a1a1a] pb-3">
+                  <div class="text-white font-mono text-xs">THE BOEING COMPANY</div>
+                  <div class="text-gray-400 font-mono text-xs">$142.3B</div>
+                  <div class="text-gray-400 font-mono text-xs">153,000</div>
+                </div>
+                <div class="grid grid-cols-3 gap-4 text-center border-b border-[#1a1a1a] pb-3">
+                  <div class="text-white font-mono text-xs">LOCKHEED MARTIN CORP.</div>
+                  <div class="text-gray-400 font-mono text-xs">$118.7B</div>
+                  <div class="text-gray-400 font-mono text-xs">116,000</div>
+                </div>
+                <div class="grid grid-cols-3 gap-4 text-center border-b border-[#1a1a1a] pb-3">
+                  <div class="text-white font-mono text-xs">NORTHROP GRUMMAN CORP.</div>
+                  <div class="text-gray-400 font-mono text-xs">$72.8B</div>
+                  <div class="text-gray-400 font-mono text-xs">90,000</div>
+                </div>
+                <div class="grid grid-cols-3 gap-4 text-center">
+                  <div class="text-white font-mono text-xs">BAE SYSTEMS PLC</div>
+                  <div class="text-gray-400 font-mono text-xs">$40.8B</div>
+                  <div class="text-gray-400 font-mono text-xs">89,600</div>
+                </div>
+              </div>
+              <div class="border-t border-[#1a1a1a] mt-4 pt-4">
+                <div class="grid grid-cols-3 gap-4 text-center">
+                  <div class="text-[#FFC600] font-black text-xs uppercase">TOTAL</div>
+                  <div class="text-[#FFC600] font-black text-sm">$374.6B</div>
+                  <div class="text-[#FFC600] font-black text-sm">448,600</div>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="text-2xl font-black text-white uppercase mt-12 mb-4">INTEGRATED CAPABILITIES</h2>
+            <div class="h-px w-24 bg-[#FFC600] mb-6"></div>
+
+            <p>
+              The acquired companies will be consolidated into Weyland Corporation's Security Solutions Division, which will operate as a unified entity with integrated research, development, manufacturing, and support functions. The Division will maintain all existing government contracts and security clearances. Current programs, including fifth- and sixth-generation fighter aircraft, next-generation ballistic missile defense, orbital defense platforms, and deep-space patrol vessels, will continue without interruption.
+            </p>
+
+            <p>
+              "Integration at this scale has never been attempted in the defense sector," said Admiral (Ret.) James Thornton, who has been appointed President of the Security Solutions Division. "But the operational synergies are compelling. Unified supply chains, shared R&D infrastructure, and a single command structure for program management will eliminate redundancy and accelerate development timelines across every major program."
+            </p>
+
+            <h2 class="text-2xl font-black text-white uppercase mt-12 mb-4">REGULATORY FRAMEWORK</h2>
+            <div class="h-px w-24 bg-[#FFC600] mb-6"></div>
+
+            <p>
+              As a condition of regulatory approval, Weyland Corporation has entered into a Consent Decree with the U.S. Department of Justice establishing an independent oversight board to monitor competitive practices within the defense market. The Corporation has also committed to maintaining open competition for subcontracting across all major defense programs and will publish an annual transparency report detailing contract award procedures.
+            </p>
+
+            <p>
+              Weyland Corporation shares rose 7.4% on the announcement. The Corporation reaffirmed its full-year revenue guidance and noted that the acquisitions are expected to be accretive to earnings per share within three quarters.
+            </p>
+
+            <!-- BOILERPLATE -->
+            <div class="mt-16 pt-8 border-t border-[#1a1a1a]">
+              <h3 class="text-sm font-black text-[#FFC600] uppercase tracking-wider mb-4">ABOUT WEYLAND CORPORATION</h3>
+              <p class="text-sm text-gray-500 leading-relaxed">
+                Weyland Corporation is a multinational conglomerate and the global leader in technology innovation, space exploration, defense, and terraforming. Founded in 2012 by Sir Peter Weyland, the Corporation operates across seven integrated business verticals with more than 600,000 employees worldwide. Weyland Corporation is publicly traded on NASDAQ under the symbol WYLD.
+              </p>
+
+              <h3 class="text-sm font-black text-[#FFC600] uppercase tracking-wider mb-4 mt-8">FORWARD-LOOKING STATEMENTS</h3>
+              <p class="text-sm text-gray-500 leading-relaxed">
+                This press release contains forward-looking statements within the meaning of the Private Securities Litigation Reform Act. These statements are based on current expectations and are subject to risks and uncertainties. Actual results may differ materially from those projected. Weyland Corporation undertakes no obligation to update forward-looking statements.
+              </p>
+
+              <h3 class="text-sm font-black text-[#FFC600] uppercase tracking-wider mb-4 mt-8">MEDIA CONTACT</h3>
+              <p class="text-sm text-gray-500">
+                Corporate Communications<br/>
+                media@weylandcorp.com<br/>
+                +1-800-555-WYLD
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

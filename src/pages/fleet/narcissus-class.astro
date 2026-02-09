@@ -1,0 +1,314 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Narcissus-Class Emergency Lifeboat"
+  description="Narcissus-Class Emergency Lifeboat -- Standard lifeboat and shuttle attached to commercial vessels. Compact, reliable, life-sustaining. ICC certified. Full safety specifications and deployment protocols."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center pt-20 pb-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          FLEET SYSTEMS -- SAFETY & EMERGENCY
+        </div>
+
+        <h1 class="text-6xl md:text-[8rem] font-black text-white mb-4 leading-none uppercase">
+          NARCISSUS<br/><span class="text-[#FFC600] text-glow-yellow">CLASS</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-6"></div>
+
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wide font-mono">
+          EMERGENCY LIFEBOAT -- CREW SAFETY SYSTEM
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Vessel Data Bar -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">CLASS</div>
+            <div class="text-sm font-black text-[#FFC600]">NARCISSUS</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">TYPE</div>
+            <div class="text-sm font-black text-[#FFC600]">EMERGENCY LIFEBOAT</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">BUILDER</div>
+            <div class="text-sm font-black text-[#FFC600]">W-Y FLEET SYSTEMS</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">CERTIFICATION</div>
+            <div class="text-sm font-black text-[#FFC600]">ICC / UAAC / CMSB</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">STATUS</div>
+            <div class="text-sm font-black text-[#FFC600] status-active">IN SERVICE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+                SYSTEM OVERVIEW
+              </div>
+              <h2 class="text-4xl md:text-5xl font-black text-white mb-8">
+                WHEN EVERYTHING ELSE <span class="text-[#FFC600] text-glow-yellow">FAILS</span>
+              </h2>
+              <div class="space-y-6 text-gray-400 font-mono text-sm leading-relaxed">
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE NARCISSUS-CLASS EMERGENCY LIFEBOAT IS THE STANDARD CREW EVACUATION SYSTEM CARRIED ABOARD ALL WEYLAND-YUTANI COMMERCIAL VESSELS. DESIGNED FOR ONE PURPOSE: THE SURVIVAL OF THE CREW WHEN THE PARENT VESSEL IS NO LONGER VIABLE. COMPACT, AUTONOMOUS, AND BUILT TO SUSTAIN LIFE FOR EXTENDED PERIODS IN DEEP SPACE.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> EVERY NARCISSUS-CLASS UNIT CARRIES INTEGRATED HYPERSLEEP CAPABILITY, ALLOWING EVACUEES TO ENTER STASIS AND AWAIT RESCUE OVER TIMESCALES RANGING FROM DAYS TO YEARS. THE LIFEBOAT'S AUTOMATED DISTRESS BEACON BROADCASTS ON ALL ICC EMERGENCY FREQUENCIES FROM THE MOMENT OF DEPLOYMENT.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE NARCISSUS-CLASS IS ICC CERTIFIED FOR ALL VESSEL CLASSES IN THE COMMERCIAL FLEET AND MEETS OR EXCEEDS EVERY INTERSTELLAR SAFETY STANDARD CURRENTLY IN FORCE. WEYLAND-YUTANI CONSIDERS CREW SAFETY A NON-NEGOTIABLE PRIORITY, AND THE NARCISSUS-CLASS IS THE PHYSICAL EXPRESSION OF THAT COMMITMENT.
+                </p>
+              </div>
+            </div>
+
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">TECHNICAL SPECIFICATIONS</h3>
+              <div class="space-y-4 text-sm font-mono">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DESIGNATION</span>
+                  <span class="text-[#FFC600] font-bold">NARCISSUS-CLASS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">TYPE</span>
+                  <span class="text-[#FFC600] font-bold">EMERGENCY LIFEBOAT</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">LENGTH</span>
+                  <span class="text-[#FFC600] font-bold">16.3 METERS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">MASS</span>
+                  <span class="text-[#FFC600] font-bold">4,800 KG</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">CREW CAPACITY</span>
+                  <span class="text-[#FFC600] font-bold">3 HYPERSLEEP BERTHS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">LIFE SUPPORT</span>
+                  <span class="text-[#FFC600] font-bold">72 HRS ACTIVE / 10 YRS STASIS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">PROPULSION</span>
+                  <span class="text-[#FFC600] font-bold">CHEMICAL THRUSTER (LIMITED)</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">BEACON</span>
+                  <span class="text-[#FFC600] font-bold">ALL-FREQ EMERGENCY</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">CERTIFICATION</span>
+                  <span class="text-[#FFC600] font-bold">ICC CLASS I</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Safety Systems -->
+    <section class="relative py-28 bg-black border-t-4 border-b-4 border-[#FFC600]">
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6 pt-6">
+        <div class="text-center mb-16">
+          <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+            SAFETY SYSTEMS
+          </div>
+          <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+            SURVIVAL <span class="text-[#FFC600] text-glow-yellow">FEATURES</span>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">HS</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">HYPERSLEEP SYSTEM</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              THREE INTEGRATED HYPERSLEEP BERTHS ALLOW CREW TO ENTER STASIS IMMEDIATELY AFTER DEPLOYMENT. THE SYSTEM IS SELF-CONTAINED WITH INDEPENDENT POWER, CRYOGENIC SUPPLY, AND MONITORING. STASIS DURATION RATED TO 10 YEARS.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">DB</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">DISTRESS BEACON</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              AUTOMATED EMERGENCY DISTRESS BEACON ACTIVATES ON DEPLOYMENT AND BROADCASTS CONTINUOUSLY ON ALL ICC EMERGENCY FREQUENCIES. SIGNAL RANGE EXCEEDS 50 LIGHT YEARS UNDER OPTIMAL CONDITIONS. BEACON POWER RATED TO 15 YEARS.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">LS</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">LIFE SUPPORT</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              CLOSED-LOOP ATMOSPHERIC SYSTEM PROVIDES 72 HOURS OF ACTIVE BREATHABLE ATMOSPHERE FOR THREE OCCUPANTS. CO2 SCRUBBING, OXYGEN GENERATION, AND THERMAL REGULATION OPERATE AUTOMATICALLY WITH ZERO CREW INPUT REQUIRED.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">RH</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">RADIATION HARDENING</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              HULL AND INTERNAL SYSTEMS ARE HARDENED AGAINST RADIATION EXPOSURE CONSISTENT WITH UNSHIELDED DEEP SPACE TRANSIT. OCCUPANTS ARE PROTECTED DURING BOTH ACTIVE AND STASIS PERIODS.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">EP</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">EMERGENCY PROVISIONS</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              SEALED EMERGENCY STORES INCLUDE WATER, NUTRITIONAL RATIONS, MEDICAL KIT, PERSONAL LOCATOR BEACONS, AND SURVIVAL EQUIPMENT. PROVISIONS ARE RATED FOR 30 DAYS OF ACTIVE OCCUPANCY WITHOUT RESUPPLY.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">AD</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">AUTO-DEPLOYMENT</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              THE NARCISSUS-CLASS CAN BE DEPLOYED MANUALLY OR AUTOMATICALLY IN RESPONSE TO CATASTROPHIC VESSEL FAILURE. EXPLOSIVE BOLT SEPARATION, THRUSTER IGNITION, AND SAFE-DISTANCE MANEUVERING EXECUTE IN UNDER 8 SECONDS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12">
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">CERTIFICATIONS</h3>
+              <div class="space-y-3">
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-xs uppercase">ICC INTERSTELLAR SAFETY STANDARD -- CLASS I LIFEBOAT</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-xs uppercase">UAAC COMMERCIAL VESSEL SAFETY REGULATION 7.4.2</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-xs uppercase">COLONIAL MARITIME SAFETY BOARD -- DEEP SPACE CERTIFIED</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-xs uppercase">ISO 45001 OCCUPATIONAL HEALTH & SAFETY</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-xs uppercase">W-Y INTERNAL SAFETY STANDARD FS-9000</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-xs uppercase">HYPERSLEEP SAFETY CERTIFICATION -- LONG DURATION</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">DEPLOYMENT RECORD</h3>
+              <div class="space-y-4 text-sm font-mono">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">UNITS INSTALLED</span>
+                  <span class="text-[#FFC600] font-bold">6,200+</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">VESSEL CLASSES</span>
+                  <span class="text-[#FFC600] font-bold">ALL COMMERCIAL</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">SUCCESSFUL RESCUES</span>
+                  <span class="text-[#FFC600] font-bold">CLASSIFIED</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">SYSTEM RELIABILITY</span>
+                  <span class="text-[#FFC600] font-bold">99.97%</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">SERVICE INTERVAL</span>
+                  <span class="text-[#FFC600] font-bold">ANNUAL INSPECTION</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">SERVICE LIFE</span>
+                  <span class="text-[#FFC600] font-bold">20 YEARS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="terminal mt-16">
+            <div class="terminal-content">
+              <p class="text-[#FFC600] font-mono text-sm leading-relaxed">
+                &gt; THE NARCISSUS-CLASS IS THE LAST LINE OF DEFENSE BETWEEN A CREW AND THE VOID. IT IS ENGINEERED TO FUNCTION WHEN EVERYTHING ELSE HAS CEASED TO FUNCTION. IT DOES NOT REQUIRE AN OPERATIONAL PARENT VESSEL, A FUNCTIONING POWER GRID, OR A CONSCIOUS CREW. IT REQUIRES ONLY THAT SOMEONE REACH IT. WEYLAND-YUTANI BUILDS SHIPS TO CROSS THE STARS. THE NARCISSUS BRINGS PEOPLE HOME.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="relative py-12 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/fleet" class="btn-secondary">ALL FLEET</a>
+          <a href="/fleet/nostromo-class" class="btn-secondary">NOSTROMO-CLASS</a>
+          <a href="/fleet/rt01-transport" class="btn-secondary">RT01 TRANSPORT</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

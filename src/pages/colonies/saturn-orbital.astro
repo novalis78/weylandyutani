@@ -1,0 +1,279 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Saturn Orbital Station"
+  description="Saturn Orbital Station -- Weyland-Yutani Class A Research Hub. Massive orbital platform in Saturn's rings. Zero-G manufacturing, helium-3 mining, deep space relay. Population 50,000."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center pt-20 pb-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          CLASS A -- RESEARCH HUB
+        </div>
+
+        <h1 class="text-6xl md:text-[8rem] font-black text-white mb-4 leading-none uppercase">
+          SATURN<br/><span class="text-[#FFC600] text-glow-yellow">ORBITAL</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-6"></div>
+
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wide font-mono">
+          SOL SYSTEM -- RING PLATFORM -- DEEP SPACE RESEARCH
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Colony Data Bar -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">LOCATION</div>
+            <div class="text-sm font-black text-[#FFC600]">SATURN RING ORBIT</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">ESTABLISHED</div>
+            <div class="text-sm font-black text-[#FFC600]">2058</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">CLASSIFICATION</div>
+            <div class="text-sm font-black text-[#FFC600]">CLASS A -- RESEARCH HUB</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">POPULATION</div>
+            <div class="text-sm font-black text-[#FFC600]">50,000</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">STATUS</div>
+            <div class="text-sm font-black text-[#FFC600] status-active">OPERATIONAL</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+                STATION OVERVIEW
+              </div>
+              <h2 class="text-4xl md:text-5xl font-black text-white mb-8">
+                HUMANITY'S OUTPOST AT THE <span class="text-[#FFC600] text-glow-yellow">RINGS</span>
+              </h2>
+              <div class="space-y-6 text-gray-400 font-mono text-sm leading-relaxed">
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE SATURN ORBITAL STATION IS WEYLAND-YUTANI'S PREMIER DEEP SPACE RESEARCH AND MANUFACTURING PLATFORM, POSITIONED IN A STABLE ORBIT WITHIN THE GAPS OF SATURN'S RING SYSTEM. THE STATION REPRESENTS THE FARTHEST PERMANENT HUMAN SETTLEMENT IN THE SOL SYSTEM AND THE MOST ADVANCED ZERO-GRAVITY INDUSTRIAL COMPLEX EVER CONSTRUCTED.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> ESTABLISHED IN 2058, THE STATION HAS EXPANDED FROM A MODEST RESEARCH OUTPOST INTO A SPRAWLING ORBITAL COMPLEX SPANNING OVER 12 KILOMETERS. ITS PRIMARY MISSIONS INCLUDE ZERO-G MANUFACTURING OF MATERIALS IMPOSSIBLE TO PRODUCE UNDER GRAVITY, HELIUM-3 EXTRACTION FROM SATURN'S ATMOSPHERE, AND OPERATION OF THE SOL SYSTEM'S MOST POWERFUL DEEP SPACE COMMUNICATIONS RELAY.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE STATION'S 50,000 PERSONNEL INCLUDE RESEARCH SCIENTISTS, ENGINEERS, MANUFACTURING SPECIALISTS, MINING CREWS, AND SUPPORT STAFF. CREW ROTATIONS OPERATE ON 18-MONTH CYCLES WITH TRANSIT TO AND FROM THE INNER SYSTEM VIA DEDICATED HIGH-SPEED TRANSPORTS.
+                </p>
+              </div>
+            </div>
+
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">STATION SPECIFICATIONS</h3>
+              <div class="space-y-4 text-sm font-mono">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DESIGNATION</span>
+                  <span class="text-[#FFC600] font-bold">SATURN ORBITAL STATION</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">ORBIT</span>
+                  <span class="text-[#FFC600] font-bold">CASSINI DIVISION</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">STRUCTURE SPAN</span>
+                  <span class="text-[#FFC600] font-bold">12.4 KM (MAX AXIS)</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DIST. FROM EARTH</span>
+                  <span class="text-[#FFC600] font-bold">1.2B KM (AVG)</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">FIRST OPERATIONS</span>
+                  <span class="text-[#FFC600] font-bold">2058</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">GRAVITY</span>
+                  <span class="text-[#FFC600] font-bold">ZERO-G / CENTRIFUGAL HAB</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">CREW ROTATION</span>
+                  <span class="text-[#FFC600] font-bold">18-MONTH CYCLES</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">POWER SOURCE</span>
+                  <span class="text-[#FFC600] font-bold">FUSION / HELIUM-3</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">ADMINISTRATOR</span>
+                  <span class="text-[#FFC600] font-bold">W-Y DEEP SPACE OPS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Facilities -->
+    <section class="relative py-28 bg-black border-t-4 border-b-4 border-[#FFC600]">
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6 pt-6">
+        <div class="text-center mb-16">
+          <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+            OPERATIONS
+          </div>
+          <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+            STATION <span class="text-[#FFC600] text-glow-yellow">OPERATIONS</span>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">ZG</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">ZERO-G MANUFACTURING</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              PRODUCTION OF ULTRA-PURE CRYSTALLINE STRUCTURES, PERFECT-SPHERE BEARINGS, EXOTIC ALLOYS, AND OPTICAL COMPONENTS THAT CANNOT BE FABRICATED UNDER GRAVITATIONAL CONDITIONS. OUTPUT SUPPLIES PRECISION COMPONENTS TO THE ENTIRE COLONIAL NETWORK.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">H3</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">HELIUM-3 EXTRACTION</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              ATMOSPHERIC SCOOPING OPERATIONS HARVEST HELIUM-3 FROM SATURN'S UPPER ATMOSPHERE VIA AUTOMATED DRONE COLLECTORS. HELIUM-3 IS THE PRIMARY FUEL SOURCE FOR FUSION REACTORS ACROSS THE COLONIAL NETWORK, MAKING SATURN THE STRATEGIC ENERGY RESERVE OF HUMAN CIVILIZATION.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">DS</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">DEEP SPACE RELAY</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              THE STATION HOUSES THE SOL SYSTEM'S MOST POWERFUL INTERSTELLAR COMMUNICATIONS ARRAY. POSITIONED AT THE SYSTEM'S EDGE, THE RELAY PROVIDES CRITICAL SIGNAL AMPLIFICATION AND ROUTING FOR COMMUNICATIONS TO AND FROM ALL DEEP SPACE COLONIES.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">RL</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">RESEARCH LABORATORIES</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              DEDICATED RESEARCH MODULES FOR ASTROPHYSICS, QUANTUM MECHANICS, MATERIALS SCIENCE, AND PROPULSION ENGINEERING. THE STATION'S UNIQUE POSITION ENABLES OBSERVATIONS AND EXPERIMENTS UNAVAILABLE AT ANY OTHER FACILITY IN HUMAN SPACE.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">RM</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">RING MINING</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              AUTOMATED MINING DRONES EXTRACT WATER ICE AND MINERAL PARTICULATES FROM SATURN'S RING SYSTEM. HARVESTED ICE PROVIDES THE STATION'S WATER SUPPLY AND HYDROGEN FOR FUEL PRODUCTION, WHILE MINERAL CONTENT IS PROCESSED FOR MANUFACTURING FEEDSTOCK.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">CH</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">CENTRIFUGAL HABITATS</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              THREE ROTATING HABITAT RINGS PROVIDE ARTIFICIAL GRAVITY FOR RESIDENTIAL QUARTERS, MEDICAL FACILITIES, AND RECREATIONAL AREAS. GRAVITY RANGES FROM 0.3G TO 0.8G DEPENDING ON RING SECTION, SUPPORTING LONG-TERM CREW HEALTH DURING 18-MONTH ROTATIONS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Economic Output -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+              STRATEGIC VALUE
+            </div>
+            <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+              OUTPUT <span class="text-[#FFC600] text-glow-yellow">METRICS</span>
+            </h2>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">42%</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">HE-3 SUPPLY</div>
+              <p class="text-gray-600 font-mono text-xs">OF THE COLONIAL NETWORK'S TOTAL HELIUM-3 FUEL SUPPLY IS SOURCED FROM SATURN ORBITAL EXTRACTION OPERATIONS.</p>
+            </div>
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">7,200</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">RESEARCH STAFF</div>
+              <p class="text-gray-600 font-mono text-xs">SCIENTISTS AND ENGINEERS CONDUCTING RESEARCH ACROSS 140 DEDICATED LABORATORY MODULES.</p>
+            </div>
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">$890B</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">ANNUAL OUTPUT</div>
+              <p class="text-gray-600 font-mono text-xs">COMBINED VALUE OF HELIUM-3 EXPORTS, ZERO-G MANUFACTURED GOODS, AND LICENSED RESEARCH APPLICATIONS.</p>
+            </div>
+          </div>
+
+          <div class="terminal mt-16">
+            <div class="terminal-content">
+              <p class="text-[#FFC600] font-mono text-sm leading-relaxed">
+                &gt; THE SATURN ORBITAL STATION IS A TESTAMENT TO WHAT HUMANITY CAN ACHIEVE WHEN VISION AND ENGINEERING OPERATE WITHOUT LIMITS. AT THE EDGE OF THE SOL SYSTEM, SUSPENDED IN THE RINGS OF A GAS GIANT, FIFTY THOUSAND MEN AND WOMEN PRODUCE THE FUEL THAT POWERS INTERSTELLAR CIVILIZATION AND THE MATERIALS THAT MAKE IT POSSIBLE. THIS IS NOT AN OUTPOST. IT IS A DECLARATION.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="relative py-12 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/colonies" class="btn-secondary">ALL COLONIES</a>
+          <a href="/colonies/mars" class="btn-secondary">MARS COLONY</a>
+          <a href="/careers" class="btn-primary">CAREERS AT SATURN</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

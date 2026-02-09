@@ -1,0 +1,273 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="RT01 Group Transport Vehicle"
+  description="RT01 Group Transport Vehicle -- Surface-to-orbit heavy transport introduced 2051. Workhorse of colony supply chains. Cargo capacity, specifications, and operational profile. Weyland-Yutani Fleet Systems."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center pt-20 pb-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          FLEET SYSTEMS -- HEAVY TRANSPORT
+        </div>
+
+        <h1 class="text-7xl md:text-[10rem] font-black text-white mb-4 leading-none uppercase">
+          <span class="text-[#FFC600] text-glow-yellow">RT01</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-6"></div>
+
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wide font-mono">
+          GROUP TRANSPORT VEHICLE -- SURFACE-TO-ORBIT
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Vessel Data Bar -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">DESIGNATION</div>
+            <div class="text-sm font-black text-[#FFC600]">RT01</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">TYPE</div>
+            <div class="text-sm font-black text-[#FFC600]">GROUP TRANSPORT</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">INTRODUCED</div>
+            <div class="text-sm font-black text-[#FFC600]">2051</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">BUILDER</div>
+            <div class="text-sm font-black text-[#FFC600]">W-Y FLEET SYSTEMS</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">STATUS</div>
+            <div class="text-sm font-black text-[#FFC600] status-active">IN SERVICE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+                VEHICLE OVERVIEW
+              </div>
+              <h2 class="text-4xl md:text-5xl font-black text-white mb-8">
+                THE BACKBONE OF <span class="text-[#FFC600] text-glow-yellow">COLONY LOGISTICS</span>
+              </h2>
+              <div class="space-y-6 text-gray-400 font-mono text-sm leading-relaxed">
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE RT01 GROUP TRANSPORT VEHICLE IS THE STANDARD HEAVY-LIFT SURFACE-TO-ORBIT TRANSPORT IN THE WEYLAND-YUTANI FLEET. INTRODUCED IN 2051 AND CONTINUOUSLY REFINED OVER DECADES OF SERVICE, THE RT01 IS THE WORKHORSE THAT KEEPS COLONY SUPPLY CHAINS MOVING. FROM PERSONNEL TRANSFERS TO HEAVY CARGO, THE RT01 HANDLES IT.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> DESIGNED FOR RELIABILITY AND OPERATIONAL SIMPLICITY, THE RT01 IS RATED FOR OPERATIONS ON ANY WORLD WITH AN ATMOSPHERE BETWEEN 0.3 AND 3.0 ATM AND A GRAVITY WELL UP TO 1.5 G. THE VEHICLE'S MODULAR CARGO CONFIGURATION ACCEPTS STANDARD ICC SHIPPING CONTAINERS, BULK MATERIALS, AND OVERSIZED EQUIPMENT.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> OVER 4,000 RT01 UNITS ARE IN ACTIVE SERVICE ACROSS THE COLONIAL NETWORK, OPERATED BY WEYLAND-YUTANI, INDEPENDENT FREIGHT CARRIERS, AND COLONIAL ADMINISTRATIONS. THE PLATFORM'S PROVEN RELIABILITY AND LOW MAINTENANCE REQUIREMENTS HAVE MADE IT THE DEFAULT CHOICE FOR COLONY SURFACE-TO-ORBIT LOGISTICS.
+                </p>
+              </div>
+            </div>
+
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">TECHNICAL SPECIFICATIONS</h3>
+              <div class="space-y-4 text-sm font-mono">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DESIGNATION</span>
+                  <span class="text-[#FFC600] font-bold">RT01</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">TYPE</span>
+                  <span class="text-[#FFC600] font-bold">GROUP TRANSPORT VEHICLE</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">LENGTH</span>
+                  <span class="text-[#FFC600] font-bold">42.8 METERS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">WINGSPAN</span>
+                  <span class="text-[#FFC600] font-bold">31.6 METERS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">MASS (EMPTY)</span>
+                  <span class="text-[#FFC600] font-bold">86,000 KG</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">MAX CARGO</span>
+                  <span class="text-[#FFC600] font-bold">120,000 KG</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">PASSENGER CAP.</span>
+                  <span class="text-[#FFC600] font-bold">80 (TRANSPORT CONFIG)</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">CREW</span>
+                  <span class="text-[#FFC600] font-bold">3 (PILOT + COPILOT + ENG)</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">PROPULSION</span>
+                  <span class="text-[#FFC600] font-bold">4x TURBORAM / ORBITAL BOOST</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">OPERATING RANGE</span>
+                  <span class="text-[#FFC600] font-bold">SURFACE-TO-ORBIT (LEO)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Configurations -->
+    <section class="relative py-28 bg-black border-t-4 border-b-4 border-[#FFC600]">
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6 pt-6">
+        <div class="text-center mb-16">
+          <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+            CONFIGURATIONS
+          </div>
+          <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+            OPERATIONAL <span class="text-[#FFC600] text-glow-yellow">VARIANTS</span>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">CG</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">CARGO</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              STANDARD CARGO CONFIGURATION. MODULAR BAY ACCEPTS UP TO EIGHT ICC STANDARD CONTAINERS OR EQUIVALENT BULK CARGO. AUTOMATED LOADING AND SECURING SYSTEMS REDUCE TURNAROUND TIME TO UNDER 45 MINUTES.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">PT</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">PASSENGER</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              PASSENGER TRANSPORT CONFIGURATION SEATS 80 PERSONNEL WITH STANDARD COMFORT PROVISIONS. USED FOR CREW ROTATIONS, COLONY PERSONNEL TRANSFERS, AND SCHEDULED TRANSIT SERVICES BETWEEN SURFACE AND ORBITAL FACILITIES.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">MX</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">MIXED</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              COMBINED PASSENGER AND CARGO CONFIGURATION. FORWARD CABIN SEATS 30 PASSENGERS WHILE THE AFT BAY CARRIES FOUR ICC CONTAINERS. THE MOST COMMON CONFIGURATION FOR ROUTINE COLONY OPERATIONS.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">HV</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">HEAVY VEHICLE</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              OVERSIZED CARGO CONFIGURATION FOR TRANSPORTING VEHICLES, CONSTRUCTION EQUIPMENT, AND MACHINERY THAT EXCEEDS STANDARD CONTAINER DIMENSIONS. REINFORCED CARGO FLOOR AND EXPANDED BAY DOORS.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">FL</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">FUEL / LIQUID</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              TANKER VARIANT FOR TRANSPORTING LIQUID CARGO: FUEL, WATER, CHEMICAL REAGENTS, AND PROCESSED FLUIDS. SEALED TANK MODULES REPLACE STANDARD CARGO BAY CONFIGURATION.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">ER</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">EMERGENCY</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              EMERGENCY RESPONSE VARIANT WITH MEDICAL STATIONS, RESCUE EQUIPMENT, AND INCREASED LIFE SUPPORT CAPACITY. DEPLOYED FOR EVACUATION OPERATIONS, DISASTER RESPONSE, AND SEARCH AND RESCUE MISSIONS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Fleet Stats -->
+    <section class="relative py-20 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">4,000+</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">ACTIVE UNITS</div>
+              <p class="text-gray-600 font-mono text-xs">RT01 VEHICLES IN ACTIVE SERVICE ACROSS THE COLONIAL NETWORK.</p>
+            </div>
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">120MT</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">MAX PAYLOAD</div>
+              <p class="text-gray-600 font-mono text-xs">MAXIMUM CARGO CAPACITY IN STANDARD HEAVY-LIFT CONFIGURATION.</p>
+            </div>
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">75 YRS</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">PROVEN SERVICE</div>
+              <p class="text-gray-600 font-mono text-xs">CONTINUOUS OPERATIONAL SERVICE SINCE INTRODUCTION IN 2051. CONTINUOUSLY REFINED AND UPGRADED.</p>
+            </div>
+          </div>
+
+          <div class="terminal mt-16">
+            <div class="terminal-content">
+              <p class="text-[#FFC600] font-mono text-sm leading-relaxed">
+                &gt; THE RT01 IS NOT THE FASTEST TRANSPORT IN THE FLEET. IT IS NOT THE MOST ADVANCED. BUT IT IS THE MOST RELIABLE AND THE MOST NUMEROUS. EVERY COLONY IN THE NETWORK DEPENDS ON THE RT01 TO MOVE THE CARGO, PERSONNEL, AND MATERIALS THAT SUSTAIN DAILY OPERATIONS. WHEN THE SUPPLY CHAIN WORKS, THE RT01 IS THE REASON. IT IS THE VEHICLE THAT BUILT THE FRONTIER.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="relative py-12 bg-[#0a0a0a]">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/fleet" class="btn-secondary">ALL FLEET</a>
+          <a href="/fleet/nostromo-class" class="btn-secondary">NOSTROMO-CLASS</a>
+          <a href="/fleet/narcissus-class" class="btn-secondary">NARCISSUS-CLASS</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

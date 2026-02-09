@@ -1,0 +1,273 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="UD-4L Cheyenne Dropship"
+  description="UD-4L Cheyenne Dropship -- Military transport and assault shuttle. Carried aboard Conestoga-class vessels. Atmospheric insertion, tactical transport, and close air support capabilities. Weyland-Yutani Defense Systems."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center pt-20 pb-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          DEFENSE SYSTEMS -- TACTICAL TRANSPORT
+        </div>
+
+        <h1 class="text-6xl md:text-[8rem] font-black text-white mb-4 leading-none uppercase">
+          UD-4L<br/><span class="text-[#FFC600] text-glow-yellow">CHEYENNE</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-6"></div>
+
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wide font-mono">
+          UTILITY DROPSHIP -- ATMOSPHERIC ASSAULT SHUTTLE
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Vessel Data Bar -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">DESIGNATION</div>
+            <div class="text-sm font-black text-[#FFC600]">UD-4L</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">TYPE</div>
+            <div class="text-sm font-black text-[#FFC600]">UTILITY DROPSHIP</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">BUILDER</div>
+            <div class="text-sm font-black text-[#FFC600]">W-Y DEFENSE SYSTEMS</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">OPERATOR</div>
+            <div class="text-sm font-black text-[#FFC600]">USCM / UAAC</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">STATUS</div>
+            <div class="text-sm font-black text-[#FFC600] status-active">IN SERVICE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+                PLATFORM OVERVIEW
+              </div>
+              <h2 class="text-4xl md:text-5xl font-black text-white mb-8">
+                FROM ORBIT TO <span class="text-[#FFC600] text-glow-yellow">GROUND</span>
+              </h2>
+              <div class="space-y-6 text-gray-400 font-mono text-sm leading-relaxed">
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE UD-4L "CHEYENNE" IS THE STANDARD UTILITY DROPSHIP OF THE UNITED STATES COLONIAL MARINES, DESIGNED AND MANUFACTURED BY WEYLAND-YUTANI DEFENSE SYSTEMS DIVISION. THE CHEYENNE PROVIDES ATMOSPHERIC INSERTION, EXTRACTION, CLOSE AIR SUPPORT, AND TACTICAL TRANSPORT CAPABILITY FOR MARINE DEPLOYMENTS ACROSS THE COLONIAL NETWORK.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> CARRIED ABOARD CONESTOGA-CLASS STARSHIPS IN DEDICATED HANGAR BAYS, THE CHEYENNE IS THE PRIMARY MEANS OF MOVING PERSONNEL AND EQUIPMENT FROM ORBIT TO THE SURFACE OF ANY WORLD. VTOL-CAPABLE AND RATED FOR OPERATIONS IN ATMOSPHERE RANGING FROM THIN TO HEAVY, THE PLATFORM PERFORMS RELIABLY ACROSS THE FULL SPECTRUM OF PLANETARY ENVIRONMENTS.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE UD-4L CONFIGURATION IS OPTIMIZED FOR VERSATILITY. MODULAR HARDPOINTS AND A CONFIGURABLE CARGO BAY ALLOW THE CHEYENNE TO BE ADAPTED FOR TROOP TRANSPORT, MEDICAL EVACUATION, CARGO DELIVERY, RECONNAISSANCE, AND DIRECT FIRE SUPPORT WITHOUT STRUCTURAL MODIFICATION.
+                </p>
+              </div>
+            </div>
+
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">TECHNICAL SPECIFICATIONS</h3>
+              <div class="space-y-4 text-sm font-mono">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DESIGNATION</span>
+                  <span class="text-[#FFC600] font-bold">UD-4L CHEYENNE</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">TYPE</span>
+                  <span class="text-[#FFC600] font-bold">UTILITY DROPSHIP</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">LENGTH</span>
+                  <span class="text-[#FFC600] font-bold">25.4 METERS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">WINGSPAN</span>
+                  <span class="text-[#FFC600] font-bold">17.2 METERS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">MASS (EMPTY)</span>
+                  <span class="text-[#FFC600] font-bold">18,200 KG</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">MAX PAYLOAD</span>
+                  <span class="text-[#FFC600] font-bold">16,000 KG</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">CREW</span>
+                  <span class="text-[#FFC600] font-bold">2 (PILOT + WSO)</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">TROOP CAPACITY</span>
+                  <span class="text-[#FFC600] font-bold">SQUAD (12 MARINES)</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">PROPULSION</span>
+                  <span class="text-[#FFC600] font-bold">TWIN TURBINE / VTOL</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">OPERATING RANGE</span>
+                  <span class="text-[#FFC600] font-bold">ORBIT-TO-SURFACE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities -->
+    <section class="relative py-28 bg-black border-t-4 border-b-4 border-[#FFC600]">
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6 pt-6">
+        <div class="text-center mb-16">
+          <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+            CAPABILITIES
+          </div>
+          <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+            MISSION <span class="text-[#FFC600] text-glow-yellow">PROFILES</span>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">TT</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">TROOP TRANSPORT</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              PRIMARY MISSION PROFILE. RAPID INSERTION OF A FULL MARINE SQUAD WITH EQUIPMENT FROM ORBIT TO THE SURFACE. SEALED TROOP COMPARTMENT WITH CRASH RESTRAINTS AND ENVIRONMENTAL PROTECTION. DOOR-TO-GROUND IN UNDER 90 SECONDS.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">ME</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">MEDICAL EVACUATION</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              CONFIGURABLE MEDEVAC ROLE WITH LITTER STATIONS AND ONBOARD MEDICAL EQUIPMENT. CAPABLE OF EXTRACTING CASUALTIES FROM HOT ZONES AND TRANSPORTING THEM TO SHIPBOARD MEDICAL FACILITIES WITHIN MINUTES.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">CL</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">CARGO LIFT</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              EXTERNAL HARDPOINTS AND AN UNDERSLUNG CARGO HOOK RATED TO 16,000 KG ENABLE HEAVY LIFT OPERATIONS. VEHICLES, EQUIPMENT, AND PREFABRICATED STRUCTURES CAN BE DELIVERED TO UNPREPARED LANDING ZONES.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">FS</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">FIRE SUPPORT</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              WEAPONS-EQUIPPED VARIANTS PROVIDE DIRECT FIRE SUPPORT FOR GROUND OPERATIONS. MODULAR HARDPOINTS ACCEPT A RANGE OF ORDNANCE CONFIGURATIONS APPROPRIATE TO THE MISSION THREAT PROFILE.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">RC</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">RECONNAISSANCE</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              SENSOR-EQUIPPED CONFIGURATIONS PROVIDE AERIAL RECONNAISSANCE AND SURVEILLANCE. THERMAL, ELECTROMAGNETIC, AND MOTION TRACKING SYSTEMS FEED REAL-TIME DATA TO GROUND COMMANDERS AND SHIPBOARD TACTICAL OPERATIONS.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">VH</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">VEHICLE DELIVERY</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              CAPABLE OF TRANSPORTING AND DEPLOYING ARMORED PERSONNEL CARRIERS AND LIGHT VEHICLES TO THE SURFACE VIA EXTERNAL CRADLE. THE APC IS THE STANDARD GROUND MOBILITY PLATFORM FOR DEPLOYED MARINE UNITS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Deployment Stats -->
+    <section class="relative py-20 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">72+</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">ACTIVE AIRFRAMES</div>
+              <p class="text-gray-600 font-mono text-xs">UD-4L CHEYENNE DROPSHIPS CURRENTLY IN ACTIVE SERVICE ABOARD CONESTOGA-CLASS VESSELS.</p>
+            </div>
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">99.2%</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">MISSION READINESS</div>
+              <p class="text-gray-600 font-mono text-xs">FLEET-WIDE OPERATIONAL READINESS RATE. STANDARDIZED MAINTENANCE PROTOCOLS ENSURE CONSISTENT AVAILABILITY.</p>
+            </div>
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">ALL</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">ATMOSPHERE RATED</div>
+              <p class="text-gray-600 font-mono text-xs">CERTIFIED FOR OPERATIONS IN ATMOSPHERES FROM 0.1 ATM TO 4.0 ATM. FULL VACUUM-TO-SURFACE TRANSIT CAPABILITY.</p>
+            </div>
+          </div>
+
+          <div class="terminal mt-16">
+            <div class="terminal-content">
+              <p class="text-[#FFC600] font-mono text-sm leading-relaxed">
+                &gt; THE CHEYENNE IS THE LAST THING BETWEEN ORBIT AND THE GROUND. WHEN COLONIAL MARINES DEPLOY, THEY DEPLOY IN A UD-4L. WHEN CASUALTIES NEED EXTRACTION, A UD-4L BRINGS THEM HOME. WHEN HEAVY EQUIPMENT NEEDS TO REACH AN UNPREPARED LANDING ZONE ON A HOSTILE WORLD, THE CHEYENNE DELIVERS IT. THIS IS NOT A PLATFORM. IT IS THE OPERATIONAL BACKBONE OF EVERY SURFACE MISSION IN THE COLONIAL NETWORK.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="relative py-12 bg-[#0a0a0a]">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/fleet" class="btn-secondary">ALL FLEET</a>
+          <a href="/fleet/conestoga-class" class="btn-secondary">CONESTOGA-CLASS</a>
+          <a href="/divisions/security" class="btn-secondary">DEFENSE DIVISION</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

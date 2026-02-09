@@ -1,0 +1,279 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Mars Colony"
+  description="Mars Colony -- Weyland-Yutani's premier off-world manufacturing center and transit hub. Population 1.2 million+. Multiple dome complexes, mining operations, and advanced research stations. Class A Major Hub."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center pt-20 pb-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          CLASS A -- MAJOR HUB
+        </div>
+
+        <h1 class="text-8xl md:text-[12rem] font-black text-white mb-4 leading-none uppercase">
+          <span class="text-[#FFC600] text-glow-yellow">MARS</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-6"></div>
+
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wide font-mono">
+          SOL SYSTEM -- MANUFACTURING CENTER & TRANSIT HUB
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Colony Data Bar -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">LOCATION</div>
+            <div class="text-sm font-black text-[#FFC600]">MARS -- SOL IV</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">ESTABLISHED</div>
+            <div class="text-sm font-black text-[#FFC600]">2042</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">CLASSIFICATION</div>
+            <div class="text-sm font-black text-[#FFC600]">CLASS A -- MAJOR HUB</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">POPULATION</div>
+            <div class="text-sm font-black text-[#FFC600]">1,200,000+</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">STATUS</div>
+            <div class="text-sm font-black text-[#FFC600] status-active">OPERATIONAL</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+                COLONY OVERVIEW
+              </div>
+              <h2 class="text-4xl md:text-5xl font-black text-white mb-8">
+                THE RED PLANET <span class="text-[#FFC600] text-glow-yellow">TRANSFORMED</span>
+              </h2>
+              <div class="space-y-6 text-gray-400 font-mono text-sm leading-relaxed">
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> MARS REPRESENTS THE SINGLE GREATEST ACHIEVEMENT IN HUMAN TERRAFORMING. SINCE WEYLAND CORPORATION BROKE GROUND ON THE FIRST PERMANENT HABITAT IN 2042, THE COLONY HAS GROWN INTO A SELF-SUSTAINING METROPOLIS OF OVER 1.2 MILLION PERMANENT RESIDENTS, SPANNING EIGHT MAJOR DOME COMPLEXES ACROSS VALLES MARINERIS AND THE HELLAS BASIN.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE MARS COLONY SERVES AS WEYLAND-YUTANI'S PRIMARY MANUFACTURING CENTER FOR HEAVY INDUSTRIAL COMPONENTS, SPACECRAFT SUBSYSTEMS, AND ADVANCED MATERIALS. THE PLANET'S LOWER GRAVITY AND ABUNDANT MINERAL RESOURCES MAKE IT THE IDEAL LOCATION FOR LARGE-SCALE INDUSTRIAL OPERATIONS THAT COMPLEMENT LUNA'S ORBITAL SHIPYARDS.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> ONGOING ATMOSPHERIC PROCESSING OPERATIONS HAVE RAISED MARS' MEAN SURFACE TEMPERATURE BY 14 DEGREES CELSIUS SINCE 2042. CURRENT PROJECTIONS INDICATE PARTIAL OPEN-AIR HABITABILITY WITHIN THE NORTHERN LOWLANDS BY 2190. THE TERRAFORMING PROGRAM REMAINS THE LONGEST-RUNNING CONTINUOUS PLANETARY ENGINEERING EFFORT IN HUMAN HISTORY.
+                </p>
+              </div>
+            </div>
+
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">COLONY SPECIFICATIONS</h3>
+              <div class="space-y-4 text-sm font-mono">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DESIGNATION</span>
+                  <span class="text-[#FFC600] font-bold">MARS COLONY</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">BODY</span>
+                  <span class="text-[#FFC600] font-bold">SOL IV (MARS)</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">REGION</span>
+                  <span class="text-[#FFC600] font-bold">VALLES MARINERIS / HELLAS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DIST. FROM EARTH</span>
+                  <span class="text-[#FFC600] font-bold">225M KM (AVG)</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">FIRST OPERATIONS</span>
+                  <span class="text-[#FFC600] font-bold">2042</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">FULL COLONY STATUS</span>
+                  <span class="text-[#FFC600] font-bold">2055</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DOME COMPLEXES</span>
+                  <span class="text-[#FFC600] font-bold">8 MAJOR / 34 MINOR</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">GRAVITY</span>
+                  <span class="text-[#FFC600] font-bold">0.38 G (AUGMENTED ZONES)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">ADMINISTRATOR</span>
+                  <span class="text-[#FFC600] font-bold">W-Y COLONIAL ADMIN</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Facilities -->
+    <section class="relative py-28 bg-black border-t-4 border-b-4 border-[#FFC600]">
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6 pt-6">
+        <div class="text-center mb-16">
+          <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+            INFRASTRUCTURE
+          </div>
+          <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+            KEY <span class="text-[#FFC600] text-glow-yellow">FACILITIES</span>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">MF</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">MANUFACTURING DISTRICT</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              THE HELLAS BASIN MANUFACTURING COMPLEX IS THE LARGEST OFF-EARTH INDUSTRIAL ZONE. OVER 400 FABRICATION FACILITIES PRODUCE SPACECRAFT COMPONENTS, HEAVY MACHINERY, ATMOSPHERIC PROCESSORS, AND CONSTRUCTION MATERIALS FOR THE ENTIRE COLONIAL NETWORK.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">AP</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">ATMOSPHERIC PROCESSING</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              TWELVE WEYLAND-YUTANI ATMOSPHERE PROCESSING PLANTS OPERATE CONTINUOUSLY ACROSS THE PLANET'S SURFACE. THESE INSTALLATIONS FORM THE BACKBONE OF THE LONGEST-RUNNING TERRAFORMING PROGRAM IN HUMAN HISTORY, CONVERTING THE MARTIAN ATMOSPHERE TOWARD EVENTUAL HABITABILITY.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">MN</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">MINING OPERATIONS</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              EXTENSIVE OPEN-PIT AND SUBSURFACE MINING ACROSS VALLES MARINERIS AND THE THARSIS REGION. PRIMARY EXTRACTION OF IRON, TITANIUM, RARE EARTH ELEMENTS, AND WATER ICE. ANNUAL OUTPUT EXCEEDS 800 MILLION METRIC TONS OF PROCESSED MATERIAL.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">RS</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">RESEARCH STATIONS</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              FOURTEEN DEDICATED RESEARCH CAMPUSES SPANNING TERRAFORMING SCIENCE, MATERIALS ENGINEERING, PLANETARY GEOLOGY, CLOSED-LOOP ECOLOGY, AND HUMAN ADAPTATION. THE MARS RESEARCH DIRECTORATE EMPLOYS OVER 18,000 SCIENTISTS AND ENGINEERS.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">TH</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">TRANSIT HUB</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              THE PHOBOS ORBITAL TRANSIT STATION AND DEIMOS FREIGHT TERMINAL HANDLE ALL INBOUND AND OUTBOUND TRAFFIC. OVER 2,000 VESSEL TRANSITS PER YEAR SERVICE THE MARS COLONY, INCLUDING DEEP SPACE FREIGHT, COLONY SUPPORT SHIPS, AND PERSONNEL TRANSPORTS.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">DC</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">DOME COMPLEXES</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              EIGHT MAJOR PRESSURIZED DOME COMPLEXES HOUSE THE COLONY'S RESIDENTIAL, COMMERCIAL, AND ADMINISTRATIVE DISTRICTS. EACH DOME IS A SELF-CONTAINED BIOSPHERE WITH INDEPENDENT LIFE SUPPORT, CLIMATE CONTROL, AND EMERGENCY SYSTEMS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Economic Output -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+              ECONOMY
+            </div>
+            <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+              ECONOMIC <span class="text-[#FFC600] text-glow-yellow">OUTPUT</span>
+            </h2>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">$6.8T</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">ANNUAL GDP</div>
+              <p class="text-gray-600 font-mono text-xs">MARS IS THE LARGEST OFF-EARTH ECONOMY, DRIVEN BY MANUFACTURING, MINING, AND EXPORT OF FINISHED INDUSTRIAL GOODS TO THE COLONIAL NETWORK.</p>
+            </div>
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">580K</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">EMPLOYED WORKFORCE</div>
+              <p class="text-gray-600 font-mono text-xs">THE MARS COLONY OFFERS EMPLOYMENT ACROSS MANUFACTURING, MINING, RESEARCH, ENGINEERING, ADMINISTRATION, AND SERVICES.</p>
+            </div>
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">800M</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">MT ANNUAL OUTPUT</div>
+              <p class="text-gray-600 font-mono text-xs">PROCESSED MATERIAL OUTPUT PER YEAR FROM COMBINED MINING AND MANUFACTURING OPERATIONS.</p>
+            </div>
+          </div>
+
+          <div class="terminal mt-16">
+            <div class="terminal-content">
+              <p class="text-[#FFC600] font-mono text-sm leading-relaxed">
+                &gt; MARS IS NOT MERELY A COLONY. IT IS THE INDUSTRIAL ENGINE OF INTERSTELLAR CIVILIZATION. WHAT LUNA COORDINATES, MARS BUILDS. EVERY ATMOSPHERE PROCESSOR DEPLOYED TO A FRONTIER WORLD, EVERY HULL PLATE FITTED TO A COLONY SHIP, EVERY PRECISION COMPONENT INSTALLED IN A DEEP SPACE RELAY HAS ITS ORIGINS IN THE FOUNDRIES AND FABRICATION PLANTS OF THE RED PLANET. MARS IS WHERE HUMANITY'S FUTURE IS FORGED.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="relative py-12 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/colonies" class="btn-secondary">ALL COLONIES</a>
+          <a href="/colonies/luna" class="btn-secondary">LUNA COLONY</a>
+          <a href="/careers" class="btn-primary">CAREERS ON MARS</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

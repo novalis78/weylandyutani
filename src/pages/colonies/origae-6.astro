@@ -1,0 +1,277 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Origae-6 Colony"
+  description="Origae-6 Colony -- Weyland-Yutani Pioneer Program destination. Class B Frontier Colony. Habitable world targeted by Covenant-class colonization ships. Now accepting applications for pioneer settlement."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center pt-20 pb-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          CLASS B -- FRONTIER COLONY
+        </div>
+
+        <h1 class="text-7xl md:text-[10rem] font-black text-white mb-4 leading-none uppercase">
+          ORIGAE<span class="text-[#FFC600] text-glow-yellow">-6</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-6"></div>
+
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wide font-mono">
+          PIONEER PROGRAM -- HUMANITY'S NEW BEGINNING
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Colony Data Bar -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">LOCATION</div>
+            <div class="text-sm font-black text-[#FFC600]">ORIGAE-6</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">SECTOR</div>
+            <div class="text-sm font-black text-[#FFC600]">OUTER RIM TERRITORIES</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">CLASSIFICATION</div>
+            <div class="text-sm font-black text-[#FFC600]">CLASS B -- FRONTIER</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">PROGRAM</div>
+            <div class="text-sm font-black text-[#FFC600]">PIONEER SETTLEMENT</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">STATUS</div>
+            <div class="text-sm font-black text-[#FFC600] status-active">ACCEPTING APPLICATIONS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pioneer Program Banner -->
+    <section class="relative bg-[#FFC600]/5 border-b-2 border-[#FFC600]/20 py-4">
+      <div class="container mx-auto px-6">
+        <div class="flex items-center justify-center gap-4">
+          <span class="w-3 h-3 bg-[#FFC600] animate-pulse"></span>
+          <span class="text-[#FFC600] font-mono text-xs uppercase tracking-widest font-bold">
+            PIONEER PROGRAM OPEN -- COVENANT-CLASS TRANSPORTS STAGING -- APPLICATIONS NOW ACCEPTED
+          </span>
+          <span class="w-3 h-3 bg-[#FFC600] animate-pulse"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+                COLONY OVERVIEW
+              </div>
+              <h2 class="text-4xl md:text-5xl font-black text-white mb-8">
+                A WORLD MADE FOR <span class="text-[#FFC600] text-glow-yellow">HUMANITY</span>
+              </h2>
+              <div class="space-y-6 text-gray-400 font-mono text-sm leading-relaxed">
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> ORIGAE-6 IS A TERRESTRIAL WORLD OF EXTRAORDINARY HABITABILITY, IDENTIFIED BY WEYLAND-YUTANI LONG-RANGE SURVEY AS THE MOST PROMISING COLONIZATION TARGET BEYOND THE ESTABLISHED NETWORK. SPECTRAL ANALYSIS CONFIRMS A NITROGEN-OXYGEN ATMOSPHERE, LIQUID SURFACE WATER, TEMPERATE CLIMATE ZONES, AND A ROBUST BIOSPHERE COMPATIBLE WITH HUMAN SETTLEMENT.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE PLANET REQUIRES NO ATMOSPHERIC PROCESSING. PRELIMINARY DATA INDICATES FERTILE SOIL COMPOSITIONS ACROSS MULTIPLE CONTINENTAL LANDMASSES, ABUNDANT FRESHWATER SYSTEMS, AND SEASONAL WEATHER PATTERNS WITHIN EARTH-NORMAL PARAMETERS. ORIGAE-6 IS, BY EVERY MEASURE, A SECOND EARTH.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE PIONEER PROGRAM REPRESENTS WEYLAND-YUTANI'S COMMITMENT TO ESTABLISHING A SELF-SUSTAINING HUMAN CIVILIZATION ON A NEW WORLD. COVENANT-CLASS COLONIZATION VESSELS WILL TRANSPORT THE FIRST WAVE OF SETTLERS, ALONG WITH THE FULL INFRASTRUCTURE REQUIRED TO BUILD A PERMANENT, THRIVING COLONY FROM THE GROUND UP.
+                </p>
+              </div>
+            </div>
+
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">PLANETARY DATA</h3>
+              <div class="space-y-4 text-sm font-mono">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DESIGNATION</span>
+                  <span class="text-[#FFC600] font-bold">ORIGAE-6</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">TYPE</span>
+                  <span class="text-[#FFC600] font-bold">TERRESTRIAL (EARTH-LIKE)</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">ATMOSPHERE</span>
+                  <span class="text-[#FFC600] font-bold">N2/O2 BREATHABLE</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">GRAVITY</span>
+                  <span class="text-[#FFC600] font-bold">0.96 G</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">MEAN TEMP</span>
+                  <span class="text-[#FFC600] font-bold">16.2 C</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">SURFACE WATER</span>
+                  <span class="text-[#FFC600] font-bold">68% COVERAGE</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">TERRAFORMING REQ.</span>
+                  <span class="text-[#FFC600] font-bold">NONE</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">TRANSIT TIME</span>
+                  <span class="text-[#FFC600] font-bold">7.4 YEARS (FTL)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">TRANSPORT</span>
+                  <span class="text-[#FFC600] font-bold">COVENANT-CLASS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pioneer Program -->
+    <section class="relative py-28 bg-black border-t-4 border-b-4 border-[#FFC600]">
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6 pt-6">
+        <div class="text-center mb-16">
+          <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+            PIONEER PROGRAM
+          </div>
+          <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+            BUILD A <span class="text-[#FFC600] text-glow-yellow">NEW WORLD</span>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">AG</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">AGRICULTURE</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              ORIGAE-6'S FERTILE SOIL AND TEMPERATE CLIMATE SUPPORT LARGE-SCALE AGRICULTURE WITHOUT HYDROPONICS OR DOME ENCLOSURES. PIONEER SETTLERS WILL ESTABLISH THE FIRST OPEN-AIR FARMS ON AN EXTRASOLAR WORLD, GROWING EARTH-ORIGIN CROPS IN NATURAL SOIL.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">CS</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">CONSTRUCTION</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              EACH COVENANT-CLASS TRANSPORT CARRIES PREFABRICATED COLONY MODULES, CONSTRUCTION EQUIPMENT, AND MATERIALS FOR INITIAL SETTLEMENT INFRASTRUCTURE. PERMANENT STRUCTURES WILL BE BUILT USING LOCAL MATERIALS AS THE COLONY MATURES.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">SC</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">SCIENCE</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              DEDICATED RESEARCH TEAMS WILL CATALOGUE THE PLANET'S NATIVE BIOSPHERE, MAP GEOLOGICAL RESOURCES, AND ESTABLISH LONG-TERM ENVIRONMENTAL MONITORING. THE SCIENTIFIC STUDY OF ORIGAE-6 IS EXPECTED TO YIELD DECADES OF DISCOVERY.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">MD</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">MEDICAL</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              FULL MEDPOD INSTALLATIONS AND STAFFED MEDICAL FACILITIES WILL BE OPERATIONAL FROM DAY ONE. THE PIONEER PROGRAM GUARANTEES COMPREHENSIVE HEALTHCARE FOR ALL SETTLERS, INCLUDING EMERGENCY, SURGICAL, AND PREVENTIVE SERVICES.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">EN</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">ENGINEERING</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              POWER GENERATION, WATER TREATMENT, COMMUNICATIONS, AND TRANSPORT INFRASTRUCTURE WILL BE ESTABLISHED BY ADVANCE ENGINEERING TEAMS. THE COLONY IS DESIGNED FOR COMPLETE SELF-SUFFICIENCY WITHIN TEN YEARS OF FOUNDING.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">GV</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">GOVERNANCE</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              THE ORIGAE-6 COLONY WILL OPERATE UNDER A COLONIAL CHARTER GUARANTEEING CIVIL RIGHTS, DEMOCRATIC REPRESENTATION, AND TRANSPARENT ADMINISTRATION. WEYLAND-YUTANI SERVES AS THE CORPORATE SPONSOR AND LOGISTICS PARTNER.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Application CTA -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+            NOW RECRUITING
+          </div>
+          <h2 class="text-5xl md:text-6xl font-black text-white mb-6">
+            YOUR PLACE IN <span class="text-[#FFC600] text-glow-yellow">HISTORY</span>
+          </h2>
+
+          <div class="terminal mb-8">
+            <div class="terminal-content">
+              <p class="text-[#FFC600] font-mono text-sm leading-relaxed">
+                &gt; THE PIONEER PROGRAM SEEKS INDIVIDUALS AND FAMILIES WITH SKILLS IN AGRICULTURE, ENGINEERING, MEDICINE, SCIENCE, CONSTRUCTION, EDUCATION, AND ADMINISTRATION. APPLICANTS MUST PASS COMPREHENSIVE MEDICAL AND PSYCHOLOGICAL SCREENING. ALL PIONEERS RECEIVE LAND GRANTS, FULL CORPORATE SUPPORT FOR THE FIRST TEN YEARS, AND A STAKE IN THE FUTURE OF A NEW WORLD. THIS IS NOT A JOB. IT IS A LEGACY.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-4 justify-center">
+            <a href="/careers" class="btn-primary">APPLY TO PIONEER PROGRAM</a>
+            <a href="/fleet/covenant-class" class="btn-secondary">COVENANT-CLASS TRANSPORT</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="relative py-12 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/colonies" class="btn-secondary">ALL COLONIES</a>
+          <a href="/colonies/gj-667cc" class="btn-secondary">GJ 667CC</a>
+          <a href="/fleet/covenant-class" class="btn-secondary">COVENANT-CLASS</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>
