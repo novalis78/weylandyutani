@@ -1,0 +1,183 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const pressReleases = [
+  { date: "NOVEMBER 18, 2157", category: "COLONIES", title: "NEW COLONY ESTABLISHED ON LV-426: HADLEY'S HOPE", href: "/news/hadleys-hope-colony", summary: "Weyland-Yutani establishes permanent settlement in the Zeta Reticuli system with full terraforming capabilities." },
+  { date: "MARCH 3, 2120", category: "FINANCIAL", title: "WEYLAND-YUTANI REPORTS RECORD ANNUAL REVENUE", href: "/news/annual-results", summary: "Corporation posts $4.2 trillion in consolidated revenue, marking the eighth consecutive year of double-digit growth." },
+  { date: "JUNE 12, 2112", category: "COLONIES", title: "WEYLAND-YUTANI CELEBRATES 300TH COLONY MILESTONE", href: "/news/colony-300", summary: "From Luna to the outer rim, the Corporation reflects on eight decades of interstellar colonization." },
+  { date: "JANUARY 7, 2099", category: "CORPORATE", title: "WEYLAND CORPORATION AND YUTANI CORPORATION COMPLETE HISTORIC MERGER", href: "/news/merger-announcement", summary: "The two largest conglomerates in human history form Weyland-Yutani Corporation." },
+  { date: "SEPTEMBER 2, 2080", category: "CAREERS", title: "EXPLORERS ACADEMY EXPANDS TO LUNA CAMPUS", href: "/news/explorers-academy-expansion", summary: "The Corporation's premier educational initiative opens its first off-world campus on the Sea of Tranquility." },
+  { date: "APRIL 15, 2071", category: "CORPORATE", title: "WEYLAND-YUTANI NAMED WORLD OLYMPIC PARTNER THROUGH 2091", href: "/news/olympic-partnership", summary: "Historic 20-year partnership reflects shared commitment to human achievement and excellence." },
+  { date: "AUGUST 22, 2070", category: "TECHNOLOGY", title: "MEDPOD 720I RECEIVES FDA APPROVAL FOR HOME USE", href: "/news/medpod-fda-approval", summary: "Revolutionary automated surgical platform cleared for civilian residential deployment." },
+  { date: "FEBRUARY 28, 2042", category: "TECHNOLOGY", title: "FIRST COMMERCIALLY AVAILABLE SYNTHETIC HUMAN ANNOUNCED", href: "/news/david-series-launch", summary: "David 4 receives National Science Foundation clearance for commercial deployment." },
+  { date: "OCTOBER 10, 2039", category: "TECHNOLOGY", title: "FIRST BREATHABLE ATMOSPHERE CREATED ON GJ 667CC", href: "/news/first-atmosphere", summary: "Historic atmospheric processing achievement marks new era for off-world colonization." },
+  { date: "MAY 15, 2032", category: "TECHNOLOGY", title: "WEYLAND CORPORATION ACHIEVES FASTER-THAN-LIGHT TRAVEL", href: "/news/ftl-breakthrough", summary: "Breakthrough in quantum fold propulsion opens the galaxy to human exploration." },
+];
+
+const categories = ["ALL", "CORPORATE", "TECHNOLOGY", "COLONIES", "FINANCIAL", "CAREERS"];
+---
+
+<Layout
+  title="Newsroom - Press Center"
+  description="Weyland-Yutani Corporation Newsroom. Access press releases, media resources, and corporate announcements from the world's leading interstellar conglomerate."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#FFC600] to-transparent"></div>
+
+      <div class="relative container mx-auto px-6 text-center py-24">
+        <div class="inline-flex items-center gap-3 mb-8">
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.3em] font-mono">CORPORATE COMMUNICATIONS</span>
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+        </div>
+
+        <h1 class="text-7xl md:text-9xl lg:text-[11rem] font-black text-white leading-none uppercase mb-6">
+          NEWS<span class="text-[#FFC600] text-glow-yellow">ROOM</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-8"></div>
+
+        <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wider font-mono leading-relaxed">
+          OFFICIAL PRESS RELEASES, CORPORATE ANNOUNCEMENTS, AND MEDIA RESOURCES
+        </p>
+      </div>
+
+      <div class="absolute bottom-0 left-0 right-0 hazard-stripes h-2"></div>
+    </section>
+
+    <!-- FILTER CATEGORIES -->
+    <section class="relative py-8 bg-[#0a0a0a] border-b border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="text-gray-600 text-xs font-mono uppercase tracking-wider mr-4">FILTER:</span>
+          {categories.map((cat, i) => (
+            <button class={`px-4 py-2 text-xs font-bold uppercase tracking-wider clip-corner transition-all ${i === 0 ? 'bg-[#FFC600] text-black' : 'bg-[#1a1a1a] text-gray-400 hover:text-[#FFC600] hover:border-[#FFC600]'}`}>
+              {cat}
+            </button>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESS RELEASES GRID -->
+    <section class="relative py-20 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-12">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">PRESS RELEASES</span>
+          <div class="flex-1 h-px bg-[#1a1a1a]"></div>
+          <span class="text-gray-600 text-xs font-mono">{pressReleases.length} RESULTS</span>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          {pressReleases.map((pr) => (
+            <a href={pr.href} class="corp-card p-8 block group">
+              <div class="flex items-center gap-4 mb-4">
+                <span class="text-[10px] font-mono text-[#FFC600] tracking-widest bg-[#FFC600]/10 px-3 py-1 clip-corner">{pr.category}</span>
+                <span class="text-[10px] font-mono text-gray-600 tracking-wider">{pr.date}</span>
+              </div>
+              <h3 class="text-lg font-black text-white uppercase leading-tight mb-3 group-hover:text-[#FFC600] transition-colors">{pr.title}</h3>
+              <p class="text-sm text-gray-500 leading-relaxed">{pr.summary}</p>
+              <div class="mt-6 flex items-center gap-2">
+                <span class="text-[#FFC600] text-xs font-bold uppercase tracking-wider">READ FULL RELEASE</span>
+                <span class="text-[#FFC600]">&rarr;</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDIA CONTACT & PRESS KIT -->
+    <section class="relative py-20 bg-[#0a0a0a] border-t border-b border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid lg:grid-cols-3 gap-10">
+          <!-- Media Contact -->
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600]/10 border border-[#FFC600]/30 clip-corner flex items-center justify-center mb-6">
+              <span class="text-[#FFC600] font-black text-lg">M</span>
+            </div>
+            <h3 class="text-xl font-black text-white uppercase mb-4">MEDIA CONTACT</h3>
+            <div class="space-y-3 text-sm">
+              <p class="text-gray-400"><span class="text-gray-600 font-mono text-xs">DIRECTOR, CORPORATE COMMUNICATIONS</span><br/>Margaret Chen</p>
+              <p class="text-gray-400"><span class="text-gray-600 font-mono text-xs">EMAIL</span><br/>media@weylandyutani.com</p>
+              <p class="text-gray-400"><span class="text-gray-600 font-mono text-xs">COMMS RELAY</span><br/>+1-800-555-WYCO (9926)</p>
+              <p class="text-gray-400"><span class="text-gray-600 font-mono text-xs">HOURS</span><br/>24/7 — All Time Zones (Earth & Off-World)</p>
+            </div>
+          </div>
+
+          <!-- Press Kit -->
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600]/10 border border-[#FFC600]/30 clip-corner flex items-center justify-center mb-6">
+              <span class="text-[#FFC600] font-black text-lg">P</span>
+            </div>
+            <h3 class="text-xl font-black text-white uppercase mb-4">PRESS KIT</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">Download official logos, executive headshots, facility photography, corporate fact sheets, and brand guidelines for media use.</p>
+            <div class="space-y-3">
+              <a href="#" class="block text-xs font-bold text-[#FFC600] uppercase tracking-wider hover:text-white transition-colors">CORPORATE LOGO PACKAGE &rarr;</a>
+              <a href="#" class="block text-xs font-bold text-[#FFC600] uppercase tracking-wider hover:text-white transition-colors">EXECUTIVE PORTRAITS &rarr;</a>
+              <a href="#" class="block text-xs font-bold text-[#FFC600] uppercase tracking-wider hover:text-white transition-colors">FACILITY PHOTOGRAPHY &rarr;</a>
+              <a href="#" class="block text-xs font-bold text-[#FFC600] uppercase tracking-wider hover:text-white transition-colors">CORPORATE FACT SHEET &rarr;</a>
+              <a href="#" class="block text-xs font-bold text-[#FFC600] uppercase tracking-wider hover:text-white transition-colors">BRAND GUIDELINES (PDF) &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Social & Updates -->
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600]/10 border border-[#FFC600]/30 clip-corner flex items-center justify-center mb-6">
+              <span class="text-[#FFC600] font-black text-lg">S</span>
+            </div>
+            <h3 class="text-xl font-black text-white uppercase mb-4">CORPORATE FEEDS</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">Follow Weyland-Yutani Corporation on official channels for real-time updates, announcements, and corporate insights.</p>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3 p-3 bg-black/50 border border-[#1a1a1a] clip-corner">
+                <span class="text-[#FFC600] font-mono text-xs">@WEYLANDYUTANI</span>
+                <span class="text-gray-600 text-xs font-mono">// GLOBAL FEED</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 bg-black/50 border border-[#1a1a1a] clip-corner">
+                <span class="text-[#FFC600] font-mono text-xs">@WY_INVESTORS</span>
+                <span class="text-gray-600 text-xs font-mono">// INVESTOR RELATIONS</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 bg-black/50 border border-[#1a1a1a] clip-corner">
+                <span class="text-[#FFC600] font-mono text-xs">@WY_CAREERS</span>
+                <span class="text-gray-600 text-xs font-mono">// RECRUITMENT</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 bg-black/50 border border-[#1a1a1a] clip-corner">
+                <span class="text-[#FFC600] font-mono text-xs">@WY_RESEARCH</span>
+                <span class="text-gray-600 text-xs font-mono">// SCIENCE & INNOVATION</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBSCRIBE -->
+    <section class="relative py-16 bg-black">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-black text-white uppercase mb-4">SUBSCRIBE TO PRESS RELEASES</h2>
+        <p class="text-gray-500 text-sm font-mono uppercase tracking-wider mb-8">RECEIVE CORPORATE ANNOUNCEMENTS DIRECTLY VIA ENCRYPTED RELAY</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-xl mx-auto">
+          <input type="email" placeholder="ENTER EMAIL ADDRESS" class="flex-1 bg-[#0a0a0a] border-2 border-[#1a1a1a] text-white px-6 py-3 text-sm font-mono uppercase tracking-wider clip-corner focus:border-[#FFC600] focus:outline-none" />
+          <button class="btn-primary px-8 py-3 text-sm">SUBSCRIBE</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

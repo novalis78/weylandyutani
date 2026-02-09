@@ -1,0 +1,278 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Hadley's Hope -- LV-426"
+  description="Hadley's Hope colony on LV-426 (Acheron), Zeta 2 Reticuli system. Class B industrial colony specializing in atmospheric processing and mineral extraction. Operations currently under review."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center pt-20 pb-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          CLASS B -- INDUSTRIAL COLONY
+        </div>
+
+        <h1 class="text-7xl md:text-[10rem] font-black text-white mb-4 leading-none uppercase">
+          HADLEY'S<br/><span class="text-[#FFC600] text-glow-yellow">HOPE</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-6"></div>
+
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wide font-mono">
+          ACHERON COLONY -- LV-426 -- ZETA 2 RETICULI SYSTEM
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Colony Data Bar -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">LOCATION</div>
+            <div class="text-sm font-black text-[#FFC600]">LV-426 (ACHERON)</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">SYSTEM</div>
+            <div class="text-sm font-black text-[#FFC600]">ZETA 2 RETICULI</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">ESTABLISHED</div>
+            <div class="text-sm font-black text-[#FFC600]">2157</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">PEAK POPULATION</div>
+            <div class="text-sm font-black text-[#FFC600]">158 COLONISTS</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">STATUS</div>
+            <div class="text-sm font-black text-[#FF0000]">UNDER REVIEW</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Status Banner -->
+    <section class="relative bg-[#FF0000]/5 border-b-2 border-[#FF0000]/20 py-4">
+      <div class="container mx-auto px-6">
+        <div class="flex items-center justify-center gap-4">
+          <span class="w-3 h-3 bg-[#FF0000] animate-pulse"></span>
+          <span class="text-[#FF0000] font-mono text-xs uppercase tracking-widest font-bold">
+            FACILITY OPERATIONS SUSPENDED -- ASSESSMENT IN PROGRESS -- RESTRICTED ACCESS PROTOCOLS ACTIVE
+          </span>
+          <span class="w-3 h-3 bg-[#FF0000] animate-pulse"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+                COLONY OVERVIEW
+              </div>
+              <h2 class="text-4xl md:text-5xl font-black text-white mb-8">
+                ACHERON <span class="text-[#FFC600] text-glow-yellow">OPERATIONS</span>
+              </h2>
+              <div class="space-y-6 text-gray-400 font-mono text-sm leading-relaxed">
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> LV-426, DESIGNATED ACHERON, IS ONE OF THREE MOONS ORBITING THE GAS GIANT CALPAMOS IN THE ZETA 2 RETICULI SYSTEM, APPROXIMATELY 39 LIGHT YEARS FROM EARTH. THE MOON WAS FIRST IDENTIFIED BY WEYLAND CORPORATION SURVEY TEAMS IN 2039 DURING ROUTINE DEEP SPACE CATALOGUING.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> HADLEY'S HOPE WAS ESTABLISHED IN 2157 AS A TERRAFORMING AND MINING COLONY, TASKED WITH THE LONG-TERM ATMOSPHERIC CONVERSION OF LV-426 AND THE EXTRACTION OF VALUABLE MINERAL RESOURCES. THE COLONY OPERATED UNDER STANDARD WEYLAND-YUTANI COLONIAL PROTOCOLS WITH A COMPLEMENT OF TERRAFORMING ENGINEERS, GEOLOGICAL SURVEYORS, FAMILIES, AND SUPPORT STAFF.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE COLONY'S CENTERPIECE WAS A MASSIVE ATMOSPHERE PROCESSING PLANT DESIGNED TO CONVERT LV-426'S HARSH, PRIMORDIAL ATMOSPHERE INTO A BREATHABLE ENVIRONMENT OVER A PROJECTED 20-YEAR CYCLE. SUPPORTING INFRASTRUCTURE INCLUDED RESIDENTIAL MODULES, MEDICAL FACILITIES, A VEHICLE BAY, AND GEOLOGICAL SURVEY EQUIPMENT.
+                </p>
+              </div>
+            </div>
+
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">COLONY SPECIFICATIONS</h3>
+              <div class="space-y-4 text-sm font-mono">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DESIGNATION</span>
+                  <span class="text-[#FFC600] font-bold">HADLEY'S HOPE</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">BODY</span>
+                  <span class="text-[#FFC600] font-bold">LV-426 (ACHERON)</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">PARENT BODY</span>
+                  <span class="text-[#FFC600] font-bold">CALPAMOS (GAS GIANT)</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">SYSTEM</span>
+                  <span class="text-[#FFC600] font-bold">ZETA 2 RETICULI</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DISTANCE</span>
+                  <span class="text-[#FFC600] font-bold">39 LIGHT YEARS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DISCOVERED</span>
+                  <span class="text-[#FFC600] font-bold">2039</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">COLONY EST.</span>
+                  <span class="text-[#FFC600] font-bold">2157</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">PEAK POP.</span>
+                  <span class="text-[#FFC600] font-bold">158</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">ATMOSPHERE</span>
+                  <span class="text-[#FFC600] font-bold">PROCESSING (IN CYCLE)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Operations -->
+    <section class="relative py-28 bg-black border-t-4 border-b-4 border-[#FFC600]">
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6 pt-6">
+        <div class="text-center mb-16">
+          <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+            OPERATIONS
+          </div>
+          <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+            COLONY <span class="text-[#FFC600] text-glow-yellow">INDUSTRIES</span>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">AP</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">ATMOSPHERIC PROCESSING</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              THE COLONY'S PRIMARY MISSION: A WEYLAND-YUTANI ATMOSPHERE PROCESSING PLANT CONVERTING LV-426'S HOSTILE ATMOSPHERE INTO BREATHABLE AIR OVER A MULTI-DECADE CYCLE. THE FACILITY OPERATED CONTINUOUSLY FROM COLONY ESTABLISHMENT.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">ME</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">MINERAL EXTRACTION</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              LV-426'S GEOLOGICAL SURVEYS REVEALED SIGNIFICANT DEPOSITS OF RARE MINERALS AND HEAVY ELEMENTS. EXTRACTION OPERATIONS PROVIDED SECONDARY REVENUE AND JUSTIFIED THE COLONY'S ECONOMIC MODEL DURING THE EXTENDED TERRAFORMING CYCLE.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">GS</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">GEOLOGICAL SURVEY</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              ONGOING GEOLOGICAL SURVEY TEAMS MAPPED LV-426'S TERRAIN, CATALOGUING MINERAL DEPOSITS, GEOLOGICAL FORMATIONS, AND SURFACE FEATURES. SURVEY DATA INFORMED BOTH MINING OPERATIONS AND LONG-TERM COLONY DEVELOPMENT PLANNING.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Current Status -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-12">
+            <div class="inline-block px-6 py-2 bg-[#FF0000] text-white font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+              CURRENT STATUS
+            </div>
+            <h2 class="text-5xl md:text-6xl font-black text-white mb-4">
+              FACILITY <span class="text-[#FF0000]">UNDER REVIEW</span>
+            </h2>
+          </div>
+
+          <div class="terminal">
+            <div class="terminal-content">
+              <div class="space-y-4 text-sm font-mono">
+                <p class="text-[#FFC600]">
+                  &gt; HADLEY'S HOPE COLONY OPERATIONS HAVE BEEN SUSPENDED PENDING A COMPREHENSIVE FACILITY ASSESSMENT. THE COLONY IS CURRENTLY UNDERGOING AN OPERATIONAL TRANSITION PERIOD.
+                </p>
+                <p class="text-gray-500">
+                  &gt; AN INTERNAL REVIEW IS IN PROGRESS TO EVALUATE FACILITY CONDITIONS, INFRASTRUCTURE INTEGRITY, AND OPERATIONAL VIABILITY. ACCESS TO THE COLONY SITE IS RESTRICTED TO AUTHORIZED WEYLAND-YUTANI ASSESSMENT PERSONNEL ONLY.
+                </p>
+                <p class="text-gray-500">
+                  &gt; ALL PERSONNEL INQUIRIES REGARDING HADLEY'S HOPE SHOULD BE DIRECTED TO THE COLONIAL ADMINISTRATION OFFICE. FAMILY LIAISON SERVICES ARE AVAILABLE THROUGH STANDARD CHANNELS.
+                </p>
+                <div class="mt-8 pt-6 border-t border-[#1a1a1a]">
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <span class="text-gray-600 uppercase text-xs">OPERATIONS STATUS</span>
+                      <div class="text-[#FF0000] font-bold mt-1">SUSPENDED</div>
+                    </div>
+                    <div>
+                      <span class="text-gray-600 uppercase text-xs">ACCESS LEVEL</span>
+                      <div class="text-[#FF0000] font-bold mt-1">RESTRICTED</div>
+                    </div>
+                    <div>
+                      <span class="text-gray-600 uppercase text-xs">ASSESSMENT PHASE</span>
+                      <div class="text-[#FFC600] font-bold mt-1">IN PROGRESS</div>
+                    </div>
+                    <div>
+                      <span class="text-gray-600 uppercase text-xs">DETAILED REPORTS</span>
+                      <div class="text-[#FF0000] font-bold mt-1">CLASSIFIED</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 p-6 bg-[#0a0a0a] border-l-4 border-[#FF0000] clip-corner">
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              <span class="text-[#FF0000] font-bold">NOTICE:</span> INFORMATION REGARDING HADLEY'S HOPE IS SUBJECT TO ONGOING REVIEW. CERTAIN FACILITY DETAILS AND OPERATIONAL RECORDS ARE RESTRICTED UNDER WEYLAND-YUTANI CORPORATE SECURITY PROTOCOLS. THIS PAGE REFLECTS PUBLICLY AVAILABLE COLONY PROFILE INFORMATION ONLY. FOR FURTHER INQUIRIES, CONTACT THE COLONIAL ADMINISTRATION OFFICE, REF: HC-LV426-2179.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="relative py-12 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/colonies" class="btn-secondary">ALL COLONIES</a>
+          <a href="/colonies/luna" class="btn-secondary">LUNA COLONY</a>
+          <a href="/colonies/gj-667cc" class="btn-secondary">GJ 667CC</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

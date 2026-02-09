@@ -1,0 +1,276 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Jackson's Star -- LV-410"
+  description="Jackson's Star colony on LV-410, Alfeios system. Class B industrial mining colony providing critical raw materials for interstellar construction. Managed under the W-Y colonial labor program."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center pt-20 pb-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          CLASS B -- INDUSTRIAL / MINING
+        </div>
+
+        <h1 class="text-7xl md:text-[10rem] font-black text-white mb-4 leading-none uppercase">
+          JACKSON'S<br/><span class="text-[#FFC600] text-glow-yellow">STAR</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-6"></div>
+
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wide font-mono">
+          LV-410 -- ALFEIOS SYSTEM
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Colony Data Bar -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">LOCATION</div>
+            <div class="text-sm font-black text-[#FFC600]">LV-410</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">SYSTEM</div>
+            <div class="text-sm font-black text-[#FFC600]">ALFEIOS</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">DISTANCE</div>
+            <div class="text-sm font-black text-[#FFC600]">65 LIGHT YEARS</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">CLASSIFICATION</div>
+            <div class="text-sm font-black text-[#FFC600]">CLASS B -- INDUSTRIAL</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">STATUS</div>
+            <div class="text-sm font-black text-[#FFC600] status-active">OPERATIONAL</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+                COLONY OVERVIEW
+              </div>
+              <h2 class="text-4xl md:text-5xl font-black text-white mb-8">
+                ECONOMIC <span class="text-[#FFC600] text-glow-yellow">OPPORTUNITY</span> ON THE FRONTIER
+              </h2>
+              <div class="space-y-6 text-gray-400 font-mono text-sm leading-relaxed">
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> JACKSON'S STAR IS ONE OF WEYLAND-YUTANI'S MOST PRODUCTIVE INDUSTRIAL COLONIES, SITUATED ON LV-410 IN THE ALFEIOS SYSTEM, 65 LIGHT YEARS FROM EARTH. THE COLONY SERVES AS A CRITICAL NODE IN THE INTERSTELLAR SUPPLY CHAIN, EXTRACTING AND PROCESSING RAW MATERIALS ESSENTIAL FOR SPACECRAFT CONSTRUCTION, COLONY INFRASTRUCTURE, AND ADVANCED MANUFACTURING.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> OPERATED UNDER THE WEYLAND-YUTANI COLONIAL LABOR PROGRAM, JACKSON'S STAR PROVIDES ECONOMIC OPPORTUNITY FOR THOUSANDS OF CONTRACTED WORKERS SEEKING FRONTIER EMPLOYMENT. THE PROGRAM OFFERS COMPETITIVE COMPENSATION, SKILLS TRAINING, AND A PATH TO PERMANENT COLONIAL RESIDENCY FOR QUALIFYING PERSONNEL.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE COLONY'S STRATEGIC IMPORTANCE CANNOT BE OVERSTATED. THE RARE MINERAL DEPOSITS ON LV-410 INCLUDE ELEMENTS CRITICAL TO FTL DRIVE MANUFACTURING, HULL ALLOY COMPOSITION, AND ATMOSPHERIC PROCESSOR CONSTRUCTION. WITHOUT JACKSON'S STAR, THE PACE OF HUMAN EXPANSION ACROSS THE FRONTIER WOULD BE SIGNIFICANTLY DIMINISHED.
+                </p>
+              </div>
+            </div>
+
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">COLONY SPECIFICATIONS</h3>
+              <div class="space-y-4 text-sm font-mono">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DESIGNATION</span>
+                  <span class="text-[#FFC600] font-bold">JACKSON'S STAR</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">BODY</span>
+                  <span class="text-[#FFC600] font-bold">LV-410</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">SYSTEM</span>
+                  <span class="text-[#FFC600] font-bold">ALFEIOS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DISTANCE</span>
+                  <span class="text-[#FFC600] font-bold">65 LIGHT YEARS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">PRIMARY INDUSTRY</span>
+                  <span class="text-[#FFC600] font-bold">MINING / EXTRACTION</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">WORKFORCE</span>
+                  <span class="text-[#FFC600] font-bold">8,400+ CONTRACTED</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">OUTPUT RANK</span>
+                  <span class="text-[#FFC600] font-bold">TOP 15 (TONNAGE)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">LABOR PROGRAM</span>
+                  <span class="text-[#FFC600] font-bold">W-Y CLP ACTIVE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infrastructure -->
+    <section class="relative py-28 bg-black border-t-4 border-b-4 border-[#FFC600]">
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6 pt-6">
+        <div class="text-center mb-16">
+          <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+            INFRASTRUCTURE
+          </div>
+          <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+            FACILITY <span class="text-[#FFC600] text-glow-yellow">OVERVIEW</span>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">MN</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">MINING COMPLEXES</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              TWELVE ACTIVE MINING COMPLEXES OPERATING ACROSS LV-410'S PRIMARY MINERAL BELT. AUTOMATED DRILLING SYSTEMS AND HEAVY EXTRACTION EQUIPMENT OPERATE AROUND THE CLOCK, SUPPORTED BY ROTATING SHIFT CREWS.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">PP</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">PROCESSING PLANTS</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              THREE ON-SITE PROCESSING PLANTS REFINE RAW ORE INTO EXPORT-GRADE MATERIALS. SMELTING, SEPARATION, AND ALLOY PREPARATION ARE PERFORMED ON-WORLD TO MINIMIZE TRANSPORT MASS AND MAXIMIZE SHIPPING EFFICIENCY.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">WH</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">WORKER HOUSING</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              MODERN RESIDENTIAL MODULES PROVIDING CLIMATE-CONTROLLED LIVING QUARTERS, RECREATIONAL FACILITIES, DINING HALLS, AND MEDICAL CLINICS. ALL HOUSING MEETS INTERSTELLAR COMMERCE COMMISSION HABITABILITY STANDARDS.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">TH</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">TRANSPORT HUB</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              A DEDICATED ORBITAL LOADING PLATFORM AND SURFACE LAUNCH FACILITY HANDLE ALL INBOUND SUPPLIES AND OUTBOUND CARGO. REGULAR FREIGHT SERVICE CONNECTS JACKSON'S STAR TO LUNA AND OTHER MAJOR TRANSIT NODES.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">MC</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">MEDICAL CENTER</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              A FULLY STAFFED MEDICAL CENTER WITH SURGICAL SUITE, DIAGNOSTIC IMAGING, AND EMERGENCY TRAUMA CAPABILITY. OCCUPATIONAL HEALTH SCREENING AND ONGOING WELLNESS PROGRAMS FOR ALL CONTRACTED PERSONNEL.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">TC</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">TRAINING CENTER</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              ON-SITE TRAINING AND CERTIFICATION FACILITIES FOR HEAVY EQUIPMENT OPERATION, SAFETY PROCEDURES, AND SPECIALIZED MINING TECHNIQUES. PART OF THE W-Y COLONIAL LABOR PROGRAM SKILLS DEVELOPMENT INITIATIVE.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Colonial Labor Program -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-16">
+            <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+              LABOR PROGRAM
+            </div>
+            <h2 class="text-5xl md:text-6xl font-black text-white mb-4">
+              W-Y <span class="text-[#FFC600] text-glow-yellow">COLONIAL LABOR</span> PROGRAM
+            </h2>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <h4 class="text-lg font-black text-white uppercase mb-4">COMPETITIVE COMPENSATION</h4>
+              <p class="text-gray-500 font-mono text-xs leading-relaxed">FRONTIER HAZARD PAY, PERFORMANCE BONUSES, AND COMPREHENSIVE BENEFITS PACKAGES. CONTRACT TERMS FROM 18 MONTHS TO 5 YEARS WITH RENEWAL OPTIONS. ALL COMPENSATION INCLUDES TRANSIT COSTS.</p>
+            </div>
+            <div class="p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <h4 class="text-lg font-black text-white uppercase mb-4">SKILLS DEVELOPMENT</h4>
+              <p class="text-gray-500 font-mono text-xs leading-relaxed">CERTIFIED TRAINING IN HEAVY EQUIPMENT OPERATION, MINING TECHNIQUES, PROCESSING TECHNOLOGY, AND SAFETY PROCEDURES. CREDENTIALS RECOGNIZED AT ALL W-Y FACILITIES AND ICC-REGISTERED OPERATIONS.</p>
+            </div>
+            <div class="p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <h4 class="text-lg font-black text-white uppercase mb-4">RESIDENCY PATHWAY</h4>
+              <p class="text-gray-500 font-mono text-xs leading-relaxed">QUALIFYING PERSONNEL MAY APPLY FOR PERMANENT COLONIAL RESIDENCY AFTER COMPLETING THEIR INITIAL CONTRACT TERM. RESIDENCY INCLUDES LAND ALLOCATION AND VOTING RIGHTS IN COLONY GOVERNANCE.</p>
+            </div>
+            <div class="p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <h4 class="text-lg font-black text-white uppercase mb-4">SUPPORT SERVICES</h4>
+              <p class="text-gray-500 font-mono text-xs leading-relaxed">COMPREHENSIVE SUPPORT INCLUDING MEDICAL COVERAGE, HOUSING, RECREATIONAL FACILITIES, AND COMMUNICATION ACCESS. FAMILY RELOCATION ASSISTANCE AVAILABLE FOR EXTENDED CONTRACT PERSONNEL.</p>
+            </div>
+          </div>
+
+          <div class="terminal mt-16">
+            <div class="terminal-content">
+              <p class="text-[#FFC600] font-mono text-sm leading-relaxed">
+                &gt; "JACKSON'S STAR DEMONSTRATES THAT EVEN THE HARSHEST FRONTIER ENVIRONMENTS CAN OFFER MEANINGFUL ECONOMIC OPPORTUNITY. EVERY TON OF ORE EXTRACTED HERE BECOMES THE HULL PLATE OF A COLONY SHIP, THE STRUCTURAL BEAM OF A FRONTIER SETTLEMENT, OR THE COMPONENT OF AN ATMOSPHERE PROCESSOR THAT WILL TRANSFORM ANOTHER WORLD. THE WORKERS OF JACKSON'S STAR ARE BUILDING BETTER WORLDS IN THE MOST LITERAL SENSE."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="relative py-12 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/colonies" class="btn-secondary">ALL COLONIES</a>
+          <a href="/colonies/luna" class="btn-secondary">LUNA COLONY</a>
+          <a href="/careers" class="btn-primary">JOIN THE WORKFORCE</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

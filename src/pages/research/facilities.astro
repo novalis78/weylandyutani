@@ -1,0 +1,205 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const facilities = [
+  {
+    name: "SAN FRANCISCO RESEARCH CAMPUS",
+    location: "San Francisco, California, United States",
+    type: "CORPORATE HEADQUARTERS R&D",
+    personnel: "4,200",
+    specializations: ["Cybernetics & Synthetic Intelligence", "Neural Lattice Architecture", "Advanced Materials", "Nanotechnology", "Corporate Research Administration"],
+    desc: "The Corporation's primary research campus and administrative center for all R&D activities. Home to the Synthetic Manufacturing Prototype Lab, the Neural Architecture Center, and the Peter Weyland Advanced Computing Facility."
+  },
+  {
+    name: "TOKYO ADVANCED TECHNOLOGY CENTER",
+    location: "Minato, Tokyo, Japan",
+    type: "ADVANCED TECHNOLOGY",
+    personnel: "3,100",
+    specializations: ["Electronics & Communications", "Quantum Computing", "Sensor Systems", "Micro-Fabrication", "Robotics"],
+    desc: "Inherited from Yutani Corporation, the Tokyo Center is the Corporation's primary facility for electronics research, quantum computing development, and micro-scale fabrication. Houses the largest clean room in the Eastern Hemisphere."
+  },
+  {
+    name: "SEA OF TRANQUILITY RESEARCH STATION",
+    location: "Luna",
+    type: "OFF-WORLD RESEARCH",
+    personnel: "1,800",
+    specializations: ["Low-Gravity Materials Testing", "Atmospheric Processing R&D", "Propulsion Systems", "Hypersleep Research", "Deep Space Medicine"],
+    desc: "The Corporation's premier off-world research installation, providing unique low-gravity and vacuum-access environments for testing technologies destined for deep-space deployment."
+  },
+  {
+    name: "CERN-WEYLAND PARTICLE PHYSICS COMPLEX",
+    location: "Geneva, Switzerland",
+    type: "FUNDAMENTAL PHYSICS",
+    personnel: "2,400",
+    specializations: ["Particle Physics", "Quantum Gravity", "Antimatter Research", "High-Energy Physics", "Theoretical Physics"],
+    desc: "Acquired in 2029, the CERN complex houses the upgraded Large Hadron Collider and the Corporation's fundamental physics research program. The facility's work in quantum gravity directly underpins FTL propulsion technology."
+  },
+  {
+    name: "ATACAMA ATMOSPHERIC TESTING FACILITY",
+    location: "Atacama Desert, Chile",
+    type: "ATMOSPHERIC SCIENCES",
+    personnel: "640",
+    specializations: ["Atmospheric Processor Testing", "Catalytic Conversion Systems", "Environmental Simulation", "Extreme-Climate Engineering"],
+    desc: "Located in one of Earth's most inhospitable environments, the Atacama facility provides near-planetary conditions for testing atmospheric processing equipment before off-world deployment."
+  },
+  {
+    name: "SYDNEY BIOMEDICAL CAMPUS",
+    location: "Sydney, Australia",
+    type: "HEALTH & BIOLOGICAL SCIENCES",
+    personnel: "1,600",
+    specializations: ["MedPod Development", "Pharmaceutical Research", "Regenerative Medicine", "Surgical Robotics", "Pathogen Research"],
+    desc: "The Corporation's dedicated biomedical research center, responsible for MedPod platform development, pharmaceutical pipeline management, and advanced surgical systems engineering."
+  },
+  {
+    name: "DEEP SPACE STATION JUNO",
+    location: "L2 Lagrange Point, Sol System",
+    type: "DEEP SPACE RESEARCH",
+    personnel: "320",
+    specializations: ["FTL Navigation Testing", "Deep Space Sensor Arrays", "Radiation Research", "Zero-Gravity Manufacturing"],
+    desc: "An orbital research platform at the L2 point providing deep-space conditions for propulsion testing, sensor calibration, and zero-gravity material manufacturing experiments."
+  },
+  {
+    name: "ABERDEEN ENERGY SYSTEMS LAB",
+    location: "Aberdeen, Scotland, United Kingdom",
+    type: "ENERGY SYSTEMS",
+    personnel: "780",
+    specializations: ["Fusion Reactor Development", "Power Grid Architecture", "Energy Storage Systems", "Micro-Fusion Cells"],
+    desc: "The Corporation's primary facility for fusion energy research and development, including next-generation reactor design, grid integration systems, and the micro-fusion cells that power synthetic persons."
+  },
+];
+---
+
+<Layout
+  title="Research Facilities"
+  description="Explore Weyland-Yutani Corporation's global network of 38 research facilities spanning Earth, Luna, and deep space stations, housing 14,200 research personnel."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative py-20 border-b-4 border-[#FFC600] overflow-hidden">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+
+      <div class="relative container mx-auto px-6 text-center py-16">
+        <div class="inline-flex items-center gap-3 mb-8">
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.3em] font-mono">RESEARCH & DEVELOPMENT</span>
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+        </div>
+
+        <h1 class="text-7xl md:text-8xl lg:text-9xl font-black text-white leading-none uppercase mb-6">
+          RESEARCH <span class="text-[#FFC600] text-glow-yellow">FACILITIES</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-8"></div>
+
+        <p class="text-lg text-gray-400 max-w-3xl mx-auto uppercase tracking-wider font-mono leading-relaxed">
+          38 INSTALLATIONS ACROSS EARTH, LUNA, AND DEEP SPACE
+        </p>
+      </div>
+
+      <div class="absolute bottom-0 left-0 right-0 hazard-stripes h-2"></div>
+    </section>
+
+    <!-- STATS -->
+    <section class="relative py-14 bg-[#0a0a0a] border-b border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div class="text-4xl font-black text-[#FFC600]">38</div>
+            <div class="text-xs text-gray-500 font-mono uppercase mt-2 tracking-wider">TOTAL FACILITIES</div>
+          </div>
+          <div>
+            <div class="text-4xl font-black text-[#FFC600]">14,200</div>
+            <div class="text-xs text-gray-500 font-mono uppercase mt-2 tracking-wider">RESEARCH PERSONNEL</div>
+          </div>
+          <div>
+            <div class="text-4xl font-black text-[#FFC600]">12</div>
+            <div class="text-xs text-gray-500 font-mono uppercase mt-2 tracking-wider">COUNTRIES</div>
+          </div>
+          <div>
+            <div class="text-4xl font-black text-[#FFC600]">3</div>
+            <div class="text-xs text-gray-500 font-mono uppercase mt-2 tracking-wider">OFF-WORLD STATIONS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAJOR FACILITIES -->
+    <section class="relative py-20 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-12">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">MAJOR R&D CAMPUSES</span>
+          <div class="flex-1 h-px bg-[#1a1a1a]"></div>
+        </div>
+
+        <div class="space-y-8">
+          {facilities.map((facility) => (
+            <div class="corp-card p-8">
+              <div class="flex flex-wrap items-center gap-4 mb-4">
+                <span class="text-[10px] font-mono text-[#FFC600] tracking-widest bg-[#FFC600]/10 px-3 py-1 clip-corner">{facility.type}</span>
+                <span class="text-[10px] font-mono text-gray-600 tracking-wider">{facility.personnel} PERSONNEL</span>
+                <span class="text-[10px] font-mono text-gray-600 tracking-wider status-active">OPERATIONAL</span>
+              </div>
+
+              <h3 class="text-2xl font-black text-white uppercase mb-2">{facility.name}</h3>
+              <p class="text-sm text-[#FFC600] font-mono mb-4">{facility.location}</p>
+              <p class="text-sm text-gray-400 leading-relaxed mb-6">{facility.desc}</p>
+
+              <div class="flex flex-wrap gap-2">
+                {facility.specializations.map((spec) => (
+                  <span class="text-[10px] font-mono text-gray-500 tracking-wider bg-[#0a0a0a] border border-[#1a1a1a] px-3 py-1 clip-corner">{spec}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMIC VISITORS -->
+    <section class="relative py-20 bg-[#0a0a0a] border-t border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">VISITOR PROGRAMS</span>
+          <h2 class="text-3xl md:text-4xl font-black text-white mt-4 mb-6 uppercase">TOURS & ACADEMIC VISITORS</h2>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="corp-card p-8">
+              <h3 class="text-lg font-black text-white uppercase mb-3">ACADEMIC VISITOR PROGRAM</h3>
+              <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                Qualified researchers from partner institutions may apply for visitor appointments at select Weyland-Yutani facilities. Appointments range from two weeks to twelve months and include laboratory access, housing, and a research stipend.
+              </p>
+              <p class="text-sm text-gray-500 leading-relaxed mb-4">
+                Eligibility: Doctoral candidates and post-doctoral researchers affiliated with institutions holding active Weyland-Yutani research partnerships.
+              </p>
+              <a href="/research/partnerships" class="text-xs font-bold text-[#FFC600] uppercase tracking-wider hover:text-white transition-colors">APPLY FOR VISITOR ACCESS &rarr;</a>
+            </div>
+            <div class="corp-card p-8">
+              <h3 class="text-lg font-black text-white uppercase mb-3">FACILITY TOURS</h3>
+              <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                The San Francisco Research Campus and CERN-Weyland Complex offer guided tours for educational groups, corporate delegations, and government officials. Tours provide an overview of the Corporation's research mission and capabilities.
+              </p>
+              <p class="text-sm text-gray-500 leading-relaxed mb-4">
+                Tour requests must be submitted at least 90 days in advance. All visitors are subject to security clearance procedures. Restricted areas are excluded from standard tours.
+              </p>
+              <a href="/contact" class="text-xs font-bold text-[#FFC600] uppercase tracking-wider hover:text-white transition-colors">REQUEST A TOUR &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

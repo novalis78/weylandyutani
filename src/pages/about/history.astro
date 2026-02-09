@@ -1,0 +1,329 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const timelineEntries = [
+  {
+    year: "1990",
+    title: "A VISIONARY IS BORN",
+    description: "Peter Weyland is born on October 1 in Mumbai, India, to a self-taught engineer mother and an Oxford-educated professor of comparative mythology. From an early age, he demonstrates an extraordinary aptitude for science and an insatiable curiosity about the nature of existence.",
+    highlight: false,
+  },
+  {
+    year: "2004",
+    title: "12TH PATENT AT AGE 14",
+    description: "At just fourteen years old, Peter Weyland files his twelfth patent: a synthetic trachea constructed from stem cell-based nano-tissue. The device saves the lives of thousands of respiratory patients worldwide and earns Weyland recognition as the youngest recipient of the Doyle Prize for Innovation in Biomedical Science.",
+    highlight: false,
+  },
+  {
+    year: "2012",
+    title: "WEYLAND CORPORATION FOUNDED",
+    description: "On October 11, Peter Weyland incorporates all of his existing enterprises under one corporate umbrella, forming Weyland Corporation. Headquartered in San Francisco, the new entity consolidates assets in nanotechnology, cybernetics, energy, and aerospace. The date will become one of the most significant in human history.",
+    highlight: true,
+  },
+  {
+    year: "2015",
+    title: "FIRST INDUSTRIALIZED SPACE MISSION",
+    description: "Weyland Corporation launches its first commercial space mission, an industrialized orbital manufacturing platform that produces ultra-pure alloys and crystalline substrates impossible to create under Earth's gravity. The venture is immediately profitable. Weyland becomes a billionaire before the age of 25.",
+    highlight: false,
+  },
+  {
+    year: "2016",
+    title: "ATMOSPHERIC BREAKTHROUGH",
+    description: "Weyland Corp deploys a revolutionary synthetic atmosphere system that successfully reverses the warming trend of Earth's polar ice caps. The technology demonstrates atmospheric processing at planetary scale for the first time. In recognition of this achievement, Peter Weyland is knighted by the British Crown.",
+    highlight: false,
+  },
+  {
+    year: "2017",
+    title: "NOBEL PEACE PRIZE",
+    description: "Sir Peter Weyland is awarded the Nobel Peace Prize for his atmospheric reclamation work. The same year, Weyland Corp acquires key technologies and personnel from NASA's defunct Project Prometheus program, gaining access to advanced deep-space sensor data and propulsion research that will prove transformative.",
+    highlight: false,
+  },
+  {
+    year: "2023",
+    title: "THE TED SPEECH THAT CHANGED EVERYTHING",
+    description: "Before a capacity crowd at Wembley Stadium, Sir Peter Weyland delivers his legendary TED address. In a sweeping, provocative speech, he declares: \"We are the gods now.\" He outlines a vision for humanity that encompasses faster-than-light travel, the creation of synthetic life, and the colonization of other worlds. The speech is viewed by an estimated 2.7 billion people worldwide.",
+    highlight: true,
+  },
+  {
+    year: "2025",
+    title: "DAVID 1 PROTOTYPE",
+    description: "Weyland Corp's Cybernetics Division produces David 1, the first truly advanced synthetic humanoid prototype. Possessing human-level intelligence, emotional processing capability, and physical capabilities exceeding those of any human, David 1 represents an existential leap in artificial intelligence and robotics.",
+    highlight: false,
+  },
+  {
+    year: "2028",
+    title: "HYPERSLEEP DISCOVERY",
+    description: "Weyland Corp researchers achieve a breakthrough in cryogenic suspension technology, discovering a method to safely place human subjects in extended states of suspended animation. The technology, initially developed for medical applications, will prove essential for long-duration interstellar travel.",
+    highlight: false,
+  },
+  {
+    year: "2029",
+    title: "ATMOSPHERIC PROCESSOR & CERN ACQUISITION",
+    description: "The first atmospheric processor capable of terraforming an extraterrestrial body is patented by Weyland Corp. Simultaneously, the Corporation acquires CERN and its complete research infrastructure, gaining access to the world's most advanced particle physics capabilities and some of the finest scientific minds on Earth.",
+    highlight: false,
+  },
+  {
+    year: "2030",
+    title: "HYPERSLEEP CHAMBER PATENTED",
+    description: "The commercially viable hypersleep chamber is patented, enabling reliable suspended animation for periods of months to decades. The technology undergoes rigorous FDA and ESA safety certification. Pre-orders from government space agencies and private contractors exceed $40 billion within the first quarter.",
+    highlight: false,
+  },
+  {
+    year: "2031",
+    title: "LUNA TERRAFORMING BEGINS",
+    description: "Weyland Corporation breaks ground on the first permanent lunar settlement and begins atmospheric processing operations on Earth's moon. The Sea of Tranquility is selected as the site for what will become the Corporation's Off-World Headquarters. Construction of enclosed habitation domes proceeds ahead of schedule.",
+    highlight: false,
+  },
+  {
+    year: "2032",
+    title: "FASTER-THAN-LIGHT TRAVEL ACHIEVED",
+    description: "In what many consider the single greatest technological achievement in human history, Weyland Corp engineers achieve faster-than-light travel. The same year, the Corporation acquires Boeing, Lockheed Martin, Northrop Grumman, and BAE Systems, consolidating the entirety of Earth's aerospace-defense industrial base under one roof.",
+    highlight: true,
+  },
+  {
+    year: "2034",
+    title: "HELIADES LAUNCHED",
+    description: "The USCSS Heliades, the first faster-than-light spacecraft, launches from Weyland Corp's orbital shipyard. The vessel completes a successful round-trip to Proxima Centauri in a fraction of the time previously calculated for sub-light travel. The era of interstellar exploration has begun.",
+    highlight: false,
+  },
+  {
+    year: "2039",
+    title: "FIRST BREATHABLE ATMOSPHERE OFF-EARTH",
+    description: "Weyland Corp atmospheric processors generate the first fully breathable atmosphere on exoplanet GJ 667Cc. The planet, located 22 light-years from Earth, becomes the first confirmed world beyond our solar system deemed suitable for permanent human habitation. Colonization planning begins immediately.",
+    highlight: false,
+  },
+  {
+    year: "2042",
+    title: "DAVID 4 -- COMMERCIAL SYNTHETICS",
+    description: "The David 4 model becomes the first commercially available synthetic humanoid. Capable of serving in virtually any capacity, from scientific research to manual labor to companionship, the David 4 is deployed across corporate, government, and military applications. Sales exceed 200,000 units in the first year.",
+    highlight: false,
+  },
+  {
+    year: "2056",
+    title: "P-5000 POWER LOADER PATENTED",
+    description: "The P-5000 Powered Work Loader is patented and enters mass production. A human-operated exoskeletal forklift capable of lifting loads exceeding 4,000 kg, the Power Loader becomes an indispensable tool in cargo operations, construction, and colonial infrastructure development across all off-world territories.",
+    highlight: false,
+  },
+  {
+    year: "2061",
+    title: "MEDPOD 720i PATENTED",
+    description: "The MedPod 720i automated surgical system is patented, representing a quantum leap in medical technology. Capable of performing any surgical procedure without a human surgeon, the MedPod can diagnose, treat, and cure virtually any medical condition. Deployment begins in hospitals, ships, and colonies systemwide.",
+    highlight: false,
+  },
+  {
+    year: "2065",
+    title: "COLONIAL PEACEKEEPING MANDATE",
+    description: "The United States Government formally approaches Weyland Corporation to partner on the establishment of a colonial peacekeeping force. This partnership will evolve into the United States Colonial Marines, the primary military force responsible for maintaining order across humanity's expanding colonial territories.",
+    highlight: false,
+  },
+  {
+    year: "2071",
+    title: "SEVEN VERTICALS ESTABLISHED",
+    description: "Weyland Corporation consolidates its operations into seven clearly defined operational verticals: Terraforming, Cybernetics & Synthetics, Security & Defense, Energy Systems, Health Sciences, Biological Sciences, and Electronics & Communications. The same year, Weyland Corp becomes a World Olympic Partner.",
+    highlight: false,
+  },
+  {
+    year: "2073",
+    title: "PROJECT PROMETHEUS",
+    description: "Project Prometheus enters full operational status. The largest and most ambitious deep-space exploration program ever undertaken, Prometheus aims to answer fundamental questions about the origins of human life. Classified details remain sealed by corporate directive, but the project's scientific output is described internally as \"paradigm-altering.\"",
+    highlight: false,
+  },
+  {
+    year: "2099",
+    title: "THE MERGER: WEYLAND-YUTANI FORMED",
+    description: "In the most consequential corporate event of the century, Weyland Corporation and the Yutani Corporation of Japan complete their historic merger, forming Weyland-Yutani Corporation. The combined entity brings together Weyland's unmatched technological capabilities with Yutani's cybernetics expertise and Asian-Pacific market dominance, creating a conglomerate valued at over $200 trillion.",
+    highlight: true,
+  },
+  {
+    year: "PRESENT",
+    title: "BUILDING BETTER WORLDS",
+    description: "Weyland-Yutani Corporation stands as the most powerful commercial entity in human history. With operations spanning 47 countries and more than 300 colonized worlds, we continue to push the boundaries of science, engineering, and human potential. The future belongs to those who build it, and no one builds it better than we do.",
+    highlight: true,
+  },
+];
+---
+
+<Layout
+  title="Our History - Corporate Timeline"
+  description="The complete history of Weyland-Yutani Corporation, from Peter Weyland's birth in 1990 to the present day. Over a century of innovation, expansion, and building better worlds."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative min-h-[50vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+
+      <div class="relative container mx-auto px-6 text-center py-20">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          CORPORATE ARCHIVES
+        </div>
+
+        <h1 class="text-7xl md:text-9xl font-black text-white leading-none uppercase mb-6">
+          OUR <span class="text-[#FFC600] text-glow-yellow">HISTORY</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-8"></div>
+
+        <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wider font-mono">
+          A CENTURY OF RELENTLESS INNOVATION AND HUMAN ADVANCEMENT
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- TIMELINE NAVIGATION BAR -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a] py-4 sticky top-[73px] z-40">
+      <div class="container mx-auto px-6">
+        <div class="flex items-center gap-4 overflow-x-auto pb-2 scrollbar-hide">
+          <span class="text-[#FFC600] text-[10px] font-black uppercase tracking-widest font-mono shrink-0">JUMP TO:</span>
+          {["1990", "2012", "2023", "2032", "2042", "2065", "2099", "PRESENT"].map(year => (
+            <a href={`#year-${year.toLowerCase()}`} class="shrink-0 px-4 py-1.5 border border-[#1a1a1a] text-gray-500 text-[10px] font-mono font-bold uppercase tracking-wider hover:border-[#FFC600] hover:text-[#FFC600] transition-all clip-corner">
+              {year}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN TIMELINE -->
+    <section class="relative py-20 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <!-- Timeline Line (center) -->
+          <div class="timeline-container relative">
+            <!-- Center Line -->
+            <div class="timeline-line absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-gradient-to-b from-[#FFC600] via-[#FFC600]/50 to-[#FFC600] hidden lg:block"></div>
+            <!-- Mobile Line -->
+            <div class="timeline-line-mobile absolute left-6 w-px h-full bg-gradient-to-b from-[#FFC600] via-[#FFC600]/50 to-[#FFC600] lg:hidden"></div>
+
+            {timelineEntries.map((entry, index) => (
+              <div id={`year-${entry.year.toLowerCase()}`} class={`timeline-entry relative mb-16 lg:mb-20 ${index % 2 === 0 ? 'lg:pr-[55%]' : 'lg:pl-[55%]'}`}>
+                <!-- Center Dot (desktop) -->
+                <div class={`hidden lg:block absolute top-2 left-1/2 transform -translate-x-1/2 z-10 ${entry.highlight ? 'w-6 h-6' : 'w-4 h-4'}`}>
+                  <div class={`w-full h-full bg-[#FFC600] clip-corner ${entry.highlight ? 'glow-yellow animate-pulse-yellow' : ''}`}></div>
+                </div>
+
+                <!-- Mobile Dot -->
+                <div class={`lg:hidden absolute top-2 left-6 transform -translate-x-1/2 z-10 ${entry.highlight ? 'w-5 h-5' : 'w-3 h-3'}`}>
+                  <div class={`w-full h-full bg-[#FFC600] clip-corner ${entry.highlight ? 'glow-yellow' : ''}`}></div>
+                </div>
+
+                <!-- Content Card -->
+                <div class={`ml-12 lg:ml-0 ${entry.highlight ? 'corp-card-highlight' : 'corp-card'} p-6 lg:p-8`}>
+                  <!-- Year Badge -->
+                  <div class="mb-4">
+                    <span class={`inline-block px-4 py-2 font-black text-xs uppercase tracking-widest clip-corner font-mono ${entry.highlight ? 'bg-[#FFC600] text-black' : 'bg-[#1a1a1a] text-[#FFC600] border border-[#FFC600]/30'}`}>
+                      {entry.year}
+                    </span>
+                  </div>
+
+                  <h3 class={`text-xl lg:text-2xl font-black uppercase mb-4 ${entry.highlight ? 'text-[#FFC600] text-glow-yellow' : 'text-white'}`}>
+                    {entry.title}
+                  </h3>
+
+                  <p class="text-gray-400 text-sm leading-relaxed">
+                    {entry.description}
+                  </p>
+
+                  {entry.highlight && (
+                    <div class="mt-4 pt-4 border-t border-[#FFC600]/20">
+                      <span class="text-[#FFC600] text-[10px] font-black uppercase tracking-widest font-mono status-active">MILESTONE EVENT</span>
+                    </div>
+                  )}
+                </div>
+
+                <!-- Connector Line (desktop) -->
+                <div class={`hidden lg:block absolute top-4 ${index % 2 === 0 ? 'right-[44%]' : 'left-[44%]'} w-[6%] h-px bg-[#FFC600]/30`}></div>
+              </div>
+            ))}
+
+            <!-- Terminal End Marker -->
+            <div class="relative flex justify-center lg:justify-center">
+              <div class="ml-12 lg:ml-0 inline-flex items-center gap-3 px-8 py-4 bg-[#FFC600] clip-corner">
+                <span class="text-black font-black text-sm uppercase tracking-widest font-mono">THE FUTURE IS BEING WRITTEN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section class="relative py-24 bg-[#0a0a0a] border-t-4 border-b-4 border-[#FFC600]">
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+          <p class="text-3xl md:text-5xl font-black text-[#FFC600] text-glow-yellow italic leading-tight mb-8">
+            "WE ARE THE GODS NOW."
+          </p>
+          <div class="h-px w-32 bg-[#FFC600] mx-auto mb-6"></div>
+          <p class="text-gray-400 text-sm uppercase tracking-widest font-mono">
+            SIR PETER WEYLAND -- TED CONFERENCE, WEMBLEY STADIUM, 2023
+          </p>
+        </div>
+      </div>
+
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- BACK NAVIGATION -->
+    <section class="relative py-16 bg-black">
+      <div class="container mx-auto px-6 text-center">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/about" class="btn-secondary px-10 py-4 text-sm">BACK TO OVERVIEW</a>
+          <a href="/about/leadership" class="btn-primary px-10 py-4 text-sm">MEET OUR LEADERS</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+
+  .corp-card-highlight {
+    background: #0a0a0a;
+    border: 2px solid #FFC600;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+    box-shadow: 0 0 30px rgba(255, 198, 0, 0.1);
+  }
+
+  .corp-card-highlight:hover {
+    box-shadow: 0 0 40px rgba(255, 198, 0, 0.2);
+    transform: translateY(-4px);
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Smooth scroll for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Timeline entry animation on hover */
+  .timeline-entry:hover .corp-card,
+  .timeline-entry:hover .corp-card-highlight {
+    border-color: #FFC600;
+  }
+</style>

@@ -1,0 +1,366 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const milestones = [
+  { year: "2029", event: "First Atmosphere Processing Plant patented by Weyland Industries" },
+  { year: "2031", event: "Luna terraforming initiative completes Phase I habitation dome" },
+  { year: "2032", event: "Second-generation APP deployed with 40% efficiency improvement" },
+  { year: "2035", event: "GJ 667Cc survey mission confirms terraforming viability" },
+  { year: "2039", event: "First fully breathable atmosphere created on GJ 667Cc" },
+  { year: "2042", event: "100th atmospheric processor deployed across 12 colony worlds" },
+  { year: "2051", event: "Third-generation APP with integrated fusion reactor platform" },
+  { year: "2058", event: "Acheron (LV-426) terraforming colony Hadley's Hope established" },
+  { year: "2065", event: "200th world reaches Phase III habitable status" },
+  { year: "2071", event: "Division consolidation under Weyland-Yutani corporate structure" },
+  { year: "2075", event: "300th world enters terraforming pipeline; 99.7% success rate achieved" },
+];
+
+const lifecycle = [
+  { phase: "01", name: "SURVEY & ASSESSMENT", desc: "Orbital and surface analysis of atmospheric composition, geological stability, gravity, and solar exposure. Typically 6-18 months." },
+  { phase: "02", name: "SITE PREPARATION", desc: "Landing zone establishment, initial infrastructure deployment, and foundation work for Atmosphere Processing Plant installation." },
+  { phase: "03", name: "APP DEPLOYMENT", desc: "Erection and activation of primary Atmosphere Processing Plant. Full operational capacity achieved within 90 days of activation." },
+  { phase: "04", name: "ATMOSPHERE CONVERSION", desc: "Continuous atmospheric processing cycle. Native atmosphere drawn through louvers, compressed, heated to 5,000K, and reassembled into breathable composition." },
+  { phase: "05", name: "COLONY ESTABLISHMENT", desc: "Habitation modules, administrative infrastructure, and initial population settlement during controlled atmospheric transition period." },
+  { phase: "06", name: "AGRICULTURAL DEVELOPMENT", desc: "Soil preparation, biosphere seeding, and agricultural zone establishment for self-sustaining food production." },
+  { phase: "07", name: "FULL HABITABILITY", desc: "Atmospheric equilibrium achieved. Open-air habitation certified. Colony transitions to self-sustaining governance and economic operations." },
+];
+---
+
+<Layout
+  title="Terraforming Operations"
+  description="Weyland-Yutani Terraforming Operations Division - Revolutionizing planetary habitability since 2029. Over 300 worlds transformed with a 99.7% success rate."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative min-h-[70vh] flex items-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-15"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+
+      <!-- Decorative large number -->
+      <div class="absolute right-0 top-1/2 -translate-y-1/2 text-[30rem] font-black text-[#FFC600]/[0.03] leading-none select-none pointer-events-none hidden xl:block">
+        300+
+      </div>
+
+      <div class="relative container mx-auto px-6 py-24">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 bg-[#FFC600] clip-corner flex items-center justify-center">
+              <span class="text-black text-2xl font-black">TF</span>
+            </div>
+            <div>
+              <div class="status-active text-xs font-mono text-[#FFC600] mb-1">DIVISION ACTIVE</div>
+              <span class="text-gray-500 font-mono text-xs uppercase tracking-widest">EST. 2029</span>
+            </div>
+          </div>
+
+          <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.85] uppercase mb-8">
+            TERRAFORMING<br/>
+            <span class="text-[#FFC600] text-glow-yellow">OPERATIONS</span>
+          </h1>
+
+          <div class="h-1 w-32 bg-[#FFC600] mb-8"></div>
+
+          <p class="text-gray-400 font-mono text-sm md:text-base leading-relaxed max-w-3xl uppercase tracking-wide">
+            Revolutionizing planetary habitability since 2029. From the first patented Atmosphere Processing
+            Plant to 300+ transformed worlds, Weyland-Yutani Terraforming Operations is the foundation
+            upon which humanity's interstellar civilization is built.
+          </p>
+        </div>
+      </div>
+
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">300+</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Worlds Transformed</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">99.7%</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Success Rate</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">20 YR</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Avg. Conversion</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">1,500m</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">APP Tower Height</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">1.0 TW</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Fusion Reactor Output</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Technical Overview</span>
+        </div>
+        <h2 class="text-4xl md:text-6xl font-black text-white uppercase mb-6">
+          ATMOSPHERE PROCESSING<br/><span class="text-[#FFC600]">TECHNOLOGY</span>
+        </h2>
+        <p class="text-gray-500 font-mono text-sm uppercase tracking-wide mb-16 max-w-3xl">
+          The Weyland-Yutani Atmosphere Processing Plant is the single most significant engineering achievement in human history. Each unit is a self-contained industrial platform capable of transforming the atmospheric composition of an entire world.
+        </p>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Technical Diagram Description -->
+          <div class="corp-card p-8">
+            <h3 class="text-xl font-black text-[#FFC600] uppercase mb-6 border-b-2 border-[#FFC600] pb-3">
+              APP SPECIFICATIONS
+            </h3>
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <div class="w-12 h-12 bg-black border-2 border-[#FFC600]/30 clip-corner flex items-center justify-center shrink-0">
+                  <span class="text-[#FFC600] font-black text-sm">01</span>
+                </div>
+                <div>
+                  <h4 class="text-white font-black uppercase text-sm mb-1">STRUCTURAL TOWER</h4>
+                  <p class="text-gray-500 font-mono text-xs uppercase">1,500 meters tall. Reinforced titanium-alloy superstructure rated for Category V seismic zones and extreme atmospheric conditions up to 400 km/h wind loads.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-12 h-12 bg-black border-2 border-[#FFC600]/30 clip-corner flex items-center justify-center shrink-0">
+                  <span class="text-[#FFC600] font-black text-sm">02</span>
+                </div>
+                <div>
+                  <h4 class="text-white font-black uppercase text-sm mb-1">ATMOSPHERIC INTAKE</h4>
+                  <p class="text-gray-500 font-mono text-xs uppercase">Multi-level louver arrays draw native atmosphere at volume rates exceeding 2.4 million cubic meters per hour across 360-degree intake surfaces.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-12 h-12 bg-black border-2 border-[#FFC600]/30 clip-corner flex items-center justify-center shrink-0">
+                  <span class="text-[#FFC600] font-black text-sm">03</span>
+                </div>
+                <div>
+                  <h4 class="text-white font-black uppercase text-sm mb-1">COMPRESSION TURBINES</h4>
+                  <p class="text-gray-500 font-mono text-xs uppercase">Industrial turbine arrays compress intake atmosphere to operational pressure. Modular design allows field replacement without system shutdown.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-12 h-12 bg-black border-2 border-[#FFC600]/30 clip-corner flex items-center justify-center shrink-0">
+                  <span class="text-[#FFC600] font-black text-sm">04</span>
+                </div>
+                <div>
+                  <h4 class="text-white font-black uppercase text-sm mb-1">MAGNETIC HEATING COILS</h4>
+                  <p class="text-gray-500 font-mono text-xs uppercase">Compressed atmosphere heated to approximately 5,000 Kelvin within superconducting magnetic coil assemblies, dissociating molecular bonds.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-12 h-12 bg-black border-2 border-[#FFC600]/30 clip-corner flex items-center justify-center shrink-0">
+                  <span class="text-[#FFC600] font-black text-sm">05</span>
+                </div>
+                <div>
+                  <h4 class="text-white font-black uppercase text-sm mb-1">MOLECULAR REASSEMBLY</h4>
+                  <p class="text-gray-500 font-mono text-xs uppercase">Dissociated elements are catalytically reassembled into target atmospheric composition: 78% nitrogen, 21% oxygen, 1% trace gases.</p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div class="w-12 h-12 bg-black border-2 border-[#FFC600]/30 clip-corner flex items-center justify-center shrink-0">
+                  <span class="text-[#FFC600] font-black text-sm">06</span>
+                </div>
+                <div>
+                  <h4 class="text-white font-black uppercase text-sm mb-1">FUSION REACTOR CORE</h4>
+                  <p class="text-gray-500 font-mono text-xs uppercase">1.0 terawatt fusion reactor provides continuous power for all processing operations. Self-sustaining deuterium-tritium fuel cycle with 40-year service life.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Process Flow Terminal -->
+          <div>
+            <div class="terminal mb-8">
+              <div class="terminal-content">
+                <p class="mb-2 text-gray-500">$ app-diag --process-flow</p>
+                <p class="mb-1">&nbsp;</p>
+                <p class="mb-1">ATMOSPHERE PROCESSING PLANT :: OPERATIONAL FLOW</p>
+                <p class="mb-1">================================================</p>
+                <p class="mb-1">&nbsp;</p>
+                <p class="mb-1">[INTAKE]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rarr; Native atmosphere via louver arrays</p>
+                <p class="mb-1">&nbsp;&nbsp;&nbsp;|</p>
+                <p class="mb-1">[COMPRESS]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rarr; Turbine compression to 200+ atm</p>
+                <p class="mb-1">&nbsp;&nbsp;&nbsp;|</p>
+                <p class="mb-1">[HEAT]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rarr; Magnetic coils to ~5,000K</p>
+                <p class="mb-1">&nbsp;&nbsp;&nbsp;|</p>
+                <p class="mb-1">[DISSOCIATE]&nbsp;&nbsp;&nbsp;&rarr; Molecular bond separation</p>
+                <p class="mb-1">&nbsp;&nbsp;&nbsp;|</p>
+                <p class="mb-1">[REASSEMBLE]&nbsp;&nbsp;&nbsp;&rarr; Catalytic reconstruction</p>
+                <p class="mb-1">&nbsp;&nbsp;&nbsp;|</p>
+                <p class="mb-1">[EXHAUST]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rarr; Breathable atmosphere output</p>
+                <p class="mb-1">&nbsp;</p>
+                <p class="mb-1">POWER SOURCE:&nbsp;&nbsp;&nbsp;1.0 TW Fusion Reactor</p>
+                <p class="mb-1">CYCLE TIME:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Continuous (24/7/365)</p>
+                <p class="text-gray-500">CONVERSION EST:&nbsp;&nbsp;15-25 years per world_</p>
+              </div>
+            </div>
+
+            <div class="corp-card p-6">
+              <h4 class="text-sm font-black text-[#FFC600] uppercase mb-4">SAFETY RECORD</h4>
+              <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">
+                Over 46 years of continuous operation, Weyland-Yutani Atmosphere Processing Plants maintain a 99.7% mission success rate. All APP installations are equipped with redundant safety systems including automated shutdown protocols, seismic dampening, and emergency containment procedures compliant with ICC Safety Regulation 4.7.2.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="relative py-24 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Product Portfolio</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-16">TERRAFORMING SYSTEMS</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="corp-card p-6">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">AP</span>
+            </div>
+            <h3 class="text-lg font-black text-white uppercase mb-3">ATMOSPHERE PROCESSING PLANT</h3>
+            <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed mb-4">
+              Flagship planetary conversion system. 1,500m tower with integrated 1.0 TW fusion reactor. Complete atmospheric transformation in 15-25 years.
+            </p>
+            <span class="text-[#FFC600] text-xs font-bold uppercase">FLAGSHIP PRODUCT</span>
+          </div>
+
+          <div class="corp-card p-6">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">IM</span>
+            </div>
+            <h3 class="text-lg font-black text-white uppercase mb-3">IM 80 ROCK PROCESSOR</h3>
+            <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed mb-4">
+              Industrial mineral extraction and terrain preparation system. Processes raw geological material for construction aggregate and rare earth mineral recovery.
+            </p>
+            <span class="text-[#FFC600] text-xs font-bold uppercase">MINING & PREP</span>
+          </div>
+
+          <div class="corp-card p-6">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">CC</span>
+            </div>
+            <h3 class="text-lg font-black text-white uppercase mb-3">CLIMATE CONTROL SYSTEMS</h3>
+            <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed mb-4">
+              Orbital and surface weather management platforms. Temperature regulation, precipitation control, and seasonal cycle establishment for habitable zones.
+            </p>
+            <span class="text-[#FFC600] text-xs font-bold uppercase">WEATHER MGMT</span>
+          </div>
+
+          <div class="corp-card p-6">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">BE</span>
+            </div>
+            <h3 class="text-lg font-black text-white uppercase mb-3">BIOSPHERE ENGINEERING</h3>
+            <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed mb-4">
+              Complete ecosystem design and deployment. Microbial seeding, soil preparation, flora and fauna introduction programs for self-sustaining planetary biospheres.
+            </p>
+            <span class="text-[#FFC600] text-xs font-bold uppercase">ECOSYSTEM DEV</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLONY DEVELOPMENT LIFECYCLE -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Process</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-16">COLONY DEVELOPMENT LIFECYCLE</h2>
+
+        <div class="space-y-0">
+          {lifecycle.map((step, i) => (
+            <div class={`flex gap-6 md:gap-10 items-start py-8 ${i < lifecycle.length - 1 ? 'border-b border-[#1a1a1a]' : ''}`}>
+              <div class="shrink-0">
+                <div class="w-16 h-16 bg-black border-2 border-[#FFC600] clip-corner flex items-center justify-center">
+                  <span class="text-[#FFC600] font-black font-mono text-lg">{step.phase}</span>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-black text-white uppercase mb-2">{step.name}</h3>
+                <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed max-w-2xl">{step.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="relative py-24 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">History</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-16">KEY MILESTONES</h2>
+
+        <div class="relative">
+          <!-- Timeline line -->
+          <div class="absolute left-8 top-0 bottom-0 w-px bg-[#FFC600]/20 hidden md:block"></div>
+
+          <div class="space-y-8">
+            {milestones.map((m) => (
+              <div class="flex gap-6 md:gap-10 items-start relative">
+                <div class="shrink-0 relative z-10">
+                  <div class="w-16 h-8 bg-[#FFC600] clip-corner flex items-center justify-center">
+                    <span class="text-black font-black text-xs">{m.year}</span>
+                  </div>
+                </div>
+                <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed pt-1">{m.event}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-20 bg-black">
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+      <div class="relative container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-5xl font-black text-white uppercase mb-6">
+          BUILDING <span class="text-[#FFC600] text-glow-yellow">BETTER WORLDS</span>
+        </h2>
+        <p class="text-gray-500 font-mono text-sm uppercase tracking-wide max-w-2xl mx-auto mb-10">
+          Learn more about our terraforming capabilities or explore career opportunities across 300+ colony worlds.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/divisions" class="btn-secondary inline-block">ALL DIVISIONS</a>
+          <a href="/careers" class="btn-primary inline-block">JOIN OUR TEAM</a>
+        </div>
+      </div>
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

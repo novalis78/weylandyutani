@@ -1,0 +1,301 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Atmospheric Processing Technology"
+  description="Weyland-Yutani's patented atmospheric processing technology transforms hostile planetary atmospheres into breathable environments. 300+ successful deployments with 99.7% success rate."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero -->
+    <section class="relative min-h-[60vh] flex items-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 py-24">
+        <div class="max-w-5xl">
+          <div class="flex items-center gap-4 mb-8">
+            <a href="/technology" class="text-[10px] font-mono text-gray-500 uppercase tracking-[0.2em] hover:text-[#FFC600] transition-colors">TECHNOLOGY</a>
+            <span class="text-gray-700">/</span>
+            <span class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em]">ATMOSPHERIC PROCESSING</span>
+          </div>
+
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 leading-[0.9] uppercase">
+            ATMOSPHERIC<br/><span class="text-[#FFC600] text-glow-yellow">PROCESSING</span>
+          </h1>
+
+          <div class="h-1 w-48 bg-[#FFC600] mb-8"></div>
+
+          <p class="text-lg md:text-xl text-gray-400 max-w-3xl uppercase tracking-wide font-mono leading-relaxed">
+            THE CROWN JEWEL OF TERRAFORMING TECHNOLOGY. CONVERTING HOSTILE PLANETARY ATMOSPHERES INTO BREATHABLE ENVIRONMENTS SINCE 2039.
+          </p>
+        </div>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Key Metrics -->
+    <section class="relative py-16 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-6xl mx-auto">
+          <div class="text-center">
+            <div class="text-3xl font-black text-[#FFC600] mb-2">2029</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-[0.15em]">PATENTED</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-black text-[#FFC600] mb-2">300+</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-[0.15em]">DEPLOYMENTS</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-black text-[#FFC600] mb-2">99.7%</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-[0.15em]">SUCCESS RATE</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-black text-[#FFC600] mb-2">1,500M</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-[0.15em]">TOWER HEIGHT</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-black text-[#FFC600] mb-2">1.0 TW</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-[0.15em]">FUSION OUTPUT</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Deep Dive -->
+    <section class="relative py-32 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-7xl">
+          <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">TECHNICAL OVERVIEW</div>
+          <h2 class="text-3xl md:text-4xl font-black text-white mb-12 uppercase">HOW IT WORKS</h2>
+
+          <div class="grid lg:grid-cols-2 gap-16">
+            <div>
+              <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+                THE WEYLAND-YUTANI ATMOSPHERE PROCESSING PLANT IS A FULLY AUTONOMOUS PLANETARY-SCALE INDUSTRIAL FACILITY DESIGNED TO CONVERT A NON-BREATHABLE ATMOSPHERE INTO A STABLE, OXYGEN-NITROGEN MIX SUITABLE FOR HUMAN HABITATION.
+              </p>
+              <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+                EACH PROCESSING TOWER STANDS APPROXIMATELY 1,500 METERS TALL AND HOUSES A 1.0 TERAWATT FUSION REACTOR AS ITS PRIMARY POWER SOURCE. THE TOWER DRAWS THE NATIVE PLANETARY ATMOSPHERE THROUGH A SERIES OF EXTERNAL LOUVER ARRAYS POSITIONED AT MULTIPLE ELEVATIONS.
+              </p>
+              <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+                INTAKE GAS IS COMPRESSED VIA MULTI-STAGE TURBINE ASSEMBLIES AND ROUTED INTO THE CENTRAL PROCESSING CORE, WHERE MAGNETIC CONFINEMENT COILS HEAT THE COMPRESSED ATMOSPHERE TO APPROXIMATELY 5,000 KELVIN. AT THIS TEMPERATURE, MOLECULAR BONDS DISSOCIATE ENTIRELY, REDUCING THE ATMOSPHERE TO ITS CONSTITUENT ATOMIC COMPONENTS.
+              </p>
+              <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed">
+                THE DISSOCIATED ATOMS ARE THEN CHANNELED THROUGH CATALYTIC REASSEMBLY CHAMBERS WHERE THEY RECOMBINE INTO A TARGET ATMOSPHERIC MIX: APPROXIMATELY 78% NITROGEN, 21% OXYGEN, AND 1% TRACE GASES. THE PROCESSED ATMOSPHERE IS VENTED THROUGH EXHAUST STACKS AT CONTROLLED RATES TO GRADUALLY REPLACE THE NATIVE ATMOSPHERE OVER THE CONVERSION CYCLE.
+              </p>
+            </div>
+
+            <div class="space-y-6">
+              <div class="terminal">
+                <div class="terminal-content">
+                  <div class="mb-4">
+                    <span class="text-gray-500">// ATMOSPHERE PROCESSOR SPECIFICATIONS</span>
+                  </div>
+                  <div class="space-y-2 text-xs">
+                    <div><span class="text-gray-500">&gt;</span> DESIGNATION: <span class="text-white">AP-SERIES PROCESSING PLANT</span></div>
+                    <div><span class="text-gray-500">&gt;</span> TOWER HEIGHT: <span class="text-white">1,500 METERS</span></div>
+                    <div><span class="text-gray-500">&gt;</span> REACTOR OUTPUT: <span class="text-white">1.0 TERAWATT (FUSION)</span></div>
+                    <div><span class="text-gray-500">&gt;</span> PROCESSING TEMP: <span class="text-white">~5,000 K</span></div>
+                    <div><span class="text-gray-500">&gt;</span> INTAKE METHOD: <span class="text-white">MULTI-LEVEL LOUVER ARRAYS</span></div>
+                    <div><span class="text-gray-500">&gt;</span> COMPRESSION: <span class="text-white">MULTI-STAGE TURBINE</span></div>
+                    <div><span class="text-gray-500">&gt;</span> DISSOCIATION: <span class="text-white">MAGNETIC CONFINEMENT COILS</span></div>
+                    <div><span class="text-gray-500">&gt;</span> REASSEMBLY: <span class="text-white">CATALYTIC CHAMBERS</span></div>
+                    <div><span class="text-gray-500">&gt;</span> TARGET OUTPUT: <span class="text-white">78% N2 / 21% O2 / 1% TRACE</span></div>
+                    <div><span class="text-gray-500">&gt;</span> CONVERSION CYCLE: <span class="text-white">~20 YEARS (STANDARD)</span></div>
+                    <div><span class="text-gray-500">&gt;</span> AUTOMATION: <span class="text-white">FULLY AUTONOMOUS</span></div>
+                    <div><span class="text-gray-500">&gt;</span> MAINTENANCE: <span class="text-white">SELF-REPAIRING SYSTEMS</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="corp-card p-6">
+                <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">CONVERSION CYCLE</div>
+                <p class="text-gray-400 font-mono text-xs uppercase leading-relaxed">
+                  A STANDARD TERRESTRIAL-CLASS BODY REQUIRES APPROXIMATELY 20 YEARS FOR FULL ATMOSPHERIC CONVERSION. LARGER BODIES OR THOSE WITH PARTICULARLY HOSTILE NATIVE ATMOSPHERES MAY REQUIRE EXTENDED CYCLES OF UP TO 40 YEARS. MULTIPLE PROCESSING TOWERS CAN BE DEPLOYED SIMULTANEOUSLY TO REDUCE CONVERSION TIME.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Flow -->
+    <section class="relative py-32 bg-[#0a0a0a] border-y-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-3xl mb-16">
+          <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">DEPLOYMENT LIFECYCLE</div>
+          <h2 class="text-3xl md:text-4xl font-black text-white mb-6 uppercase">FROM SURVEY TO BREATHABLE AIR</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-7xl">
+          <div class="corp-card p-6">
+            <div class="text-3xl font-black text-[#FFC600]/30 mb-3">01</div>
+            <h3 class="text-sm font-black text-white mb-2 uppercase">PLANETARY SURVEY</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed">
+              ATMOSPHERIC COMPOSITION ANALYSIS, GEOLOGICAL SURVEY, GRAVITY AND MAGNETIC FIELD ASSESSMENT.
+            </p>
+          </div>
+          <div class="corp-card p-6">
+            <div class="text-3xl font-black text-[#FFC600]/30 mb-3">02</div>
+            <h3 class="text-sm font-black text-white mb-2 uppercase">SITE SELECTION</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed">
+              OPTIMAL PLACEMENT MODELING. WIND PATTERNS, TECTONIC STABILITY, AND RESOURCE PROXIMITY EVALUATION.
+            </p>
+          </div>
+          <div class="corp-card p-6">
+            <div class="text-3xl font-black text-[#FFC600]/30 mb-3">03</div>
+            <h3 class="text-sm font-black text-white mb-2 uppercase">CONSTRUCTION</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed">
+              MODULAR TOWER ASSEMBLY. REACTOR INSTALLATION AND COMMISSIONING. 18-24 MONTH BUILD CYCLE.
+            </p>
+          </div>
+          <div class="corp-card p-6">
+            <div class="text-3xl font-black text-[#FFC600]/30 mb-3">04</div>
+            <h3 class="text-sm font-black text-white mb-2 uppercase">ACTIVATION</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed">
+              REACTOR IGNITION, LOUVER DEPLOYMENT, TURBINE SPIN-UP. INITIAL ATMOSPHERIC INTAKE AND PROCESSING.
+            </p>
+          </div>
+          <div class="corp-card p-6">
+            <div class="text-3xl font-black text-[#FFC600]/30 mb-3">05</div>
+            <h3 class="text-sm font-black text-white mb-2 uppercase">CONVERSION</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed">
+              20-YEAR AUTONOMOUS PROCESSING CYCLE. CONTINUOUS MONITORING AND SELF-MAINTENANCE.
+            </p>
+          </div>
+          <div class="corp-card p-6">
+            <div class="text-3xl font-black text-[#FFC600]/30 mb-3">06</div>
+            <h3 class="text-sm font-black text-white mb-2 uppercase">HABITATION</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed">
+              ATMOSPHERE CERTIFIED BREATHABLE. COLONY INFRASTRUCTURE DEPLOYED. POPULATION TRANSFER BEGINS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Companion Technologies -->
+    <section class="relative py-32 bg-black">
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-3xl mb-16">
+          <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">COMPANION SYSTEMS</div>
+          <h2 class="text-3xl md:text-4xl font-black text-white mb-6 uppercase">INTEGRATED TERRAFORMING SUITE</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl">
+          <div class="corp-card p-8">
+            <h3 class="text-xl font-black text-white mb-4 uppercase">IM 80 ROCK PROCESSOR</h3>
+            <p class="text-gray-400 font-mono text-xs uppercase leading-relaxed mb-4">
+              COMPANION GEOLOGICAL PROCESSING SYSTEM DESIGNED TO WORK IN CONCERT WITH ATMOSPHERIC PROCESSORS. THE IM 80 BREAKS DOWN PLANETARY SURFACE MATERIAL TO RELEASE TRAPPED GASES, ACCELERATING ATMOSPHERIC CONVERSION AND PREPARING TERRAIN FOR AGRICULTURAL USE.
+            </p>
+            <div class="space-y-2">
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">&gt;</span>
+                <span class="text-gray-500 font-mono text-[10px] uppercase">SURFACE MATERIAL PROCESSING CAPACITY: 500,000 TONS/DAY</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">&gt;</span>
+                <span class="text-gray-500 font-mono text-[10px] uppercase">AUTONOMOUS OPERATION WITH GPS-GUIDED NAVIGATION</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">&gt;</span>
+                <span class="text-gray-500 font-mono text-[10px] uppercase">DEPLOYABLE IN VACUUM OR TOXIC ATMOSPHERE CONDITIONS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="corp-card p-8">
+            <h3 class="text-xl font-black text-white mb-4 uppercase">CLIMATE MANAGEMENT ARRAY</h3>
+            <p class="text-gray-400 font-mono text-xs uppercase leading-relaxed mb-4">
+              ORBITAL AND GROUND-BASED SYSTEMS THAT REGULATE PLANETARY WEATHER PATTERNS DURING AND AFTER ATMOSPHERIC CONVERSION. ENSURES STABLE TEMPERATURE GRADIENTS, PRECIPITATION CYCLES, AND WIND PATTERNS SUITABLE FOR HUMAN HABITATION.
+            </p>
+            <div class="space-y-2">
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">&gt;</span>
+                <span class="text-gray-500 font-mono text-[10px] uppercase">SATELLITE-BASED CLIMATE MONITORING CONSTELLATION</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">&gt;</span>
+                <span class="text-gray-500 font-mono text-[10px] uppercase">GROUND STATION NETWORK FOR LOCALIZED WEATHER CONTROL</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">&gt;</span>
+                <span class="text-gray-500 font-mono text-[10px] uppercase">INTEGRATED WITH AP-SERIES PROCESSING TELEMETRY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notable Deployments -->
+    <section class="relative py-24 bg-[#0a0a0a] border-y-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-3xl mb-12">
+          <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">OPERATIONAL HISTORY</div>
+          <h2 class="text-3xl font-black text-white mb-6 uppercase">NOTABLE DEPLOYMENTS</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-6xl">
+          <div class="corp-card p-6">
+            <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">GJ 667CC</div>
+            <h3 class="text-lg font-black text-white mb-2 uppercase">FIRST DEPLOYMENT</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed mb-3">
+              FIRST OPERATIONAL ATMOSPHERIC PROCESSOR ACTIVATED IN 2039. SUCCESSFULLY CONVERTED A CO2-DOMINANT ATMOSPHERE TO BREATHABLE MIX IN 22 YEARS. ESTABLISHED THE OPERATIONAL BASELINE FOR ALL SUBSEQUENT DEPLOYMENTS.
+            </p>
+            <div class="text-[10px] font-mono text-gray-600 uppercase">STATUS: COMPLETE / COLONY ACTIVE</div>
+          </div>
+
+          <div class="corp-card p-6">
+            <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">LUNA</div>
+            <h3 class="text-lg font-black text-white mb-2 uppercase">EARTH'S MOON</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed mb-3">
+              MULTIPLE PROCESSING TOWERS DEPLOYED TO CREATE AND MAINTAIN A LOCALIZED BREATHABLE ATMOSPHERE WITHIN THE LUNA COLONY DOME COMPLEX. SPECIALIZED LOW-GRAVITY CONFIGURATION.
+            </p>
+            <div class="text-[10px] font-mono text-gray-600 uppercase">STATUS: ACTIVE / CONTINUOUS PROCESSING</div>
+          </div>
+
+          <div class="corp-card p-6">
+            <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">LV-426 (ACHERON)</div>
+            <h3 class="text-lg font-black text-white mb-2 uppercase">HADLEY'S HOPE</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed mb-3">
+              LARGE-SCALE PROCESSOR DEPLOYED TO SUPPORT THE HADLEY'S HOPE COLONY. PROCESSING ACHERON'S PRIMORDIAL ATMOSPHERE UNDER EXTREME WIND AND TEMPERATURE CONDITIONS.
+            </p>
+            <div class="text-[10px] font-mono text-gray-600 uppercase">STATUS: <span class="text-[#FF0000]">[DATA RESTRICTED]</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-20 bg-black border-t-2 border-[#1a1a1a]">
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+      <div class="relative container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-black text-white mb-6 uppercase">REQUEST A TERRAFORMING ASSESSMENT</h2>
+        <p class="text-gray-400 font-mono text-sm uppercase mb-8 max-w-2xl mx-auto">
+          OUR TERRAFORMING DIVISION OFFERS COMPREHENSIVE PLANETARY ASSESSMENTS AND ATMOSPHERIC PROCESSING SOLUTIONS FOR GOVERNMENT, MILITARY, AND COMMERCIAL CLIENTS.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="/products/atmosphere-processors" class="btn-primary">VIEW PRODUCT DETAILS</a>
+          <a href="/contact" class="btn-secondary">CONTACT TERRAFORMING DIVISION</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

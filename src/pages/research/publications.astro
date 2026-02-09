@@ -1,0 +1,124 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const publications = [
+  { title: "Atmospheric Recombination at Extreme Temperatures: A Catalytic Approach to CO2 Conversion on Super-Earth Candidates", authors: "Okafor, L.; Tanaka, H.; Bruzzone, M.", journal: "Journal of Planetary Science", year: "2038", area: "ATMOSPHERIC", abstract: "We present a novel catalytic framework for atmospheric recombination under temperature regimes exceeding 400K, demonstrating 94% conversion efficiency in field conditions on GJ 667Cc." },
+  { title: "Neural Architecture in Synthetic Cognitive Systems: Emergent Behavior in the David-4 Lattice Framework", authors: "Lund, A.; Okonkwo, C.; Petrov, D.", journal: "AI Research Quarterly", year: "2041", area: "CYBERNETICS", abstract: "This paper examines emergent cognitive behaviors observed in fourth-generation neural lattice architectures, including unprompted creative reasoning and contextual emotional modeling." },
+  { title: "Fusion Reactor Efficiency at Scale: Lessons from the WY-GEN IV Deployment Program", authors: "Hargrove, S.; Yun, J.; Blackwell, T.", journal: "Energy Systems Review", year: "2056", area: "ENERGY", abstract: "Analysis of fusion reactor performance data from 42 deployments across Earth and off-world installations, demonstrating sustained output efficiency of 97.3% over operational lifetimes exceeding 15 years." },
+  { title: "Hypersleep Stasis: A 40-Year Safety Analysis of Extended-Duration Cryogenic Suspension", authors: "Park, R.; Fujimoto, K.; Osei, R.", journal: "Deep Space Medicine", year: "2068", area: "HEALTH", abstract: "Comprehensive retrospective analysis of 18,400 hypersleep episodes spanning 40 years, documenting a 99.96% safe revival rate and identifying three primary risk factors for adverse outcomes." },
+  { title: "Quantum Fold Navigation: Error Correction Protocols for Trans-Stellar Transit", authors: "Kanamori, Y.; Stein, E.; Li, W.", journal: "Astrophysical Engineering Letters", year: "2044", area: "PROPULSION", abstract: "We describe an error correction framework for quantum fold navigation that reduces positional variance upon emergence to less than 0.003 AU, enabling precision targeting of stellar orbital zones." },
+  { title: "Synthetic Dermal Substrates: Polyurethane Composite Performance Under UV and Thermal Stress", authors: "Ndongo, F.; Alvarez, P.; Chang, S.", journal: "Materials Science & Engineering", year: "2040", area: "MATERIALS", abstract: "Evaluation of polyurethane-silicone composite dermal substrates under prolonged UV exposure and thermal cycling representative of off-world environments." },
+  { title: "Biomarker Detection in Subsurface Aqueous Environments: Methodology for Exobiological Survey", authors: "Watts, C.; Reyes, M.; Ishikawa, T.", journal: "Astrobiology", year: "2049", area: "BIOLOGICAL", abstract: "A standardized methodology for detecting organic biomarkers in subsurface aqueous environments on candidate exoplanets, validated through field deployment on three survey missions." },
+  { title: "Autonomous Surgical Decision Trees: Machine Learning Optimization of the MedPod 720i Platform", authors: "Osei, R.; Bergman, N.; Zhao, Y.", journal: "Journal of Medical Robotics", year: "2067", area: "HEALTH", abstract: "Description of the machine learning framework underpinning the MedPod 720i's autonomous surgical decision system, with validation against 240,000 clinical outcomes." },
+  { title: "Atmospheric Nitrogen Fixation on Low-Mass Planetary Bodies: Constraints and Solutions", authors: "Okafor, L.; Jensen, M.; Kowalski, R.", journal: "Icarus", year: "2052", area: "ATMOSPHERIC", abstract: "We address the challenge of nitrogen budget maintenance during atmospheric processing on bodies with mass below 0.6 Earth, proposing a cyclic injection protocol." },
+  { title: "Antimatter Containment at Milligram Scale: Magnetic Bottle Architecture for Propulsion Applications", authors: "Kanamori, Y.; Ferrara, G.; Singh, A.", journal: "Physical Review Applied", year: "2075", area: "PROPULSION", abstract: "Design and testing of a magnetic confinement system capable of stable antimatter storage at milligram quantities, with projected applications in next-generation propulsion." },
+  { title: "Emotional Valence Modeling in Eighth-Generation Synthetic Persons", authors: "Lund, A.; Okonkwo, C.; Kim, H.", journal: "Cognitive Systems Research", year: "2098", area: "CYBERNETICS", abstract: "Analysis of emotional valence modeling algorithms in the David 8 neural lattice, demonstrating convergence with human emotional response patterns at 98.7% fidelity." },
+  { title: "Nano-Particulate Atmospheric Seeding: Accelerated Terraforming Through Engineered Aerosols", authors: "Bruzzone, M.; Tanaka, H.; Olsen, D.", journal: "Environmental Engineering Science", year: "2093", area: "ATMOSPHERIC", abstract: "Field results from nano-particulate atmospheric seeding trials demonstrating a 40% reduction in terraforming cycle times on three candidate worlds." },
+  { title: "FTL Communications: Quantum Entanglement Relay Architecture for Interstellar Data Transmission", authors: "Stein, E.; Nakamura, R.; Dubois, C.", journal: "IEEE Transactions on Communications", year: "2076", area: "ELECTRONICS", abstract: "Design specification and performance analysis of the Corporation's FTL communications relay network, achieving real-time data transmission across distances of up to 40 light-years." },
+  { title: "Pathogen Containment in Closed-Loop Ecological Systems: Lessons from Colony Biosphere Management", authors: "Watts, C.; Osei, R.; Torres, A.", journal: "Applied & Environmental Microbiology", year: "2084", area: "BIOLOGICAL", abstract: "Analysis of pathogen emergence and containment protocols across 14 closed-loop colony biospheres, establishing best practices for microbial population management." },
+  { title: "Structural Integrity of Carbon-Nanotube Composites Under Sustained Micro-Gravity Stress", authors: "Ndongo, F.; Hargrove, S.; Petrov, D.", journal: "Acta Materialia", year: "2062", area: "MATERIALS", abstract: "Long-term stress analysis of carbon-nanotube composite structural members deployed in orbital and low-gravity environments, with fatigue modeling extending to 200-year service life." },
+  { title: "Deep Space Radiation Shielding: Active Magnetic Field Generation for Crew Protection", authors: "Park, R.; Bergman, N.; Li, W.", journal: "Radiation Research", year: "2055", area: "HEALTH", abstract: "Design and testing of active magnetic radiation shielding systems for deep-space crew habitats, reducing cumulative radiation exposure by 99.2% compared to passive systems." },
+  { title: "Particle Physics Beyond the Standard Model: Results from the CERN-Weyland Collider Program", authors: "Kanamori, Y.; Laurent, M.; Whitfield, A.", journal: "Physical Review Letters", year: "2034", area: "PROPULSION", abstract: "Presentation of experimental results from the upgraded Large Hadron Collider under the CERN-Weyland program, including observation of predicted quantum gravity effects at 14.8 TeV." },
+  { title: "Colony Ecosystem Engineering: Designing Self-Sustaining Biospheres for Permanent Human Settlement", authors: "Watts, C.; Alvarez, I.; Reyes, M.", journal: "Ecological Engineering", year: "2088", area: "BIOLOGICAL", abstract: "A comprehensive framework for designing closed-loop biosphere systems capable of sustaining permanent human populations of 10,000+ without external biological inputs." },
+];
+
+const areas = ["ALL", "ATMOSPHERIC", "CYBERNETICS", "PROPULSION", "BIOLOGICAL", "HEALTH", "ENERGY", "MATERIALS", "ELECTRONICS"];
+---
+
+<Layout
+  title="Publications - Research"
+  description="Browse peer-reviewed publications from Weyland-Yutani Corporation researchers across atmospheric sciences, cybernetics, propulsion, biological sciences, and health technologies."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative py-20 border-b-4 border-[#FFC600] overflow-hidden">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+
+      <div class="relative container mx-auto px-6 text-center py-16">
+        <div class="inline-flex items-center gap-3 mb-8">
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.3em] font-mono">RESEARCH & DEVELOPMENT</span>
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+        </div>
+
+        <h1 class="text-7xl md:text-8xl lg:text-9xl font-black text-white leading-none uppercase mb-6">
+          PUBLI<span class="text-[#FFC600] text-glow-yellow">CATIONS</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-8"></div>
+
+        <p class="text-lg text-gray-400 max-w-3xl mx-auto uppercase tracking-wider font-mono leading-relaxed">
+          PEER-REVIEWED RESEARCH FROM WEYLAND-YUTANI SCIENTISTS AND ENGINEERS
+        </p>
+      </div>
+
+      <div class="absolute bottom-0 left-0 right-0 hazard-stripes h-2"></div>
+    </section>
+
+    <!-- FILTER -->
+    <section class="relative py-8 bg-[#0a0a0a] border-b border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="text-gray-600 text-xs font-mono uppercase tracking-wider mr-4">RESEARCH AREA:</span>
+          {areas.map((area, i) => (
+            <button class={`px-4 py-2 text-xs font-bold uppercase tracking-wider clip-corner transition-all ${i === 0 ? 'bg-[#FFC600] text-black' : 'bg-[#1a1a1a] text-gray-400 hover:text-[#FFC600]'}`}>
+              {area}
+            </button>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS LIST -->
+    <section class="relative py-16 bg-black">
+      <div class="container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-10">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">PUBLISHED WORKS</span>
+          <div class="flex-1 h-px bg-[#1a1a1a]"></div>
+          <span class="text-gray-600 text-xs font-mono">{publications.length} PUBLICATIONS</span>
+        </div>
+
+        <div class="space-y-6 max-w-5xl">
+          {publications.map((pub) => (
+            <div class="corp-card p-8">
+              <div class="flex flex-wrap items-center gap-3 mb-3">
+                <span class="text-[10px] font-mono text-[#FFC600] tracking-widest bg-[#FFC600]/10 px-3 py-1 clip-corner">{pub.area}</span>
+                <span class="text-[10px] font-mono text-gray-600 tracking-wider">{pub.year}</span>
+              </div>
+              <h3 class="text-base font-black text-white uppercase leading-tight mb-2">{pub.title}</h3>
+              <p class="text-xs text-gray-500 font-mono mb-3">{pub.authors} -- <em class="text-gray-400">{pub.journal}</em></p>
+              <p class="text-sm text-gray-500 leading-relaxed">{pub.abstract}</p>
+              <a href="#" class="inline-block mt-4 text-xs font-bold text-[#FFC600] uppercase tracking-wider hover:text-white transition-colors">REQUEST FULL TEXT &rarr;</a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBMISSION -->
+    <section class="relative py-16 bg-[#0a0a0a] border-t border-[#1a1a1a]">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-black text-white uppercase mb-4">ACCESS OUR RESEARCH LIBRARY</h2>
+        <p class="text-gray-500 text-sm font-mono uppercase tracking-wider mb-8 max-w-2xl mx-auto">
+          QUALIFIED RESEARCHERS AND INSTITUTIONAL PARTNERS MAY REQUEST ACCESS TO THE FULL WEYLAND-YUTANI RESEARCH ARCHIVE THROUGH OUR ACADEMIC PARTNERSHIPS PROGRAM.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/research/partnerships" class="btn-primary px-8 py-3 text-sm inline-block">PARTNERSHIP INQUIRY</a>
+          <a href="/research" class="btn-secondary px-8 py-3 text-sm inline-block">R&D OVERVIEW</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

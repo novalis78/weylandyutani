@@ -1,0 +1,221 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const earthLocations = [
+  { name: "San Francisco", region: "North America", employees: "45,000+", operations: "Global Headquarters, Cybernetics R&D, Corporate Administration", lifestyle: "Iconic waterfront campus with panoramic bay views. World-class dining, culture, and recreation in the heart of the city." },
+  { name: "Tokyo", region: "Asia-Pacific", employees: "38,000+", operations: "Asia-Pacific Headquarters, Electronics Division, Legal Affairs", lifestyle: "Our Shinjuku tower combines Japanese design philosophy with cutting-edge corporate infrastructure. Deeply integrated into Tokyo's vibrant culture." },
+  { name: "London", region: "Europe", employees: "22,000+", operations: "European Operations, Financial Services, Holographic Systems", lifestyle: "Located in Canary Wharf with direct access to London's financial and cultural centers. Historic city with modern corporate amenities." },
+  { name: "Mumbai", region: "South Asia", employees: "18,000+", operations: "Software Development, Emerging Markets, Supply Chain", lifestyle: "Rapidly expanding campus in BKC. A dynamic city with unmatched energy, serving as our gateway to South Asian markets." },
+  { name: "Sydney", region: "Oceania", employees: "12,000+", operations: "Southern Hemisphere Operations, Marine Systems, Climate Research", lifestyle: "Harbourside offices offering an exceptional quality of life. Leading our climate and oceanic research initiatives." },
+  { name: "Sao Paulo", region: "South America", employees: "15,000+", operations: "Latin American Operations, Terraforming Training, Resource Extraction", lifestyle: "Brazil's commercial capital serves as our South American hub. Vibrant culture with strong professional development opportunities." },
+  { name: "Berlin", region: "Europe", employees: "10,000+", operations: "Energy Systems R&D, AI Research, European Manufacturing", lifestyle: "Our Mitte campus blends industrial heritage with innovation. Berlin's creative ecosystem fuels breakthrough thinking." },
+  { name: "Dubai", region: "Middle East", employees: "8,000+", operations: "Middle East & Africa Operations, Logistics Hub, Desert Terraforming R&D", lifestyle: "Our DIFC offices anchor our Middle East presence. Extreme-climate research here directly informs our off-world operations." },
+];
+
+const offWorldLocations = [
+  { name: "Sea of Tranquility", region: "Luna", employees: "25,000+", operations: "Lunar Operations Command, FTL Drive Assembly, Fleet Staging, Energy Research", lifestyle: "Humanity's first permanent off-world city. Full amenities including recreation domes, hydroponic parks, and Earth-view observation decks." },
+  { name: "Olympus Base", region: "Mars", employees: "15,000+", operations: "Mars Colony Administration, Terraforming Pioneer Program, Geological Survey", lifestyle: "Mars's largest settlement features pressurized habitats with artificial gravity zones, community centers, and the renowned Olympus Arboretum." },
+  { name: "Titan Station", region: "Saturn Orbital", employees: "4,000+", operations: "Deep Space Research, Fuel Processing, Advanced Materials Lab", lifestyle: "Our outermost permanent facility offers unparalleled views of Saturn's rings. Rotating habitat provides Earth-standard gravity." },
+  { name: "300+ Colony Worlds", region: "Frontier Space", employees: "150,000+", operations: "Terraforming, Colony Administration, Resource Extraction, Agricultural Development", lifestyle: "Each colony offers a unique experience. From temperate garden worlds to rugged frontier outposts, every assignment is an adventure." },
+];
+---
+
+<Layout
+  title="Work Locations"
+  description="Weyland-Yutani operates across Earth, Luna, Mars, and 300+ colony worlds. Explore our global and interstellar work locations."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center py-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          CAREERS
+        </div>
+
+        <h1 class="text-6xl md:text-8xl font-black text-white mb-8 leading-none uppercase">
+          WHERE WE <span class="text-[#FFC600] text-glow-yellow">WORK</span>
+        </h1>
+
+        <div class="h-1 w-64 bg-[#FFC600] mx-auto mb-8"></div>
+
+        <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wide font-mono">
+          FROM CORNER OFFICES TO THE FRONTIER &mdash; YOUR CAREER KNOWS NO BOUNDS.
+          WEYLAND-YUTANI OPERATES ON EVERY CONTINENT, IN ORBIT, AND ACROSS 300+ COLONY WORLDS.
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- EARTH LOCATIONS -->
+    <section class="relative py-24 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="text-center mb-16">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-widest font-mono">TERRESTRIAL OPERATIONS</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-4 uppercase">
+            EARTH <span class="text-[#FFC600]">LOCATIONS</span>
+          </h2>
+          <p class="text-gray-500 font-mono text-sm uppercase tracking-wide mt-4">
+            MAJOR OFFICES AND FACILITIES ACROSS SIX CONTINENTS
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          {earthLocations.map((loc) => (
+            <div class="corp-card p-8">
+              <div class="flex items-start justify-between mb-4">
+                <div>
+                  <h3 class="text-xl font-black text-white uppercase">{loc.name}</h3>
+                  <span class="text-[#FFC600] font-mono text-xs uppercase">{loc.region}</span>
+                </div>
+                <div class="px-4 py-2 bg-black border-2 border-[#FFC600] clip-corner">
+                  <span class="text-[#FFC600] font-black text-sm">{loc.employees}</span>
+                </div>
+              </div>
+              <div class="border-t border-[#1a1a1a] pt-4 mb-4">
+                <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-2">KEY OPERATIONS</h4>
+                <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">{loc.operations}</p>
+              </div>
+              <div class="border-t border-[#1a1a1a] pt-4">
+                <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-2">LIFESTYLE</h4>
+                <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">{loc.lifestyle}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- OFF-WORLD LOCATIONS -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="text-center mb-16">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-widest font-mono">EXTRATERRESTRIAL OPERATIONS</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-4 uppercase">
+            OFF-WORLD <span class="text-[#FFC600] text-glow-yellow">LOCATIONS</span>
+          </h2>
+          <p class="text-gray-500 font-mono text-sm uppercase tracking-wide mt-4">
+            PERMANENT FACILITIES FROM LUNA TO THE OUTER COLONIES
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          {offWorldLocations.map((loc) => (
+            <div class="corp-card p-8 border-[#FFC600]/20">
+              <div class="flex items-start justify-between mb-4">
+                <div>
+                  <h3 class="text-xl font-black text-white uppercase">{loc.name}</h3>
+                  <span class="text-[#FFC600] font-mono text-xs uppercase">{loc.region}</span>
+                </div>
+                <div class="px-4 py-2 bg-[#FFC600] clip-corner">
+                  <span class="text-black font-black text-sm">{loc.employees}</span>
+                </div>
+              </div>
+              <div class="border-t border-[#FFC600]/20 pt-4 mb-4">
+                <h4 class="text-[#FFC600] font-bold text-xs uppercase tracking-wider mb-2">KEY OPERATIONS</h4>
+                <p class="text-gray-400 font-mono text-xs uppercase leading-relaxed">{loc.operations}</p>
+              </div>
+              <div class="border-t border-[#FFC600]/20 pt-4">
+                <h4 class="text-[#FFC600] font-bold text-xs uppercase tracking-wider mb-2">LIFESTYLE</h4>
+                <p class="text-gray-400 font-mono text-xs uppercase leading-relaxed">{loc.lifestyle}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- DEEP SPACE -->
+    <section class="relative py-24 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6 max-w-5xl">
+        <div class="text-center mb-16">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-widest font-mono">FLEET OPERATIONS</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-4 uppercase">
+            DEEP SPACE <span class="text-[#FFC600]">ASSIGNMENTS</span>
+          </h2>
+        </div>
+
+        <div class="corp-card p-8 md:p-12">
+          <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-8">
+            FOR THOSE WHO SEEK THE ULTIMATE FRONTIER, WEYLAND-YUTANI MAINTAINS A FLEET OF OVER 200 INTERSTELLAR VESSELS REQUIRING SKILLED PROFESSIONALS IN EVERY DISCIPLINE. DEEP SPACE ASSIGNMENTS OFFER THE HIGHEST COMPENSATION RATES AND THE MOST EXTRAORDINARY EXPERIENCES AVAILABLE TO ANY EMPLOYEE IN THE PRIVATE SECTOR.
+          </p>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-black p-6 border border-[#1a1a1a] clip-corner">
+              <h4 class="text-white font-black text-sm uppercase mb-3">FLEET POSITIONS</h4>
+              <ul class="space-y-2">
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">NAVIGATION OFFICERS</li>
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">ENGINEERING CREW</li>
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">MEDICAL OFFICERS</li>
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">SCIENCE TEAMS</li>
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">SECURITY PERSONNEL</li>
+              </ul>
+            </div>
+            <div class="bg-black p-6 border border-[#1a1a1a] clip-corner">
+              <h4 class="text-white font-black text-sm uppercase mb-3">RESEARCH STATIONS</h4>
+              <ul class="space-y-2">
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">ORBITAL LABORATORIES</li>
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">DEEP SPACE OBSERVATORIES</li>
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">BIOLOGICAL FIELD STATIONS</li>
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">GEOLOGICAL SURVEY CAMPS</li>
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">COMMUNICATIONS RELAYS</li>
+              </ul>
+            </div>
+            <div class="bg-black p-6 border border-[#1a1a1a] clip-corner">
+              <h4 class="text-white font-black text-sm uppercase mb-3">COMPENSATION</h4>
+              <ul class="space-y-2">
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">200% BASE SALARY PREMIUM</li>
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">HYPERSLEEP TIME CREDIT</li>
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">ACCELERATED PROMOTION TRACK</li>
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">DISCOVERY BONUSES</li>
+                <li class="text-gray-500 font-mono text-xs uppercase status-active">EXTENDED LEAVE ON RETURN</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-24 bg-black">
+      <div class="relative container mx-auto px-6 max-w-4xl">
+        <div class="terminal">
+          <div class="terminal-content text-center">
+            <h2 class="text-3xl md:text-4xl font-black text-white mb-6 uppercase">
+              &gt; FIND YOUR PLACE IN THE GALAXY
+            </h2>
+            <p class="text-[#FFC600] font-mono text-sm uppercase mb-8 leading-relaxed">
+              WITH OPERATIONS SPANNING FROM SAN FRANCISCO TO THE OUTER RIM,
+              YOUR NEXT CAREER MOVE COULD TAKE YOU ANYWHERE.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+              <a href="/careers" class="btn-primary text-sm">VIEW OPEN POSITIONS</a>
+              <a href="/careers/benefits" class="btn-secondary text-sm">BENEFITS & CULTURE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

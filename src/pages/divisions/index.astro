@@ -1,0 +1,344 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const divisions = [
+  {
+    id: "TF",
+    name: "Terraforming Operations",
+    status: "ACTIVE",
+    statusClass: "status-active",
+    href: "/divisions/terraforming",
+    desc: "Revolutionizing planetary habitability through industrial-scale atmospheric processing. Over 300 worlds transformed from hostile environments into thriving human colonies since 2029.",
+    stats: ["300+ WORLDS", "99.7% SUCCESS", "EST. 2029"],
+    borderColor: "border-[#FFC600]",
+    iconColor: "text-[#FFC600]",
+    accentColor: "#FFC600",
+  },
+  {
+    id: "CS",
+    name: "Cybernetics & Synthetics",
+    status: "ACTIVE",
+    statusClass: "status-active",
+    href: "/divisions/cybernetics",
+    desc: "Creating artificial persons indistinguishable from humans. Eight generations of synthetic development culminating in the most advanced biomechanical platforms ever engineered.",
+    stats: ["100K+ UNITS", "8 GENERATIONS", "EST. 2025"],
+    borderColor: "border-[#FFC600]",
+    iconColor: "text-[#FFC600]",
+    accentColor: "#FFC600",
+  },
+  {
+    id: "BS",
+    name: "Biological Sciences",
+    status: "ACTIVE",
+    statusClass: "status-active",
+    href: "/divisions/biological-sciences",
+    desc: "Advancing humanity's understanding of biology across worlds. Pioneering research in advanced genetics, pharmaceutical development, and environmental biology for the betterment of all.",
+    stats: ["200+ STATIONS", "12K RESEARCHERS", "EST. 2017"],
+    borderColor: "border-[#FFC600]/60",
+    iconColor: "text-[#FFC600]",
+    accentColor: "#FFC600",
+    classified: true,
+  },
+  {
+    id: "SS",
+    name: "Security Solutions",
+    status: "ACTIVE",
+    statusClass: "status-active",
+    href: "/divisions/security",
+    desc: "Protecting humanity's interests from frontier to frontier. Primary supplier to the United States Colonial Marine Corps and private security forces across 300+ colony worlds.",
+    stats: ["85% COLONIAL DEF.", "USCM PARTNER", "EST. 2024"],
+    borderColor: "border-[#FFC600]",
+    iconColor: "text-[#FFC600]",
+    accentColor: "#FFC600",
+  },
+  {
+    id: "ES",
+    name: "Energy Systems",
+    status: "ACTIVE",
+    statusClass: "status-active",
+    href: "/divisions/energy",
+    desc: "Powering civilization from Earth to the Outer Veil. Breakthrough FTL propulsion, fusion reactor technology, and advanced power distribution across humanity's expanding frontier.",
+    stats: ["15K+ REACTORS", "FTL PIONEERS", "EST. 2015"],
+    borderColor: "border-[#FFC600]",
+    iconColor: "text-[#FFC600]",
+    accentColor: "#FFC600",
+  },
+  {
+    id: "HS",
+    name: "Health Sciences",
+    status: "ACTIVE",
+    statusClass: "status-active",
+    href: "/divisions/health",
+    desc: "Revolutionizing human health from genetic therapy to deep space medicine. MedPod automated surgery, hypersleep technology, and the identification of 98% of cancer genetic chains.",
+    stats: ["FDA APPROVED", "98% CANCER ID", "EST. 2022"],
+    borderColor: "border-[#FFC600]",
+    iconColor: "text-[#FFC600]",
+    accentColor: "#FFC600",
+  },
+  {
+    id: "EC",
+    name: "Electronics & Communications",
+    status: "ACTIVE",
+    statusClass: "status-active",
+    href: "/divisions/electronics",
+    desc: "Connecting humanity across light-years. Holographic environment simulation, deep space communication relay networks, and the MU-TH-UR enterprise operating platform.",
+    stats: ["DEEP SPACE COMMS", "MU-TH-UR OS", "EST. 2024"],
+    borderColor: "border-[#FFC600]",
+    iconColor: "text-[#FFC600]",
+    accentColor: "#FFC600",
+  },
+];
+---
+
+<Layout
+  title="Our Divisions"
+  description="Weyland-Yutani Corporation's seven operational divisions spanning terraforming, cybernetics, biological sciences, security, energy, health, and electronics — building better worlds across 300+ colonized planets."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative min-h-[70vh] flex items-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+
+      <!-- Decorative vertical lines -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-0 bottom-0 left-[14.28%] w-px bg-[#FFC600]/5"></div>
+        <div class="absolute top-0 bottom-0 left-[28.57%] w-px bg-[#FFC600]/5"></div>
+        <div class="absolute top-0 bottom-0 left-[42.85%] w-px bg-[#FFC600]/5"></div>
+        <div class="absolute top-0 bottom-0 left-[57.14%] w-px bg-[#FFC600]/5"></div>
+        <div class="absolute top-0 bottom-0 left-[71.42%] w-px bg-[#FFC600]/5"></div>
+        <div class="absolute top-0 bottom-0 left-[85.71%] w-px bg-[#FFC600]/5"></div>
+      </div>
+
+      <div class="relative container mx-auto px-6 py-24">
+        <div class="max-w-5xl">
+          <div class="flex items-center gap-4 mb-8">
+            <div class="h-px flex-1 max-w-[60px] bg-[#FFC600]"></div>
+            <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Weyland-Yutani Corporation</span>
+          </div>
+
+          <h1 class="text-7xl md:text-9xl font-black text-white leading-[0.85] uppercase mb-8">
+            OUR<br/>
+            <span class="text-[#FFC600] text-glow-yellow">DIVISIONS</span>
+          </h1>
+
+          <div class="h-1 w-32 bg-[#FFC600] mb-10"></div>
+
+          <p class="text-gray-400 font-mono text-sm md:text-base leading-relaxed max-w-3xl uppercase tracking-wide">
+            In 2071, Weyland-Yutani consolidated its global operations into seven integrated verticals,
+            each a world leader in its domain. Together, these divisions form the most comprehensive
+            industrial enterprise in human history — spanning terraforming, advanced synthetics,
+            biological research, defense technology, energy generation, healthcare, and communications.
+          </p>
+
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#divisions-grid" class="btn-primary inline-block">EXPLORE DIVISIONS</a>
+            <a href="/about" class="btn-secondary inline-block">CORPORATE OVERVIEW</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-[#1a1a1a]">
+          <div class="py-10 px-6 text-center">
+            <div class="text-4xl md:text-5xl font-black text-[#FFC600] text-glow-yellow mb-2">7</div>
+            <div class="text-xs font-mono text-gray-500 uppercase tracking-widest">Operational Verticals</div>
+          </div>
+          <div class="py-10 px-6 text-center">
+            <div class="text-4xl md:text-5xl font-black text-[#FFC600] text-glow-yellow mb-2">$200T+</div>
+            <div class="text-xs font-mono text-gray-500 uppercase tracking-widest">Combined Revenue</div>
+          </div>
+          <div class="py-10 px-6 text-center">
+            <div class="text-4xl md:text-5xl font-black text-[#FFC600] text-glow-yellow mb-2">500K+</div>
+            <div class="text-xs font-mono text-gray-500 uppercase tracking-widest">Employees Worldwide</div>
+          </div>
+          <div class="py-10 px-6 text-center">
+            <div class="text-4xl md:text-5xl font-black text-[#FFC600] text-glow-yellow mb-2">300+</div>
+            <div class="text-xs font-mono text-gray-500 uppercase tracking-widest">Worlds Served</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVISIONS GRID -->
+    <section id="divisions-grid" class="relative py-24 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Operational Overview</span>
+        </div>
+        <h2 class="text-4xl md:text-6xl font-black text-white uppercase mb-4">SEVEN VERTICALS</h2>
+        <p class="text-gray-500 font-mono text-sm uppercase tracking-wide mb-16 max-w-2xl">
+          Each division operates as a fully integrated business unit with its own R&D, manufacturing, and global distribution capabilities.
+        </p>
+
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+          {divisions.map((div) => (
+            <a href={div.href} class={`corp-card p-8 group block ${div.classified ? 'division-classified' : ''}`}>
+              <!-- Header -->
+              <div class="flex items-center justify-between mb-6">
+                <div class={`w-16 h-16 bg-black border-3 ${div.borderColor} clip-corner flex items-center justify-center`}>
+                  <span class={`${div.iconColor} text-2xl font-black font-mono`}>{div.id}</span>
+                </div>
+                <div class={`${div.statusClass} text-xs font-mono`} style={`color: ${div.accentColor}`}>
+                  {div.status}
+                </div>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-xl font-black text-white uppercase mb-4 group-hover:text-[#FFC600] transition-colors">
+                {div.name}
+              </h3>
+
+              <!-- Description -->
+              <p class="text-gray-500 font-mono text-xs leading-relaxed uppercase mb-6">
+                {div.desc}
+              </p>
+
+              <!-- Stats Row -->
+              <div class="flex flex-wrap gap-2 mb-6">
+                {div.stats.map((stat: string) => (
+                  <span class="px-3 py-1 bg-black border border-[#1a1a1a] text-[10px] font-mono text-gray-400 uppercase tracking-wider clip-corner">
+                    {stat}
+                  </span>
+                ))}
+              </div>
+
+              <!-- CTA -->
+              <div class="flex items-center gap-2 text-[#FFC600] text-xs font-bold uppercase tracking-wider group-hover:gap-4 transition-all">
+                <span>VIEW DIVISION</span>
+                <span class="text-lg">&rarr;</span>
+              </div>
+
+              {div.classified && (
+                <div class="absolute top-4 right-4">
+                  <span class="px-2 py-1 bg-[#FF0000]/10 border border-[#FF0000]/30 text-[#FF0000] text-[9px] font-mono uppercase tracking-wider">
+                    CLEARANCE REQ.
+                  </span>
+                </div>
+              )}
+            </a>
+          ))}
+
+          <!-- Seventh card spans full or stands alone -->
+        </div>
+      </div>
+    </section>
+
+    <!-- INTEGRATION STATEMENT -->
+    <section class="relative py-24 bg-[#0a0a0a] border-t-2 border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <div class="flex items-center gap-4 mb-4">
+              <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+              <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Integrated Operations</span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-6">
+              ONE CORPORATION.<br/>
+              <span class="text-[#FFC600]">INFINITE CAPABILITY.</span>
+            </h2>
+            <p class="text-gray-400 font-mono text-sm leading-relaxed uppercase mb-6">
+              The consolidation of our seven verticals in 2071 created unprecedented operational synergies. A terraforming project on a new world draws on Energy Systems for power generation, Cybernetics for synthetic labor, Health Sciences for colony medical infrastructure, Security Solutions for perimeter defense, Electronics for communications, and Biological Sciences for ecosystem development.
+            </p>
+            <p class="text-gray-400 font-mono text-sm leading-relaxed uppercase">
+              No other entity in human history has possessed the breadth of capability to take a barren rock and deliver a fully functioning, self-sustaining human civilization. That is what Weyland-Yutani does, every day, across 300 worlds.
+            </p>
+          </div>
+
+          <div class="terminal">
+            <div class="terminal-content">
+              <p class="mb-4"><span class="text-gray-500">$</span> wy-ops --status --all-divisions</p>
+              <p class="mb-1">[TERRAFORMING]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="text-green-400">OPERATIONAL</span> &mdash; 312 ACTIVE SITES</p>
+              <p class="mb-1">[CYBERNETICS]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="text-green-400">OPERATIONAL</span> &mdash; 100K+ DEPLOYED</p>
+              <p class="mb-1">[BIOLOGICAL SCI.]&nbsp;&nbsp; <span class="text-green-400">OPERATIONAL</span> &mdash; 200+ STATIONS</p>
+              <p class="mb-1">[SECURITY]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="text-green-400">OPERATIONAL</span> &mdash; GLOBAL COVERAGE</p>
+              <p class="mb-1">[ENERGY SYSTEMS]&nbsp;&nbsp;&nbsp; <span class="text-green-400">OPERATIONAL</span> &mdash; 15K+ REACTORS</p>
+              <p class="mb-1">[HEALTH SCIENCES]&nbsp;&nbsp; <span class="text-green-400">OPERATIONAL</span> &mdash; FDA CERTIFIED</p>
+              <p class="mb-4">[ELECTRONICS]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="text-green-400">OPERATIONAL</span> &mdash; DEEP SPACE NET</p>
+              <p class="text-gray-500">$ ALL DIVISIONS NOMINAL. BUILDING BETTER WORLDS._</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORPORATE GOVERNANCE -->
+    <section class="relative py-20 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-black text-white uppercase mb-6">DIVISIONAL LEADERSHIP</h2>
+        <p class="text-gray-500 font-mono text-sm uppercase tracking-wide max-w-3xl mx-auto mb-10">
+          Each division is led by a Senior Vice President reporting directly to the Chief Operating Officer.
+          Divisional strategy is reviewed quarterly by the Board of Directors to ensure alignment with
+          corporate objectives and shareholder value.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/about/leadership" class="btn-primary inline-block">LEADERSHIP TEAM</a>
+          <a href="/governance" class="btn-secondary inline-block">CORPORATE GOVERNANCE</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="relative py-24 bg-[#0a0a0a]">
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6 text-center">
+        <h2 class="text-4xl md:text-6xl font-black text-white uppercase mb-6">
+          BUILD WITH <span class="text-[#FFC600] text-glow-yellow">US</span>
+        </h2>
+        <p class="text-gray-400 font-mono text-sm uppercase tracking-wide max-w-2xl mx-auto mb-10">
+          Join over 500,000 professionals working across seven divisions to shape the future of human civilization. Opportunities available across 300+ worlds.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/careers" class="btn-primary inline-block">EXPLORE CAREERS</a>
+          <a href="/contact" class="btn-secondary inline-block">CONTACT US</a>
+        </div>
+      </div>
+
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+
+  .division-classified {
+    position: relative;
+  }
+
+  .division-classified::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #FF0000, transparent);
+    opacity: 0.4;
+  }
+
+  .border-3 {
+    border-width: 3px;
+  }
+</style>

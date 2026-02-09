@@ -1,0 +1,365 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Hypersleep Chambers - Product Details"
+  description="Weyland-Yutani hypersleep chamber systems. Standard crew, luxury executive, military-grade, and colony transport configurations. 99.98% revival success rate."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero -->
+    <section class="relative min-h-[50vh] flex items-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 py-24">
+        <div class="max-w-5xl">
+          <div class="flex items-center gap-4 mb-8">
+            <a href="/products" class="text-[10px] font-mono text-gray-500 uppercase tracking-[0.2em] hover:text-[#FFC600] transition-colors">PRODUCTS</a>
+            <span class="text-gray-700">/</span>
+            <span class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em]">HYPERSLEEP CHAMBERS</span>
+          </div>
+
+          <div class="inline-block px-4 py-1.5 bg-[#FFC600] text-black font-black text-[10px] uppercase tracking-[0.2em] mb-6 clip-corner">
+            STASIS SYSTEMS
+          </div>
+
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-[0.9] uppercase">
+            HYPERSLEEP<br/><span class="text-[#FFC600] text-glow-yellow">CHAMBERS</span>
+          </h1>
+
+          <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed max-w-2xl mb-8">
+            COMPLETE METABOLIC SUSPENSION WITH FULL REVERSIBILITY. 99.98% REVIVAL SUCCESS RATE. AVAILABLE IN CREW, EXECUTIVE, MILITARY, AND COLONY CONFIGURATIONS.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="/contact" class="btn-primary">REQUEST SPECIFICATION SHEET</a>
+            <a href="/technology/hypersleep" class="btn-secondary">VIEW TECHNOLOGY</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Models -->
+    <section class="relative py-32 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-3xl mb-16">
+          <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">PRODUCT LINE</div>
+          <h2 class="text-3xl md:text-4xl font-black text-white mb-6 uppercase">AVAILABLE MODELS</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl">
+          <!-- Standard Crew -->
+          <div class="corp-card p-8">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em]">MODEL HC-1200</span>
+              <span class="status-active text-[10px] font-mono text-[#FFC600] uppercase">IN PRODUCTION</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-4 uppercase">STANDARD CREW</h3>
+            <p class="text-gray-400 font-mono text-xs uppercase leading-relaxed mb-6">
+              THE STANDARD-ISSUE HYPERSLEEP CHAMBER FOR COMMERCIAL AND EXPLORATION VESSEL CREW. PROVEN RELIABILITY ACROSS MILLIONS OF STASIS CYCLES. OPTIMIZED FOR SHIPBOARD INSTALLATION IN STANDARD RACK CONFIGURATIONS.
+            </p>
+            <div class="space-y-2 text-[10px] font-mono uppercase">
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">DIMENSIONS</span>
+                <span class="text-white">2.2M x 0.8M x 0.7M</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">WEIGHT</span>
+                <span class="text-white">380 KG</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">POWER DRAW</span>
+                <span class="text-white">0.8 KW (STASIS MODE)</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">BACKUP POWER</span>
+                <span class="text-white">72 HOURS</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-500">INSTALLATION</span>
+                <span class="text-white">STANDARD RACK / DECK MOUNT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Luxury Executive -->
+          <div class="corp-card p-8 border-[#FFC600]">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em]">MODEL HC-2500E</span>
+              <span class="status-active text-[10px] font-mono text-[#FFC600] uppercase">IN PRODUCTION</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-4 uppercase">LUXURY EXECUTIVE</h3>
+            <p class="text-gray-400 font-mono text-xs uppercase leading-relaxed mb-6">
+              PREMIUM HYPERSLEEP CHAMBER WITH ENHANCED BIOMETRIC MONITORING, EXPANDED INTERIOR DIMENSIONS, AND ADVANCED CLIMATE CONTROL. DESIGNED FOR EXECUTIVE TRANSPORT AND VIP ACCOMMODATIONS.
+            </p>
+            <div class="space-y-2 text-[10px] font-mono uppercase">
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">DIMENSIONS</span>
+                <span class="text-white">2.4M x 1.0M x 0.9M</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">WEIGHT</span>
+                <span class="text-white">520 KG</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">POWER DRAW</span>
+                <span class="text-white">1.2 KW (STASIS MODE)</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">BACKUP POWER</span>
+                <span class="text-white">120 HOURS</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-500">FEATURES</span>
+                <span class="text-white">ENHANCED MONITORING / PREMIUM FINISH</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Military Grade -->
+          <div class="corp-card p-8">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em]">MODEL HC-1200M</span>
+              <span class="status-active text-[10px] font-mono text-[#FFC600] uppercase">IN PRODUCTION</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-4 uppercase">MILITARY-GRADE</h3>
+            <p class="text-gray-400 font-mono text-xs uppercase leading-relaxed mb-6">
+              HARDENED VARIANT CERTIFIED FOR USCM DEPLOYMENT. ENHANCED STRUCTURAL INTEGRITY FOR COMBAT VESSEL INSTALLATION. NBC-SEALED WITH RAPID-WAKE CAPABILITY FOR TACTICAL ALERT SCENARIOS.
+            </p>
+            <div class="space-y-2 text-[10px] font-mono uppercase">
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">DIMENSIONS</span>
+                <span class="text-white">2.2M x 0.8M x 0.7M</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">WEIGHT</span>
+                <span class="text-white">450 KG (ARMORED)</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">RAPID WAKE</span>
+                <span class="text-white">15-MINUTE EMERGENCY PROTOCOL</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">PROTECTION</span>
+                <span class="text-white">NBC SEALED / IMPACT HARDENED</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-500">CERTIFICATION</span>
+                <span class="text-white">USCM MIL-SPEC APPROVED</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colony Transport -->
+          <div class="corp-card p-8">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em]">MODEL HC-800T</span>
+              <span class="status-active text-[10px] font-mono text-[#FFC600] uppercase">IN PRODUCTION</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-4 uppercase">COLONY TRANSPORT</h3>
+            <p class="text-gray-400 font-mono text-xs uppercase leading-relaxed mb-6">
+              HIGH-DENSITY CONFIGURATION FOR MASS COLONIAL TRANSPORT. OPTIMIZED FOR MINIMUM FOOTPRINT AND POWER CONSUMPTION. STACKABLE DESIGN FOR BULK INSTALLATION IN COLONY SHIP STASIS DECKS.
+            </p>
+            <div class="space-y-2 text-[10px] font-mono uppercase">
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">DIMENSIONS</span>
+                <span class="text-white">2.1M x 0.7M x 0.6M</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">WEIGHT</span>
+                <span class="text-white">290 KG</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">POWER DRAW</span>
+                <span class="text-white">0.5 KW (STASIS MODE)</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-gray-500">CONFIGURATION</span>
+                <span class="text-white">4-HIGH STACKABLE RACK</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-500">CAPACITY PER DECK</span>
+                <span class="text-white">500-1,000 UNITS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Survival Pod -->
+        <div class="mt-8 max-w-6xl">
+          <div class="corp-card p-8 border-[#FFC600]">
+            <div class="grid lg:grid-cols-2 gap-8">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em]">MODEL LSP-50</span>
+                  <span class="status-active text-[10px] font-mono text-[#FFC600] uppercase">IN PRODUCTION</span>
+                </div>
+                <h3 class="text-xl font-black text-white mb-4 uppercase">LUXURY SURVIVAL POD</h3>
+                <p class="text-gray-400 font-mono text-xs uppercase leading-relaxed mb-4">
+                  SELF-CONTAINED HYPERSLEEP SYSTEM WITH INDEPENDENT POWER, LIFE SUPPORT, AND EMERGENCY LOCATOR BEACON. PATENTED 2057. DESIGNED FOR EXECUTIVE PROTECTION AND EMERGENCY EVACUATION FROM VESSEL CATASTROPHE SCENARIOS. 50-YEAR AUTONOMOUS OPERATION.
+                </p>
+                <p class="text-gray-400 font-mono text-xs uppercase leading-relaxed">
+                  INCLUDES MICRO-THRUSTER NAVIGATION FOR ORBITAL MANEUVERING, DISTRESS BEACON WITH 100+ LIGHT-YEAR RANGE, AND HARDENED CONSTRUCTION RATED FOR ATMOSPHERIC RE-ENTRY.
+                </p>
+              </div>
+              <div class="space-y-2 text-[10px] font-mono uppercase">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-500">AUTONOMOUS LIFESPAN</span>
+                  <span class="text-white">50 YEARS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-500">BEACON RANGE</span>
+                  <span class="text-white">100+ LIGHT-YEARS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-500">NAVIGATION</span>
+                  <span class="text-white">MICRO-THRUSTER ARRAY</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-500">RE-ENTRY RATED</span>
+                  <span class="text-white">YES (ABLATIVE SHIELDING)</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-500">WEIGHT</span>
+                  <span class="text-white">1,200 KG</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">POWER SOURCE</span>
+                  <span class="text-white">RADIOISOTOPE THERMOELECTRIC</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Installation & Safety -->
+    <section class="relative py-32 bg-[#0a0a0a] border-y-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 max-w-6xl">
+          <div>
+            <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">INSTALLATION</div>
+            <h2 class="text-3xl font-black text-white mb-6 uppercase">REQUIREMENTS</h2>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">01</span>
+                <div>
+                  <span class="text-white font-mono text-xs uppercase font-bold block mb-1">VESSEL INTEGRATION</span>
+                  <span class="text-gray-500 font-mono text-[10px] uppercase">SHIP POWER GRID CONNECTION, MUTHUR AI INTEGRATION, LIFE SUPPORT TIE-IN. STANDARD CONDUIT INTERFACE.</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">02</span>
+                <div>
+                  <span class="text-white font-mono text-xs uppercase font-bold block mb-1">ENVIRONMENTAL</span>
+                  <span class="text-gray-500 font-mono text-[10px] uppercase">TEMPERATURE-CONTROLLED SPACE (15-25C AMBIENT). HUMIDITY BELOW 60%. CLEAN ROOM PREFERRED.</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">03</span>
+                <div>
+                  <span class="text-white font-mono text-xs uppercase font-bold block mb-1">STRUCTURAL</span>
+                  <span class="text-gray-500 font-mono text-[10px] uppercase">DECK LOAD RATING: 500 KG/SQ M MINIMUM. VIBRATION DAMPENING MOUNTS INCLUDED.</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">04</span>
+                <div>
+                  <span class="text-white font-mono text-xs uppercase font-bold block mb-1">COMMISSIONING</span>
+                  <span class="text-gray-500 font-mono text-[10px] uppercase">W-Y CERTIFIED TECHNICIAN REQUIRED FOR INSTALLATION AND ACTIVATION. CALIBRATION AND TESTING PROTOCOL.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div class="corp-card p-6">
+              <h3 class="text-sm font-black text-[#FFC600] mb-4 uppercase">SAFETY CERTIFICATIONS</h3>
+              <div class="space-y-2">
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">ICC INTERSTELLAR TRANSPORT SAFETY AUTHORITY</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">USCM MILITARY EQUIPMENT CERTIFICATION</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">FDA MEDICAL DEVICE CLASSIFICATION (STASIS)</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">COLONIAL ADMINISTRATION PERSONNEL TRANSPORT</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">ISO 9001:2095 QUALITY MANAGEMENT</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="corp-card p-6">
+              <h3 class="text-sm font-black text-[#FFC600] mb-4 uppercase">MAINTENANCE SCHEDULE</h3>
+              <div class="space-y-2 text-[10px] font-mono uppercase">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-500">DAILY (DURING USE)</span>
+                  <span class="text-white">AUTOMATED SELF-DIAGNOSTIC</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-500">MONTHLY</span>
+                  <span class="text-white">SEAL INTEGRITY CHECK</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-500">ANNUAL</span>
+                  <span class="text-white">FULL SYSTEM DIAGNOSTIC</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-500">5-YEAR</span>
+                  <span class="text-white">SENSOR ARRAY REPLACEMENT</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">10-YEAR</span>
+                  <span class="text-white">COMPLETE OVERHAUL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-20 bg-black border-t-2 border-[#1a1a1a]">
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+      <div class="relative container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-black text-white mb-6 uppercase">REQUEST SPECIFICATIONS</h2>
+        <p class="text-gray-400 font-mono text-sm uppercase mb-8 max-w-2xl mx-auto">
+          COMPLETE ENGINEERING SPECIFICATIONS, PRICING, AND INSTALLATION REQUIREMENTS AVAILABLE UPON REQUEST. VOLUME PRICING FOR FLEET AND COLONY ORDERS.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="/contact" class="btn-primary">CONTACT SALES</a>
+          <a href="/products" class="btn-secondary">BACK TO CATALOG</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

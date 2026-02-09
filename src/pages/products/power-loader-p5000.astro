@@ -1,0 +1,346 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="P-5000 Power Loader - Product Details"
+  description="P-5000 Powered Work Loader by Weyland-Yutani. 4,000 kg lift capacity, hydraulic exoskeleton, 14-hour operation. Available in Standard, Military, EVA, and Heavy configurations."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero -->
+    <section class="relative min-h-[50vh] flex items-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 py-24">
+        <div class="max-w-5xl">
+          <div class="flex items-center gap-4 mb-8">
+            <a href="/products" class="text-[10px] font-mono text-gray-500 uppercase tracking-[0.2em] hover:text-[#FFC600] transition-colors">PRODUCTS</a>
+            <span class="text-gray-700">/</span>
+            <span class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em]">P-5000 POWER LOADER</span>
+          </div>
+
+          <div class="inline-block px-4 py-1.5 bg-[#FFC600] text-black font-black text-[10px] uppercase tracking-[0.2em] mb-6 clip-corner">
+            HEAVY EQUIPMENT
+          </div>
+
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-[0.9] uppercase">
+            P-5000<br/><span class="text-[#FFC600] text-glow-yellow">POWER LOADER</span>
+          </h1>
+
+          <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed max-w-2xl mb-8">
+            MECHANIZED EXOSKELETON WITH 4,000 KG LIFT CAPACITY. DIRECT-MOTION HYDRAULIC CONTROL. THE INDUSTRY STANDARD FOR HEAVY MATERIAL HANDLING.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="/contact" class="btn-primary">REQUEST QUOTE</a>
+            <a href="/technology/power-loader" class="btn-secondary">VIEW TECHNOLOGY</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="relative py-32 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-7xl">
+          <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">SPECIFICATIONS</div>
+          <h2 class="text-3xl md:text-4xl font-black text-white mb-12 uppercase">TECHNICAL DATA</h2>
+
+          <div class="grid lg:grid-cols-2 gap-12">
+            <div>
+              <table class="w-full">
+                <thead>
+                  <tr class="border-b-2 border-[#FFC600]">
+                    <th class="text-left py-3 px-4 text-[10px] font-black text-[#FFC600] uppercase tracking-[0.15em]" colspan="2">DIMENSIONS & WEIGHT</th>
+                  </tr>
+                </thead>
+                <tbody class="text-xs font-mono uppercase">
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400 w-1/2">HEIGHT (STANDING)</td>
+                    <td class="py-3 px-4 text-white">4.2 METERS</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">WIDTH</td>
+                    <td class="py-3 px-4 text-white">2.8 METERS</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">DEPTH</td>
+                    <td class="py-3 px-4 text-white">2.1 METERS</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">EMPTY WEIGHT</td>
+                    <td class="py-3 px-4 text-white">2,580 KG</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-400">ARM REACH</td>
+                    <td class="py-3 px-4 text-white">3.5 METERS (EXTENDED)</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="w-full mt-8">
+                <thead>
+                  <tr class="border-b-2 border-[#FFC600]">
+                    <th class="text-left py-3 px-4 text-[10px] font-black text-[#FFC600] uppercase tracking-[0.15em]" colspan="2">PERFORMANCE</th>
+                  </tr>
+                </thead>
+                <tbody class="text-xs font-mono uppercase">
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400 w-1/2">MAX LIFT CAPACITY</td>
+                    <td class="py-3 px-4 text-white">4,000 KG</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">SUSTAINED LIFT</td>
+                    <td class="py-3 px-4 text-white">3,200 KG</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">GRIP FORCE</td>
+                    <td class="py-3 px-4 text-white">8,500 N PER MANIPULATOR</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">WALK SPEED</td>
+                    <td class="py-3 px-4 text-white">6 KM/H (UNLOADED)</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-400">OPERATING TEMPERATURE</td>
+                    <td class="py-3 px-4 text-white">-30C TO +55C</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div>
+              <table class="w-full">
+                <thead>
+                  <tr class="border-b-2 border-[#FFC600]">
+                    <th class="text-left py-3 px-4 text-[10px] font-black text-[#FFC600] uppercase tracking-[0.15em]" colspan="2">POWER & SYSTEMS</th>
+                  </tr>
+                </thead>
+                <tbody class="text-xs font-mono uppercase">
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400 w-1/2">POWER SOURCE</td>
+                    <td class="py-3 px-4 text-white">HYDROGEN FUEL CELL</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">CONTINUOUS OPERATION</td>
+                    <td class="py-3 px-4 text-white">14 HOURS</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">FUEL CELL SWAP TIME</td>
+                    <td class="py-3 px-4 text-white">&lt;3 MINUTES</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">ACTUATION</td>
+                    <td class="py-3 px-4 text-white">CLOSED-LOOP HYDRAULIC</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-400">HYDRAULIC PRESSURE</td>
+                    <td class="py-3 px-4 text-white">350 BAR</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="w-full mt-8">
+                <thead>
+                  <tr class="border-b-2 border-[#FFC600]">
+                    <th class="text-left py-3 px-4 text-[10px] font-black text-[#FFC600] uppercase tracking-[0.15em]" colspan="2">OPERATOR INTERFACE</th>
+                  </tr>
+                </thead>
+                <tbody class="text-xs font-mono uppercase">
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400 w-1/2">CONTROL METHOD</td>
+                    <td class="py-3 px-4 text-white">DIRECT-MOTION PROPORTIONAL</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">HARNESS</td>
+                    <td class="py-3 px-4 text-white">4-POINT WITH QUICK-RELEASE</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">DISPLAY</td>
+                    <td class="py-3 px-4 text-white">HEADS-UP / MULTI-FUNCTION</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">SAFETY SYSTEMS</td>
+                    <td class="py-3 px-4 text-white">STABILITY COMP / PROXIMITY / DEAD-MAN</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-400">CERTIFICATION</td>
+                    <td class="py-3 px-4 text-white">8-HOUR TRAINING PROGRAM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Applications by Industry -->
+    <section class="relative py-32 bg-[#0a0a0a] border-y-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-3xl mb-16">
+          <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">APPLICATIONS</div>
+          <h2 class="text-3xl md:text-4xl font-black text-white mb-6 uppercase">BY INDUSTRY</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl">
+          <div class="corp-card p-6">
+            <h3 class="text-sm font-black text-[#FFC600] mb-3 uppercase">LOGISTICS & FREIGHT</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed">DOCKING BAY CARGO OPS, WAREHOUSE MATERIAL HANDLING, CONTAINER STACKING AND RETRIEVAL, FREIGHT VEHICLE LOADING.</p>
+          </div>
+          <div class="corp-card p-6">
+            <h3 class="text-sm font-black text-[#FFC600] mb-3 uppercase">CONSTRUCTION</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed">STRUCTURAL STEEL PLACEMENT, PREFAB MODULE ASSEMBLY, FOUNDATION WORK, HEAVY COMPONENT INSTALLATION.</p>
+          </div>
+          <div class="corp-card p-6">
+            <h3 class="text-sm font-black text-[#FFC600] mb-3 uppercase">MINING</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed">ORE HANDLING, TUNNEL REINFORCEMENT, EQUIPMENT INSTALLATION, SURFACE AND SUBSURFACE MATERIAL TRANSPORT.</p>
+          </div>
+          <div class="corp-card p-6">
+            <h3 class="text-sm font-black text-[#FFC600] mb-3 uppercase">MILITARY</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed">FORWARD BASE CONSTRUCTION, ORDNANCE HANDLING, VEHICLE MAINTENANCE, FIELD FORTIFICATION, DISASTER RESPONSE.</p>
+          </div>
+          <div class="corp-card p-6">
+            <h3 class="text-sm font-black text-[#FFC600] mb-3 uppercase">SHIPYARD</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed">HULL SECTION MANIPULATION, ENGINE COMPONENT INSTALLATION, INTERIOR FITOUT, VESSEL MAINTENANCE AND REPAIR.</p>
+          </div>
+          <div class="corp-card p-6">
+            <h3 class="text-sm font-black text-[#FFC600] mb-3 uppercase">SALVAGE</h3>
+            <p class="text-gray-500 font-mono text-[10px] uppercase leading-relaxed">WRECKAGE CLEARING, STRUCTURAL STABILIZATION, COMPONENT RECOVERY, EMERGENCY DEBRIS REMOVAL.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accessories -->
+    <section class="relative py-32 bg-black">
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-3xl mb-16">
+          <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">ACCESSORIES</div>
+          <h2 class="text-3xl md:text-4xl font-black text-white mb-6 uppercase">ATTACHMENTS & TOOLING</h2>
+          <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed">
+            ALL P-5000 VARIANTS ACCEPT STANDARD-INTERFACE MANIPULATOR ATTACHMENTS. QUICK-CHANGE TOOLING ENABLES RAPID RECONFIGURATION FOR DIFFERENT TASKS.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl">
+          <div class="corp-card p-6">
+            <h3 class="text-xs font-black text-white mb-2 uppercase">STANDARD CLAWS</h3>
+            <p class="text-gray-500 font-mono text-[9px] uppercase leading-relaxed">GENERAL-PURPOSE MANIPULATORS. VARIABLE GRIP. INCLUDED WITH ALL UNITS.</p>
+          </div>
+          <div class="corp-card p-6">
+            <h3 class="text-xs font-black text-white mb-2 uppercase">CONTAINER FORKS</h3>
+            <p class="text-gray-500 font-mono text-[9px] uppercase leading-relaxed">WIDE-STANCE FORK ATTACHMENT FOR STANDARDIZED FREIGHT CONTAINER HANDLING.</p>
+          </div>
+          <div class="corp-card p-6">
+            <h3 class="text-xs font-black text-white mb-2 uppercase">WELDING ARRAY</h3>
+            <p class="text-gray-500 font-mono text-[9px] uppercase leading-relaxed">INTEGRATED WELDING AND CUTTING TOOLS FOR CONSTRUCTION AND REPAIR OPERATIONS.</p>
+          </div>
+          <div class="corp-card p-6">
+            <h3 class="text-xs font-black text-white mb-2 uppercase">DRILL ATTACHMENT</h3>
+            <p class="text-gray-500 font-mono text-[9px] uppercase leading-relaxed">HEAVY-DUTY ROTARY DRILL FOR MINING AND CONSTRUCTION BORING OPERATIONS.</p>
+          </div>
+          <div class="corp-card p-6">
+            <h3 class="text-xs font-black text-white mb-2 uppercase">MAGNETIC GRAPPLE</h3>
+            <p class="text-gray-500 font-mono text-[9px] uppercase leading-relaxed">ELECTROMAGNETIC GRAPPLE FOR FERROUS MATERIAL HANDLING AND SALVAGE.</p>
+          </div>
+          <div class="corp-card p-6">
+            <h3 class="text-xs font-black text-white mb-2 uppercase">PRECISION FINGERS</h3>
+            <p class="text-gray-500 font-mono text-[9px] uppercase leading-relaxed">FINE-MOTOR MANIPULATORS FOR ELECTRONICS AND DELICATE COMPONENT HANDLING.</p>
+          </div>
+          <div class="corp-card p-6">
+            <h3 class="text-xs font-black text-white mb-2 uppercase">SHIELD MOUNT</h3>
+            <p class="text-gray-500 font-mono text-[9px] uppercase leading-relaxed">BALLISTIC SHIELD BRACKET FOR MILITARY AND HAZARDOUS MATERIAL OPERATIONS.</p>
+          </div>
+          <div class="corp-card p-6">
+            <h3 class="text-xs font-black text-white mb-2 uppercase">LIGHTING ARRAY</h3>
+            <p class="text-gray-500 font-mono text-[9px] uppercase leading-relaxed">HIGH-OUTPUT WORK LIGHTS FOR LOW-VISIBILITY AND UNDERGROUND OPERATIONS.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service & Training -->
+    <section class="relative py-24 bg-[#0a0a0a] border-y-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 max-w-6xl">
+          <div class="corp-card p-8">
+            <h3 class="text-lg font-black text-[#FFC600] mb-6 uppercase">SERVICE PACKAGES</h3>
+            <div class="space-y-4">
+              <div class="border-b border-[#1a1a1a] pb-4">
+                <div class="text-xs font-mono text-white uppercase font-bold mb-1">BASIC WARRANTY</div>
+                <div class="text-[10px] font-mono text-gray-500 uppercase">3-YEAR PARTS AND LABOR. ANNUAL SERVICE INSPECTION. SOFTWARE UPDATES.</div>
+              </div>
+              <div class="border-b border-[#1a1a1a] pb-4">
+                <div class="text-xs font-mono text-white uppercase font-bold mb-1">EXTENDED SERVICE</div>
+                <div class="text-[10px] font-mono text-gray-500 uppercase">5-YEAR COMPREHENSIVE. SEMI-ANNUAL INSPECTIONS. PRIORITY PARTS. 48-HOUR RESPONSE.</div>
+              </div>
+              <div class="border-b border-[#1a1a1a] pb-4">
+                <div class="text-xs font-mono text-white uppercase font-bold mb-1">FLEET SERVICE</div>
+                <div class="text-[10px] font-mono text-gray-500 uppercase">10+ UNITS. DEDICATED SERVICE TECHNICIAN. ON-SITE PARTS INVENTORY. 24/7 SUPPORT.</div>
+              </div>
+              <div>
+                <div class="text-xs font-mono text-white uppercase font-bold mb-1">MILITARY SUSTAINMENT</div>
+                <div class="text-[10px] font-mono text-gray-500 uppercase">USCM-COMPATIBLE. FIELD-FORWARD SUPPORT. COMBAT DAMAGE REPAIR. DEPOT-LEVEL MAINTENANCE.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="corp-card p-8">
+            <h3 class="text-lg font-black text-[#FFC600] mb-6 uppercase">TRAINING & CERTIFICATION</h3>
+            <div class="space-y-4">
+              <div class="border-b border-[#1a1a1a] pb-4">
+                <div class="text-xs font-mono text-white uppercase font-bold mb-1">OPERATOR CERTIFICATION</div>
+                <div class="text-[10px] font-mono text-gray-500 uppercase">8-HOUR PROGRAM. CLASSROOM + PRACTICAL. W-Y CERTIFIED OPERATOR CREDENTIAL. VALID 2 YEARS.</div>
+              </div>
+              <div class="border-b border-[#1a1a1a] pb-4">
+                <div class="text-xs font-mono text-white uppercase font-bold mb-1">ADVANCED OPERATIONS</div>
+                <div class="text-[10px] font-mono text-gray-500 uppercase">16-HOUR PROGRAM. COMPLEX LOAD MANAGEMENT, CONFINED SPACE OPS, MULTI-LOADER COORDINATION.</div>
+              </div>
+              <div class="border-b border-[#1a1a1a] pb-4">
+                <div class="text-xs font-mono text-white uppercase font-bold mb-1">MAINTENANCE TECH</div>
+                <div class="text-[10px] font-mono text-gray-500 uppercase">40-HOUR PROGRAM. HYDRAULIC SYSTEMS, FUEL CELL, FRAME REPAIR, DIAGNOSTIC SOFTWARE.</div>
+              </div>
+              <div>
+                <div class="text-xs font-mono text-white uppercase font-bold mb-1">TRAINER CERTIFICATION</div>
+                <div class="text-[10px] font-mono text-gray-500 uppercase">80-HOUR PROGRAM. QUALIFY INTERNAL PERSONNEL TO DELIVER OPERATOR AND ADVANCED TRAINING.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-20 bg-black border-t-2 border-[#1a1a1a]">
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+      <div class="relative container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-black text-white mb-6 uppercase">REQUEST A QUOTE</h2>
+        <p class="text-gray-400 font-mono text-sm uppercase mb-8 max-w-2xl mx-auto">
+          INDIVIDUAL UNITS, FLEET ORDERS, AND CUSTOM CONFIGURATIONS AVAILABLE. VOLUME PRICING FOR ORDERS OF 10+ UNITS. CONTACT OUR HEAVY EQUIPMENT DIVISION.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="/contact" class="btn-primary">CONTACT SALES</a>
+          <a href="/products" class="btn-secondary">BACK TO CATALOG</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

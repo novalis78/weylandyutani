@@ -6,188 +6,224 @@ import Footer from '../components/Footer.astro';
 
 <Layout
   title="Contact"
-  description="Contact Weyland-Yutani Corporation. Get in touch with our divisions and corporate headquarters."
+  description="Contact Weyland-Yutani Corporation. Reach our global headquarters in San Francisco, Tokyo, and Luna."
 >
   <Header />
 
   <main class="bg-black">
     <!-- Hero -->
-    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+    <section class="relative min-h-[50vh] flex items-center justify-center overflow-hidden border-b-4 border-[#FFC600]">
       <div class="industrial-grid absolute inset-0 opacity-20"></div>
-      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
 
-      <div class="relative container mx-auto px-6 text-center pt-40 pb-24">
-        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
-          COMMUNICATION CHANNEL OPEN
+      <div class="relative container mx-auto px-6 text-center pt-44 pb-20">
+        <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-[10px] uppercase tracking-widest mb-8 clip-corner">
+          CORPORATE COMMUNICATIONS
         </div>
 
-        <h1 class="text-6xl md:text-8xl font-black text-white mb-8 leading-none uppercase">
-          ESTABLISH<br/><span class="text-[#FFC600] text-glow-yellow">CONTACT</span>
+        <h1 class="text-5xl md:text-7xl font-black text-white mb-6 leading-none uppercase">
+          CONTACT<br/><span class="text-[#FFC600] text-glow-yellow">WEYLAND-YUTANI</span>
         </h1>
 
-        <div class="h-1 w-64 bg-[#FFC600] mx-auto mb-8"></div>
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-6"></div>
 
-        <p class="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto uppercase tracking-wide font-mono">
-          READY TO BUILD BETTER WORLDS TOGETHER? WE'D LOVE TO HEAR FROM YOU.
+        <p class="text-base text-gray-400 max-w-2xl mx-auto uppercase tracking-wide font-mono">
+          CONNECT WITH OUR GLOBAL TEAMS ACROSS EARTH, LUNA, AND 300+ COLONY WORLDS.
         </p>
       </div>
 
-      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="relative py-32 bg-black">
+    <!-- Contact Grid -->
+    <section class="relative py-24 bg-black">
       <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
 
       <div class="relative container mx-auto px-6">
-        <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <!-- Contact Form -->
           <div>
             <div class="mb-8">
-              <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-4">
-                SEND MESSAGE
+              <div class="inline-block px-5 py-1.5 bg-[#FFC600] text-black font-black text-[10px] uppercase tracking-widest mb-4 clip-corner">
+                INQUIRY
               </div>
-              <h2 class="text-4xl font-black text-white uppercase">TRANSMIT DATA</h2>
+              <h2 class="text-3xl font-black text-white uppercase">SEND A MESSAGE</h2>
             </div>
 
-            <form class="space-y-6" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-              <div>
-                <label for="name" class="block text-sm font-black text-[#FFC600] mb-2 uppercase font-mono">FULL NAME *</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  class="w-full px-4 py-3 bg-[#0a0a0a] border-2 border-[#1a1a1a] text-white placeholder-gray-600 focus:border-[#FFC600] focus:outline-none transition-colors clip-corner font-mono"
-                  placeholder="JOHN DOE"
-                />
+            <form class="space-y-5" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <label for="name" class="block text-[10px] font-black text-[#FFC600] mb-2 uppercase font-mono tracking-widest">FULL NAME *</label>
+                  <input type="text" id="name" name="name" required
+                    class="w-full px-4 py-3 bg-[#0a0a0a] border-2 border-[#1a1a1a] text-white placeholder-gray-700 focus:border-[#FFC600] focus:outline-none transition-colors clip-corner font-mono text-sm"
+                    placeholder="NAME" />
+                </div>
+                <div>
+                  <label for="email" class="block text-[10px] font-black text-[#FFC600] mb-2 uppercase font-mono tracking-widest">EMAIL *</label>
+                  <input type="email" id="email" name="email" required
+                    class="w-full px-4 py-3 bg-[#0a0a0a] border-2 border-[#1a1a1a] text-white placeholder-gray-700 focus:border-[#FFC600] focus:outline-none transition-colors clip-corner font-mono text-sm"
+                    placeholder="EMAIL@EXAMPLE.COM" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <label for="company" class="block text-[10px] font-black text-[#FFC600] mb-2 uppercase font-mono tracking-widest">ORGANIZATION</label>
+                  <input type="text" id="company" name="company"
+                    class="w-full px-4 py-3 bg-[#0a0a0a] border-2 border-[#1a1a1a] text-white placeholder-gray-700 focus:border-[#FFC600] focus:outline-none transition-colors clip-corner font-mono text-sm"
+                    placeholder="COMPANY" />
+                </div>
+                <div>
+                  <label for="division" class="block text-[10px] font-black text-[#FFC600] mb-2 uppercase font-mono tracking-widest">DIVISION</label>
+                  <select id="division" name="division"
+                    class="w-full px-4 py-3 bg-[#0a0a0a] border-2 border-[#1a1a1a] text-white focus:border-[#FFC600] focus:outline-none transition-colors clip-corner font-mono text-sm uppercase">
+                    <option value="">SELECT...</option>
+                    <option value="terraforming">TERRAFORMING OPS</option>
+                    <option value="cybernetics">CYBERNETICS</option>
+                    <option value="biological">BIOLOGICAL SCIENCES</option>
+                    <option value="security">SECURITY SOLUTIONS</option>
+                    <option value="energy">ENERGY SYSTEMS</option>
+                    <option value="health">HEALTH SCIENCES</option>
+                    <option value="electronics">ELECTRONICS</option>
+                    <option value="fleet">FLEET OPERATIONS</option>
+                    <option value="careers">CAREERS</option>
+                    <option value="investors">INVESTOR RELATIONS</option>
+                    <option value="press">PRESS / MEDIA</option>
+                    <option value="general">GENERAL INQUIRY</option>
+                  </select>
+                </div>
               </div>
 
               <div>
-                <label for="email" class="block text-sm font-black text-[#FFC600] mb-2 uppercase font-mono">EMAIL ADDRESS *</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  class="w-full px-4 py-3 bg-[#0a0a0a] border-2 border-[#1a1a1a] text-white placeholder-gray-600 focus:border-[#FFC600] focus:outline-none transition-colors clip-corner font-mono"
-                  placeholder="JOHN.DOE@EXAMPLE.COM"
-                />
+                <label for="subject" class="block text-[10px] font-black text-[#FFC600] mb-2 uppercase font-mono tracking-widest">SUBJECT *</label>
+                <input type="text" id="subject" name="subject" required
+                  class="w-full px-4 py-3 bg-[#0a0a0a] border-2 border-[#1a1a1a] text-white placeholder-gray-700 focus:border-[#FFC600] focus:outline-none transition-colors clip-corner font-mono text-sm"
+                  placeholder="SUBJECT" />
               </div>
 
               <div>
-                <label for="division" class="block text-sm font-black text-[#FFC600] mb-2 uppercase font-mono">DIVISION OF INTEREST</label>
-                <select
-                  id="division"
-                  name="division"
-                  class="w-full px-4 py-3 bg-[#0a0a0a] border-2 border-[#1a1a1a] text-white focus:border-[#FFC600] focus:outline-none transition-colors clip-corner font-mono uppercase"
-                >
-                  <option value="">SELECT A DIVISION...</option>
-                  <option value="terraforming">TERRAFORMING OPERATIONS</option>
-                  <option value="cybernetics">CYBERNETICS & SYNTHETICS</option>
-                  <option value="bio-research">BIO-WEAPONS DIVISION</option>
-                  <option value="security">SECURITY SOLUTIONS</option>
-                  <option value="energy">ENERGY SYSTEMS</option>
-                  <option value="reverse-engineering">REVERSE ENGINEERING</option>
-                  <option value="general">GENERAL INQUIRY</option>
-                </select>
+                <label for="message" class="block text-[10px] font-black text-[#FFC600] mb-2 uppercase font-mono tracking-widest">MESSAGE *</label>
+                <textarea id="message" name="message" required rows="5"
+                  class="w-full px-4 py-3 bg-[#0a0a0a] border-2 border-[#1a1a1a] text-white placeholder-gray-700 focus:border-[#FFC600] focus:outline-none transition-colors resize-none clip-corner font-mono text-sm"
+                  placeholder="YOUR MESSAGE..."></textarea>
               </div>
 
-              <div>
-                <label for="message" class="block text-sm font-black text-[#FFC600] mb-2 uppercase font-mono">MESSAGE *</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  required
-                  rows="6"
-                  class="w-full px-4 py-3 bg-[#0a0a0a] border-2 border-[#1a1a1a] text-white placeholder-gray-600 focus:border-[#FFC600] focus:outline-none transition-colors resize-none clip-corner font-mono"
-                  placeholder="ENTER YOUR MESSAGE..."
-                ></textarea>
-              </div>
+              <button type="submit" class="btn-primary w-full">SUBMIT INQUIRY</button>
 
-              <button type="submit" class="btn-primary w-full text-lg">
-                TRANSMIT MESSAGE
-              </button>
-
-              <p class="text-xs text-gray-600 text-center font-mono uppercase">
-                BY SUBMITTING THIS FORM, YOU AGREE TO OUR PRIVACY POLICY AND TERMS OF SERVICE.
+              <p class="text-[10px] text-gray-700 text-center font-mono uppercase tracking-wide">
+                BY SUBMITTING, YOU AGREE TO OUR <a href="/legal/privacy" class="text-[#FFC600] hover:text-white">PRIVACY POLICY</a> AND <a href="/legal/terms" class="text-[#FFC600] hover:text-white">TERMS OF SERVICE</a>.
               </p>
             </form>
           </div>
 
-          <!-- Contact Information -->
-          <div>
-            <div class="mb-8">
-              <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-4">
-                HEADQUARTERS
+          <!-- Contact Info -->
+          <div class="space-y-4">
+            <div class="mb-6">
+              <div class="inline-block px-5 py-1.5 bg-[#FFC600] text-black font-black text-[10px] uppercase tracking-widest mb-4 clip-corner">
+                OFFICES
               </div>
-              <h2 class="text-4xl font-black text-white uppercase">CORPORATE HQ</h2>
+              <h2 class="text-3xl font-black text-white uppercase">GLOBAL HEADQUARTERS</h2>
             </div>
 
-            <div class="corp-card p-8 mb-6">
-              <!-- Address -->
-              <div class="flex items-start gap-4 mb-8 pb-8 border-b-2 border-[#1a1a1a]">
-                <div class="w-12 h-12 bg-black border-2 border-[#FFC600] clip-corner flex items-center justify-center flex-shrink-0">
-                  <span class="text-[#FFC600] font-black">📍</span>
+            <!-- San Francisco -->
+            <div class="corp-card p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 bg-[#FFC600] clip-corner flex items-center justify-center shrink-0">
+                  <span class="text-black font-black text-xs">SF</span>
                 </div>
                 <div>
-                  <h3 class="font-black text-[#FFC600] mb-2 uppercase text-sm">ADDRESS</h3>
-                  <p class="text-gray-400 text-sm font-mono uppercase leading-relaxed">
-                    WEYLAND-YUTANI TOWER<br/>
-                    1 CORPORATE PLAZA<br/>
-                    SAN FRANCISCO, CA 94111<br/>
-                    UNITED STATES
-                  </p>
+                  <div class="text-white font-black text-sm uppercase">SAN FRANCISCO</div>
+                  <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-widest">CORPORATE HEADQUARTERS</div>
                 </div>
               </div>
-
-              <!-- Email -->
-              <div class="flex items-start gap-4 mb-8 pb-8 border-b-2 border-[#1a1a1a]">
-                <div class="w-12 h-12 bg-black border-2 border-[#FFC600] clip-corner flex items-center justify-center flex-shrink-0">
-                  <span class="text-[#FFC600] font-black">✉</span>
-                </div>
-                <div>
-                  <h3 class="font-black text-[#FFC600] mb-2 uppercase text-sm">EMAIL</h3>
-                  <p class="text-gray-400 text-sm font-mono">
-                    GENERAL: <a href="mailto:info@weylandyutani.com" class="text-[#FFC600] hover:text-white transition-colors">INFO@WEYLANDYUTANI.COM</a><br/>
-                    CAREERS: <a href="mailto:careers@weylandyutani.com" class="text-[#FFC600] hover:text-white transition-colors">CAREERS@WEYLANDYUTANI.COM</a><br/>
-                    PRESS: <a href="mailto:press@weylandyutani.com" class="text-[#FFC600] hover:text-white transition-colors">PRESS@WEYLANDYUTANI.COM</a>
-                  </p>
-                </div>
-              </div>
-
-              <!-- Phone -->
-              <div class="flex items-start gap-4">
-                <div class="w-12 h-12 bg-black border-2 border-[#FFC600] clip-corner flex items-center justify-center flex-shrink-0">
-                  <span class="text-[#FFC600] font-black">📞</span>
-                </div>
-                <div>
-                  <h3 class="font-black text-[#FFC600] mb-2 uppercase text-sm">PHONE</h3>
-                  <p class="text-gray-400 text-sm font-mono">
-                    +1 (800) 555-WEYLAND<br/>
-                    +1 (800) 555-9392
-                  </p>
-                </div>
+              <div class="text-gray-500 text-xs font-mono uppercase leading-relaxed">
+                WEYLAND-YUTANI TOWER, 1 CORPORATE PLAZA<br/>
+                SAN FRANCISCO, CA 94111, UNITED STATES<br/>
+                <span class="text-gray-600">T:</span> <span class="text-gray-400">+1 (800) 555-9392</span><br/>
+                <span class="text-gray-600">E:</span> <span class="text-[#FFC600]">INFO@WEYLANDYUTANI.COM</span>
               </div>
             </div>
 
-            <!-- Office Hours -->
-            <div class="corp-card p-8">
-              <h3 class="font-black text-white mb-6 uppercase text-lg border-b-2 border-[#FFC600] pb-3">
-                OPERATIONAL HOURS
-              </h3>
-              <div class="space-y-4 font-mono text-sm">
-                <div class="flex justify-between items-center">
-                  <span class="text-gray-400 uppercase">MONDAY - FRIDAY</span>
+            <!-- Tokyo -->
+            <div class="corp-card p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 bg-[#FFC600] clip-corner flex items-center justify-center shrink-0">
+                  <span class="text-black font-black text-xs">TK</span>
+                </div>
+                <div>
+                  <div class="text-white font-black text-sm uppercase">TOKYO</div>
+                  <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-widest">ASIA-PACIFIC HEADQUARTERS</div>
+                </div>
+              </div>
+              <div class="text-gray-500 text-xs font-mono uppercase leading-relaxed">
+                YUTANI TOWER, 2-1 MARUNOUCHI<br/>
+                CHIYODA-KU, TOKYO 100-0005, JAPAN<br/>
+                <span class="text-gray-600">T:</span> <span class="text-gray-400">+81 3-XXXX-XXXX</span><br/>
+                <span class="text-gray-600">E:</span> <span class="text-[#FFC600]">TOKYO@WEYLANDYUTANI.COM</span>
+              </div>
+            </div>
+
+            <!-- Luna -->
+            <div class="corp-card p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 bg-[#FFC600] clip-corner flex items-center justify-center shrink-0">
+                  <span class="text-black font-black text-xs">LN</span>
+                </div>
+                <div>
+                  <div class="text-white font-black text-sm uppercase">LUNA</div>
+                  <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-widest">OFF-WORLD HEADQUARTERS</div>
+                </div>
+              </div>
+              <div class="text-gray-500 text-xs font-mono uppercase leading-relaxed">
+                WEYLAND-YUTANI COMPLEX, SECTOR 7<br/>
+                SEA OF TRANQUILITY, LUNA<br/>
+                <span class="text-gray-600">COMMS:</span> <span class="text-gray-400">RELAY-LUNA-001</span><br/>
+                <span class="text-gray-600">E:</span> <span class="text-[#FFC600]">LUNA@WEYLANDYUTANI.COM</span>
+              </div>
+            </div>
+
+            <!-- Department Contacts -->
+            <div class="corp-card p-6">
+              <h3 class="font-black text-white mb-4 uppercase text-sm border-b border-[#FFC600]/20 pb-2">DEPARTMENT CONTACTS</h3>
+              <div class="space-y-3 font-mono text-xs">
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">CAREERS</span>
+                  <span class="text-[#FFC600]">CAREERS@WEYLANDYUTANI.COM</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">PRESS / MEDIA</span>
+                  <span class="text-[#FFC600]">PRESS@WEYLANDYUTANI.COM</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">INVESTOR RELATIONS</span>
+                  <span class="text-[#FFC600]">IR@WEYLANDYUTANI.COM</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">PRODUCT SALES</span>
+                  <span class="text-[#FFC600]">SALES@WEYLANDYUTANI.COM</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">TECHNICAL SUPPORT</span>
+                  <span class="text-[#FFC600]">SUPPORT@WEYLANDYUTANI.COM</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hours -->
+            <div class="corp-card p-6">
+              <h3 class="font-black text-white mb-4 uppercase text-sm border-b border-[#FFC600]/20 pb-2">OPERATIONAL HOURS (SAN FRANCISCO)</h3>
+              <div class="space-y-2 font-mono text-xs">
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">MONDAY - FRIDAY</span>
                   <span class="text-[#FFC600] font-bold">08:00 - 18:00 PST</span>
                 </div>
-                <div class="flex justify-between items-center">
-                  <span class="text-gray-400 uppercase">SATURDAY</span>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">SATURDAY</span>
                   <span class="text-[#FFC600] font-bold">10:00 - 16:00 PST</span>
                 </div>
-                <div class="flex justify-between items-center">
-                  <span class="text-gray-400 uppercase">SUNDAY</span>
-                  <span class="text-[#FF0000] font-bold">OFFLINE</span>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">OFF-WORLD OPS</span>
+                  <span class="text-[#FFC600] font-bold">24/7/365</span>
                 </div>
               </div>
             </div>

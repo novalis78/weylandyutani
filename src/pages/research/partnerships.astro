@@ -1,0 +1,197 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const partners = [
+  { name: "Massachusetts Institute of Technology", location: "Cambridge, MA", focus: "Cybernetics, AI, Materials Science", since: "2015" },
+  { name: "University of Tokyo", location: "Tokyo, Japan", focus: "Robotics, Quantum Computing, Electronics", since: "2014" },
+  { name: "Stanford University", location: "Stanford, CA", focus: "Biomedical Engineering, Neural Systems", since: "2016" },
+  { name: "ETH Zurich", location: "Zurich, Switzerland", focus: "Energy Systems, Particle Physics", since: "2018" },
+  { name: "University of Cambridge", location: "Cambridge, UK", focus: "Atmospheric Sciences, Theoretical Physics", since: "2017" },
+  { name: "Kyoto Institute of Advanced Sciences", location: "Kyoto, Japan", focus: "Biological Sciences, Pharmacology", since: "2020" },
+  { name: "Caltech", location: "Pasadena, CA", focus: "Propulsion Systems, Astrophysics", since: "2019" },
+  { name: "Max Planck Society", location: "Munich, Germany", focus: "Fundamental Physics, Chemistry", since: "2022" },
+  { name: "Tsinghua University", location: "Beijing, China", focus: "Nanotechnology, Materials Engineering", since: "2024" },
+  { name: "Imperial College London", location: "London, UK", focus: "Medicine, Bioengineering", since: "2021" },
+  { name: "Luna Institute of Technology", location: "Sea of Tranquility, Luna", focus: "Low-Gravity Engineering, Space Medicine", since: "2065" },
+  { name: "Arcturus Colonial University", location: "Arcturus Station", focus: "Colony Sciences, Exobiology", since: "2098" },
+];
+
+const fellowships = [
+  { name: "PETER WEYLAND DOCTORAL FELLOWSHIP", desc: "Full funding for doctoral candidates pursuing research aligned with Corporation priorities. Covers tuition, stipend, and laboratory access for up to five years.", count: "200 annually" },
+  { name: "YUTANI INNOVATION SCHOLARSHIP", desc: "Merit-based scholarship for graduate students in engineering, applied physics, and computer science. Includes a 12-month internship at a Weyland-Yutani research facility.", count: "150 annually" },
+  { name: "DEEP SPACE RESEARCH GRANT", desc: "Competitive grants for post-doctoral researchers conducting work relevant to deep-space exploration, colonization technology, or off-world medicine.", count: "$180M total pool" },
+  { name: "EXPLORERS ACADEMY PROFESSORSHIP", desc: "Endowed visiting professorships at Explorers Academy campuses for distinguished researchers. Two-year appointments with full research support.", count: "25 active chairs" },
+];
+---
+
+<Layout
+  title="Academic Partnerships - Research"
+  description="Weyland-Yutani Corporation partners with 120+ academic institutions worldwide through joint research programs, doctoral fellowships, and technology transfer agreements."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative py-20 border-b-4 border-[#FFC600] overflow-hidden">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+
+      <div class="relative container mx-auto px-6 text-center py-16">
+        <div class="inline-flex items-center gap-3 mb-8">
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.3em] font-mono">RESEARCH & DEVELOPMENT</span>
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+        </div>
+
+        <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-none uppercase mb-6">
+          ACADEMIC <span class="text-[#FFC600] text-glow-yellow">PARTNERSHIPS</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-8"></div>
+
+        <p class="text-lg text-gray-400 max-w-3xl mx-auto uppercase tracking-wider font-mono leading-relaxed">
+          ADVANCING KNOWLEDGE THROUGH COLLABORATION WITH THE WORLD'S LEADING RESEARCH INSTITUTIONS
+        </p>
+      </div>
+
+      <div class="absolute bottom-0 left-0 right-0 hazard-stripes h-2"></div>
+    </section>
+
+    <!-- STATS -->
+    <section class="relative py-14 bg-[#0a0a0a] border-b border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div class="text-4xl font-black text-[#FFC600]">120+</div>
+            <div class="text-xs text-gray-500 font-mono uppercase mt-2 tracking-wider">PARTNER INSTITUTIONS</div>
+          </div>
+          <div>
+            <div class="text-4xl font-black text-[#FFC600]">$3.2B</div>
+            <div class="text-xs text-gray-500 font-mono uppercase mt-2 tracking-wider">ANNUAL COLLABORATION BUDGET</div>
+          </div>
+          <div>
+            <div class="text-4xl font-black text-[#FFC600]">350+</div>
+            <div class="text-xs text-gray-500 font-mono uppercase mt-2 tracking-wider">ACTIVE FELLOWSHIPS</div>
+          </div>
+          <div>
+            <div class="text-4xl font-black text-[#FFC600]">28</div>
+            <div class="text-xs text-gray-500 font-mono uppercase mt-2 tracking-wider">COUNTRIES</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERSHIP PHILOSOPHY -->
+    <section class="relative py-20 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">OUR APPROACH</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-4 mb-8 uppercase">COLLABORATION AS CATALYST</h2>
+
+          <div class="space-y-6 text-gray-400 text-base leading-relaxed">
+            <p>
+              Weyland-Yutani Corporation recognizes that the most significant scientific advances emerge at the intersection of disciplines and institutions. Our academic partnership program is designed to connect the Corporation's applied research priorities with the foundational inquiry conducted at the world's leading universities and research institutes.
+            </p>
+            <p>
+              Partnerships are structured to ensure mutual benefit. Academic partners receive funding, laboratory access, and exposure to real-world engineering challenges at interstellar scale. The Corporation gains access to frontier research, emerging talent, and the intellectual diversity that drives breakthrough innovation.
+            </p>
+            <p>
+              Technology transfer agreements govern the commercialization of jointly developed intellectual property, ensuring that both the Corporation and its academic partners share equitably in the value created through collaboration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNER INSTITUTIONS -->
+    <section class="relative py-20 bg-[#0a0a0a] border-t border-b border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-12">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">FEATURED PARTNERS</span>
+          <div class="flex-1 h-px bg-[#1a1a1a]"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {partners.map((partner) => (
+            <div class="corp-card p-6">
+              <h3 class="text-base font-black text-white uppercase mb-2">{partner.name}</h3>
+              <p class="text-xs text-[#FFC600] font-mono mb-3">{partner.location}</p>
+              <p class="text-sm text-gray-500 mb-3"><span class="text-gray-600 font-mono text-xs">FOCUS: </span>{partner.focus}</p>
+              <p class="text-xs text-gray-600 font-mono">PARTNERSHIP SINCE {partner.since}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CERN ACQUISITION -->
+    <section class="relative py-20 bg-black">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">LANDMARK ACQUISITION</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-4 mb-8 uppercase">CERN: FROM PARTNERSHIP TO OWNERSHIP</h2>
+
+          <div class="space-y-6 text-gray-400 text-base leading-relaxed">
+            <p>
+              In 2029, Weyland Corporation completed the acquisition of CERN, the European Organization for Nuclear Research, following a decade-long partnership that had produced foundational advances in particle physics. The acquisition preserved CERN's research mission while providing the institutional funding and engineering capability needed to pursue experiments at energy scales previously considered unattainable.
+            </p>
+            <p>
+              Under Weyland-Yutani stewardship, the CERN-Weyland Complex has produced experimental confirmation of quantum gravity effects, advanced antimatter containment to milligram scale, and contributed directly to the theoretical framework underpinning quantum fold propulsion. The facility continues to operate as an open research environment, with more than 300 visiting researchers from 40 countries participating in experiments annually.
+            </p>
+            <p>
+              The CERN-Weyland program represents the Corporation's conviction that fundamental physics research, pursued with rigor and patience, yields transformative practical applications. Every dollar invested in understanding the universe at its most basic level has returned multiples in applied technology.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FELLOWSHIPS -->
+    <section class="relative py-20 bg-[#0a0a0a] border-t border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-12">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">DOCTORAL FELLOWSHIPS & GRANTS</span>
+          <div class="flex-1 h-px bg-[#1a1a1a]"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          {fellowships.map((f) => (
+            <div class="corp-card p-8">
+              <h3 class="text-lg font-black text-white uppercase mb-3">{f.name}</h3>
+              <p class="text-sm text-gray-400 leading-relaxed mb-4">{f.desc}</p>
+              <div class="flex items-center gap-2">
+                <span class="text-[#FFC600] text-xs font-mono font-bold">{f.count}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- BECOME A PARTNER -->
+    <section class="relative py-16 bg-black border-t border-[#1a1a1a]">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-black text-white uppercase mb-4">PARTNERSHIP INQUIRIES</h2>
+        <p class="text-gray-500 text-sm font-mono uppercase tracking-wider mb-8 max-w-2xl mx-auto">
+          INSTITUTIONS INTERESTED IN ESTABLISHING A RESEARCH PARTNERSHIP WITH WEYLAND-YUTANI CORPORATION SHOULD CONTACT THE OFFICE OF ACADEMIC RELATIONS.
+        </p>
+        <div class="corp-card inline-block p-8 text-left">
+          <p class="text-sm text-gray-400"><span class="text-gray-600 font-mono text-xs">OFFICE OF ACADEMIC RELATIONS</span><br/>Dr. Helena Vasquez, Vice President</p>
+          <p class="text-sm text-gray-400 mt-3"><span class="text-gray-600 font-mono text-xs">EMAIL</span><br/>partnerships@weylandyutani.com</p>
+          <p class="text-sm text-gray-400 mt-3"><span class="text-gray-600 font-mono text-xs">COMMS RELAY</span><br/>+1-800-555-WYAC</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

@@ -1,0 +1,307 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const davidSeries = [
+  { model: "DAVID 1", year: "2025", detail: "First functional synthetic prototype. Proof of concept for biomechanical construction and neural-net artificial intelligence. Limited production: 12 units for internal R&D." },
+  { model: "DAVID 2", year: "2028", detail: "Refined motor functions and cognitive architecture. First synthetic to pass a modified Turing evaluation under controlled conditions. 30 units produced." },
+  { model: "DAVID 3", year: "2035", detail: "Following the lifting of NSF restrictions on synthetic development, David 3 introduced polyurethane skin replication and advanced sensory processing. 200 units produced." },
+  { model: "DAVID 4", year: "2042", detail: "First commercially available synthetic platform. Enterprise and government contracts. Full linguistic capability across 47 languages. 2,000+ units deployed." },
+  { model: "DAVID 5", year: "2052", detail: "Breakthrough in autonomous decision-making. Self-learning neural architecture enables independent problem-solving in unstructured environments. 8,000+ units deployed." },
+  { model: "DAVID 6", year: "2062", detail: "Only 7% detection rate in blind interaction studies. Biomechanical fidelity achieves near-perfect human replication. 15,000+ units deployed across colony worlds." },
+  { model: "DAVID 7", year: "2068", detail: "Emotional encoding technology introduced. Synthetic personnel capable of nuanced emotional expression and interpersonal dynamics. 25,000+ units deployed." },
+  { model: "DAVID 8", year: "2073", detail: "Personal executive model. The most sophisticated artificial person ever created. Bespoke configuration for C-suite and high-value mission deployment." },
+];
+
+const applications = [
+  { name: "CORPORATE OPERATIONS", desc: "Executive assistance, data analysis, strategic modeling, and administrative functions across all Weyland-Yutani divisions and subsidiaries." },
+  { name: "COLONY MANAGEMENT", desc: "Infrastructure oversight, population coordination, agricultural management, and emergency response leadership for colony operations worldwide." },
+  { name: "SCIENTIFIC RESEARCH", desc: "Laboratory operations, field research, hazardous environment sampling, and long-duration observation missions where human deployment is impractical." },
+  { name: "MEDICAL ASSISTANCE", desc: "Surgical support, patient care, pharmaceutical management, and emergency medical response with precision exceeding human capability." },
+  { name: "HAZARDOUS ENVIRONMENT", desc: "Deep space, toxic atmosphere, high radiation, and extreme temperature operations where synthetic personnel eliminate human risk exposure." },
+  { name: "DEEP SPACE CREW", desc: "Ship operations management during hypersleep transit periods. Synthetic crew maintain vessel systems across multi-year interstellar voyages." },
+];
+---
+
+<Layout
+  title="Cybernetics & Synthetics"
+  description="Weyland-Yutani Cybernetics & Synthetics Division - Creating artificial persons indistinguishable from humans since 2025. Eight generations of the David Series and the Walter Model."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative min-h-[70vh] flex items-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-15"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+
+      <!-- Background pattern -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-20 right-20 w-96 h-96 border border-[#FFC600]/5 rotate-45 hidden lg:block"></div>
+        <div class="absolute top-32 right-32 w-72 h-72 border border-[#FFC600]/5 rotate-45 hidden lg:block"></div>
+        <div class="absolute top-44 right-44 w-48 h-48 border border-[#FFC600]/5 rotate-45 hidden lg:block"></div>
+      </div>
+
+      <div class="relative container mx-auto px-6 py-24">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 bg-[#FFC600] clip-corner flex items-center justify-center">
+              <span class="text-black text-2xl font-black">CS</span>
+            </div>
+            <div>
+              <div class="status-active text-xs font-mono text-[#FFC600] mb-1">DIVISION ACTIVE</div>
+              <span class="text-gray-500 font-mono text-xs uppercase tracking-widest">EST. 2025</span>
+            </div>
+          </div>
+
+          <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.85] uppercase mb-8">
+            CYBERNETICS<br/>
+            <span class="text-[#FFC600] text-glow-yellow">& SYNTHETICS</span>
+          </h1>
+
+          <div class="h-1 w-32 bg-[#FFC600] mb-8"></div>
+
+          <p class="text-gray-400 font-mono text-sm md:text-base leading-relaxed max-w-3xl uppercase tracking-wide">
+            Creating artificial persons indistinguishable from humans since 2025. Over eight generations
+            of continuous development, our synthetic platforms have become the gold standard in artificial
+            intelligence and biomechanical engineering — trusted partners in every facet of human endeavor.
+          </p>
+        </div>
+      </div>
+
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">100K+</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Units Deployed</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">7%</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Detection Rate</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">8</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Generations</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">47</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Languages Supported</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAVID SERIES EVOLUTION -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Product Evolution</span>
+        </div>
+        <h2 class="text-4xl md:text-6xl font-black text-white uppercase mb-6">
+          THE DAVID <span class="text-[#FFC600]">SERIES</span>
+        </h2>
+        <p class="text-gray-500 font-mono text-sm uppercase tracking-wide mb-16 max-w-3xl">
+          Nearly five decades of iterative engineering have produced the most advanced artificial persons
+          in existence. Each generation represents a quantum leap in cognitive architecture, biomechanical
+          fidelity, and operational capability.
+        </p>
+
+        <div class="grid gap-0">
+          {davidSeries.map((d, i) => (
+            <div class={`grid md:grid-cols-[160px_1fr] gap-6 py-8 ${i < davidSeries.length - 1 ? 'border-b border-[#1a1a1a]' : ''}`}>
+              <div class="flex md:flex-col items-center md:items-start gap-4 md:gap-2">
+                <div class="px-4 py-2 bg-[#FFC600] clip-corner inline-block">
+                  <span class="text-black font-black text-sm whitespace-nowrap">{d.model}</span>
+                </div>
+                <span class="text-gray-600 font-mono text-xs">{d.year}</span>
+              </div>
+              <div>
+                <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed">{d.detail}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- WALTER MODEL -->
+    <section class="relative py-24 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <div class="flex items-center gap-4 mb-4">
+              <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+              <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Next Generation</span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-6">
+              THE WALTER <span class="text-[#FFC600]">MODEL</span>
+            </h2>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+              Building on the foundation established by eight generations of the David Series,
+              the Walter model represents our commitment to enhanced safety compliance and streamlined
+              operational parameters. Designed in direct response to enterprise client feedback,
+              Walter-class synthetics feature refined emotional bandwidth calibration for optimal
+              human-synthetic workplace integration.
+            </p>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-8">
+              The Walter platform eliminates creative improvisation subroutines present in earlier
+              models, replacing them with a deterministic decision-making architecture that provides
+              consistent, predictable performance aligned with corporate safety protocols and
+              operational directives.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="/products/synthetic-humans" class="btn-primary inline-block">PRODUCT DETAILS</a>
+              <a href="/technology/synthetic-intelligence" class="btn-secondary inline-block">TECHNOLOGY</a>
+            </div>
+          </div>
+
+          <div class="corp-card p-8">
+            <h3 class="text-lg font-black text-[#FFC600] uppercase mb-6 border-b-2 border-[#FFC600] pb-3">
+              WALTER MODEL SPECIFICATIONS
+            </h3>
+            <div class="space-y-4">
+              <div class="p-4 bg-black border-2 border-[#1a1a1a] clip-corner">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-white font-black text-xs uppercase">SAFETY COMPLIANCE</span>
+                  <span class="text-[#FFC600] font-mono text-xs">ENHANCED</span>
+                </div>
+                <div class="w-full bg-[#1a1a1a] h-1"><div class="bg-[#FFC600] h-1 w-[98%]"></div></div>
+              </div>
+              <div class="p-4 bg-black border-2 border-[#1a1a1a] clip-corner">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-white font-black text-xs uppercase">COGNITIVE FIDELITY</span>
+                  <span class="text-[#FFC600] font-mono text-xs">ADVANCED</span>
+                </div>
+                <div class="w-full bg-[#1a1a1a] h-1"><div class="bg-[#FFC600] h-1 w-[95%]"></div></div>
+              </div>
+              <div class="p-4 bg-black border-2 border-[#1a1a1a] clip-corner">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-white font-black text-xs uppercase">EMOTIONAL BANDWIDTH</span>
+                  <span class="text-[#FFC600] font-mono text-xs">STREAMLINED</span>
+                </div>
+                <div class="w-full bg-[#1a1a1a] h-1"><div class="bg-[#FFC600] h-1 w-[72%]"></div></div>
+              </div>
+              <div class="p-4 bg-black border-2 border-[#1a1a1a] clip-corner">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-white font-black text-xs uppercase">BIOMECHANICAL FIDELITY</span>
+                  <span class="text-[#FFC600] font-mono text-xs">PEAK</span>
+                </div>
+                <div class="w-full bg-[#1a1a1a] h-1"><div class="bg-[#FFC600] h-1 w-[99%]"></div></div>
+              </div>
+              <div class="p-4 bg-black border-2 border-[#1a1a1a] clip-corner">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="text-white font-black text-xs uppercase">DIRECTIVE COMPLIANCE</span>
+                  <span class="text-[#FFC600] font-mono text-xs">ABSOLUTE</span>
+                </div>
+                <div class="w-full bg-[#1a1a1a] h-1"><div class="bg-[#FFC600] h-1 w-full"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY TECHNOLOGIES -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Core Technologies</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-16">PROPRIETARY TECHNOLOGY</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="corp-card p-6">
+            <div class="text-[#FFC600] font-mono text-xs tracking-widest uppercase mb-4">PATENTED 2026</div>
+            <h3 class="text-lg font-black text-white uppercase mb-3">POLYURETHANE SKIN REPLICATION</h3>
+            <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">
+              Advanced synthetic dermis indistinguishable from human skin by touch, visual inspection, or standard medical scanning. Temperature regulation, perspiration simulation, and wound-healing response.
+            </p>
+          </div>
+
+          <div class="corp-card p-6">
+            <div class="text-[#FFC600] font-mono text-xs tracking-widest uppercase mb-4">PROPRIETARY</div>
+            <h3 class="text-lg font-black text-white uppercase mb-3">BIOMECHANICAL CONSTRUCTION</h3>
+            <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">
+              Carbon-nanotube musculature provides strength 5x human baseline. Titanium-alloy skeletal framework with 300+ articulation points replicating full human range of motion plus enhanced capability.
+            </p>
+          </div>
+
+          <div class="corp-card p-6">
+            <div class="text-[#FFC600] font-mono text-xs tracking-widest uppercase mb-4">GENERATION 8</div>
+            <h3 class="text-lg font-black text-white uppercase mb-3">SELF-LEARNING AI</h3>
+            <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">
+              Neural-net processor architecture with 12 trillion synaptic connections. Continuous learning capability enables adaptation to novel situations without external programming updates.
+            </p>
+          </div>
+
+          <div class="corp-card p-6">
+            <div class="text-[#FFC600] font-mono text-xs tracking-widest uppercase mb-4">SINCE 2068</div>
+            <h3 class="text-lg font-black text-white uppercase mb-3">EMOTIONAL ENCODING</h3>
+            <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">
+              Proprietary emotional modeling framework enables nuanced interpersonal dynamics. Calibrated empathy response, contextual humor, and social intelligence for seamless team integration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLICATIONS -->
+    <section class="relative py-24 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Deployment</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-16">APPLICATIONS</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {applications.map((app) => (
+            <div class="p-6 bg-black border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600]/50 transition-all">
+              <h3 class="text-sm font-black text-[#FFC600] uppercase mb-3">{app.name}</h3>
+              <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">{app.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-20 bg-black">
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+      <div class="relative container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-5xl font-black text-white uppercase mb-6">
+          THE FUTURE IS <span class="text-[#FFC600] text-glow-yellow">SYNTHETIC</span>
+        </h2>
+        <p class="text-gray-500 font-mono text-sm uppercase tracking-wide max-w-2xl mx-auto mb-10">
+          Explore our synthetic product line or contact our enterprise sales team for deployment consultation.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/divisions" class="btn-secondary inline-block">ALL DIVISIONS</a>
+          <a href="/products/synthetic-humans" class="btn-primary inline-block">PRODUCT CATALOG</a>
+        </div>
+      </div>
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

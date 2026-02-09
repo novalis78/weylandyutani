@@ -1,0 +1,407 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const productPortfolio = [
+  {
+    code: "HES",
+    name: "HOLOGRAPHIC ENVIRONMENT SIMULATOR",
+    year: "2024",
+    desc: "Immersive holographic projection system recreating complete environments including visual, auditory, olfactory, and thermal elements. Supports live video feeds, recorded environments, and procedurally generated spaces. Deployed in corporate offices, colony recreation facilities, and military training installations.",
+    category: "HOLOGRAPHIC SYSTEMS",
+  },
+  {
+    code: "PUS",
+    name: "PARAMETER UPLINK SPECTAGRAPH",
+    year: "2063",
+    desc: "Antigravity-enabled 3D terrain mapping platform with self-propelled flight capability. Provides centimeter-resolution topographic, geological, and atmospheric data for planetary survey operations. Standard deployment tool for terraforming site assessment.",
+    category: "SURVEY EQUIPMENT",
+  },
+  {
+    code: "MTR",
+    name: "MU-TH-UR OPERATING SYSTEM",
+    year: "2058",
+    desc: "Enterprise-grade ship and facility management operating system. Manages all vessel subsystems including life support, navigation, power distribution, communication, and cargo management. Deployed across the corporate fleet and USCM naval vessels.",
+    category: "ENTERPRISE SOFTWARE",
+  },
+  {
+    code: "DSR",
+    name: "DEEP SPACE RELAY NETWORK",
+    year: "2045",
+    desc: "Interstellar communication relay infrastructure enabling data transmission across light-year distances. FTL-burst communication protocol provides near-real-time connectivity between core systems and frontier colonies.",
+    category: "COMMUNICATIONS",
+  },
+  {
+    code: "NAV",
+    name: "ASTROGATION SUITE",
+    year: "2050",
+    desc: "Integrated navigation and sensor platform for FTL and sub-light spacecraft operations. Combines stellar cartography, hazard detection, FTL course plotting, and real-time positional tracking for safe interstellar transit.",
+    category: "NAVIGATION",
+  },
+  {
+    code: "CNI",
+    name: "COLONY NETWORK INFRASTRUCTURE",
+    year: "2052",
+    desc: "Complete communications and computing infrastructure package for colony deployment. Includes local networking, satellite uplink, emergency broadcast, and deep space relay interface. Turnkey solution operational within 72 hours of delivery.",
+    category: "INFRASTRUCTURE",
+  },
+];
+
+const muthrCapabilities = [
+  { name: "LIFE SUPPORT MANAGEMENT", desc: "Continuous monitoring and regulation of atmospheric composition, temperature, humidity, and pressure across all habitable spaces." },
+  { name: "NAVIGATION & PILOTING", desc: "Autonomous piloting during FTL transit and sub-light operations. Course correction, hazard avoidance, and orbital insertion without crew intervention." },
+  { name: "POWER DISTRIBUTION", desc: "Real-time load balancing and power routing across all vessel subsystems. Emergency power allocation protocols for critical systems." },
+  { name: "COMMUNICATION", desc: "Management of all internal and external communication systems. Deep space relay interface, distress beacon, and encrypted corporate channels." },
+  { name: "CREW MONITORING", desc: "Hypersleep pod management, health monitoring, and automated wake protocols. Crew scheduling, duty rotation, and welfare tracking during active operation." },
+  { name: "SECURITY & ACCESS", desc: "Facility-wide access control, surveillance integration, and automated lockdown protocols. Threat detection and response coordination." },
+  { name: "CARGO & LOGISTICS", desc: "Automated inventory management, cargo environmental control, and loading/unloading sequencing for commercial transport operations." },
+  { name: "SPECIAL ORDER COMPLIANCE", desc: "Priority directive processing and corporate directive implementation. Classified instruction execution with appropriate authorization verification." },
+];
+
+const timeline = [
+  { year: "2024", event: "Holographic Environment Simulator (HES) introduced for corporate and military applications" },
+  { year: "2035", event: "First deep space communication relay deployed at Alpha Centauri transit corridor" },
+  { year: "2042", event: "Colony Network Infrastructure package standardized for all new colony deployments" },
+  { year: "2045", event: "Deep Space Relay Network achieves continuous coverage across core colonial systems" },
+  { year: "2050", event: "Astrogation Suite becomes standard equipment on all FTL-capable commercial vessels" },
+  { year: "2052", event: "Colony Network Infrastructure v3 reduces deployment time from 2 weeks to 72 hours" },
+  { year: "2058", event: "MU-TH-UR operating system deployed across corporate fleet. Becomes industry standard" },
+  { year: "2063", event: "Parameter Uplink Spectagraph introduced with antigravity and self-propelled flight" },
+  { year: "2068", event: "FTL-burst communication protocol enables near-real-time interstellar data transmission" },
+  { year: "2075", event: "Quantum-entangled communication prototype achieves instantaneous data transfer in laboratory conditions" },
+];
+---
+
+<Layout
+  title="Electronics & Communications"
+  description="Weyland-Yutani Electronics & Communications Division - Connecting humanity across light-years. Holographic systems, deep space communications, and the MU-TH-UR enterprise operating platform."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative min-h-[70vh] flex items-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-15"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+
+      <!-- Signal wave decorative elements -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <svg class="absolute top-1/3 right-0 w-[600px] h-[200px] hidden xl:block" viewBox="0 0 600 200" fill="none">
+          <path d="M0 100 Q75 20 150 100 Q225 180 300 100 Q375 20 450 100 Q525 180 600 100" stroke="rgba(255,198,0,0.04)" stroke-width="1" fill="none"/>
+          <path d="M0 100 Q75 40 150 100 Q225 160 300 100 Q375 40 450 100 Q525 160 600 100" stroke="rgba(255,198,0,0.03)" stroke-width="1" fill="none"/>
+          <path d="M0 100 Q75 60 150 100 Q225 140 300 100 Q375 60 450 100 Q525 140 600 100" stroke="rgba(255,198,0,0.02)" stroke-width="1" fill="none"/>
+        </svg>
+      </div>
+
+      <div class="relative container mx-auto px-6 py-24">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 bg-[#FFC600] clip-corner flex items-center justify-center">
+              <span class="text-black text-2xl font-black">EC</span>
+            </div>
+            <div>
+              <div class="status-active text-xs font-mono text-[#FFC600] mb-1">DIVISION ACTIVE</div>
+              <span class="text-gray-500 font-mono text-xs uppercase tracking-widest">EST. 2024</span>
+            </div>
+          </div>
+
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-[0.85] uppercase mb-8">
+            ELECTRONICS &<br/>
+            <span class="text-[#FFC600] text-glow-yellow">COMMUNICATIONS</span>
+          </h1>
+
+          <div class="h-1 w-32 bg-[#FFC600] mb-8"></div>
+
+          <p class="text-gray-400 font-mono text-sm md:text-base leading-relaxed max-w-3xl uppercase tracking-wide">
+            Connecting humanity across light-years. From holographic environment simulation to the
+            MU-TH-UR enterprise operating system, the Electronics & Communications Division builds
+            the technology backbone that makes interstellar civilization possible — keeping ships flying,
+            colonies connected, and information flowing across the vastness of space.
+          </p>
+        </div>
+      </div>
+
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">MU-TH-UR</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Enterprise OS</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">2,400+</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Relay Stations</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">300+</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Colony Networks</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">NRT</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">FTL-Burst Comms</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT PORTFOLIO -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Product Portfolio</span>
+        </div>
+        <h2 class="text-4xl md:text-6xl font-black text-white uppercase mb-16">
+          SYSTEMS & <span class="text-[#FFC600]">PLATFORMS</span>
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {productPortfolio.map((p) => (
+            <div class="corp-card p-6">
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-3 py-1 bg-[#FFC600] clip-corner text-black font-black text-xs">{p.code}</span>
+                <span class="text-gray-600 font-mono text-[10px] uppercase">{p.year}</span>
+              </div>
+              <h3 class="text-lg font-black text-white uppercase mb-2">{p.name}</h3>
+              <span class="text-[#FFC600] font-mono text-[10px] uppercase tracking-widest mb-4 block">{p.category}</span>
+              <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">{p.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- MU-TH-UR DEEP DIVE -->
+    <section class="relative py-24 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <div class="flex items-center gap-4 mb-4">
+              <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+              <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Enterprise Platform</span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-6">
+              MU-TH-UR<br/><span class="text-[#FFC600]">OPERATING SYSTEM</span>
+            </h2>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+              The MU-TH-UR (Model Utility Tethered Heuristic Unified Resource) operating system is the
+              industry-standard platform for vessel and facility management across the corporate fleet,
+              USCM naval forces, and commercial shipping operators.
+            </p>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+              First deployed in 2058, MU-TH-UR integrates all vessel subsystems — life support,
+              navigation, power, communications, cargo, and security — into a unified management
+              platform accessible through natural language interface. The system operates autonomously
+              during hypersleep transit periods, maintaining all vessel functions without crew
+              intervention for durations measured in years.
+            </p>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed">
+              MU-TH-UR also serves as the primary interface between vessel crew and Weyland-Yutani
+              corporate directives, ensuring operational alignment with mission parameters and
+              corporate protocols at all times.
+            </p>
+          </div>
+
+          <div>
+            <div class="terminal mb-6">
+              <div class="terminal-content">
+                <p class="mb-2 text-gray-500">INTERFACE 2037 READY FOR INQUIRY</p>
+                <p class="mb-1">&nbsp;</p>
+                <p class="mb-2">MU-TH-UR 6000 :: SYSTEM STATUS</p>
+                <p class="mb-1">==============================</p>
+                <p class="mb-1">&nbsp;</p>
+                <p class="mb-1">LIFE SUPPORT:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="text-green-400">NOMINAL</span></p>
+                <p class="mb-1">NAVIGATION:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="text-green-400">NOMINAL</span></p>
+                <p class="mb-1">POWER SYSTEMS:&nbsp;&nbsp;&nbsp;&nbsp; <span class="text-green-400">NOMINAL</span></p>
+                <p class="mb-1">COMMUNICATIONS:&nbsp;&nbsp;&nbsp; <span class="text-green-400">NOMINAL</span></p>
+                <p class="mb-1">CARGO MANAGEMENT:&nbsp; <span class="text-green-400">NOMINAL</span></p>
+                <p class="mb-1">SECURITY:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="text-green-400">NOMINAL</span></p>
+                <p class="mb-1">CREW STATUS:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HYPERSLEEP</p>
+                <p class="mb-1">&nbsp;</p>
+                <p class="mb-1">SPECIAL ORDER:&nbsp;&nbsp;&nbsp;&nbsp; <span class="text-[#FFC600]">PENDING</span></p>
+                <p class="mb-1">&nbsp;</p>
+                <p class="text-gray-500">ALL SYSTEMS OPERATIONAL. GOOD MORNING._</p>
+              </div>
+            </div>
+
+            <!-- MU-TH-UR model versions -->
+            <div class="space-y-3">
+              <div class="p-4 bg-black border-2 border-[#1a1a1a] clip-corner flex justify-between items-center">
+                <span class="text-white font-black text-xs uppercase">MU-TH-UR 2000</span>
+                <span class="text-gray-500 font-mono text-xs">LEGACY SUPPORT</span>
+              </div>
+              <div class="p-4 bg-black border-2 border-[#1a1a1a] clip-corner flex justify-between items-center">
+                <span class="text-white font-black text-xs uppercase">MU-TH-UR 4000</span>
+                <span class="text-gray-500 font-mono text-xs">ACTIVE — COMMERCIAL</span>
+              </div>
+              <div class="p-4 bg-black border-2 border-[#FFC600]/30 clip-corner flex justify-between items-center">
+                <span class="text-white font-black text-xs uppercase">MU-TH-UR 6000</span>
+                <span class="text-[#FFC600] font-mono text-xs">CURRENT — FLAGSHIP</span>
+              </div>
+              <div class="p-4 bg-black border-2 border-[#1a1a1a] clip-corner flex justify-between items-center">
+                <span class="text-white font-black text-xs uppercase">MU-TH-UR 8000</span>
+                <span class="text-gray-500 font-mono text-xs">IN DEVELOPMENT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MU-TH-UR CAPABILITIES -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">System Capabilities</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-16">
+          MU-TH-UR <span class="text-[#FFC600]">MODULES</span>
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {muthrCapabilities.map((cap) => (
+            <div class="p-5 bg-[#0a0a0a] border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600]/50 transition-all">
+              <h3 class="text-xs font-black text-[#FFC600] uppercase mb-3">{cap.name}</h3>
+              <p class="text-gray-500 font-mono text-[11px] uppercase leading-relaxed">{cap.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- DEEP SPACE COMMUNICATIONS -->
+    <section class="relative py-24 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <div class="flex items-center gap-4 mb-4">
+              <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+              <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Infrastructure</span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-6">
+              DEEP SPACE<br/><span class="text-[#FFC600]">RELAY NETWORK</span>
+            </h2>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+              The Deep Space Relay Network is the communications backbone of interstellar civilization.
+              Over 2,400 relay stations positioned along major transit corridors and near every colony
+              world provide continuous communication coverage across human-explored space.
+            </p>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+              In 2068, the introduction of FTL-burst communication protocol transformed interstellar
+              communications from a weeks-delayed process to near-real-time connectivity. Using the
+              same spacetime compression principles as FTL propulsion, data packets are transmitted
+              at superluminal velocities through the relay network, enabling practical voice, video,
+              and data communication between core systems and frontier colonies.
+            </p>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed">
+              Current research into quantum-entangled communication aims to achieve truly instantaneous
+              data transfer regardless of distance, eliminating even the minimal latency inherent in
+              FTL-burst protocols.
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <div class="corp-card p-6">
+              <h4 class="text-sm font-black text-[#FFC600] uppercase mb-3">NETWORK ARCHITECTURE</h4>
+              <div class="space-y-3">
+                <div class="flex justify-between items-center py-2 border-b border-[#1a1a1a]">
+                  <span class="text-gray-400 font-mono text-xs uppercase">RELAY STATIONS</span>
+                  <span class="text-white font-black text-sm">2,400+</span>
+                </div>
+                <div class="flex justify-between items-center py-2 border-b border-[#1a1a1a]">
+                  <span class="text-gray-400 font-mono text-xs uppercase">COVERAGE</span>
+                  <span class="text-white font-black text-sm">98.7% OF COLONY SPACE</span>
+                </div>
+                <div class="flex justify-between items-center py-2 border-b border-[#1a1a1a]">
+                  <span class="text-gray-400 font-mono text-xs uppercase">PROTOCOL</span>
+                  <span class="text-white font-black text-sm">FTL-BURST v3.2</span>
+                </div>
+                <div class="flex justify-between items-center py-2 border-b border-[#1a1a1a]">
+                  <span class="text-gray-400 font-mono text-xs uppercase">MAX BANDWIDTH</span>
+                  <span class="text-white font-black text-sm">12.8 TBPS / RELAY</span>
+                </div>
+                <div class="flex justify-between items-center py-2">
+                  <span class="text-gray-400 font-mono text-xs uppercase">UPTIME</span>
+                  <span class="text-white font-black text-sm">99.997%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="corp-card p-6">
+              <h4 class="text-sm font-black text-[#FFC600] uppercase mb-3">QUANTUM COMMS RESEARCH</h4>
+              <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed mb-3">
+                In 2075, laboratory demonstration achieved instantaneous data transfer via quantum
+                entanglement across 0.3 light-year distance. Full-scale deployment under evaluation.
+              </p>
+              <div class="flex items-center gap-2">
+                <div class="w-full bg-[#1a1a1a] h-1"><div class="bg-[#FFC600] h-1 w-[22%]"></div></div>
+                <span class="text-[#FFC600] font-mono text-xs shrink-0">PHASE I</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">History</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-16">KEY MILESTONES</h2>
+
+        <div class="space-y-0">
+          {timeline.map((t, i) => (
+            <div class={`flex gap-6 md:gap-10 items-start py-6 ${i < timeline.length - 1 ? 'border-b border-[#1a1a1a]' : ''}`}>
+              <div class="shrink-0">
+                <div class="px-4 py-2 bg-[#FFC600] clip-corner">
+                  <span class="text-black font-black text-xs">{t.year}</span>
+                </div>
+              </div>
+              <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed pt-1">{t.event}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-20 bg-[#0a0a0a]">
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+      <div class="relative container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-5xl font-black text-white uppercase mb-6">
+          CONNECTED ACROSS <span class="text-[#FFC600] text-glow-yellow">THE STARS</span>
+        </h2>
+        <p class="text-gray-500 font-mono text-sm uppercase tracking-wide max-w-2xl mx-auto mb-10">
+          Explore our communications and electronics platforms or contact our enterprise solutions team.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/divisions" class="btn-secondary inline-block">ALL DIVISIONS</a>
+          <a href="/technology" class="btn-primary inline-block">TECHNOLOGY OVERVIEW</a>
+        </div>
+      </div>
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

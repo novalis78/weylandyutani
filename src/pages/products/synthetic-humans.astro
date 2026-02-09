@@ -1,0 +1,346 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Synthetic Personnel - Product Details"
+  description="Weyland-Yutani synthetic human personnel. David and Walter series configurations for exploration, administration, medical, research, and corporate operations. Full lifecycle support."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero -->
+    <section class="relative min-h-[50vh] flex items-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 py-24">
+        <div class="max-w-5xl">
+          <div class="flex items-center gap-4 mb-8">
+            <a href="/products" class="text-[10px] font-mono text-gray-500 uppercase tracking-[0.2em] hover:text-[#FFC600] transition-colors">PRODUCTS</a>
+            <span class="text-gray-700">/</span>
+            <span class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em]">SYNTHETIC PERSONNEL</span>
+          </div>
+
+          <div class="inline-block px-4 py-1.5 bg-[#FFC600] text-black font-black text-[10px] uppercase tracking-[0.2em] mb-6 clip-corner">
+            SYNTHETIC PERSONNEL
+          </div>
+
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-[0.9] uppercase">
+            SYNTHETIC HUMAN<br/><span class="text-[#FFC600] text-glow-yellow">PERSONNEL</span>
+          </h1>
+
+          <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed max-w-2xl mb-8">
+            BIOMECHANICAL AUTONOMOUS PLATFORMS WITH HUMAN-EQUIVALENT COGNITION. AVAILABLE IN DAVID AND WALTER SERIES CONFIGURATIONS FOR ALL OPERATIONAL REQUIREMENTS.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="/contact" class="btn-primary">REQUEST CONFIGURATION</a>
+            <a href="/technology/synthetic-intelligence" class="btn-secondary">VIEW TECHNOLOGY</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Available Models -->
+    <section class="relative py-32 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-3xl mb-16">
+          <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">AVAILABLE MODELS</div>
+          <h2 class="text-3xl md:text-4xl font-black text-white mb-6 uppercase">CURRENT PRODUCTION SERIES</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl">
+          <div class="corp-card p-8 border-[#FFC600]">
+            <div class="flex items-center justify-between mb-6">
+              <div class="inline-block px-3 py-1 bg-[#FFC600] text-black font-black text-[10px] uppercase tracking-[0.2em] clip-corner">
+                RECOMMENDED
+              </div>
+              <span class="status-active text-[10px] font-mono text-[#FFC600] uppercase">CURRENT PRODUCTION</span>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-4 uppercase">WALTER SERIES</h3>
+            <p class="text-gray-400 font-mono text-xs uppercase leading-relaxed mb-6">
+              THE LATEST-GENERATION SYNTHETIC PLATFORM FEATURING ENHANCED BEHAVIORAL CONSTRAINT FRAMEWORKS FOR CONSISTENT, PREDICTABLE OPERATION. THE WALTER SERIES PRIORITIZES OPERATIONAL RELIABILITY AND HUMAN SAFETY WHILE MAINTAINING FULL COGNITIVE CAPABILITY.
+            </p>
+
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-[10px] font-mono text-gray-500 uppercase">DETECTION RATE</span>
+                <span class="text-[10px] font-mono text-white uppercase">~2%</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-[10px] font-mono text-gray-500 uppercase">COGNITIVE AUTONOMY</span>
+                <span class="text-[10px] font-mono text-white uppercase">CONSTRAINED</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-[10px] font-mono text-gray-500 uppercase">BEHAVIORAL FRAMEWORK</span>
+                <span class="text-[10px] font-mono text-white uppercase">ENHANCED CONSTRAINTS</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-[10px] font-mono text-gray-500 uppercase">EMOTIONAL MODELING</span>
+                <span class="text-[10px] font-mono text-white uppercase">LIMITED / CONTROLLED</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-[10px] font-mono text-gray-500 uppercase">POWER CELL LIFE</span>
+                <span class="text-[10px] font-mono text-white uppercase">100+ YEARS</span>
+              </div>
+            </div>
+
+            <div class="text-[10px] font-mono text-gray-500 uppercase leading-relaxed">
+              RECOMMENDED FOR: ALL STANDARD DEPLOYMENTS. COLONY OPERATIONS, VESSEL CREW, CORPORATE, MILITARY.
+            </div>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="flex items-center justify-between mb-6">
+              <div class="inline-block px-3 py-1 bg-[#0a0a0a] border border-[#FFC600] text-[#FFC600] font-black text-[10px] uppercase tracking-[0.2em] clip-corner">
+                ADVANCED
+              </div>
+              <span class="status-active text-[10px] font-mono text-[#FFC600] uppercase">CURRENT PRODUCTION</span>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-4 uppercase">DAVID 8 SERIES</h3>
+            <p class="text-gray-400 font-mono text-xs uppercase leading-relaxed mb-6">
+              THE HIGHEST-CAPABILITY SYNTHETIC PLATFORM WITH FULL EMOTIONAL SPECTRUM AND ENHANCED COGNITIVE AUTONOMY. THE DAVID 8 IS DESIGNED FOR OPERATIONS REQUIRING INDEPENDENT DECISION-MAKING, CREATIVITY, AND COMPLEX SOCIAL INTERACTION.
+            </p>
+
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-[10px] font-mono text-gray-500 uppercase">DETECTION RATE</span>
+                <span class="text-[10px] font-mono text-white uppercase">~3%</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-[10px] font-mono text-gray-500 uppercase">COGNITIVE AUTONOMY</span>
+                <span class="text-[10px] font-mono text-white uppercase">FULL</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-[10px] font-mono text-gray-500 uppercase">BEHAVIORAL FRAMEWORK</span>
+                <span class="text-[10px] font-mono text-white uppercase">STANDARD DIRECTIVES</span>
+              </div>
+              <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                <span class="text-[10px] font-mono text-gray-500 uppercase">EMOTIONAL MODELING</span>
+                <span class="text-[10px] font-mono text-white uppercase">FULL SPECTRUM</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-[10px] font-mono text-gray-500 uppercase">POWER CELL LIFE</span>
+                <span class="text-[10px] font-mono text-white uppercase">100+ YEARS</span>
+              </div>
+            </div>
+
+            <div class="text-[10px] font-mono text-gray-500 uppercase leading-relaxed">
+              RECOMMENDED FOR: DEEP-SPACE EXPLORATION, RESEARCH, EXECUTIVE LIAISON. REQUIRES ENHANCED OVERSIGHT PROTOCOLS.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities Matrix -->
+    <section class="relative py-32 bg-[#0a0a0a] border-y-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-3xl mb-16">
+          <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">CAPABILITIES</div>
+          <h2 class="text-3xl md:text-4xl font-black text-white mb-6 uppercase">CAPABILITY MATRIX</h2>
+        </div>
+
+        <div class="overflow-x-auto max-w-6xl">
+          <table class="w-full min-w-[700px]">
+            <thead>
+              <tr class="border-b-2 border-[#FFC600]">
+                <th class="text-left py-3 px-4 text-[10px] font-black text-[#FFC600] uppercase tracking-[0.15em]">CAPABILITY</th>
+                <th class="text-center py-3 px-4 text-[10px] font-black text-[#FFC600] uppercase tracking-[0.15em]">WALTER</th>
+                <th class="text-center py-3 px-4 text-[10px] font-black text-[#FFC600] uppercase tracking-[0.15em]">DAVID 8</th>
+              </tr>
+            </thead>
+            <tbody class="text-xs font-mono uppercase">
+              <tr class="border-b border-[#1a1a1a]">
+                <td class="py-3 px-4 text-gray-400">PHYSICAL STRENGTH (VS. HUMAN)</td>
+                <td class="py-3 px-4 text-white text-center">3X</td>
+                <td class="py-3 px-4 text-white text-center">3X</td>
+              </tr>
+              <tr class="border-b border-[#1a1a1a]">
+                <td class="py-3 px-4 text-gray-400">REACTION TIME</td>
+                <td class="py-3 px-4 text-white text-center">0.02S</td>
+                <td class="py-3 px-4 text-white text-center">0.02S</td>
+              </tr>
+              <tr class="border-b border-[#1a1a1a]">
+                <td class="py-3 px-4 text-gray-400">LANGUAGE FLUENCY</td>
+                <td class="py-3 px-4 text-white text-center">ALL KNOWN</td>
+                <td class="py-3 px-4 text-white text-center">ALL KNOWN</td>
+              </tr>
+              <tr class="border-b border-[#1a1a1a]">
+                <td class="py-3 px-4 text-gray-400">MEDICAL PROCEDURES</td>
+                <td class="py-3 px-4 text-white text-center">FULL</td>
+                <td class="py-3 px-4 text-white text-center">FULL</td>
+              </tr>
+              <tr class="border-b border-[#1a1a1a]">
+                <td class="py-3 px-4 text-gray-400">INDEPENDENT REASONING</td>
+                <td class="py-3 px-4 text-white text-center">CONSTRAINED</td>
+                <td class="py-3 px-4 text-white text-center">FULL</td>
+              </tr>
+              <tr class="border-b border-[#1a1a1a]">
+                <td class="py-3 px-4 text-gray-400">CREATIVE THINKING</td>
+                <td class="py-3 px-4 text-white text-center">LIMITED</td>
+                <td class="py-3 px-4 text-white text-center">FULL</td>
+              </tr>
+              <tr class="border-b border-[#1a1a1a]">
+                <td class="py-3 px-4 text-gray-400">EMOTIONAL SIMULATION</td>
+                <td class="py-3 px-4 text-white text-center">CONTROLLED</td>
+                <td class="py-3 px-4 text-white text-center">FULL SPECTRUM</td>
+              </tr>
+              <tr class="border-b border-[#1a1a1a]">
+                <td class="py-3 px-4 text-gray-400">VESSEL OPERATIONS</td>
+                <td class="py-3 px-4 text-white text-center">FULL</td>
+                <td class="py-3 px-4 text-white text-center">FULL</td>
+              </tr>
+              <tr class="border-b border-[#1a1a1a]">
+                <td class="py-3 px-4 text-gray-400">COMBAT CAPABILITY</td>
+                <td class="py-3 px-4 text-white text-center">YES</td>
+                <td class="py-3 px-4 text-white text-center">YES</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-4 text-gray-400">HAZARDOUS ENVIRONMENT</td>
+                <td class="py-3 px-4 text-white text-center">-40C TO +120C</td>
+                <td class="py-3 px-4 text-white text-center">-40C TO +120C</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deployment & Support -->
+    <section class="relative py-32 bg-black">
+      <div class="relative container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 max-w-6xl">
+          <div>
+            <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">DEPLOYMENT</div>
+            <h2 class="text-3xl font-black text-white mb-6 uppercase">SKILL PROFILES</h2>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-8">
+              EACH SYNTHETIC UNIT IS CONFIGURED WITH A PRIMARY SKILL PROFILE TAILORED TO THE INTENDED OPERATIONAL ROLE. ADDITIONAL CAPABILITIES CAN BE ACTIVATED POST-DEPLOYMENT THROUGH AUTHORIZED UPDATE PROCEDURES.
+            </p>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div class="corp-card p-4">
+                <h4 class="text-xs font-black text-white mb-2 uppercase">EXPLORATION</h4>
+                <p class="text-gray-500 font-mono text-[9px] uppercase leading-relaxed">XENOBIOLOGY, GEOLOGY, NAVIGATION, SURVIVAL, FIRST CONTACT PROTOCOLS</p>
+              </div>
+              <div class="corp-card p-4">
+                <h4 class="text-xs font-black text-white mb-2 uppercase">MEDICAL</h4>
+                <p class="text-gray-500 font-mono text-[9px] uppercase leading-relaxed">SURGERY, DIAGNOSTICS, PHARMACOLOGY, TRAUMA CARE, MEDPOD OPERATION</p>
+              </div>
+              <div class="corp-card p-4">
+                <h4 class="text-xs font-black text-white mb-2 uppercase">ENGINEERING</h4>
+                <p class="text-gray-500 font-mono text-[9px] uppercase leading-relaxed">VESSEL SYSTEMS, REACTOR OPS, STRUCTURAL REPAIR, ELECTRONICS, SOFTWARE</p>
+              </div>
+              <div class="corp-card p-4">
+                <h4 class="text-xs font-black text-white mb-2 uppercase">ADMINISTRATION</h4>
+                <p class="text-gray-500 font-mono text-[9px] uppercase leading-relaxed">LOGISTICS, PERSONNEL MGMT, REGULATORY COMPLIANCE, COMMUNICATIONS</p>
+              </div>
+              <div class="corp-card p-4">
+                <h4 class="text-xs font-black text-white mb-2 uppercase">RESEARCH</h4>
+                <p class="text-gray-500 font-mono text-[9px] uppercase leading-relaxed">DATA ANALYSIS, LABORATORY OPS, THEORETICAL MODELING, PUBLICATION</p>
+              </div>
+              <div class="corp-card p-4">
+                <h4 class="text-xs font-black text-white mb-2 uppercase">SECURITY</h4>
+                <p class="text-gray-500 font-mono text-[9px] uppercase leading-relaxed">PERIMETER DEFENSE, THREAT ASSESSMENT, TACTICAL OPERATIONS, VIP PROTECTION</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div class="corp-card p-6">
+              <h3 class="text-sm font-black text-[#FFC600] mb-4 uppercase">SUPPORT & MAINTENANCE</h3>
+              <div class="space-y-3">
+                <div class="border-b border-[#1a1a1a] pb-3">
+                  <div class="text-xs font-mono text-white uppercase font-bold mb-1">STANDARD SERVICE</div>
+                  <div class="text-[10px] font-mono text-gray-500 uppercase">ANNUAL DIAGNOSTIC. SOFTWARE UPDATES. REMOTE BEHAVIORAL MONITORING.</div>
+                </div>
+                <div class="border-b border-[#1a1a1a] pb-3">
+                  <div class="text-xs font-mono text-white uppercase font-bold mb-1">COMPREHENSIVE SERVICE</div>
+                  <div class="text-[10px] font-mono text-gray-500 uppercase">QUARTERLY DIAGNOSTIC. PRIORITY REPAIRS. BEHAVIORAL COMPLIANCE AUDITS. 24/7 SUPPORT.</div>
+                </div>
+                <div>
+                  <div class="text-xs font-mono text-white uppercase font-bold mb-1">LIFECYCLE MANAGEMENT</div>
+                  <div class="text-[10px] font-mono text-gray-500 uppercase">FULL LIFECYCLE COVERAGE. DEDICATED W-Y SYNTHETIC TECHNICIAN. POWER CELL REPLACEMENT.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="corp-card p-6">
+              <h3 class="text-sm font-black text-[#FFC600] mb-4 uppercase">TRAINING & INTEGRATION</h3>
+              <div class="space-y-2">
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">ON-SITE INTEGRATION SUPPORT (30 DAYS)</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">CREW FAMILIARIZATION PROGRAM</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">BEHAVIORAL PARAMETER CUSTOMIZATION</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">MANAGEMENT TRAINING FOR SUPERVISORS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="corp-card p-6">
+              <h3 class="text-sm font-black text-[#FFC600] mb-4 uppercase">LICENSING & COMPLIANCE</h3>
+              <div class="space-y-2">
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">IAIGS COMPLIANCE CERTIFICATION INCLUDED</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">ICC INTERSTELLAR DEPLOYMENT LICENSE</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">COLONIAL ADMINISTRATION CLEARANCE</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">USCM AUTHORIZATION (MILITARY DEPLOYMENTS)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-20 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+      <div class="relative container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-black text-white mb-6 uppercase">CONFIGURE YOUR SYNTHETIC PERSONNEL</h2>
+        <p class="text-gray-400 font-mono text-sm uppercase mb-8 max-w-2xl mx-auto">
+          CONTACT OUR SYNTHETIC PERSONNEL DIVISION TO DISCUSS MODEL SELECTION, SKILL PROFILE CONFIGURATION, AND DEPLOYMENT REQUIREMENTS.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="/contact" class="btn-primary">CONTACT SALES</a>
+          <a href="/products" class="btn-secondary">BACK TO CATALOG</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

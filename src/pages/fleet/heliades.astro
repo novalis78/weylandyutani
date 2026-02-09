@@ -1,0 +1,288 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="USCSS Heliades -- First FTL Spacecraft"
+  description="The USCSS Heliades -- humanity's first faster-than-light spacecraft, launched in 2034. The vessel that proved interstellar travel was possible. Now preserved as a Weyland-Yutani corporate heritage artifact."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center pt-20 pb-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          HERITAGE VESSEL -- FIRST FTL SPACECRAFT
+        </div>
+
+        <h1 class="text-7xl md:text-[10rem] font-black text-white mb-4 leading-none uppercase">
+          USCSS<br/><span class="text-[#FFC600] text-glow-yellow">HELIADES</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-6"></div>
+
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wide font-mono">
+          THE VESSEL THAT PROVED FASTER-THAN-LIGHT TRAVEL WAS POSSIBLE
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Vessel Data Bar -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">REGISTRY</div>
+            <div class="text-sm font-black text-[#FFC600]">USCSS HELIADES</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">LAUNCHED</div>
+            <div class="text-sm font-black text-[#FFC600]">2034</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">TYPE</div>
+            <div class="text-sm font-black text-[#FFC600]">FTL EXPLORATION</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">BUILDER</div>
+            <div class="text-sm font-black text-[#FFC600]">WEYLAND CORP</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">STATUS</div>
+            <div class="text-sm font-black text-[#FFC600]">PRESERVED</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Heritage Banner -->
+    <section class="relative bg-[#FFC600]/5 border-b-2 border-[#FFC600]/20 py-4">
+      <div class="container mx-auto px-6">
+        <div class="flex items-center justify-center gap-4">
+          <span class="w-3 h-3 bg-[#FFC600] animate-pulse-yellow"></span>
+          <span class="text-[#FFC600] font-mono text-xs uppercase tracking-widest font-bold">
+            CORPORATE HERITAGE ARTIFACT -- PRESERVED AT LUNA COLONY -- WEYLAND-YUTANI MUSEUM OF INTERSTELLAR ACHIEVEMENT
+          </span>
+          <span class="w-3 h-3 bg-[#FFC600] animate-pulse-yellow"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Historical Significance -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+                HISTORICAL RECORD
+              </div>
+              <h2 class="text-4xl md:text-5xl font-black text-white mb-8">
+                THE DAY EVERYTHING <span class="text-[#FFC600] text-glow-yellow">CHANGED</span>
+              </h2>
+              <div class="space-y-6 text-gray-400 font-mono text-sm leading-relaxed">
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> ON AN UNREMARKABLE MORNING IN 2034, THE USCSS HELIADES DEPARTED LUNA ORBIT AND ENGAGED ITS FASTER-THAN-LIGHT DRIVE. IN THAT INSTANT, HUMANITY CROSSED A THRESHOLD THAT HAD DEFINED THE BOUNDARY OF THE POSSIBLE FOR THE ENTIRE HISTORY OF THE SPECIES. THE STARS WERE NO LONGER UNREACHABLE.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE HELIADES WAS THE CULMINATION OF PETER WEYLAND'S MOST AMBITIOUS ENGINEERING PROGRAM. BUILDING ON BREAKTHROUGHS IN NANOTECHNOLOGY, ENERGY SYSTEMS, AND THEORETICAL PHYSICS, WEYLAND CORPORATION ENGINEERS SOLVED THE FUNDAMENTAL PROBLEM OF SUPERLUMINAL TRAVEL AND BUILT A VESSEL CAPABLE OF DEMONSTRATING IT.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE FIRST FTL VOYAGE WAS A CONTROLLED TEST: A ROUND-TRIP TO THE ALPHA CENTAURI SYSTEM, 4.37 LIGHT YEARS FROM EARTH. THE HELIADES COMPLETED THE JOURNEY IN UNDER 72 HOURS. THE DATA TRANSMITTED BACK TO LUNA CONFIRMED WHAT THE ENGINEERS ALREADY KNEW: THE DRIVE WORKED. INTERSTELLAR TRAVEL WAS REAL.
+                </p>
+              </div>
+            </div>
+
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">VESSEL SPECIFICATIONS</h3>
+              <div class="space-y-4 text-sm font-mono">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DESIGNATION</span>
+                  <span class="text-[#FFC600] font-bold">USCSS HELIADES</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">TYPE</span>
+                  <span class="text-[#FFC600] font-bold">FTL DEMONSTRATOR</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">BUILDER</span>
+                  <span class="text-[#FFC600] font-bold">WEYLAND CORPORATION</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">LAUNCHED</span>
+                  <span class="text-[#FFC600] font-bold">2034</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">CREW</span>
+                  <span class="text-[#FFC600] font-bold">4 (TEST FLIGHT)</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DRIVE</span>
+                  <span class="text-[#FFC600] font-bold">WEYLAND MK-I FTL</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">FIRST DESTINATION</span>
+                  <span class="text-[#FFC600] font-bold">ALPHA CENTAURI</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">TRANSIT TIME</span>
+                  <span class="text-[#FFC600] font-bold">&lt; 72 HOURS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">TOTAL MISSIONS</span>
+                  <span class="text-[#FFC600] font-bold">17 (BEFORE RETIREMENT)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">CURRENT LOCATION</span>
+                  <span class="text-[#FFC600] font-bold">LUNA MUSEUM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission History -->
+    <section class="relative py-28 bg-black border-t-4 border-b-4 border-[#FFC600]">
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6 pt-6">
+        <div class="text-center mb-16">
+          <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+            MISSION LOG
+          </div>
+          <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+            MISSION <span class="text-[#FFC600] text-glow-yellow">HISTORY</span>
+          </h2>
+        </div>
+
+        <div class="max-w-4xl mx-auto space-y-0">
+          <div class="relative pl-16 border-l-4 border-[#FFC600]/30 pb-12">
+            <div class="absolute -left-[13px] top-0 w-6 h-6 bg-[#FFC600] clip-corner glow-yellow-intense"></div>
+            <div class="mb-4">
+              <span class="px-4 py-2 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest clip-corner">
+                2034 -- FIRST FLIGHT
+              </span>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-4 uppercase">ALPHA CENTAURI ROUND-TRIP</h3>
+            <p class="text-gray-400 font-mono text-sm leading-relaxed">
+              THE HISTORIC FIRST FTL VOYAGE. CREW OF FOUR DEPARTED LUNA ORBIT, TRANSITED TO ALPHA CENTAURI (4.37 LY), CONDUCTED SYSTEM SURVEY, AND RETURNED TO LUNA IN UNDER 72 HOURS. ALL SYSTEMS PERFORMED WITHIN DESIGN PARAMETERS. FTL DRIVE INTEGRITY CONFIRMED POST-FLIGHT.
+            </p>
+          </div>
+
+          <div class="relative pl-16 border-l-4 border-[#FFC600]/30 pb-12">
+            <div class="absolute -left-[13px] top-0 w-6 h-6 bg-[#FFC600] clip-corner animate-pulse-yellow"></div>
+            <div class="mb-4">
+              <span class="px-4 py-2 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest clip-corner">
+                2034-2035 -- VALIDATION SERIES
+              </span>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-4 uppercase">EXTENDED RANGE TESTING</h3>
+            <p class="text-gray-400 font-mono text-sm leading-relaxed">
+              SEVEN SUBSEQUENT MISSIONS TO PROGRESSIVELY DISTANT STAR SYSTEMS, VALIDATING FTL DRIVE PERFORMANCE AT EXTENDED RANGE. BARNARD'S STAR, WOLF 359, LALANDE 21185, AND SIRIUS ALL REACHED AND SURVEYED. EACH MISSION REFINED NAVIGATION PROTOCOLS AND DRIVE CALIBRATION.
+            </p>
+          </div>
+
+          <div class="relative pl-16 border-l-4 border-[#FFC600]/30 pb-12">
+            <div class="absolute -left-[13px] top-0 w-6 h-6 bg-[#FFC600] clip-corner animate-pulse-yellow"></div>
+            <div class="mb-4">
+              <span class="px-4 py-2 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest clip-corner">
+                2035-2037 -- SURVEY MISSIONS
+              </span>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-4 uppercase">COLONY CANDIDATE SURVEYS</h3>
+            <p class="text-gray-400 font-mono text-sm leading-relaxed">
+              NINE MISSIONS SURVEYING POTENTIAL COLONY CANDIDATE WORLDS. THE HELIADES' SENSOR SUITE AND GEOLOGICAL SURVEY EQUIPMENT ASSESSED ATMOSPHERIC COMPOSITION, MINERAL RESOURCES, AND TERRAFORMING VIABILITY FOR DOZENS OF PLANETARY BODIES. DATA FROM THESE SURVEYS INFORMED THE FIRST WAVE OF COLONY SITE SELECTIONS.
+            </p>
+          </div>
+
+          <div class="relative pl-16">
+            <div class="absolute -left-[13px] top-0 w-6 h-6 bg-[#FFC600] clip-corner glow-yellow-intense"></div>
+            <div class="mb-4">
+              <span class="px-4 py-2 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest clip-corner">
+                2037 -- RETIREMENT
+              </span>
+            </div>
+            <h3 class="text-2xl font-black text-white mb-4 uppercase">PRESERVATION & HERITAGE</h3>
+            <p class="text-gray-400 font-mono text-sm leading-relaxed">
+              AFTER 17 SUCCESSFUL MISSIONS, THE HELIADES WAS FORMALLY RETIRED FROM ACTIVE SERVICE AND DESIGNATED A CORPORATE HERITAGE ARTIFACT. THE VESSEL WAS TRANSPORTED TO LUNA COLONY AND INSTALLED AS THE CENTERPIECE OF THE WEYLAND-YUTANI MUSEUM OF INTERSTELLAR ACHIEVEMENT, WHERE IT REMAINS ON PERMANENT DISPLAY.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Technical Legacy -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-16">
+            <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+              LEGACY
+            </div>
+            <h2 class="text-5xl md:text-6xl font-black text-white mb-4">
+              TECHNICAL <span class="text-[#FFC600] text-glow-yellow">LEGACY</span>
+            </h2>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">MK-I</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">FTL DRIVE PROTOTYPE</div>
+              <p class="text-gray-600 font-mono text-xs">THE WEYLAND MK-I FTL DRIVE ABOARD THE HELIADES BECAME THE FOUNDATION FOR ALL SUBSEQUENT SUPERLUMINAL PROPULSION SYSTEMS.</p>
+            </div>
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">10,000+</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">VESSELS DESCENDED</div>
+              <p class="text-gray-600 font-mono text-xs">EVERY FTL-CAPABLE VESSEL IN THE WEYLAND-YUTANI FLEET TRACES ITS PROPULSION LINEAGE DIRECTLY TO THE HELIADES' DRIVE SYSTEM.</p>
+            </div>
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">300+</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">WORLDS MADE REACHABLE</div>
+              <p class="text-gray-600 font-mono text-xs">THE TECHNOLOGY PROVEN ABOARD THE HELIADES MADE EVERY COLONY WORLD IN THE NETWORK ACCESSIBLE TO HUMAN SETTLEMENT.</p>
+            </div>
+          </div>
+
+          <div class="terminal mt-16">
+            <div class="terminal-content">
+              <p class="text-[#FFC600] font-mono text-sm leading-relaxed">
+                &gt; "THE HELIADES DID NOT MERELY TRAVEL FASTER THAN LIGHT. IT BROKE THE FUNDAMENTAL CONSTRAINT THAT HAD KEPT HUMANITY CONFINED TO A SINGLE STAR SYSTEM FOR ITS ENTIRE EXISTENCE. EVERY COLONY, EVERY TRADE ROUTE, EVERY INTERSTELLAR ACHIEVEMENT THAT HAS FOLLOWED IS A DIRECT CONSEQUENCE OF WHAT HAPPENED ON THAT FIRST FLIGHT IN 2034. THIS VESSEL CHANGED THE TRAJECTORY OF THE SPECIES."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="relative py-12 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/fleet" class="btn-secondary">ALL FLEET</a>
+          <a href="/fleet/nostromo-class" class="btn-secondary">NOSTROMO-CLASS</a>
+          <a href="/fleet/covenant-class" class="btn-secondary">COVENANT-CLASS</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

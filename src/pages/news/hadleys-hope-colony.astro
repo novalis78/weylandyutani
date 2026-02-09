@@ -1,0 +1,162 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Press Release: Hadley's Hope Colony Established"
+  description="Weyland-Yutani Corporation establishes Hadley's Hope, a new permanent colony on LV-426 in the Zeta Reticuli system, with full terraforming and mining operations."
+  type="article"
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- ARTICLE HEADER -->
+    <section class="relative py-20 border-b border-[#1a1a1a]">
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <a href="/news" class="inline-flex items-center gap-2 text-[#FFC600] text-xs font-bold uppercase tracking-wider mb-8 hover:text-white transition-colors">
+            &larr; BACK TO NEWSROOM
+          </a>
+
+          <div class="flex items-center gap-4 mb-6">
+            <span class="text-[10px] font-mono text-[#FFC600] tracking-widest bg-[#FFC600]/10 px-3 py-1 clip-corner">COLONIES</span>
+            <span class="text-[10px] font-mono text-gray-600 tracking-wider">PRESS RELEASE</span>
+          </div>
+
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase leading-none mb-6">
+            NEW COLONY ESTABLISHED ON LV-426: <span class="text-[#FFC600]">HADLEY'S HOPE</span>
+          </h1>
+
+          <div class="flex flex-wrap items-center gap-6 text-sm text-gray-500 font-mono">
+            <span>NOVEMBER 18, 2157</span>
+            <span class="text-[#FFC600]">|</span>
+            <span>LV-426, ZETA RETICULI SYSTEM</span>
+            <span class="text-[#FFC600]">|</span>
+            <span>FOR IMMEDIATE RELEASE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-0 left-0 right-0 hazard-stripes-thin h-1"></div>
+    </section>
+
+    <!-- ARTICLE BODY -->
+    <section class="relative py-16 bg-black">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-gray-300 leading-relaxed space-y-6 text-base">
+            <p class="text-lg text-white font-semibold">
+              <strong>LV-426, ZETA RETICULI --</strong> Weyland-Yutani Corporation (NYSE: WEYU) today announced the official commissioning of Hadley's Hope, a permanent terraforming and resource extraction colony on the planetoid LV-426 in the Zeta 2 Reticuli system. The colony, designated Acheron Colony Administration 01, received its operational certification from the Interstellar Commerce Commission following the successful deployment of all primary infrastructure systems.
+            </p>
+
+            <p>
+              Hadley's Hope is the Corporation's first permanent installation in the Zeta Reticuli sector, a region of significant strategic interest due to its mineral wealth and proximity to established transit corridors. The colony is designed to support a population of up to 158 colonists and support personnel in its initial phase, with provisions for expansion to 500 within five years.
+            </p>
+
+            <p>
+              "Hadley's Hope represents our commitment to extending human presence into every viable system within our reach," said Dr. Ines Alvarez, President of Colony Operations. "The Zeta Reticuli sector offers exceptional economic potential, and this colony is the foundation upon which we will build a thriving commercial hub."
+            </p>
+
+            <h2 class="text-2xl font-black text-white uppercase mt-12 mb-4">COLONY SPECIFICATIONS</h2>
+            <div class="h-px w-24 bg-[#FFC600] mb-6"></div>
+
+            <div class="my-8 corp-card p-8">
+              <h3 class="text-lg font-black text-[#FFC600] uppercase mb-6">HADLEY'S HOPE -- OPERATIONAL PROFILE</h3>
+              <div class="grid md:grid-cols-2 gap-6 text-sm">
+                <div class="space-y-3">
+                  <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                    <span class="text-gray-500 font-mono">DESIGNATION</span>
+                    <span class="text-white">Acheron Colony Admin 01</span>
+                  </div>
+                  <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                    <span class="text-gray-500 font-mono">LOCATION</span>
+                    <span class="text-white">LV-426, Zeta 2 Reticuli</span>
+                  </div>
+                  <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                    <span class="text-gray-500 font-mono">INITIAL POPULATION</span>
+                    <span class="text-white">158 colonists</span>
+                  </div>
+                  <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                    <span class="text-gray-500 font-mono">EXPANSION CAPACITY</span>
+                    <span class="text-white">500 colonists</span>
+                  </div>
+                </div>
+                <div class="space-y-3">
+                  <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                    <span class="text-gray-500 font-mono">ATMO PROCESSOR</span>
+                    <span class="text-white">WY-48A (primary)</span>
+                  </div>
+                  <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                    <span class="text-gray-500 font-mono">TERRAFORMING EST.</span>
+                    <span class="text-white">20-year cycle</span>
+                  </div>
+                  <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                    <span class="text-gray-500 font-mono">PRIMARY INDUSTRY</span>
+                    <span class="text-white">Mineral extraction</span>
+                  </div>
+                  <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                    <span class="text-gray-500 font-mono">STATUS</span>
+                    <span class="text-[#FFC600] status-active">OPERATIONAL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="text-2xl font-black text-white uppercase mt-12 mb-4">TERRAFORMING OPERATIONS</h2>
+            <div class="h-px w-24 bg-[#FFC600] mb-6"></div>
+
+            <p>
+              LV-426's primordial atmosphere, characterized by extreme temperatures, high winds, and toxic gas concentrations, presented a challenging but well-understood terraforming profile. The colony's WY-48A atmospheric processing station, the largest single-unit processor deployed to date, has initiated a 20-year atmospheric conversion cycle that will progressively render the planetoid's surface habitable for unassisted human activity.
+            </p>
+
+            <p>
+              In the interim, all colony structures are fully pressurized and climate-controlled, with redundant life-support systems meeting Class A habitability standards. Surface operations are conducted using standard EVA protocols and environmental suits rated for LV-426's current conditions.
+            </p>
+
+            <h2 class="text-2xl font-black text-white uppercase mt-12 mb-4">ECONOMIC POTENTIAL</h2>
+            <div class="h-px w-24 bg-[#FFC600] mb-6"></div>
+
+            <p>
+              Geological surveys of LV-426 have identified significant deposits of rare-earth minerals, lithium, and silicate composites with commercial applications in semiconductor manufacturing and fusion reactor construction. The colony's extraction facilities are projected to generate $4.2 billion in annual resource revenue within three years of full operation.
+            </p>
+
+            <p>
+              The Zeta Reticuli sector's position along the Outer Rim transit corridor also positions Hadley's Hope as a potential resupply and maintenance waypoint for deep-space commercial traffic, adding further strategic value to the installation.
+            </p>
+
+            <p>
+              Colony Administrator Al Simpson has been appointed to oversee Hadley's Hope operations. Simpson, a 22-year veteran of Weyland-Yutani Colony Operations, previously served as deputy administrator at the Thedus installation.
+            </p>
+
+            <!-- BOILERPLATE -->
+            <div class="mt-16 pt-8 border-t border-[#1a1a1a]">
+              <h3 class="text-sm font-black text-[#FFC600] uppercase tracking-wider mb-4">ABOUT WEYLAND-YUTANI CORPORATION</h3>
+              <p class="text-sm text-gray-500 leading-relaxed">
+                Weyland-Yutani Corporation is a British-Japanese multinational conglomerate and the leading enterprise in terraforming, cybernetics, energy, health sciences, and interstellar colonization. With more than 500,000 employees across 47 countries and 300+ colonized worlds, the Corporation is Building Better Worlds. NYSE: WEYU.
+              </p>
+
+              <h3 class="text-sm font-black text-[#FFC600] uppercase tracking-wider mb-4 mt-8">MEDIA CONTACT</h3>
+              <p class="text-sm text-gray-500">
+                Corporate Communications<br/>
+                media@weylandyutani.com<br/>
+                +1-800-555-WYCO (9926)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

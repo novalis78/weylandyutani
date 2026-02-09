@@ -1,0 +1,297 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const cSuite = [
+  {
+    name: "HIDEO YUTANI III",
+    title: "CHIEF EXECUTIVE OFFICER",
+    initials: "HY",
+    bio: "Grandson of Yutani Corporation co-founder Hideo Yutani, he assumed the role of CEO following the 2099 merger. A graduate of the University of Tokyo and MIT, Yutani III has overseen the Corporation's most aggressive period of colonial expansion, growing the portfolio from 47 to over 300 operational worlds.",
+  },
+  {
+    name: "DR. ELENA VASQUEZ",
+    title: "CHIEF OPERATING OFFICER",
+    initials: "EV",
+    bio: "A former director of the European Space Agency, Dr. Vasquez brings three decades of operational expertise to Weyland-Yutani's global and off-world logistics. Under her leadership, supply chain efficiency across interstellar distances has improved by 340%. She holds dual doctorates in aerospace engineering and operations research.",
+  },
+  {
+    name: "KARL-ERIK LINDSTROM",
+    title: "CHIEF TECHNOLOGY OFFICER",
+    initials: "KL",
+    bio: "The architect behind the seventh-generation FTL drive and the David 8 synthetic platform, Lindstrom oversees all technology R&D across seven verticals. A former CERN physicist recruited by Peter Weyland personally in 2031, he has filed more than 1,400 patents during his tenure with the Corporation.",
+  },
+  {
+    name: "MARGARET CHEN-WRIGHT",
+    title: "CHIEF FINANCIAL OFFICER",
+    initials: "MC",
+    bio: "Previously the youngest managing director in Goldman Sachs history, Chen-Wright manages a $200 trillion balance sheet with precision and foresight. She engineered the financial structure of the Weyland-Yutani merger and has delivered 47 consecutive quarters of revenue growth to shareholders.",
+  },
+  {
+    name: "DR. TOMAS BERGKAMP",
+    title: "CHIEF SCIENCE OFFICER",
+    initials: "TB",
+    bio: "A Nobel laureate in molecular biology, Dr. Bergkamp directs the Corporation's pure and applied science programs across 2,400 research facilities. His work on adaptive terraforming organisms reduced atmospheric processing timelines by a factor of twelve. He also chairs the Weyland Foundation for Scientific Advancement.",
+  },
+  {
+    name: "GENERAL YUKI TANAKA (RET.)",
+    title: "CHIEF SECURITY OFFICER",
+    initials: "YT",
+    bio: "A decorated veteran of the USCM with 28 years of service across the Outer Veil, General Tanaka leads all security, defense, and intelligence operations. She designed the current colonial security framework used across all Weyland-Yutani territories and serves as principal liaison to government defense agencies.",
+  },
+  {
+    name: "DR. ADAEZE OKONKWO",
+    title: "VP, TERRAFORMING OPERATIONS",
+    initials: "AO",
+    bio: "Dr. Okonkwo oversees the Corporation's atmospheric processing and planetary engineering programs across all 300+ colonized worlds. A pioneer in large-scale ecosystem design, she led the record-setting Kepler-442b terraforming operation, bringing the planet from lifeless rock to full habitability in under eleven years.",
+  },
+  {
+    name: "PROF. JAMES HARTWELL",
+    title: "VP, CYBERNETICS & SYNTHETICS",
+    initials: "JH",
+    bio: "The mind behind the David 6, 7, and 8 series, Professor Hartwell leads all synthetic humanoid development and cybernetics research. A cognitive scientist by training, he has pushed synthetic intelligence closer to human consciousness than anyone thought possible, blurring the line between creation and creator.",
+  },
+  {
+    name: "DIANA KOLCHAK-REYES",
+    title: "GENERAL COUNSEL",
+    initials: "DK",
+    bio: "Kolchak-Reyes manages the Corporation's legal affairs across 47 national jurisdictions and all colonial territories. A former chief justice of the Interstellar Commerce Tribunal, she authored the framework for off-world corporate governance that is now standard across the industry.",
+  },
+];
+
+const boardMembers = [
+  { name: "SIR PETER WEYLAND", role: "CHAIRMAN EMERITUS & FOUNDER", initials: "PW" },
+  { name: "HIDEO YUTANI III", role: "CHAIRMAN OF THE BOARD & CEO", initials: "HY" },
+  { name: "DAME CHARLOTTE WINDSOR", role: "INDEPENDENT DIRECTOR", initials: "CW" },
+  { name: "DR. RAJESH KAPOOR", role: "INDEPENDENT DIRECTOR", initials: "RK" },
+  { name: "ADMIRAL CHEN WEI (RET.)", role: "INDEPENDENT DIRECTOR", initials: "CW" },
+  { name: "PROF. INGRID HAUGEN", role: "INDEPENDENT DIRECTOR", initials: "IH" },
+  { name: "MARCUS STILLWELL", role: "INDEPENDENT DIRECTOR", initials: "MS" },
+  { name: "DR. AMARA NDIAYE", role: "INDEPENDENT DIRECTOR", initials: "AN" },
+];
+
+const advisoryBoard = [
+  { name: "DR. SARAH CHEN", role: "SCIENCE & TECHNOLOGY ADVISOR", desc: "Former Director-General of the Global Science Foundation. Advisor on emerging technologies and research policy." },
+  { name: "GEN. ROBERT BLACKWELL (RET.)", role: "DEFENSE & SECURITY ADVISOR", desc: "Former Commander, United Americas Allied Command. Advisor on defense strategy and colonial security doctrine." },
+  { name: "PROF. YUKI MORIMOTO", role: "ETHICS & GOVERNANCE ADVISOR", desc: "Chair of Ethics at the University of Tokyo. Advisor on corporate governance, AI ethics, and synthetic rights policy." },
+  { name: "LADY EVELYN DRAKE", role: "PHILANTHROPY & CSR ADVISOR", desc: "President of the Weyland Foundation. Oversees the Corporation's $8 billion annual philanthropic commitments." },
+];
+---
+
+<Layout
+  title="Leadership - Executive Team"
+  description="Meet the leadership team of Weyland-Yutani Corporation. Our world-class executives drive innovation across seven verticals and 300+ colonized worlds."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative min-h-[50vh] flex items-center justify-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#FFC600] to-transparent"></div>
+
+      <div class="relative container mx-auto px-6 text-center py-20">
+        <div class="inline-flex items-center gap-3 mb-8">
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.3em] font-mono">EXECUTIVE TEAM</span>
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+        </div>
+
+        <h1 class="text-7xl md:text-9xl font-black text-white leading-none uppercase mb-6">
+          LEADER<span class="text-[#FFC600] text-glow-yellow">SHIP</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-8"></div>
+
+        <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wider font-mono">
+          THE ARCHITECTS OF HUMANITY'S INTERSTELLAR FUTURE
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- LEADERSHIP PHILOSOPHY -->
+    <section class="relative py-20 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">OUR APPROACH</span>
+          <h2 class="text-3xl md:text-4xl font-black text-white mt-4 mb-8 uppercase">LEADERSHIP PHILOSOPHY</h2>
+          <p class="text-gray-400 text-base leading-relaxed mb-6">
+            Weyland-Yutani's leadership team is selected for one quality above all others: the ability to operate at the frontier of the possible. Our executives are drawn from the highest echelons of science, industry, military service, and public administration. They share a common conviction that the expansion of human civilization across the stars is not merely an ambition but an obligation.
+          </p>
+          <p class="text-gray-400 text-base leading-relaxed">
+            Every member of our leadership team has demonstrated the capacity to make consequential decisions under uncertainty, to lead diverse teams across vast distances, and to hold the Corporation's mission above all other considerations. They are, in every sense, the architects of the future.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER: PETER WEYLAND -->
+    <section class="relative py-24 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="text-center mb-12">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">FOUNDER</span>
+        </div>
+
+        <div class="max-w-5xl mx-auto">
+          <div class="founder-card relative border-2 border-[#FFC600] clip-corner overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-[#FFC600]/5 to-transparent"></div>
+
+            <div class="relative grid md:grid-cols-3 gap-0">
+              <!-- Portrait Placeholder -->
+              <div class="bg-[#0a0a0a] flex items-center justify-center p-12 md:p-0 min-h-[300px]">
+                <div class="w-40 h-40 bg-black border-4 border-[#FFC600] clip-corner flex items-center justify-center glow-yellow">
+                  <span class="text-8xl text-[#FFC600] font-black">PW</span>
+                </div>
+              </div>
+
+              <!-- Bio -->
+              <div class="md:col-span-2 p-8 md:p-12">
+                <h3 class="text-3xl md:text-4xl font-black text-white uppercase mb-2">SIR PETER WEYLAND</h3>
+                <p class="text-[#FFC600] font-bold uppercase tracking-widest text-sm mb-6">FOUNDER & CHAIRMAN EMERITUS</p>
+
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                  Born October 1, 1990, in Mumbai, India. A prodigy who filed his twelfth patent at the age of fourteen, a synthetic trachea that saved thousands of lives. Knighted by the British Crown in 2016 for reversing polar ice cap degradation. Awarded the Nobel Peace Prize in 2017.
+                </p>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                  Founded Weyland Corporation on October 11, 2012. Under his leadership, the Corporation achieved faster-than-light travel, created the first synthetic humanoid, and began the colonization of other worlds. His 2023 TED address at Wembley Stadium is considered one of the defining speeches of the modern era.
+                </p>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  Sir Peter's vision and legacy form the moral and intellectual foundation upon which every element of Weyland-Yutani is built. His doctrine, "If we can, we must," remains the Corporation's guiding principle.
+                </p>
+
+                <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                  <div class="bg-black/50 p-3 clip-corner border border-[#1a1a1a]">
+                    <div class="text-[#FFC600] font-black text-lg font-mono">1990</div>
+                    <div class="text-gray-500 text-[10px] uppercase tracking-wider">BORN</div>
+                  </div>
+                  <div class="bg-black/50 p-3 clip-corner border border-[#1a1a1a]">
+                    <div class="text-[#FFC600] font-black text-lg font-mono">2012</div>
+                    <div class="text-gray-500 text-[10px] uppercase tracking-wider">FOUNDED W-C</div>
+                  </div>
+                  <div class="bg-black/50 p-3 clip-corner border border-[#1a1a1a]">
+                    <div class="text-[#FFC600] font-black text-lg font-mono">2017</div>
+                    <div class="text-gray-500 text-[10px] uppercase tracking-wider">NOBEL PRIZE</div>
+                  </div>
+                  <div class="bg-black/50 p-3 clip-corner border border-[#1a1a1a]">
+                    <div class="text-[#FFC600] font-black text-lg font-mono">14</div>
+                    <div class="text-gray-500 text-[10px] uppercase tracking-wider">AGE AT 12TH PATENT</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- C-SUITE EXECUTIVES -->
+    <section class="relative py-24 bg-[#0a0a0a] border-t-2 border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="text-center mb-16">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">C-SUITE</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-4 uppercase">EXECUTIVE LEADERSHIP</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {cSuite.map(exec => (
+            <div class="corp-card p-0 group">
+              <!-- Header -->
+              <div class="p-6 pb-4 border-b border-[#1a1a1a] group-hover:border-[#FFC600]/30 transition-colors">
+                <div class="flex items-center gap-4">
+                  <div class="w-16 h-16 bg-black border-2 border-[#FFC600]/50 clip-corner flex items-center justify-center shrink-0 group-hover:border-[#FFC600] transition-colors">
+                    <span class="text-[#FFC600] font-black text-xl">{exec.initials}</span>
+                  </div>
+                  <div>
+                    <h3 class="text-white font-black text-sm uppercase leading-tight">{exec.name}</h3>
+                    <p class="text-[#FFC600] text-[10px] font-bold uppercase tracking-widest mt-1">{exec.title}</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Bio -->
+              <div class="p-6 pt-4">
+                <p class="text-gray-500 text-xs leading-relaxed">{exec.bio}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- BOARD OF DIRECTORS -->
+    <section class="relative py-24 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="text-center mb-16">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">GOVERNANCE</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-4 uppercase">BOARD OF DIRECTORS</h2>
+          <p class="text-gray-500 text-sm uppercase tracking-wider font-mono mt-4 max-w-2xl mx-auto">
+            OUR BOARD PROVIDES STRATEGIC OVERSIGHT AND ENSURES THE CORPORATION OPERATES IN THE BEST INTERESTS OF ALL STAKEHOLDERS.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+          {boardMembers.map(member => (
+            <div class="bg-[#0a0a0a] border border-[#1a1a1a] p-6 clip-corner hover:border-[#FFC600]/50 transition-all group">
+              <div class="w-12 h-12 bg-black border-2 border-[#FFC600]/30 clip-corner flex items-center justify-center mb-4 group-hover:border-[#FFC600] transition-colors">
+                <span class="text-[#FFC600] font-black text-sm">{member.initials}</span>
+              </div>
+              <h3 class="text-white font-black text-xs uppercase mb-1">{member.name}</h3>
+              <p class="text-[#FFC600] text-[9px] font-bold uppercase tracking-widest">{member.role}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- ADVISORY BOARD -->
+    <section class="relative py-24 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="text-center mb-16">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">STRATEGIC GUIDANCE</span>
+          <h2 class="text-3xl md:text-4xl font-black text-white mt-4 uppercase">ADVISORY BOARD</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          {advisoryBoard.map(advisor => (
+            <div class="corp-card p-8">
+              <h3 class="text-white font-black text-sm uppercase mb-1">{advisor.name}</h3>
+              <p class="text-[#FFC600] text-[10px] font-bold uppercase tracking-widest mb-4">{advisor.role}</p>
+              <p class="text-gray-500 text-xs leading-relaxed">{advisor.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- BACK NAVIGATION -->
+    <section class="relative py-16 bg-black border-t-4 border-[#FFC600]">
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+      <div class="container mx-auto px-6 text-center">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/about" class="btn-secondary px-10 py-4 text-sm">BACK TO OVERVIEW</a>
+          <a href="/about/mission" class="btn-primary px-10 py-4 text-sm">OUR MISSION & VALUES</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+
+  .founder-card {
+    clip-path: polygon(16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 16px);
+  }
+</style>

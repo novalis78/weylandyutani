@@ -1,84 +1,185 @@
 ---
 const currentPath = Astro.url.pathname;
+const isActive = (path: string) => currentPath.startsWith(path);
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-black border-b-4 border-[#FFC600]">
-  <div class="hazard-stripes h-2"></div>
+<header class="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b-2 border-[#FFC600]">
+  <!-- Top utility bar -->
+  <div class="bg-[#0a0a0a] border-b border-[#1a1a1a]">
+    <div class="container mx-auto px-6 flex items-center justify-between py-1.5">
+      <div class="flex items-center gap-6">
+        <span class="text-[10px] font-mono text-gray-600 uppercase tracking-widest hidden md:block">
+          <span class="text-[#FFC600]">&#9632;</span> WEYLAND-YUTANI CORPORATE NETWORK
+        </span>
+        <span class="text-[10px] font-mono text-gray-600 uppercase tracking-widest hidden lg:block">
+          SYS.STATUS: <span class="text-[#FFC600]">OPERATIONAL</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="/investors" class="text-[10px] font-mono text-gray-500 uppercase tracking-widest hover:text-[#FFC600] transition-colors">Investors</a>
+        <a href="/news" class="text-[10px] font-mono text-gray-500 uppercase tracking-widest hover:text-[#FFC600] transition-colors">Newsroom</a>
+        <a href="/careers" class="text-[10px] font-mono text-gray-500 uppercase tracking-widest hover:text-[#FFC600] transition-colors">Careers</a>
+        <a href="/contact" class="text-[10px] font-mono text-gray-500 uppercase tracking-widest hover:text-[#FFC600] transition-colors">Contact</a>
+      </div>
+    </div>
+  </div>
 
-  <nav class="container mx-auto px-6 py-4">
+  <nav class="container mx-auto px-6 py-3">
     <div class="flex items-center justify-between">
       <!-- Logo -->
-      <a href="/" class="flex items-center space-x-4 group">
+      <a href="/" class="flex items-center space-x-4 group shrink-0">
         <div class="relative">
-          <div class="w-14 h-14 bg-[#FFC600] clip-corner flex items-center justify-center glow-yellow">
-            <span class="text-black font-black text-2xl">W</span>
+          <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center glow-yellow">
+            <span class="text-black font-black text-xl">W</span>
           </div>
-          <div class="absolute -bottom-1 -right-1 w-8 h-8 bg-black border-2 border-[#FFC600] clip-corner flex items-center justify-center">
-            <span class="text-[#FFC600] font-black text-sm">Y</span>
+          <div class="absolute -bottom-1 -right-1 w-7 h-7 bg-black border-2 border-[#FFC600] clip-corner flex items-center justify-center">
+            <span class="text-[#FFC600] font-black text-xs">Y</span>
           </div>
         </div>
         <div class="flex flex-col">
-          <span class="text-xl font-black text-white tracking-tighter">WEYLAND-YUTANI</span>
-          <span class="text-xs text-[#FFC600] font-bold tracking-widest">"BUILDING BETTER WORLDS"</span>
+          <span class="text-lg font-black text-white tracking-tighter leading-none">WEYLAND-YUTANI</span>
+          <span class="text-[10px] text-[#FFC600] font-bold tracking-[0.25em]">BUILDING BETTER WORLDS</span>
         </div>
       </a>
 
-      <!-- Desktop Navigation -->
-      <ul class="hidden lg:flex items-center space-x-1">
-        <li>
-          <a
-            href="/"
-            class={`px-6 py-3 text-sm font-bold uppercase tracking-wider transition-all ${currentPath === '/' ? 'bg-[#FFC600] text-black' : 'text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600]'}`}
-          >
-            Home
+      <!-- Desktop Navigation with Mega Menu -->
+      <div class="hidden xl:flex items-center gap-0">
+        <!-- COMPANY -->
+        <div class="nav-dropdown relative group">
+          <a href="/about" class={`nav-link ${isActive('/about') ? 'nav-link-active' : ''}`}>
+            Company <span class="dropdown-arrow">&#9662;</span>
           </a>
-        </li>
-        <li>
-          <a
-            href="/about"
-            class={`px-6 py-3 text-sm font-bold uppercase tracking-wider transition-all ${currentPath === '/about' ? 'bg-[#FFC600] text-black' : 'text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600]'}`}
-          >
-            About
+          <div class="mega-menu">
+            <div class="mega-menu-inner">
+              <div class="mega-menu-section">
+                <div class="mega-menu-heading">COMPANY</div>
+                <a href="/about" class="mega-menu-item">Corporate Overview</a>
+                <a href="/about/history" class="mega-menu-item">Our History</a>
+                <a href="/about/leadership" class="mega-menu-item">Leadership</a>
+                <a href="/about/mission" class="mega-menu-item">Mission & Values</a>
+                <a href="/about/global-presence" class="mega-menu-item">Global Presence</a>
+              </div>
+              <div class="mega-menu-section">
+                <div class="mega-menu-heading">GOVERNANCE</div>
+                <a href="/governance" class="mega-menu-item">Corporate Governance</a>
+                <a href="/governance/board" class="mega-menu-item">Board of Directors</a>
+                <a href="/governance/ethics" class="mega-menu-item">Ethics & Compliance</a>
+              </div>
+              <div class="mega-menu-featured">
+                <div class="mega-menu-heading">EST. OCTOBER 11, 2012</div>
+                <p class="text-gray-500 text-xs font-mono leading-relaxed mt-2">From a single visionary's ambition to an interstellar enterprise spanning 300+ worlds. The Weyland-Yutani story is the story of human progress.</p>
+                <a href="/about/history" class="text-[#FFC600] text-xs font-bold uppercase tracking-wider mt-3 inline-block hover:text-white transition-colors">Explore Our Legacy &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OPERATIONS -->
+        <div class="nav-dropdown relative group">
+          <a href="/divisions" class={`nav-link ${isActive('/divisions') || isActive('/colonies') || isActive('/fleet') ? 'nav-link-active' : ''}`}>
+            Operations <span class="dropdown-arrow">&#9662;</span>
           </a>
-        </li>
-        <li>
-          <a
-            href="/divisions"
-            class={`px-6 py-3 text-sm font-bold uppercase tracking-wider transition-all ${currentPath === '/divisions' ? 'bg-[#FFC600] text-black' : 'text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600]'}`}
-          >
-            Divisions
+          <div class="mega-menu mega-menu-wide">
+            <div class="mega-menu-inner">
+              <div class="mega-menu-section">
+                <div class="mega-menu-heading">DIVISIONS</div>
+                <a href="/divisions" class="mega-menu-item">All Divisions</a>
+                <a href="/divisions/terraforming" class="mega-menu-item">Terraforming Operations</a>
+                <a href="/divisions/cybernetics" class="mega-menu-item">Cybernetics & Synthetics</a>
+                <a href="/divisions/biological-sciences" class="mega-menu-item">Biological Sciences</a>
+                <a href="/divisions/security" class="mega-menu-item">Security Solutions</a>
+              </div>
+              <div class="mega-menu-section">
+                <div class="mega-menu-heading">&nbsp;</div>
+                <a href="/divisions/energy" class="mega-menu-item">Energy Systems</a>
+                <a href="/divisions/health" class="mega-menu-item">Health Sciences</a>
+                <a href="/divisions/electronics" class="mega-menu-item">Electronics & Comms</a>
+              </div>
+              <div class="mega-menu-section">
+                <div class="mega-menu-heading">OPERATIONS</div>
+                <a href="/colonies" class="mega-menu-item">Colony Operations</a>
+                <a href="/colonies/luna" class="mega-menu-item">Luna</a>
+                <a href="/colonies/hadleys-hope" class="mega-menu-item">Hadley's Hope (LV-426)</a>
+                <a href="/colonies/jacksons-star" class="mega-menu-item">Jackson's Star</a>
+                <a href="/fleet" class="mega-menu-item">Corporate Fleet</a>
+              </div>
+              <div class="mega-menu-featured">
+                <div class="mega-menu-heading">7 VERTICALS. 300+ WORLDS.</div>
+                <p class="text-gray-500 text-xs font-mono leading-relaxed mt-2">Our integrated operations span terraforming, defense, energy, healthcare, cybernetics, electronics, and biological sciences.</p>
+                <a href="/divisions" class="text-[#FFC600] text-xs font-bold uppercase tracking-wider mt-3 inline-block hover:text-white transition-colors">View All Operations &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INNOVATION -->
+        <div class="nav-dropdown relative group">
+          <a href="/technology" class={`nav-link ${isActive('/technology') || isActive('/products') || isActive('/research') ? 'nav-link-active' : ''}`}>
+            Innovation <span class="dropdown-arrow">&#9662;</span>
           </a>
-        </li>
-        <li>
-          <a
-            href="/technology"
-            class={`px-6 py-3 text-sm font-bold uppercase tracking-wider transition-all ${currentPath === '/technology' ? 'bg-[#FFC600] text-black' : 'text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600]'}`}
-          >
-            Technology
+          <div class="mega-menu">
+            <div class="mega-menu-inner">
+              <div class="mega-menu-section">
+                <div class="mega-menu-heading">TECHNOLOGY</div>
+                <a href="/technology" class="mega-menu-item">Technology Overview</a>
+                <a href="/technology/ftl-propulsion" class="mega-menu-item">FTL Propulsion</a>
+                <a href="/technology/atmospheric-processing" class="mega-menu-item">Atmospheric Processing</a>
+                <a href="/technology/synthetic-intelligence" class="mega-menu-item">Synthetic Intelligence</a>
+                <a href="/technology/medpod" class="mega-menu-item">MedPod Systems</a>
+                <a href="/technology/hypersleep" class="mega-menu-item">Hypersleep Technology</a>
+              </div>
+              <div class="mega-menu-section">
+                <div class="mega-menu-heading">PRODUCTS</div>
+                <a href="/products" class="mega-menu-item">Product Catalog</a>
+                <a href="/products/atmosphere-processors" class="mega-menu-item">Atmosphere Processors</a>
+                <a href="/products/synthetic-humans" class="mega-menu-item">Synthetic Personnel</a>
+                <a href="/products/power-loader-p5000" class="mega-menu-item">P-5000 Power Loader</a>
+              </div>
+              <div class="mega-menu-section">
+                <div class="mega-menu-heading">RESEARCH</div>
+                <a href="/research" class="mega-menu-item">R&D Overview</a>
+                <a href="/research/publications" class="mega-menu-item">Publications</a>
+                <a href="/research/facilities" class="mega-menu-item">Research Facilities</a>
+                <a href="/research/partnerships" class="mega-menu-item">Academic Partnerships</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUSTAINABILITY -->
+        <a href="/sustainability" class={`nav-link ${isActive('/sustainability') ? 'nav-link-active' : ''}`}>
+          Sustainability
+        </a>
+
+        <!-- CAREERS -->
+        <div class="nav-dropdown relative group">
+          <a href="/careers" class={`nav-link ${isActive('/careers') ? 'nav-link-active' : ''}`}>
+            Careers <span class="dropdown-arrow">&#9662;</span>
           </a>
-        </li>
-        <li>
-          <a
-            href="/careers"
-            class={`px-6 py-3 text-sm font-bold uppercase tracking-wider transition-all ${currentPath === '/careers' ? 'bg-[#FFC600] text-black' : 'text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600]'}`}
-          >
-            Careers
-          </a>
-        </li>
-        <li>
-          <a
-            href="/contact"
-            class="ml-4 px-8 py-3 bg-[#FFC600] text-black text-sm font-black uppercase tracking-wider clip-corner hover:glow-yellow transition-all"
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
+          <div class="mega-menu mega-menu-narrow">
+            <div class="mega-menu-inner">
+              <div class="mega-menu-section">
+                <div class="mega-menu-heading">JOIN US</div>
+                <a href="/careers" class="mega-menu-item">Open Positions</a>
+                <a href="/careers/benefits" class="mega-menu-item">Benefits & Culture</a>
+                <a href="/careers/locations" class="mega-menu-item">Work Locations</a>
+                <a href="/careers/explorers-academy" class="mega-menu-item">Explorers Academy</a>
+                <a href="/careers/veterans" class="mega-menu-item">Veterans Program</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT CTA -->
+        <a href="/contact" class="ml-4 px-6 py-2.5 bg-[#FFC600] text-black text-xs font-black uppercase tracking-wider clip-corner hover:bg-[#FFD633] hover:shadow-[0_0_20px_rgba(255,198,0,0.4)] transition-all">
+          Contact
+        </a>
+      </div>
 
       <!-- Mobile Menu Button -->
       <button
         id="mobile-menu-button"
-        class="lg:hidden text-[#FFC600] p-2 border-2 border-[#FFC600] clip-corner hover:bg-[#FFC600]/10"
+        class="xl:hidden text-[#FFC600] p-2 border-2 border-[#FFC600] clip-corner hover:bg-[#FFC600]/10"
         aria-label="Toggle menu"
       >
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -88,36 +189,44 @@ const currentPath = Astro.url.pathname;
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden mt-6 pb-4 border-t-2 border-[#FFC600]/20">
-      <ul class="flex flex-col space-y-2 mt-4">
-        <li>
-          <a href="/" class="block px-4 py-3 text-sm font-bold uppercase tracking-wider text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600] transition-all">
-            Home
-          </a>
+    <div id="mobile-menu" class="hidden xl:hidden mt-4 pb-4 border-t-2 border-[#FFC600]/20 max-h-[80vh] overflow-y-auto">
+      <ul class="flex flex-col mt-4">
+        <li class="mobile-section">
+          <div class="mobile-section-heading">Company</div>
+          <a href="/about" class="mobile-link">Corporate Overview</a>
+          <a href="/about/history" class="mobile-link">Our History</a>
+          <a href="/about/leadership" class="mobile-link">Leadership</a>
+          <a href="/about/mission" class="mobile-link">Mission & Values</a>
+          <a href="/about/global-presence" class="mobile-link">Global Presence</a>
         </li>
-        <li>
-          <a href="/about" class="block px-4 py-3 text-sm font-bold uppercase tracking-wider text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600] transition-all">
-            About
-          </a>
+        <li class="mobile-section">
+          <div class="mobile-section-heading">Operations</div>
+          <a href="/divisions" class="mobile-link">All Divisions</a>
+          <a href="/divisions/terraforming" class="mobile-link">Terraforming</a>
+          <a href="/divisions/cybernetics" class="mobile-link">Cybernetics & Synthetics</a>
+          <a href="/divisions/biological-sciences" class="mobile-link">Biological Sciences</a>
+          <a href="/divisions/security" class="mobile-link">Security Solutions</a>
+          <a href="/divisions/energy" class="mobile-link">Energy Systems</a>
+          <a href="/divisions/health" class="mobile-link">Health Sciences</a>
+          <a href="/colonies" class="mobile-link">Colony Operations</a>
+          <a href="/fleet" class="mobile-link">Corporate Fleet</a>
         </li>
-        <li>
-          <a href="/divisions" class="block px-4 py-3 text-sm font-bold uppercase tracking-wider text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600] transition-all">
-            Divisions
-          </a>
+        <li class="mobile-section">
+          <div class="mobile-section-heading">Innovation</div>
+          <a href="/technology" class="mobile-link">Technology</a>
+          <a href="/products" class="mobile-link">Products</a>
+          <a href="/research" class="mobile-link">Research</a>
         </li>
-        <li>
-          <a href="/technology" class="block px-4 py-3 text-sm font-bold uppercase tracking-wider text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600] transition-all">
-            Technology
-          </a>
+        <li class="mobile-section">
+          <div class="mobile-section-heading">More</div>
+          <a href="/sustainability" class="mobile-link">Sustainability</a>
+          <a href="/careers" class="mobile-link">Careers</a>
+          <a href="/investors" class="mobile-link">Investors</a>
+          <a href="/news" class="mobile-link">News</a>
         </li>
-        <li>
-          <a href="/careers" class="block px-4 py-3 text-sm font-bold uppercase tracking-wider text-white hover:bg-[#FFC600]/10 hover:text-[#FFC600] transition-all">
-            Careers
-          </a>
-        </li>
-        <li>
-          <a href="/contact" class="block px-4 py-3 bg-[#FFC600] text-black text-sm font-black uppercase tracking-wider text-center clip-corner">
-            Contact
+        <li class="mt-4 px-4">
+          <a href="/contact" class="block py-3 bg-[#FFC600] text-black text-sm font-black uppercase tracking-wider text-center clip-corner">
+            Contact Us
           </a>
         </li>
       </ul>
@@ -128,7 +237,6 @@ const currentPath = Astro.url.pathname;
 <script>
   const button = document.getElementById('mobile-menu-button');
   const menu = document.getElementById('mobile-menu');
-
   button?.addEventListener('click', () => {
     menu?.classList.toggle('hidden');
   });
@@ -137,5 +245,147 @@ const currentPath = Astro.url.pathname;
 <style>
   .clip-corner {
     clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #e8e8e8;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .nav-link:hover {
+    color: #FFC600;
+    background: rgba(255, 198, 0, 0.05);
+  }
+
+  .nav-link-active {
+    color: #FFC600;
+    border-bottom: 2px solid #FFC600;
+  }
+
+  .dropdown-arrow {
+    font-size: 0.5rem;
+    opacity: 0.5;
+    transition: transform 0.2s;
+  }
+
+  .nav-dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+
+  /* Mega Menu */
+  .mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 600px;
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-top: 3px solid #FFC600;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    z-index: 100;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px));
+  }
+
+  .mega-menu-wide {
+    min-width: 800px;
+  }
+
+  .mega-menu-narrow {
+    min-width: 280px;
+  }
+
+  .nav-dropdown:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mega-menu-inner {
+    display: flex;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .mega-menu-section {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .mega-menu-heading {
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: #FFC600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .mega-menu-item {
+    display: block;
+    padding: 0.4rem 0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.15s;
+  }
+
+  .mega-menu-item:hover {
+    color: #FFC600;
+    padding-left: 0.5rem;
+  }
+
+  .mega-menu-featured {
+    flex: 1;
+    background: #050505;
+    padding: 1rem;
+    border-left: 2px solid #1a1a1a;
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+
+  /* Mobile Styles */
+  .mobile-section {
+    border-bottom: 1px solid #1a1a1a;
+    padding: 0.75rem 0;
+  }
+
+  .mobile-section-heading {
+    font-size: 0.6rem;
+    font-weight: 800;
+    color: #FFC600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+  }
+
+  .mobile-link {
+    display: block;
+    padding: 0.5rem 1rem 0.5rem 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.15s;
+  }
+
+  .mobile-link:hover {
+    color: #FFC600;
+    background: rgba(255, 198, 0, 0.05);
   }
 </style>

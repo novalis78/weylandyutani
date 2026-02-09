@@ -1,0 +1,342 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Conestoga-Class Military Support"
+  description="Conestoga-class light assault starship. 385m length, 78,000 metric tons, carries UD-4L Cheyenne dropships. Built by Lunnar-Welsun for UAAC under Weyland-Yutani contract. Colonial Marine force projection."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center pt-20 pb-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          MILITARY SUPPORT -- VESSEL CLASS PROFILE
+        </div>
+
+        <h1 class="text-6xl md:text-[8rem] font-black text-white mb-4 leading-none uppercase">
+          CONESTOGA<br/><span class="text-[#FFC600] text-glow-yellow">CLASS</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-6"></div>
+
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wide font-mono">
+          LIGHT ASSAULT STARSHIP -- SECURITY & FORCE PROJECTION
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Vessel Data Bar -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">CLASS</div>
+            <div class="text-sm font-black text-[#FFC600]">CONESTOGA</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">TYPE</div>
+            <div class="text-sm font-black text-[#FFC600]">LIGHT ASSAULT</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">BUILDER</div>
+            <div class="text-sm font-black text-[#FFC600]">LUNNAR-WELSUN</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">OPERATOR</div>
+            <div class="text-sm font-black text-[#FFC600]">UAAC / USCM</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">STATUS</div>
+            <div class="text-sm font-black text-[#FFC600] status-active">IN SERVICE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+                CLASS OVERVIEW
+              </div>
+              <h2 class="text-4xl md:text-5xl font-black text-white mb-8">
+                PROTECTING <span class="text-[#FFC600] text-glow-yellow">COLONIAL INVESTMENTS</span>
+              </h2>
+              <div class="space-y-6 text-gray-400 font-mono text-sm leading-relaxed">
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE CONESTOGA-CLASS LIGHT ASSAULT STARSHIP IS THE PRIMARY FORCE PROJECTION PLATFORM FOR THE UNITED STATES COLONIAL MARINES, BUILT BY LUNNAR-WELSUN UNDER CONTRACT TO THE UNITED AMERICAS ALLIED COMMAND (UAAC) WITH WEYLAND-YUTANI AS PRINCIPAL CONTRACTOR AND SYSTEMS INTEGRATOR.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> DESIGNED FOR RAPID DEPLOYMENT OF COLONIAL MARINE UNITS, THE CONESTOGA-CLASS PROVIDES THE SECURITY INFRASTRUCTURE THAT PROTECTS WEYLAND-YUTANI'S COLONIAL INVESTMENTS AND ENSURES THE SAFETY OF COLONISTS ACROSS THE FRONTIER. THESE VESSELS ARE CAPABLE OF SUSTAINED INDEPENDENT OPERATIONS IN DEEP SPACE, CONVOY ESCORT, AND ORBITAL SUPPORT.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> EACH CONESTOGA-CLASS VESSEL CARRIES A FULL COMPLEMENT OF COLONIAL MARINES, GROUND VEHICLES, AND TWO UD-4L CHEYENNE DROPSHIPS FOR SURFACE DEPLOYMENT. THE CLASS IS OPTIMIZED FOR SPEED, MANEUVERABILITY, AND OPERATIONAL FLEXIBILITY ACROSS A WIDE RANGE OF MISSION PROFILES.
+                </p>
+              </div>
+            </div>
+
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">TECHNICAL SPECIFICATIONS</h3>
+              <div class="space-y-4 text-sm font-mono">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DESIGNATION</span>
+                  <span class="text-[#FFC600] font-bold">CONESTOGA-CLASS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">TYPE</span>
+                  <span class="text-[#FFC600] font-bold">LIGHT ASSAULT STARSHIP</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">LENGTH</span>
+                  <span class="text-[#FFC600] font-bold">385 METERS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">MASS</span>
+                  <span class="text-[#FFC600] font-bold">78,000 METRIC TONS</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">CARGO CAPACITY</span>
+                  <span class="text-[#FFC600] font-bold">+20,000 MT</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">CREW</span>
+                  <span class="text-[#FFC600] font-bold">UP TO 90 INDEFINITELY</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DROPSHIPS</span>
+                  <span class="text-[#FFC600] font-bold">2x UD-4L CHEYENNE</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">BUILDER</span>
+                  <span class="text-[#FFC600] font-bold">LUNNAR-WELSUN</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">CONTRACT</span>
+                  <span class="text-[#FFC600] font-bold">UAAC / W-Y</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">OPERATIONAL RANGE</span>
+                  <span class="text-[#FFC600] font-bold">FULL NETWORK</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities -->
+    <section class="relative py-28 bg-black border-t-4 border-b-4 border-[#FFC600]">
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6 pt-6">
+        <div class="text-center mb-16">
+          <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+            CAPABILITIES
+          </div>
+          <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+            OPERATIONAL <span class="text-[#FFC600] text-glow-yellow">CAPABILITIES</span>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">FP</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">FORCE PROJECTION</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              PRIMARY CAPABILITY: RAPID DEPLOYMENT OF COLONIAL MARINE UNITS TO ANY LOCATION WITHIN THE COLONIAL NETWORK. FTL TRANSIT ENABLES RESPONSE TIMES MEASURED IN DAYS RATHER THAN MONTHS, ENSURING TIMELY INTERVENTION WHEREVER SECURITY SITUATIONS ARISE.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">DS</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">DROPSHIP OPERATIONS</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              EACH CONESTOGA-CLASS CARRIES TWO UD-4L CHEYENNE DROPSHIPS IN DEDICATED HANGAR BAYS. THE CHEYENNE PROVIDES ATMOSPHERIC INSERTION CAPABILITY FOR MARINE SQUADS, HEAVY EQUIPMENT, AND ARMORED VEHICLES TO THE SURFACE OF ANY WORLD.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">CE</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">CONVOY ESCORT</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              ESCORT DUTY FOR HIGH-VALUE FREIGHT CONVOYS AND COLONY SHIPS TRANSITING THROUGH UNSECURED OR FRONTIER SPACE. THE CONESTOGA-CLASS PROVIDES DETERRENT PRESENCE AND RAPID-RESPONSE CAPABILITY FOR THE DURATION OF CONVOY TRANSIT.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">OS</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">ORBITAL SUPPORT</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              ORBITAL PRESENCE AND SUPPORT FOR GROUND OPERATIONS. THE CONESTOGA-CLASS PROVIDES COMMUNICATIONS RELAY, SURVEILLANCE, MEDICAL EVACUATION COORDINATION, AND RESUPPLY FOR DEPLOYED MARINE UNITS OPERATING ON THE SURFACE.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">RD</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">RAPID DEPLOYMENT</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              OPTIMIZED FOR QUICK-REACTION MISSIONS. MARINE DETACHMENTS MAINTAIN COMBAT READINESS IN HYPERSLEEP AND CAN BE FULLY OPERATIONAL WITHIN HOURS OF ARRIVAL IN-SYSTEM. STANDARDIZED DEPLOYMENT PROTOCOLS ENSURE CONSISTENT READINESS ACROSS ALL VESSELS.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">SE</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">SUSTAINED ENDURANCE</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              CAPABLE OF SUSTAINING A CREW OF UP TO 90 PERSONNEL INDEFINITELY WITH ONBOARD LIFE SUPPORT, PROVISIONS, AND MAINTENANCE CAPABILITY. THE CONESTOGA-CLASS CAN REMAIN ON STATION FOR EXTENDED DEPLOYMENTS WITHOUT RESUPPLY.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Embarked Assets -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+              EMBARKED ASSETS
+            </div>
+            <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+              STANDARD <span class="text-[#FFC600] text-glow-yellow">LOADOUT</span>
+            </h2>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-4 uppercase border-b-2 border-[#FFC600] pb-3">UD-4L CHEYENNE DROPSHIP</h3>
+              <div class="space-y-3 text-sm font-mono">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-600 uppercase text-xs">QUANTITY</span>
+                  <span class="text-[#FFC600] font-bold text-xs">2 PER VESSEL</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-600 uppercase text-xs">TYPE</span>
+                  <span class="text-[#FFC600] font-bold text-xs">UTILITY / TACTICAL TRANSPORT</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-600 uppercase text-xs">CAPACITY</span>
+                  <span class="text-[#FFC600] font-bold text-xs">SQUAD + EQUIPMENT</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-600 uppercase text-xs">ROLE</span>
+                  <span class="text-[#FFC600] font-bold text-xs">ATMOSPHERIC INSERTION</span>
+                </div>
+              </div>
+              <p class="text-gray-500 font-mono text-xs leading-relaxed mt-4">
+                THE UD-4L CHEYENNE IS A VERSATILE TACTICAL TRANSPORT CAPABLE OF ATMOSPHERIC AND ORBITAL OPERATIONS. VTOL-CAPABLE WITH FULL WEAPONS SYSTEMS AND MEDICAL EVACUATION CONFIGURATION.
+              </p>
+            </div>
+
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-4 uppercase border-b-2 border-[#FFC600] pb-3">MARINE COMPLEMENT</h3>
+              <div class="space-y-3 text-sm font-mono">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-600 uppercase text-xs">MAX PERSONNEL</span>
+                  <span class="text-[#FFC600] font-bold text-xs">90 INDEFINITELY</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-600 uppercase text-xs">UNIT</span>
+                  <span class="text-[#FFC600] font-bold text-xs">USCM DETACHMENT</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-2">
+                  <span class="text-gray-600 uppercase text-xs">READINESS</span>
+                  <span class="text-[#FFC600] font-bold text-xs">HYPERSLEEP / RAPID WAKE</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-600 uppercase text-xs">SUPPORT</span>
+                  <span class="text-[#FFC600] font-bold text-xs">FULL ARMORY / MEDICAL</span>
+                </div>
+              </div>
+              <p class="text-gray-500 font-mono text-xs leading-relaxed mt-4">
+                STANDARD MARINE DETACHMENT WITH SQUAD LEADERS, WEAPONS SPECIALISTS, MEDICS, TECHNICIANS, AND COMMAND STAFF. FULL ARMORY, MEDICAL FACILITIES, AND MISSION PLANNING RESOURCES ABOARD.
+              </p>
+            </div>
+          </div>
+
+          <div class="terminal mt-16">
+            <div class="terminal-content">
+              <p class="text-[#FFC600] font-mono text-sm leading-relaxed">
+                &gt; "THE CONESTOGA-CLASS REPRESENTS WEYLAND-YUTANI'S COMMITMENT TO THE SECURITY OF OUR COLONIAL NETWORK. EVERY COLONY WORLD, EVERY TRADE ROUTE, AND EVERY CORPORATE ASSET OPERATES UNDER THE PROTECTION AFFORDED BY THESE VESSELS AND THE COLONIAL MARINES THEY CARRY. SUPPORTING THE SECURITY INFRASTRUCTURE THAT PROTECTS OUR COLONIAL INVESTMENTS IS NOT MERELY A CONTRACTUAL OBLIGATION. IT IS FOUNDATIONAL TO EVERYTHING WE BUILD."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Defense Portfolio -->
+    <section class="relative py-20 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">36</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">ACTIVE VESSELS</div>
+              <p class="text-gray-600 font-mono text-xs">CONESTOGA-CLASS VESSELS CURRENTLY IN ACTIVE SERVICE ACROSS THE COLONIAL NETWORK.</p>
+            </div>
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">100%</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">NETWORK COVERAGE</div>
+              <p class="text-gray-600 font-mono text-xs">ALL 47 STAR SYSTEMS WITHIN OPERATIONAL RANGE OF AT LEAST ONE CONESTOGA-CLASS DEPLOYMENT.</p>
+            </div>
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">&lt;96H</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">AVG RESPONSE TIME</div>
+              <p class="text-gray-600 font-mono text-xs">AVERAGE RESPONSE TIME FROM ALERT TO MARINE DEPLOYMENT AT ANY POINT IN THE COLONIAL NETWORK.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="relative py-12 bg-[#0a0a0a]">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/fleet" class="btn-secondary">ALL FLEET</a>
+          <a href="/fleet/nostromo-class" class="btn-secondary">NOSTROMO-CLASS</a>
+          <a href="/fleet/covenant-class" class="btn-secondary">COVENANT-CLASS</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

@@ -1,0 +1,440 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="MedPod 720i - Product Details"
+  description="MedPod 720i automated medical station by Weyland-Yutani. Full specifications, procedure capabilities, installation requirements, and regulatory approvals. FDA approved for home use."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero -->
+    <section class="relative min-h-[50vh] flex items-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 py-24">
+        <div class="max-w-5xl">
+          <div class="flex items-center gap-4 mb-8">
+            <a href="/products" class="text-[10px] font-mono text-gray-500 uppercase tracking-[0.2em] hover:text-[#FFC600] transition-colors">PRODUCTS</a>
+            <span class="text-gray-700">/</span>
+            <span class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em]">MEDPOD 720I</span>
+          </div>
+
+          <div class="inline-block px-4 py-1.5 bg-[#FFC600] text-black font-black text-[10px] uppercase tracking-[0.2em] mb-6 clip-corner">
+            MEDICAL TECHNOLOGY
+          </div>
+
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-[0.9] uppercase">
+            MEDPOD<br/><span class="text-[#FFC600] text-glow-yellow">720i</span>
+          </h1>
+
+          <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed max-w-2xl mb-8">
+            FULLY AUTOMATED DIAGNOSTIC AND SURGICAL PLATFORM. 99.6% DIAGNOSTIC ACCURACY. NON-INVASIVE OPERATION. FDA APPROVED FOR INSTITUTIONAL AND HOME USE.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="/contact" class="btn-primary">REQUEST CONSULTATION</a>
+            <a href="/technology/medpod" class="btn-secondary">VIEW TECHNOLOGY</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Quick Specs -->
+    <section class="relative py-8 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+          <div class="text-center">
+            <div class="text-xl font-black text-[#FFC600]">99.6%</div>
+            <div class="text-[9px] font-mono text-gray-500 uppercase tracking-[0.15em]">DIAGNOSTIC ACCURACY</div>
+          </div>
+          <div class="text-center">
+            <div class="text-xl font-black text-[#FFC600]">40M+</div>
+            <div class="text-[9px] font-mono text-gray-500 uppercase tracking-[0.15em]">CASE DATABASE</div>
+          </div>
+          <div class="text-center">
+            <div class="text-xl font-black text-[#FFC600]">FDA</div>
+            <div class="text-[9px] font-mono text-gray-500 uppercase tracking-[0.15em]">HOME USE APPROVED</div>
+          </div>
+          <div class="text-center">
+            <div class="text-xl font-black text-[#FFC600]">12,000+</div>
+            <div class="text-[9px] font-mono text-gray-500 uppercase tracking-[0.15em]">UNITS DEPLOYED</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Specifications -->
+    <section class="relative py-32 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-7xl">
+          <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">SPECIFICATIONS</div>
+          <h2 class="text-3xl md:text-4xl font-black text-white mb-12 uppercase">TECHNICAL DATA</h2>
+
+          <div class="grid lg:grid-cols-2 gap-12">
+            <div>
+              <table class="w-full">
+                <thead>
+                  <tr class="border-b-2 border-[#FFC600]">
+                    <th class="text-left py-3 px-4 text-[10px] font-black text-[#FFC600] uppercase tracking-[0.15em]" colspan="2">PHYSICAL</th>
+                  </tr>
+                </thead>
+                <tbody class="text-xs font-mono uppercase">
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400 w-1/2">DIMENSIONS (CLOSED)</td>
+                    <td class="py-3 px-4 text-white">2.4M x 1.2M x 1.1M</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">WEIGHT</td>
+                    <td class="py-3 px-4 text-white">680 KG</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">PATIENT CAPACITY</td>
+                    <td class="py-3 px-4 text-white">SINGLE ADULT (UP TO 200 KG)</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">CANOPY</td>
+                    <td class="py-3 px-4 text-white">TRANSPARENT POLYCARBONATE</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-400">PATIENT BED</td>
+                    <td class="py-3 px-4 text-white">ARTICULATED / MULTI-POSITION</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="w-full mt-8">
+                <thead>
+                  <tr class="border-b-2 border-[#FFC600]">
+                    <th class="text-left py-3 px-4 text-[10px] font-black text-[#FFC600] uppercase tracking-[0.15em]" colspan="2">DIAGNOSTIC SYSTEMS</th>
+                  </tr>
+                </thead>
+                <tbody class="text-xs font-mono uppercase">
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400 w-1/2">IMAGING</td>
+                    <td class="py-3 px-4 text-white">FULL-BODY VOLUMETRIC (0.1MM RES)</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">AI ENGINE</td>
+                    <td class="py-3 px-4 text-white">40M+ CASE REFERENCE DATABASE</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">DIAGNOSTIC ACCURACY</td>
+                    <td class="py-3 px-4 text-white">99.6%</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">BLOOD ANALYSIS</td>
+                    <td class="py-3 px-4 text-white">FULL PANEL / 120 SECONDS</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-400">GENETIC SCREENING</td>
+                    <td class="py-3 px-4 text-white">FULL GENOME / 30 MINUTES</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div>
+              <table class="w-full">
+                <thead>
+                  <tr class="border-b-2 border-[#FFC600]">
+                    <th class="text-left py-3 px-4 text-[10px] font-black text-[#FFC600] uppercase tracking-[0.15em]" colspan="2">SURGICAL SYSTEMS</th>
+                  </tr>
+                </thead>
+                <tbody class="text-xs font-mono uppercase">
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400 w-1/2">ROBOTIC ARMS</td>
+                    <td class="py-3 px-4 text-white">12-ARM ARTICULATED ARRAY</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">PRECISION</td>
+                    <td class="py-3 px-4 text-white">0.01MM POSITIONAL ACCURACY</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">TOOL HEADS</td>
+                    <td class="py-3 px-4 text-white">48 INTERCHANGEABLE</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">ANESTHESIA</td>
+                    <td class="py-3 px-4 text-white">INTEGRATED / AUTOMATED</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-400">STERILIZATION</td>
+                    <td class="py-3 px-4 text-white">AUTOMATIC (UV + CHEMICAL)</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <table class="w-full mt-8">
+                <thead>
+                  <tr class="border-b-2 border-[#FFC600]">
+                    <th class="text-left py-3 px-4 text-[10px] font-black text-[#FFC600] uppercase tracking-[0.15em]" colspan="2">POWER & CONNECTIVITY</th>
+                  </tr>
+                </thead>
+                <tbody class="text-xs font-mono uppercase">
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400 w-1/2">POWER INPUT</td>
+                    <td class="py-3 px-4 text-white">3-PHASE / 240V / 60A</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">BACKUP POWER</td>
+                    <td class="py-3 px-4 text-white">8-HOUR INTERNAL BATTERY</td>
+                  </tr>
+                  <tr class="border-b border-[#1a1a1a]">
+                    <td class="py-3 px-4 text-gray-400">DATA CONNECTIVITY</td>
+                    <td class="py-3 px-4 text-white">W-Y MEDICAL NETWORK / ENCRYPTED</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-400">SOFTWARE UPDATES</td>
+                    <td class="py-3 px-4 text-white">AUTOMATIC / OTA</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Procedure Capabilities -->
+    <section class="relative py-32 bg-[#0a0a0a] border-y-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-3xl mb-16">
+          <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">CAPABILITIES</div>
+          <h2 class="text-3xl md:text-4xl font-black text-white mb-6 uppercase">PROCEDURE LIST</h2>
+          <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed">
+            THE MEDPOD 720I IS CAPABLE OF PERFORMING OVER 3,000 CATALOGUED MEDICAL PROCEDURES. THE FOLLOWING REPRESENTS A SUMMARY OF MAJOR CATEGORIES.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl">
+          <div class="corp-card p-6">
+            <h3 class="text-sm font-black text-[#FFC600] mb-3 uppercase">DIAGNOSTIC</h3>
+            <div class="space-y-1.5 text-[10px] font-mono text-gray-400 uppercase">
+              <div>&gt; FULL-BODY IMAGING AND ANALYSIS</div>
+              <div>&gt; BLOOD / TISSUE / FLUID PANELS</div>
+              <div>&gt; NEUROLOGICAL FUNCTION MAPPING</div>
+              <div>&gt; CARDIAC ASSESSMENT</div>
+              <div>&gt; PATHOGEN IDENTIFICATION</div>
+              <div>&gt; GENETIC SCREENING AND ANALYSIS</div>
+              <div>&gt; TUMOR DETECTION AND STAGING</div>
+              <div>&gt; BONE DENSITY ASSESSMENT</div>
+            </div>
+          </div>
+
+          <div class="corp-card p-6">
+            <h3 class="text-sm font-black text-[#FFC600] mb-3 uppercase">SURGICAL</h3>
+            <div class="space-y-1.5 text-[10px] font-mono text-gray-400 uppercase">
+              <div>&gt; GENERAL SURGERY (ALL DISCIPLINES)</div>
+              <div>&gt; NEUROSURGERY</div>
+              <div>&gt; CARDIOVASCULAR SURGERY</div>
+              <div>&gt; ORTHOPEDIC RECONSTRUCTION</div>
+              <div>&gt; FOREIGN BODY EXTRACTION</div>
+              <div>&gt; ORGAN REPAIR</div>
+              <div>&gt; TISSUE REGENERATION</div>
+              <div>&gt; MICROSURGERY (NERVE / VESSEL)</div>
+            </div>
+          </div>
+
+          <div class="corp-card p-6">
+            <h3 class="text-sm font-black text-[#FFC600] mb-3 uppercase">EMERGENCY</h3>
+            <div class="space-y-1.5 text-[10px] font-mono text-gray-400 uppercase">
+              <div>&gt; TRAUMA STABILIZATION</div>
+              <div>&gt; HEMORRHAGE CONTROL</div>
+              <div>&gt; BURN TREATMENT</div>
+              <div>&gt; TOXIN / VENOM NEUTRALIZATION</div>
+              <div>&gt; DECOMPRESSION TREATMENT</div>
+              <div>&gt; RADIATION EXPOSURE THERAPY</div>
+              <div>&gt; CARDIAC RESUSCITATION</div>
+              <div>&gt; AIRWAY MANAGEMENT</div>
+            </div>
+          </div>
+
+          <div class="corp-card p-6">
+            <h3 class="text-sm font-black text-[#FFC600] mb-3 uppercase">PREVENTIVE</h3>
+            <div class="space-y-1.5 text-[10px] font-mono text-gray-400 uppercase">
+              <div>&gt; COMPREHENSIVE HEALTH SCREENING</div>
+              <div>&gt; VACCINATION ADMINISTRATION</div>
+              <div>&gt; PROPHYLACTIC TREATMENT</div>
+              <div>&gt; IMMUNE SYSTEM OPTIMIZATION</div>
+              <div>&gt; NUTRITIONAL ASSESSMENT</div>
+              <div>&gt; STRESS AND FATIGUE ANALYSIS</div>
+            </div>
+          </div>
+
+          <div class="corp-card p-6">
+            <h3 class="text-sm font-black text-[#FFC600] mb-3 uppercase">IMPLANT PROCEDURES</h3>
+            <div class="space-y-1.5 text-[10px] font-mono text-gray-400 uppercase">
+              <div>&gt; BROCA DIALECTICAL IMPLANT</div>
+              <div>&gt; NEURAL INTERFACE DEVICES</div>
+              <div>&gt; ORTHOPEDIC IMPLANTS</div>
+              <div>&gt; CARDIOVASCULAR DEVICES</div>
+              <div>&gt; SENSORY AUGMENTATION</div>
+              <div>&gt; MONITORING IMPLANTS</div>
+            </div>
+          </div>
+
+          <div class="corp-card p-6">
+            <h3 class="text-sm font-black text-[#FFC600] mb-3 uppercase">REHABILITATION</h3>
+            <div class="space-y-1.5 text-[10px] font-mono text-gray-400 uppercase">
+              <div>&gt; SYNAPSE REESTABLISHMENT</div>
+              <div>&gt; MOTOR FUNCTION RESTORATION</div>
+              <div>&gt; COGNITIVE REHABILITATION</div>
+              <div>&gt; POST-HYPERSLEEP ASSESSMENT</div>
+              <div>&gt; PHYSICAL THERAPY PROTOCOLS</div>
+              <div>&gt; PAIN MANAGEMENT</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Installation & Regulatory -->
+    <section class="relative py-32 bg-black">
+      <div class="relative container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12 max-w-6xl">
+          <div>
+            <div class="text-[10px] font-mono text-[#FFC600] uppercase tracking-[0.2em] mb-4">INSTALLATION</div>
+            <h2 class="text-3xl font-black text-white mb-6 uppercase">FACILITY REQUIREMENTS</h2>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">&gt;</span>
+                <div>
+                  <span class="text-white font-mono text-xs uppercase font-bold block mb-1">SPACE</span>
+                  <span class="text-gray-500 font-mono text-[10px] uppercase">MINIMUM 4M x 3M ROOM. 2.5M CEILING CLEARANCE. LEVEL, REINFORCED FLOOR (700+ KG).</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">&gt;</span>
+                <div>
+                  <span class="text-white font-mono text-xs uppercase font-bold block mb-1">POWER</span>
+                  <span class="text-gray-500 font-mono text-[10px] uppercase">3-PHASE / 240V / 60A DEDICATED CIRCUIT. BACKUP GENERATOR RECOMMENDED.</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">&gt;</span>
+                <div>
+                  <span class="text-white font-mono text-xs uppercase font-bold block mb-1">ENVIRONMENT</span>
+                  <span class="text-gray-500 font-mono text-[10px] uppercase">CLEAN ROOM CLASS 10,000 OR BETTER. TEMPERATURE 18-24C. HUMIDITY 30-60%.</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">&gt;</span>
+                <div>
+                  <span class="text-white font-mono text-xs uppercase font-bold block mb-1">CONNECTIVITY</span>
+                  <span class="text-gray-500 font-mono text-[10px] uppercase">ENCRYPTED DATA LINK TO W-Y MEDICAL NETWORK. LOCAL NETWORK FOR RECORDS MANAGEMENT.</span>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="text-[#FFC600] font-black text-xs">&gt;</span>
+                <div>
+                  <span class="text-white font-mono text-xs uppercase font-bold block mb-1">CONSUMABLES</span>
+                  <span class="text-gray-500 font-mono text-[10px] uppercase">PHARMACEUTICAL CARTRIDGE BAY (INCLUDED). RESUPPLY EVERY 6-12 MONTHS (USAGE DEPENDENT).</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div class="corp-card p-6">
+              <h3 class="text-sm font-black text-[#FFC600] mb-4 uppercase">REGULATORY APPROVALS</h3>
+              <div class="space-y-2">
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">FDA CLEARED: INSTITUTIONAL USE (2061)</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">FDA CLEARED: HOME USE (2070)</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">ICC OFF-WORLD MEDICAL AUTHORITY</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">COLONIAL MEDICAL STANDARDS BOARD</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">USCM FIELD MEDICAL EQUIPMENT CERTIFICATION</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-[#FFC600] text-xs">&gt;</span>
+                  <span class="text-gray-400 font-mono text-[10px] uppercase">ISO 13485 MEDICAL DEVICE QMS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="corp-card p-6">
+              <h3 class="text-sm font-black text-[#FFC600] mb-4 uppercase">TRAINING & CERTIFICATION</h3>
+              <div class="space-y-3">
+                <div class="border-b border-[#1a1a1a] pb-3">
+                  <div class="text-xs font-mono text-white uppercase font-bold mb-1">OPERATOR CERTIFICATION</div>
+                  <div class="text-[10px] font-mono text-gray-500 uppercase">16-HOUR PROGRAM. SYSTEM OPERATION, PATIENT PREPARATION, EMERGENCY PROTOCOLS. REQUIRED FOR ALL INSTALLATIONS.</div>
+                </div>
+                <div class="border-b border-[#1a1a1a] pb-3">
+                  <div class="text-xs font-mono text-white uppercase font-bold mb-1">MEDICAL STAFF TRAINING</div>
+                  <div class="text-[10px] font-mono text-gray-500 uppercase">40-HOUR PROGRAM. ADVANCED PROCEDURE MANAGEMENT, AI INTERACTION, MANUAL OVERRIDE PROTOCOLS.</div>
+                </div>
+                <div>
+                  <div class="text-xs font-mono text-white uppercase font-bold mb-1">SERVICE TECHNICIAN</div>
+                  <div class="text-[10px] font-mono text-gray-500 uppercase">80-HOUR PROGRAM. HARDWARE MAINTENANCE, SOFTWARE DIAGNOSTICS, ROBOTIC ARM CALIBRATION, CONSUMABLES MANAGEMENT.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="corp-card p-6">
+              <h3 class="text-sm font-black text-[#FFC600] mb-4 uppercase">SUPPORT PACKAGES</h3>
+              <div class="space-y-3">
+                <div class="border-b border-[#1a1a1a] pb-3">
+                  <div class="text-xs font-mono text-white uppercase font-bold mb-1">STANDARD</div>
+                  <div class="text-[10px] font-mono text-gray-500 uppercase">3-YEAR WARRANTY. ANNUAL SERVICE. SOFTWARE UPDATES. CONSUMABLE RESUPPLY.</div>
+                </div>
+                <div class="border-b border-[#1a1a1a] pb-3">
+                  <div class="text-xs font-mono text-white uppercase font-bold mb-1">PREMIUM</div>
+                  <div class="text-[10px] font-mono text-gray-500 uppercase">5-YEAR COMPREHENSIVE. QUARTERLY SERVICE. 24/7 REMOTE SUPPORT. PRIORITY PARTS.</div>
+                </div>
+                <div>
+                  <div class="text-xs font-mono text-white uppercase font-bold mb-1">ENTERPRISE</div>
+                  <div class="text-[10px] font-mono text-gray-500 uppercase">MULTI-UNIT. DEDICATED SERVICE TEAM. ON-SITE PARTS INVENTORY. PERFORMANCE GUARANTEE.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-20 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+      <div class="relative container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-black text-white mb-6 uppercase">REQUEST A CONSULTATION</h2>
+        <p class="text-gray-400 font-mono text-sm uppercase mb-8 max-w-2xl mx-auto">
+          OUR MEDICAL SYSTEMS TEAM WILL ASSESS YOUR REQUIREMENTS AND PROVIDE DETAILED SPECIFICATIONS, PRICING, AND INSTALLATION PLANNING.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="/contact" class="btn-primary">CONTACT MEDICAL SYSTEMS</a>
+          <a href="/products" class="btn-secondary">BACK TO CATALOG</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

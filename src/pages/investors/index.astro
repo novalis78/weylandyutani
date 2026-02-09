@@ -1,0 +1,275 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Investor Relations"
+  description="Weyland-Yutani Corporation investor relations. Market capitalization exceeding $200 trillion. Access financial reports, stock information, governance documents, and earnings data."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center py-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          NYSE: WYUT &bull; TSE: 9457 &bull; LSE: WYC
+        </div>
+
+        <h1 class="text-6xl md:text-8xl font-black text-white mb-8 leading-none uppercase">
+          INVESTOR <span class="text-[#FFC600] text-glow-yellow">RELATIONS</span>
+        </h1>
+
+        <div class="h-1 w-64 bg-[#FFC600] mx-auto mb-8"></div>
+
+        <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wide font-mono">
+          DELIVERING CONSISTENT SHAREHOLDER VALUE THROUGH DISCIPLINED CAPITAL ALLOCATION
+          AND STRATEGIC GROWTH ACROSS SEVEN OPERATING DIVISIONS.
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- STOCK TICKER -->
+    <section class="relative py-6 bg-[#0a0a0a] border-b-2 border-[#1a1a1a] overflow-hidden">
+      <div class="flex items-center justify-center gap-12 flex-wrap px-6">
+        <div class="flex items-center gap-3">
+          <span class="text-gray-600 font-mono text-xs uppercase">NYSE: WYUT</span>
+          <span class="text-white font-black text-lg">$4,287.53</span>
+          <span class="text-[#FFC600] font-mono text-xs">+1.24%</span>
+        </div>
+        <div class="w-px h-8 bg-[#1a1a1a]"></div>
+        <div class="flex items-center gap-3">
+          <span class="text-gray-600 font-mono text-xs uppercase">TSE: 9457</span>
+          <span class="text-white font-black text-lg">&yen;642,100</span>
+          <span class="text-[#FFC600] font-mono text-xs">+0.87%</span>
+        </div>
+        <div class="w-px h-8 bg-[#1a1a1a]"></div>
+        <div class="flex items-center gap-3">
+          <span class="text-gray-600 font-mono text-xs uppercase">LSE: WYC</span>
+          <span class="text-white font-black text-lg">&pound;3,412.00</span>
+          <span class="text-[#FFC600] font-mono text-xs">+1.02%</span>
+        </div>
+        <div class="w-px h-8 bg-[#1a1a1a]"></div>
+        <div class="flex items-center gap-3">
+          <span class="text-gray-600 font-mono text-xs uppercase">VOLUME</span>
+          <span class="text-white font-mono text-sm">42.3M</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY FINANCIALS -->
+    <section class="relative py-24 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="text-center mb-16">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-widest font-mono">FISCAL YEAR 2058</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-4 uppercase">
+            FINANCIAL <span class="text-[#FFC600]">HIGHLIGHTS</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div class="corp-card p-8 text-center">
+            <div class="text-gray-600 font-mono text-xs uppercase mb-2">MARKET CAPITALIZATION</div>
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] text-glow-yellow">$218T</div>
+            <div class="text-gray-500 font-mono text-xs uppercase mt-2">+12% YOY</div>
+          </div>
+          <div class="corp-card p-8 text-center">
+            <div class="text-gray-600 font-mono text-xs uppercase mb-2">ANNUAL REVENUE</div>
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] text-glow-yellow">$45.2T</div>
+            <div class="text-gray-500 font-mono text-xs uppercase mt-2">+8.3% YOY</div>
+          </div>
+          <div class="corp-card p-8 text-center">
+            <div class="text-gray-600 font-mono text-xs uppercase mb-2">NET INCOME</div>
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] text-glow-yellow">$12.1T</div>
+            <div class="text-gray-500 font-mono text-xs uppercase mt-2">26.8% MARGIN</div>
+          </div>
+          <div class="corp-card p-8 text-center">
+            <div class="text-gray-600 font-mono text-xs uppercase mb-2">DIVIDEND YIELD</div>
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] text-glow-yellow">3.2%</div>
+            <div class="text-gray-500 font-mono text-xs uppercase mt-2">$137.20/SHARE ANNUAL</div>
+          </div>
+          <div class="corp-card p-8 text-center">
+            <div class="text-gray-600 font-mono text-xs uppercase mb-2">EMPLOYEES</div>
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] text-glow-yellow">527K</div>
+            <div class="text-gray-500 font-mono text-xs uppercase mt-2">ACROSS 300+ WORLDS</div>
+          </div>
+          <div class="corp-card p-8 text-center">
+            <div class="text-gray-600 font-mono text-xs uppercase mb-2">R&D INVESTMENT</div>
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] text-glow-yellow">$6.8T</div>
+            <div class="text-gray-500 font-mono text-xs uppercase mt-2">15% OF REVENUE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUARTERLY HIGHLIGHTS -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6 max-w-5xl">
+        <div class="text-center mb-16">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-widest font-mono">MOST RECENT QUARTER</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-4 uppercase">
+            Q4 FY2058 <span class="text-[#FFC600]">HIGHLIGHTS</span>
+          </h2>
+        </div>
+
+        <div class="corp-card p-8 md:p-12">
+          <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <div>
+              <h4 class="text-white font-black text-sm uppercase mb-4 border-b border-[#FFC600]/30 pb-2">OPERATIONAL HIGHLIGHTS</h4>
+              <ul class="space-y-3">
+                <li class="text-gray-400 font-mono text-xs uppercase leading-relaxed status-active">QUARTERLY REVENUE OF $12.4T, UP 9.1% YEAR-OVER-YEAR</li>
+                <li class="text-gray-400 font-mono text-xs uppercase leading-relaxed status-active">TERRAFORMING DIVISION REVENUE SURPASSED $8T FOR THE FIRST TIME</li>
+                <li class="text-gray-400 font-mono text-xs uppercase leading-relaxed status-active">12 NEW COLONY ATMOSPHERES DECLARED BREATHABLE THIS QUARTER</li>
+                <li class="text-gray-400 font-mono text-xs uppercase leading-relaxed status-active">DAVID-9 SERIES SYNTHETIC PLATFORM ACHIEVED FULL PRODUCTION</li>
+                <li class="text-gray-400 font-mono text-xs uppercase leading-relaxed status-active">FLEET EXPANDED BY 18 VESSELS INCLUDING 3 NEW HELIADES-CLASS</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-white font-black text-sm uppercase mb-4 border-b border-[#FFC600]/30 pb-2">STRATEGIC DEVELOPMENTS</h4>
+              <ul class="space-y-3">
+                <li class="text-gray-400 font-mono text-xs uppercase leading-relaxed status-active">COMPLETED ACQUISITION OF KELLAND MINING CORPORATION</li>
+                <li class="text-gray-400 font-mono text-xs uppercase leading-relaxed status-active">SIGNED 20-YEAR TERRAFORMING CONTRACT WITH COLONIAL ADMINISTRATION</li>
+                <li class="text-gray-400 font-mono text-xs uppercase leading-relaxed status-active">BOARD AUTHORIZED $2T SHARE REPURCHASE PROGRAM</li>
+                <li class="text-gray-400 font-mono text-xs uppercase leading-relaxed status-active">MEDPOD 5000 RECEIVED REGULATORY APPROVAL IN 42 JURISDICTIONS</li>
+                <li class="text-gray-400 font-mono text-xs uppercase leading-relaxed status-active">ENTERED STRATEGIC PARTNERSHIP WITH UNITED AMERICAS GOVERNMENT</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="border-t border-[#1a1a1a] pt-8 text-center">
+            <a href="/investors/quarterly-earnings" class="btn-primary text-sm">FULL QUARTERLY REPORT</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANALYST COVERAGE -->
+    <section class="relative py-24 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6 max-w-5xl">
+        <div class="text-center mb-16">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-widest font-mono">MARKET CONSENSUS</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-4 uppercase">
+            ANALYST <span class="text-[#FFC600]">COVERAGE</span>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+          <div class="corp-card p-6 text-center">
+            <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">24</div>
+            <div class="text-white font-bold text-xs uppercase">BUY RATINGS</div>
+          </div>
+          <div class="corp-card p-6 text-center">
+            <div class="text-4xl font-black text-gray-400 mb-2">4</div>
+            <div class="text-white font-bold text-xs uppercase">HOLD RATINGS</div>
+          </div>
+          <div class="corp-card p-6 text-center">
+            <div class="text-4xl font-black text-gray-600 mb-2">0</div>
+            <div class="text-white font-bold text-xs uppercase">SELL RATINGS</div>
+          </div>
+        </div>
+
+        <div class="corp-card p-8">
+          <h4 class="text-white font-black text-sm uppercase mb-6 border-b border-[#1a1a1a] pb-4">CONSENSUS PRICE TARGETS</h4>
+          <div class="grid grid-cols-3 gap-6 text-center">
+            <div>
+              <div class="text-gray-600 font-mono text-xs uppercase mb-2">LOW</div>
+              <div class="text-white font-black text-xl">$3,900</div>
+            </div>
+            <div>
+              <div class="text-[#FFC600] font-mono text-xs uppercase mb-2">MEDIAN</div>
+              <div class="text-[#FFC600] font-black text-xl">$4,750</div>
+            </div>
+            <div>
+              <div class="text-gray-600 font-mono text-xs uppercase mb-2">HIGH</div>
+              <div class="text-white font-black text-xl">$5,500</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK LINKS -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="text-center mb-16">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-widest font-mono">RESOURCES</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-4 uppercase">
+            INVESTOR <span class="text-[#FFC600]">RESOURCES</span>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <a href="/investors/annual-report" class="corp-card p-8 text-center group">
+            <div class="w-14 h-14 bg-black border-2 border-[#FFC600] clip-corner flex items-center justify-center mx-auto mb-6 group-hover:bg-[#FFC600] transition-colors">
+              <span class="text-[#FFC600] text-xl font-black group-hover:text-black transition-colors">AR</span>
+            </div>
+            <h3 class="text-lg font-black text-white mb-2 uppercase">ANNUAL REPORT</h3>
+            <p class="text-gray-600 font-mono text-xs uppercase">FY2058 COMPREHENSIVE FINANCIAL REVIEW</p>
+          </a>
+          <a href="/investors/quarterly-earnings" class="corp-card p-8 text-center group">
+            <div class="w-14 h-14 bg-black border-2 border-[#FFC600] clip-corner flex items-center justify-center mx-auto mb-6 group-hover:bg-[#FFC600] transition-colors">
+              <span class="text-[#FFC600] text-xl font-black group-hover:text-black transition-colors">QE</span>
+            </div>
+            <h3 class="text-lg font-black text-white mb-2 uppercase">QUARTERLY EARNINGS</h3>
+            <p class="text-gray-600 font-mono text-xs uppercase">Q4 FY2058 RESULTS AND GUIDANCE</p>
+          </a>
+          <a href="/investors/corporate-governance" class="corp-card p-8 text-center group">
+            <div class="w-14 h-14 bg-black border-2 border-[#FFC600] clip-corner flex items-center justify-center mx-auto mb-6 group-hover:bg-[#FFC600] transition-colors">
+              <span class="text-[#FFC600] text-xl font-black group-hover:text-black transition-colors">CG</span>
+            </div>
+            <h3 class="text-lg font-black text-white mb-2 uppercase">GOVERNANCE</h3>
+            <p class="text-gray-600 font-mono text-xs uppercase">BOARD, COMMITTEES, AND POLICIES</p>
+          </a>
+          <a href="/sustainability" class="corp-card p-8 text-center group">
+            <div class="w-14 h-14 bg-black border-2 border-[#FFC600] clip-corner flex items-center justify-center mx-auto mb-6 group-hover:bg-[#FFC600] transition-colors">
+              <span class="text-[#FFC600] text-xl font-black group-hover:text-black transition-colors">ES</span>
+            </div>
+            <h3 class="text-lg font-black text-white mb-2 uppercase">ESG REPORT</h3>
+            <p class="text-gray-600 font-mono text-xs uppercase">SUSTAINABILITY AND ESG METRICS</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGULATORY -->
+    <section class="relative py-16 bg-[#0a0a0a]">
+      <div class="relative container mx-auto px-6 max-w-5xl">
+        <div class="corp-card p-8">
+          <h3 class="text-lg font-black text-white mb-4 uppercase">REGULATORY COMPLIANCE</h3>
+          <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed mb-4">
+            WEYLAND-YUTANI CORPORATION IS A PUBLICLY TRADED COMPANY LISTED ON THE NEW YORK STOCK EXCHANGE (NYSE: WYUT), TOKYO STOCK EXCHANGE (TSE: 9457), AND LONDON STOCK EXCHANGE (LSE: WYC). THE COMPANY IS SUBJECT TO AND IN FULL COMPLIANCE WITH ALL APPLICABLE SECURITIES REGULATIONS INCLUDING SEC, FSA, AND FCA REPORTING REQUIREMENTS.
+          </p>
+          <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed mb-4">
+            ALL FINANCIAL STATEMENTS ARE PREPARED IN ACCORDANCE WITH INTERNATIONAL FINANCIAL REPORTING STANDARDS (IFRS) AND ARE AUDITED ANNUALLY BY AN INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM. QUARTERLY REPORTS ARE REVIEWED IN ACCORDANCE WITH APPLICABLE STANDARDS.
+          </p>
+          <p class="text-gray-600 font-mono text-xs uppercase leading-relaxed">
+            FOR INVESTOR INQUIRIES, PLEASE CONTACT THE INVESTOR RELATIONS DEPARTMENT AT IR@WEYLANDYUTANI.COM OR +1-800-555-WYUT.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

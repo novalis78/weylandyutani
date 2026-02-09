@@ -1,0 +1,364 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const energySystems = [
+  {
+    name: "FTL PROPULSION DRIVE",
+    desc: "Based on Weyland's 2032 breakthrough in inverse velocity-time relationship, our FTL propulsion systems power every interstellar vessel in the corporate fleet and the majority of commercial FTL-capable spacecraft. The Heliades, launched in 2034, was the first ship to exceed the speed of light.",
+    stat: "FIRST FTL: 2034",
+  },
+  {
+    name: "FUSION REACTOR PLATFORM",
+    desc: "1.0 terawatt deuterium-tritium fusion reactors providing continuous power generation for atmospheric processors, colony infrastructure, and industrial operations. Self-sustaining fuel cycle with a 40-year service life and zero-emission operation.",
+    stat: "15,000+ DEPLOYED",
+  },
+  {
+    name: "ORBITAL SOLAR ARRAYS",
+    desc: "First industrialized space mission (2015) deployed orbital solar collection platforms. Current generation arrays achieve 94% photon capture efficiency with wireless power transmission to surface installations.",
+    stat: "SINCE 2015",
+  },
+  {
+    name: "COLONIAL POWER GRID",
+    desc: "Integrated power distribution networks designed for colony-scale operations. Redundant transmission, automated load balancing, and emergency backup systems ensuring uninterrupted power across all colony installations.",
+    stat: "300+ WORLDS",
+  },
+];
+
+const timeline = [
+  { year: "2015", event: "First industrialized space mission deploys orbital solar panels for commercial energy generation" },
+  { year: "2023", event: "Fourth-generation solar collection arrays achieve 80% photon capture efficiency in orbital deployment" },
+  { year: "2028", event: "Prototype fusion reactor achieves sustained plasma ignition for 200+ continuous hours" },
+  { year: "2032", event: "Peter Weyland cracks FTL travel based on inverse velocity-time relationship theory" },
+  { year: "2034", event: "HELIADES launched as first faster-than-light spacecraft. Interstellar travel becomes reality" },
+  { year: "2038", event: "First 1.0 terawatt fusion reactor deployed in atmosphere processing plant installation" },
+  { year: "2045", event: "1,000th fusion reactor commissioned across colony worlds and orbital installations" },
+  { year: "2055", event: "Next-generation FTL drive reduces transit time by 40%, opening access to Outer Veil systems" },
+  { year: "2065", event: "10,000th fusion reactor deployed. Energy Systems becomes largest division by infrastructure footprint" },
+  { year: "2075", event: "15,000+ fusion reactors operational. Research into quantum vacuum energy extraction begins" },
+];
+
+const applications = [
+  { name: "SPACECRAFT PROPULSION", desc: "FTL and sub-light propulsion systems for commercial, military, and exploration vessels ranging from scout ships to heavy cruisers." },
+  { name: "COLONY POWER GENERATION", desc: "Complete power infrastructure for colony installations including generation, transmission, distribution, and emergency backup systems." },
+  { name: "INDUSTRIAL OPERATIONS", desc: "High-output power systems for mining, refining, manufacturing, and atmospheric processing requiring terawatt-scale energy delivery." },
+  { name: "TERRAFORMING SUPPORT", desc: "Dedicated fusion reactor platforms engineered for Atmosphere Processing Plant integration. Continuous operation for 20+ year conversion cycles." },
+  { name: "DEEP SPACE STATIONS", desc: "Power generation and management for orbital platforms, relay stations, and deep space installations operating beyond solar energy collection range." },
+  { name: "R&D FACILITIES", desc: "Specialized power systems for particle accelerators, containment fields, and high-energy research equipment across corporate laboratories." },
+];
+---
+
+<Layout
+  title="Energy Systems"
+  description="Weyland-Yutani Energy Systems Division - Powering civilization from Earth to the Outer Veil. FTL propulsion, fusion reactor technology, and advanced power distribution across 300+ worlds."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative min-h-[70vh] flex items-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-15"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+
+      <!-- Radiating energy lines -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-1/2 right-[10%] -translate-y-1/2 hidden xl:block">
+          <div class="w-64 h-64 relative">
+            <div class="absolute inset-0 border border-[#FFC600]/5 rounded-full"></div>
+            <div class="absolute inset-6 border border-[#FFC600]/5 rounded-full"></div>
+            <div class="absolute inset-12 border border-[#FFC600]/5 rounded-full"></div>
+            <div class="absolute inset-[72px] border border-[#FFC600]/8 rounded-full"></div>
+            <div class="absolute inset-24 border border-[#FFC600]/10 rounded-full animate-pulse-yellow"></div>
+            <div class="absolute top-1/2 left-0 right-0 h-px bg-[#FFC600]/5"></div>
+            <div class="absolute left-1/2 top-0 bottom-0 w-px bg-[#FFC600]/5"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative container mx-auto px-6 py-24">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 bg-[#FFC600] clip-corner flex items-center justify-center">
+              <span class="text-black text-2xl font-black">ES</span>
+            </div>
+            <div>
+              <div class="status-active text-xs font-mono text-[#FFC600] mb-1">DIVISION ACTIVE</div>
+              <span class="text-gray-500 font-mono text-xs uppercase tracking-widest">EST. 2015</span>
+            </div>
+          </div>
+
+          <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.85] uppercase mb-8">
+            ENERGY<br/>
+            <span class="text-[#FFC600] text-glow-yellow">SYSTEMS</span>
+          </h1>
+
+          <div class="h-1 w-32 bg-[#FFC600] mb-8"></div>
+
+          <p class="text-gray-400 font-mono text-sm md:text-base leading-relaxed max-w-3xl uppercase tracking-wide">
+            Powering civilization from Earth to the Outer Veil. From the first industrialized space mission
+            to the breakthrough of faster-than-light travel, Weyland-Yutani Energy Systems provides the
+            fundamental infrastructure upon which interstellar civilization depends.
+          </p>
+        </div>
+      </div>
+
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">15K+</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Fusion Reactors</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">300+</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Worlds Powered</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">FTL</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Propulsion Pioneer</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">60 YR</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Of Innovation</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FTL PROPULSION -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <div class="flex items-center gap-4 mb-4">
+              <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+              <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Flagship Technology</span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-6">
+              FASTER THAN<br/><span class="text-[#FFC600]">LIGHT</span>
+            </h2>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+              In 2032, Sir Peter Weyland's theoretical work on the inverse relationship between velocity
+              and time yielded the foundational equations for superluminal travel. Within two years,
+              Weyland Industries had translated theory into engineering reality with the launch of the
+              HELIADES, humanity's first faster-than-light spacecraft.
+            </p>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+              FTL propulsion works by generating a localized distortion in spacetime, effectively
+              compressing the distance between origin and destination rather than accelerating a vessel
+              beyond the speed of light. The ship itself never exceeds light speed relative to its
+              local reference frame, avoiding the relativistic paradoxes predicted by classical physics.
+            </p>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed">
+              Today, Weyland-Yutani FTL drive systems power the majority of interstellar-capable vessels
+              in operation, from corporate fleet freighters to USCM troop transports. Our next-generation
+              drive, introduced in 2055, reduced transit times by 40%, opening access to previously
+              unreachable star systems in the Outer Veil.
+            </p>
+          </div>
+
+          <div>
+            <div class="terminal mb-6">
+              <div class="terminal-content">
+                <p class="mb-2 text-gray-500">$ ftl-drive --specifications</p>
+                <p class="mb-1">&nbsp;</p>
+                <p class="mb-1">FTL PROPULSION DRIVE :: GEN 4</p>
+                <p class="mb-1">================================</p>
+                <p class="mb-1">&nbsp;</p>
+                <p class="mb-1">PRINCIPLE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spacetime compression</p>
+                <p class="mb-1">MAX VELOCITY:&nbsp;&nbsp;&nbsp;&nbsp; Classified (superluminal)</p>
+                <p class="mb-1">POWER SOURCE:&nbsp;&nbsp;&nbsp;&nbsp; Dedicated fusion reactor</p>
+                <p class="mb-1">SPOOL TIME:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.2 hours (cold start)</p>
+                <p class="mb-1">TRANSIT MODE:&nbsp;&nbsp;&nbsp;&nbsp; Continuous / Pulse</p>
+                <p class="mb-1">CREW STATUS:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hypersleep recommended</p>
+                <p class="mb-1">SERVICE LIFE:&nbsp;&nbsp;&nbsp;&nbsp; 25 years / 50 transits</p>
+                <p class="mb-1">&nbsp;</p>
+                <p class="mb-1">SAFETY:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Triple-redundant containment</p>
+                <p class="mb-1">CERTIFICATION:&nbsp;&nbsp;&nbsp; ICC Class A / USCM Mil-Spec</p>
+                <p class="text-gray-500">$ DRIVE STATUS: NOMINAL_</p>
+              </div>
+            </div>
+
+            <div class="corp-card p-6">
+              <h4 class="text-sm font-black text-[#FFC600] uppercase mb-3">HELIADES — FIRST FTL VESSEL</h4>
+              <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">
+                Launched 2034 from Earth orbit. The Heliades completed the first superluminal transit
+                to Alpha Centauri, confirming Weyland's theoretical framework and opening the era
+                of interstellar exploration and colonization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE SYSTEMS -->
+    <section class="relative py-24 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Product Portfolio</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-16">CORE SYSTEMS</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          {energySystems.map((sys) => (
+            <div class="corp-card p-8">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-black text-white uppercase">{sys.name}</h3>
+                <span class="px-3 py-1 bg-black border border-[#FFC600]/30 text-[#FFC600] font-mono text-[10px] uppercase tracking-wider clip-corner shrink-0 ml-4">{sys.stat}</span>
+              </div>
+              <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">{sys.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLICATIONS -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Deployment</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-16">APPLICATIONS</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {applications.map((app) => (
+            <div class="p-6 bg-[#0a0a0a] border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600]/50 transition-all">
+              <h3 class="text-sm font-black text-[#FFC600] uppercase mb-3">{app.name}</h3>
+              <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">{app.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- R&D -->
+    <section class="relative py-24 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <div class="flex items-center gap-4 mb-4">
+              <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+              <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Future</span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-6">
+              NEXT-GENERATION<br/><span class="text-[#FFC600]">RESEARCH</span>
+            </h2>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+              Our Advanced Research group is exploring energy sources that could make even fusion
+              reactors obsolete. Current programs include quantum vacuum energy extraction, zero-point
+              field manipulation, and compact antimatter containment.
+            </p>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed">
+              Additionally, fifth-generation FTL drive research aims to reduce transit times by another
+              order of magnitude, potentially enabling real-time interstellar logistics and communication.
+              These programs represent billions in annual R&D investment and employ some of the finest
+              theoretical and applied physicists in human civilization.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="p-4 bg-black border-2 border-[#FFC600]/20 clip-corner">
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white font-black text-xs uppercase">QUANTUM VACUUM ENERGY</span>
+                <span class="text-[#FFC600] font-mono text-xs">PHASE II</span>
+              </div>
+              <div class="w-full bg-[#1a1a1a] h-1"><div class="bg-[#FFC600] h-1 w-[35%]"></div></div>
+            </div>
+            <div class="p-4 bg-black border-2 border-[#FFC600]/20 clip-corner">
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white font-black text-xs uppercase">ZERO-POINT FIELD MANIPULATION</span>
+                <span class="text-[#FFC600] font-mono text-xs">PHASE I</span>
+              </div>
+              <div class="w-full bg-[#1a1a1a] h-1"><div class="bg-[#FFC600] h-1 w-[18%]"></div></div>
+            </div>
+            <div class="p-4 bg-black border-2 border-[#FFC600]/20 clip-corner">
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white font-black text-xs uppercase">ANTIMATTER CONTAINMENT</span>
+                <span class="text-[#FFC600] font-mono text-xs">PHASE II</span>
+              </div>
+              <div class="w-full bg-[#1a1a1a] h-1"><div class="bg-[#FFC600] h-1 w-[28%]"></div></div>
+            </div>
+            <div class="p-4 bg-black border-2 border-[#FFC600]/20 clip-corner">
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white font-black text-xs uppercase">GEN 5 FTL DRIVE</span>
+                <span class="text-[#FFC600] font-mono text-xs">PHASE III</span>
+              </div>
+              <div class="w-full bg-[#1a1a1a] h-1"><div class="bg-[#FFC600] h-1 w-[52%]"></div></div>
+            </div>
+            <div class="p-4 bg-black border-2 border-[#FFC600]/20 clip-corner">
+              <div class="flex justify-between items-center mb-2">
+                <span class="text-white font-black text-xs uppercase">COMPACT FUSION (GEN 4)</span>
+                <span class="text-[#FFC600] font-mono text-xs">PRODUCTION</span>
+              </div>
+              <div class="w-full bg-[#1a1a1a] h-1"><div class="bg-[#FFC600] h-1 w-[92%]"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">History</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-16">KEY MILESTONES</h2>
+
+        <div class="space-y-0">
+          {timeline.map((t, i) => (
+            <div class={`flex gap-6 md:gap-10 items-start py-6 ${i < timeline.length - 1 ? 'border-b border-[#1a1a1a]' : ''}`}>
+              <div class="shrink-0">
+                <div class="px-4 py-2 bg-[#FFC600] clip-corner">
+                  <span class="text-black font-black text-xs">{t.year}</span>
+                </div>
+              </div>
+              <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed pt-1">{t.event}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-20 bg-[#0a0a0a]">
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+      <div class="relative container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-5xl font-black text-white uppercase mb-6">
+          POWERING <span class="text-[#FFC600] text-glow-yellow">PROGRESS</span>
+        </h2>
+        <p class="text-gray-500 font-mono text-sm uppercase tracking-wide max-w-2xl mx-auto mb-10">
+          From the first solar panel in orbit to the edge of known space, our energy systems make human civilization possible.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/divisions" class="btn-secondary inline-block">ALL DIVISIONS</a>
+          <a href="/technology/ftl-propulsion" class="btn-primary inline-block">FTL TECHNOLOGY</a>
+        </div>
+      </div>
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

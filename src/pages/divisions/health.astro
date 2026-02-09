@@ -1,0 +1,403 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const products = [
+  {
+    code: "MP720i",
+    name: "MEDPOD 720i",
+    year: "PATENTED 2061",
+    desc: "Fully automated diagnostic and surgical station. Non-invasive scanning, real-time diagnosis, and robotic surgical intervention without human operator. FDA approved for home use since 2070. Capable of performing over 4,000 surgical procedures autonomously.",
+    category: "SURGICAL SYSTEMS",
+    highlight: true,
+  },
+  {
+    code: "SR-1",
+    name: "SYNAPSE REESTABLISHER",
+    year: "2071",
+    desc: "Emergency neurological intervention system that temporarily restarts brain activity in clinically deceased patients. Providing critical time windows for medical teams to address underlying causes. Breakthrough in emergency medicine and trauma care.",
+    category: "EMERGENCY MEDICINE",
+    highlight: true,
+  },
+  {
+    code: "HS-IV",
+    name: "HYPERSLEEP CHAMBER",
+    year: "PATENTED 2030",
+    desc: "Complete cessation of biological processes enabling interstellar travel across years or decades without aging or resource consumption. Standard equipment on all FTL-capable vessels. Over 2 million successful hibernation cycles recorded.",
+    category: "STASIS TECHNOLOGY",
+    highlight: true,
+  },
+  {
+    code: "BDI",
+    name: "BROCA DIALECTICAL IMPLANT",
+    year: "2060",
+    desc: "Neural interface enabling instant language acquisition. Compact cochlear-cortical implant translates and produces speech in real time across 200+ human and colonial dialect databases. Essential for multi-cultural colony operations.",
+    category: "NEURAL TECHNOLOGY",
+    highlight: false,
+  },
+  {
+    code: "PDC",
+    name: "PORTABLE DECONTAMINATION PACK",
+    year: "2059",
+    desc: "Self-replenishing environmental decontamination system. Neutralizes biological, chemical, and radiological contaminants across a 50-meter radius. Standard issue for colonial survey teams and hazardous environment operations.",
+    category: "FIELD EQUIPMENT",
+    highlight: false,
+  },
+  {
+    code: "GTP",
+    name: "GENE THERAPY PLATFORM",
+    year: "2025",
+    desc: "Targeted genetic modification system leveraging the 2022 cancer genetic chain identification. Enables precise gene editing for cancer prevention, hereditary condition correction, and genetic optimization under clinical protocols.",
+    category: "GENETIC MEDICINE",
+    highlight: false,
+  },
+];
+
+const colonyHealth = [
+  { name: "PRIMARY CARE CLINICS", desc: "Standard medical facilities at every colony installation providing routine healthcare, preventive medicine, and basic emergency services." },
+  { name: "SURGICAL CENTERS", desc: "MedPod-equipped surgical facilities handling complex procedures without the need for specialist surgeons. 24/7 autonomous operation." },
+  { name: "PHARMACEUTICAL PRODUCTION", desc: "On-site pharmaceutical manufacturing facilities producing colony-specific medications, vaccines, and emergency medical supplies from local resources." },
+  { name: "TELEMEDICINE NETWORKS", desc: "Deep-space communication-enabled remote consultation with Earth-based specialists for complex cases exceeding local diagnostic capability." },
+  { name: "PREVENTIVE HEALTH", desc: "Population-wide screening, vaccination, and health monitoring programs leveraging MedPod diagnostic capabilities for early disease detection." },
+  { name: "ENVIRONMENTAL HEALTH", desc: "Continuous monitoring of atmospheric, water, and soil quality across colony habitation zones. Rapid response protocols for environmental health threats." },
+];
+---
+
+<Layout
+  title="Health Sciences"
+  description="Weyland-Yutani Health Sciences Division - Revolutionizing human health from genetic therapy to deep space medicine. MedPod, hypersleep technology, and breakthrough cancer research."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative min-h-[70vh] flex items-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-15"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+
+      <!-- Heartbeat-inspired decorative line -->
+      <div class="absolute bottom-[30%] left-0 right-0 h-px hidden lg:block pointer-events-none">
+        <svg class="w-full h-12 absolute -top-6" viewBox="0 0 1400 48" fill="none" preserveAspectRatio="none">
+          <path d="M0 24 H400 L420 8 L440 40 L460 8 L480 40 L500 24 H1400" stroke="rgba(255,198,0,0.06)" stroke-width="1" fill="none"/>
+        </svg>
+      </div>
+
+      <div class="relative container mx-auto px-6 py-24">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 bg-[#FFC600] clip-corner flex items-center justify-center">
+              <span class="text-black text-2xl font-black">HS</span>
+            </div>
+            <div>
+              <div class="status-active text-xs font-mono text-[#FFC600] mb-1">DIVISION ACTIVE</div>
+              <span class="text-gray-500 font-mono text-xs uppercase tracking-widest">EST. 2022</span>
+            </div>
+          </div>
+
+          <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-[0.85] uppercase mb-8">
+            HEALTH<br/>
+            <span class="text-[#FFC600] text-glow-yellow">SCIENCES</span>
+          </h1>
+
+          <div class="h-1 w-32 bg-[#FFC600] mb-8"></div>
+
+          <p class="text-gray-400 font-mono text-sm md:text-base leading-relaxed max-w-3xl uppercase tracking-wide">
+            Revolutionizing human health from genetic therapy to deep space medicine. The Health Sciences
+            Division develops and deploys the medical technologies that keep humanity healthy from
+            Earth to the farthest colony, including the MedPod surgical system, hypersleep technology,
+            and the breakthrough identification of cancer's genetic chain.
+          </p>
+        </div>
+      </div>
+
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">98%</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Cancer Genes Mapped</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">4,000+</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">MedPod Procedures</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">2M+</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Hypersleep Cycles</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">FDA</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Approved Systems</div>
+          </div>
+          <div class="py-8 px-4 text-center">
+            <div class="text-3xl md:text-4xl font-black text-[#FFC600] mb-1">200+</div>
+            <div class="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Languages (BDI)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLAGSHIP PRODUCTS -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Flagship Systems</span>
+        </div>
+        <h2 class="text-4xl md:text-6xl font-black text-white uppercase mb-6">
+          MEDICAL <span class="text-[#FFC600]">TECHNOLOGY</span>
+        </h2>
+        <p class="text-gray-500 font-mono text-sm uppercase tracking-wide mb-16 max-w-3xl">
+          Our product portfolio spans the complete spectrum of human healthcare, from automated surgical
+          stations to deep space stasis systems. Each product represents decades of research and
+          development, bringing hospital-grade medical care to the frontier.
+        </p>
+
+        <!-- Top 3 flagship products -->
+        <div class="grid lg:grid-cols-3 gap-6 mb-8">
+          {products.filter(p => p.highlight).map((p) => (
+            <div class="corp-card p-8">
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-4 py-2 bg-[#FFC600] clip-corner text-black font-black text-sm">{p.code}</span>
+                <span class="text-gray-600 font-mono text-[10px] uppercase">{p.year}</span>
+              </div>
+              <h3 class="text-xl font-black text-white uppercase mb-2">{p.name}</h3>
+              <span class="text-[#FFC600] font-mono text-[10px] uppercase tracking-widest mb-4 block">{p.category}</span>
+              <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">{p.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        <!-- Additional products -->
+        <div class="grid md:grid-cols-3 gap-6">
+          {products.filter(p => !p.highlight).map((p) => (
+            <div class="p-6 bg-[#0a0a0a] border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600]/50 transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-[#FFC600] font-black text-xs">{p.code}</span>
+                <span class="text-gray-600 font-mono text-[10px] uppercase">{p.year}</span>
+              </div>
+              <h3 class="text-sm font-black text-white uppercase mb-2">{p.name}</h3>
+              <span class="text-[#FFC600] font-mono text-[10px] uppercase tracking-widest mb-3 block">{p.category}</span>
+              <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">{p.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDPOD DEEP DIVE -->
+    <section class="relative py-24 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <div class="flex items-center gap-4 mb-4">
+              <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+              <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Product Spotlight</span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-6">
+              MEDPOD <span class="text-[#FFC600]">720i</span>
+            </h2>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+              The MedPod 720i is the most advanced automated medical system ever developed. Patented in
+              2061 and FDA approved for home use in 2070, it eliminates the need for specialized surgeons
+              in remote locations by providing fully autonomous diagnostic and surgical capability.
+            </p>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+              The system performs non-invasive full-body scans, identifies pathologies through AI-driven
+              analysis, and executes surgical interventions with sub-millimeter precision. From emergency
+              appendectomies to complex cardiac procedures, the MedPod 720i handles over 4,000 distinct
+              surgical procedures without human oversight.
+            </p>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed">
+              For colony installations, the MedPod 720i provides hospital-equivalent surgical care
+              regardless of proximity to trained medical personnel. This single technology has transformed
+              the viability of frontier colonies by removing healthcare as a limiting factor in
+              settlement planning.
+            </p>
+          </div>
+
+          <div class="terminal">
+            <div class="terminal-content">
+              <p class="mb-2 text-gray-500">$ medpod-720i --capabilities</p>
+              <p class="mb-1">&nbsp;</p>
+              <p class="mb-1">MEDPOD 720i :: CAPABILITY SUMMARY</p>
+              <p class="mb-1">==================================</p>
+              <p class="mb-1">&nbsp;</p>
+              <p class="mb-1">DIAGNOSTIC SCAN:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Full-body, non-invasive</p>
+              <p class="mb-1">SCAN TIME:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; 30 seconds</p>
+              <p class="mb-1">SURGICAL PROCEDURES:&nbsp;&nbsp; 4,000+ cataloged</p>
+              <p class="mb-1">PRECISION:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.01mm tolerance</p>
+              <p class="mb-1">ANESTHESIA:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Integrated, automated</p>
+              <p class="mb-1">RECOVERY SUPPORT:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Automated monitoring</p>
+              <p class="mb-1">&nbsp;</p>
+              <p class="mb-1">CERTIFICATIONS:</p>
+              <p class="mb-1">&nbsp;&nbsp;- FDA APPROVED (HOME USE, 2070)</p>
+              <p class="mb-1">&nbsp;&nbsp;- ICC MEDICAL DEVICE CLASS III</p>
+              <p class="mb-1">&nbsp;&nbsp;- USCM FIELD MEDICAL APPROVED</p>
+              <p class="mb-1">&nbsp;</p>
+              <p class="text-gray-500">$ SYSTEM STATUS: READY_</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CANCER RESEARCH -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="flex items-center gap-4 mb-4 justify-center">
+            <div class="h-px w-10 bg-[#FFC600]"></div>
+            <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Landmark Achievement</span>
+            <div class="h-px w-10 bg-[#FFC600]"></div>
+          </div>
+          <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-6 text-center">
+            THE END OF <span class="text-[#FFC600]">CANCER</span>
+          </h2>
+
+          <div class="corp-card p-10 text-center">
+            <div class="text-6xl font-black text-[#FFC600] text-glow-yellow mb-4">98%</div>
+            <h3 class="text-xl font-black text-white uppercase mb-6">OF ALL CANCER GENETIC CHAINS IDENTIFIED</h3>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6 max-w-2xl mx-auto">
+              In 2022, Weyland-Yutani researchers identified the complete genetic chain responsible for
+              98% of all known human cancers. This breakthrough, published in Nature Genetics, provided
+              the foundation for targeted gene therapy protocols that have since been deployed across
+              Earth and colony healthcare systems worldwide.
+            </p>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed max-w-2xl mx-auto">
+              Combined with our Gene Therapy Platform, this discovery has transformed cancer from a
+              life-threatening diagnosis to a manageable condition with a greater than 95% remission
+              rate for detected cases treated within standard clinical windows.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLONY HEALTHCARE -->
+    <section class="relative py-24 bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Infrastructure</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-6">
+          COLONY <span class="text-[#FFC600]">HEALTHCARE</span>
+        </h2>
+        <p class="text-gray-500 font-mono text-sm uppercase tracking-wide mb-16 max-w-3xl">
+          Every Weyland-Yutani colony receives comprehensive healthcare infrastructure as part of the
+          standard colony development package. Our integrated approach ensures frontier populations
+          receive care equivalent to Earth-based metropolitan standards.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {colonyHealth.map((item) => (
+            <div class="p-6 bg-black border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600]/50 transition-all">
+              <h3 class="text-sm font-black text-[#FFC600] uppercase mb-3">{item.name}</h3>
+              <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- HYPERSLEEP -->
+    <section class="relative py-24 bg-black border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <div class="flex items-center gap-4 mb-4">
+              <div class="h-px flex-1 max-w-[40px] bg-[#FFC600]"></div>
+              <span class="text-[#FFC600] font-mono text-xs tracking-[0.3em] uppercase">Stasis Technology</span>
+            </div>
+            <h2 class="text-4xl md:text-5xl font-black text-white uppercase mb-6">
+              HYPERSLEEP<br/><span class="text-[#FFC600]">TECHNOLOGY</span>
+            </h2>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+              Patented in 2030, Weyland-Yutani hypersleep technology achieves complete cessation of
+              biological processes, enabling human beings to travel across interstellar distances
+              without aging, resource consumption, or psychological deterioration.
+            </p>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed mb-6">
+              The hypersleep chamber maintains the subject in a state of biological stasis through
+              controlled cryogenic protocols, preserving cellular integrity for periods ranging
+              from months to decades. Revival protocols ensure safe, controlled reactivation of all
+              biological processes with minimal post-stasis adjustment time.
+            </p>
+            <p class="text-gray-400 font-mono text-sm uppercase leading-relaxed">
+              Over 2 million successful hibernation cycles have been recorded across the corporate
+              fleet and USCM vessels, with a safety record exceeding 99.99%. Hypersleep is the
+              foundational technology that makes interstellar colonization practical.
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <div class="corp-card p-6">
+              <div class="flex justify-between items-center mb-3">
+                <h4 class="text-sm font-black text-[#FFC600] uppercase">STASIS DEPTH</h4>
+                <span class="text-gray-600 font-mono text-xs">COMPLETE CESSATION</span>
+              </div>
+              <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">
+                All biological processes halted. Zero metabolic activity, zero aging, zero resource consumption during stasis period.
+              </p>
+            </div>
+            <div class="corp-card p-6">
+              <div class="flex justify-between items-center mb-3">
+                <h4 class="text-sm font-black text-[#FFC600] uppercase">DURATION RANGE</h4>
+                <span class="text-gray-600 font-mono text-xs">MONTHS TO DECADES</span>
+              </div>
+              <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">
+                Certified for stasis periods up to 75 years. Extended duration protocols under development for generation ship programs.
+              </p>
+            </div>
+            <div class="corp-card p-6">
+              <div class="flex justify-between items-center mb-3">
+                <h4 class="text-sm font-black text-[#FFC600] uppercase">SAFETY RECORD</h4>
+                <span class="text-gray-600 font-mono text-xs">99.99%</span>
+              </div>
+              <p class="text-gray-500 font-mono text-xs uppercase leading-relaxed">
+                Over 2 million successful cycles. Automated monitoring by synthetic crew during transit ensures immediate response to any anomaly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative py-20 bg-[#0a0a0a]">
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+      <div class="relative container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-5xl font-black text-white uppercase mb-6">
+          BETTER HEALTH. <span class="text-[#FFC600] text-glow-yellow">BETTER WORLDS.</span>
+        </h2>
+        <p class="text-gray-500 font-mono text-sm uppercase tracking-wide max-w-2xl mx-auto mb-10">
+          Explore our medical technology portfolio or learn about healthcare careers across 300+ worlds.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/divisions" class="btn-secondary inline-block">ALL DIVISIONS</a>
+          <a href="/technology/medpod" class="btn-primary inline-block">MEDPOD SYSTEMS</a>
+        </div>
+      </div>
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

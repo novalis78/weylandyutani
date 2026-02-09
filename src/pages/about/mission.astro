@@ -1,0 +1,356 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const coreValues = [
+  {
+    letter: "I",
+    name: "INNOVATION",
+    tagline: "THE RELENTLESS PURSUIT OF BREAKTHROUGH",
+    description: "Innovation is not an initiative at Weyland-Yutani. It is the air we breathe. Every division, every employee, every process is oriented toward discovering what has never been discovered and building what has never been built. From faster-than-light propulsion to synthetic intelligence, we do not iterate. We leap.",
+  },
+  {
+    letter: "E",
+    name: "EXPLORATION",
+    tagline: "PUSHING THE BOUNDARIES OF KNOWN SPACE",
+    description: "The urge to explore is encoded in our corporate DNA. We have sent ships beyond the Outer Veil, landed atmospheric processors on worlds no human eye has ever seen, and mapped star systems that were theoretical a generation ago. Where the frontier ends, we extend it.",
+  },
+  {
+    letter: "X",
+    name: "EXCELLENCE",
+    tagline: "THE HIGHEST STANDARDS IN EVERYTHING",
+    description: "Acceptable is unacceptable. From the tolerances of an FTL drive coil to the surface finish of a corporate report, Weyland-Yutani operates at the highest standard attainable. We recruit the best. We invest in the best. We accept nothing less than the best.",
+  },
+  {
+    letter: "I",
+    name: "INTEGRITY",
+    tagline: "ETHICAL CONDUCT IN ALL OPERATIONS",
+    description: "Trust is the foundation of every relationship we maintain, whether with governments, shareholders, or the billions who depend on our services. We operate with transparency, accountability, and unwavering ethical commitment across every jurisdiction and every world in which we do business.",
+  },
+  {
+    letter: "H",
+    name: "HUMANITY",
+    tagline: "OUR WORK SERVES THE GREATER GOOD",
+    description: "Every technology we develop, every world we terraform, every synthetic we build exists to serve one purpose: the advancement and preservation of human civilization. We are not in the business of profit alone. We are in the business of ensuring humanity's survival and flourishing across the cosmos.",
+  },
+  {
+    letter: "R",
+    name: "RESILIENCE",
+    tagline: "OVERCOMING IMPOSSIBLE CHALLENGES",
+    description: "Space is unforgiving. The distances are incomprehensible. The problems are unprecedented. Weyland-Yutani was built for this. We thrive in conditions that would destroy lesser organizations. We have terraformed worlds declared impossible, built cities in the void, and turned every setback into a stepping stone.",
+  },
+  {
+    letter: "P",
+    name: "PROGRESS",
+    tagline: "EVERY DAY, WE ADVANCE THE FRONTIER",
+    description: "Progress at Weyland-Yutani is not measured in quarterly earnings alone, though those are exceptional. It is measured in worlds colonized, diseases cured, distances collapsed, and lives transformed. Every day, across every vertical and every territory, we move the entire human project forward.",
+  },
+];
+
+const csrInitiatives = [
+  {
+    title: "WEYLAND FOUNDATION FOR SCIENTIFIC ADVANCEMENT",
+    description: "An $8 billion annual endowment supporting fundamental scientific research at 400+ universities and institutions across known space. Over 12,000 active research grants.",
+    stat: "$8B+",
+    label: "ANNUAL ENDOWMENT",
+  },
+  {
+    title: "COLONIAL EDUCATION INITIATIVE",
+    description: "Providing universal access to education on all colonized worlds. Over 4 million students currently enrolled in Weyland-Yutani sponsored educational programs from primary through post-doctoral levels.",
+    stat: "4M+",
+    label: "STUDENTS ENROLLED",
+  },
+  {
+    title: "ATMOSPHERIC RECLAMATION PROGRAM",
+    description: "Ongoing commitment to restoring Earth's atmosphere using the same technology deployed on colonial worlds. We have reversed polar ice cap degradation and improved global air quality by 47% since 2016.",
+    stat: "47%",
+    label: "AIR QUALITY IMPROVEMENT",
+  },
+  {
+    title: "SYNTHETIC WORKFORCE DEVELOPMENT",
+    description: "Providing synthetic personnel at no cost to disaster relief, humanitarian operations, and underfunded colonial administrations. Over 50,000 synthetics deployed in humanitarian service worldwide.",
+    stat: "50K+",
+    label: "SYNTHETICS DEPLOYED",
+  },
+];
+---
+
+<Layout
+  title="Mission, Vision & Values"
+  description="Weyland-Yutani Corporation's mission, vision, and core values. Building better worlds through innovation, exploration, excellence, and an unwavering commitment to human progress."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/80"></div>
+
+      <div class="relative container mx-auto px-6 text-center py-24">
+        <div class="inline-flex items-center gap-3 mb-8">
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.3em] font-mono">WHAT WE BELIEVE</span>
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+        </div>
+
+        <h1 class="text-7xl md:text-9xl font-black text-white leading-none uppercase mb-6">
+          OUR <span class="text-[#FFC600] text-glow-yellow">MISSION</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-8"></div>
+
+        <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wider font-mono">
+          THE PRINCIPLES AND CONVICTIONS THAT DRIVE EVERY DECISION WE MAKE
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-2 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- MISSION STATEMENT -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-6">
+            <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">MISSION STATEMENT</span>
+          </div>
+
+          <div class="mission-block relative bg-[#0a0a0a] border-2 border-[#FFC600] p-12 md:p-16 clip-corner-lg text-center">
+            <div class="absolute top-0 left-0 w-full h-1 bg-[#FFC600]"></div>
+            <div class="absolute bottom-0 right-0 w-full h-1 bg-[#FFC600]"></div>
+
+            <p class="text-2xl md:text-3xl lg:text-4xl font-black text-white uppercase leading-tight mb-8">
+              TO EXTEND THE REACH OF HUMAN CIVILIZATION ACROSS THE STARS, ADVANCING THE FRONTIERS OF SCIENCE AND TECHNOLOGY TO SOLVE THE CHALLENGES THAT DEFINE OUR ERA AND ENSURE THE SURVIVAL AND FLOURISHING OF OUR SPECIES.
+            </p>
+
+            <div class="h-px w-32 bg-[#FFC600] mx-auto mb-6"></div>
+
+            <p class="text-gray-400 text-sm leading-relaxed max-w-3xl mx-auto">
+              We build the ships that cross the void. We build the machines that make dead worlds breathe. We build the minds that work alongside us. We build the future, one world at a time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION STATEMENT -->
+    <section class="relative py-24 bg-[#0a0a0a] border-t-2 border-b-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">VISION</span>
+              <h2 class="text-4xl md:text-5xl font-black text-white mt-4 mb-8 uppercase">A FUTURE WITHOUT LIMITS</h2>
+
+              <p class="text-gray-400 text-base leading-relaxed mb-6">
+                We envision a future in which no habitable world is left untouched, no disease is incurable, no distance is impassable, and no potential is unrealized. A future in which humanity is not confined to a single fragile world but is spread across thousands, resilient against any catastrophe, capable of feats our ancestors could not imagine.
+              </p>
+
+              <p class="text-gray-400 text-base leading-relaxed">
+                This is not a distant dream. It is a business plan. Weyland-Yutani is the instrument through which this vision is being realized, one world, one breakthrough, one day at a time.
+              </p>
+            </div>
+
+            <!-- Vision Stats -->
+            <div class="space-y-4">
+              <div class="bg-black border border-[#1a1a1a] p-6 clip-corner flex items-center gap-6 hover:border-[#FFC600]/50 transition-colors">
+                <div class="text-[#FFC600] font-black text-4xl font-mono shrink-0 w-24 text-right">300+</div>
+                <div>
+                  <div class="text-white font-bold text-sm uppercase">WORLDS COLONIZED</div>
+                  <div class="text-gray-500 text-xs">AND COUNTING. NEW COLONIES ESTABLISHED EVERY QUARTER.</div>
+                </div>
+              </div>
+              <div class="bg-black border border-[#1a1a1a] p-6 clip-corner flex items-center gap-6 hover:border-[#FFC600]/50 transition-colors">
+                <div class="text-[#FFC600] font-black text-4xl font-mono shrink-0 w-24 text-right">12B+</div>
+                <div>
+                  <div class="text-white font-bold text-sm uppercase">LIVES IMPROVED</div>
+                  <div class="text-gray-500 text-xs">THROUGH HEALTH, ENERGY, AND INFRASTRUCTURE TECHNOLOGIES.</div>
+                </div>
+              </div>
+              <div class="bg-black border border-[#1a1a1a] p-6 clip-corner flex items-center gap-6 hover:border-[#FFC600]/50 transition-colors">
+                <div class="text-[#FFC600] font-black text-4xl font-mono shrink-0 w-24 text-right">2,400</div>
+                <div>
+                  <div class="text-white font-bold text-sm uppercase">RESEARCH FACILITIES</div>
+                  <div class="text-gray-500 text-xs">ADVANCING HUMAN KNOWLEDGE ACROSS EVERY DISCIPLINE.</div>
+                </div>
+              </div>
+              <div class="bg-black border border-[#1a1a1a] p-6 clip-corner flex items-center gap-6 hover:border-[#FFC600]/50 transition-colors">
+                <div class="text-[#FFC600] font-black text-4xl font-mono shrink-0 w-24 text-right">100%</div>
+                <div>
+                  <div class="text-white font-bold text-sm uppercase">COMMITTED</div>
+                  <div class="text-gray-500 text-xs">TO BUILDING BETTER WORLDS. WITHOUT EXCEPTION.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE VALUES -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="text-center mb-16">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">WHAT GUIDES US</span>
+          <h2 class="text-4xl md:text-6xl font-black text-white mt-4 uppercase">CORE VALUES</h2>
+          <p class="text-gray-500 text-sm uppercase tracking-wider font-mono mt-4 max-w-2xl mx-auto">
+            SEVEN PRINCIPLES THAT DEFINE HOW WE OPERATE, FROM THE BOARDROOM TO THE OUTER VEIL.
+          </p>
+        </div>
+
+        <div class="max-w-6xl mx-auto space-y-6">
+          {coreValues.map((value, index) => (
+            <div class="value-card group relative overflow-hidden">
+              <div class="grid md:grid-cols-12 gap-0">
+                <!-- Number & Letter -->
+                <div class="md:col-span-2 bg-[#0a0a0a] border-r-2 border-[#1a1a1a] p-8 flex flex-col items-center justify-center group-hover:border-[#FFC600]/30 transition-colors">
+                  <div class="text-[#FFC600]/20 font-black text-6xl font-mono leading-none group-hover:text-[#FFC600]/40 transition-colors">
+                    {String(index + 1).padStart(2, '0')}
+                  </div>
+                </div>
+
+                <!-- Content -->
+                <div class="md:col-span-10 bg-[#0a0a0a] p-8 border-l-0 border-t-2 md:border-t-0 border-[#1a1a1a]">
+                  <div class="flex flex-col md:flex-row md:items-start gap-6">
+                    <div class="shrink-0">
+                      <div class="w-14 h-14 bg-[#FFC600] clip-corner flex items-center justify-center group-hover:glow-yellow transition-all">
+                        <span class="text-black font-black text-2xl">{value.letter}</span>
+                      </div>
+                    </div>
+                    <div>
+                      <h3 class="text-2xl font-black text-white uppercase mb-1">{value.name}</h3>
+                      <p class="text-[#FFC600] text-xs font-bold uppercase tracking-widest mb-4">{value.tagline}</p>
+                      <p class="text-gray-400 text-sm leading-relaxed">{value.description}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bottom accent line -->
+              <div class="h-px w-full bg-[#1a1a1a] group-hover:bg-[#FFC600]/30 transition-colors"></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER'S QUOTE -->
+    <section class="relative py-24 bg-[#FFC600]">
+      <div class="absolute inset-0 opacity-5">
+        <div class="industrial-grid-dense w-full h-full"></div>
+      </div>
+
+      <div class="relative container mx-auto px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+          <p class="text-4xl md:text-6xl font-black text-black italic leading-tight mb-8">
+            "IF WE CAN, WE MUST."
+          </p>
+          <div class="h-1 w-24 bg-black mx-auto mb-6"></div>
+          <p class="text-black/70 text-sm uppercase tracking-widest font-mono font-bold">
+            SIR PETER WEYLAND -- FOUNDER, WEYLAND-YUTANI CORPORATION
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORPORATE SOCIAL RESPONSIBILITY -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="text-center mb-16">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">GIVING BACK</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-4 uppercase">CORPORATE SOCIAL RESPONSIBILITY</h2>
+          <p class="text-gray-500 text-sm uppercase tracking-wider font-mono mt-4 max-w-3xl mx-auto">
+            OUR COMMITMENT TO HUMANITY EXTENDS FAR BEYOND OUR COMMERCIAL OPERATIONS. WE INVEST HEAVILY IN THE COMMUNITIES, WORLDS, AND PEOPLE WE SERVE.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          {csrInitiatives.map(initiative => (
+            <div class="corp-card p-8">
+              <div class="flex items-start gap-4 mb-4">
+                <div class="shrink-0">
+                  <div class="text-[#FFC600] font-black text-3xl font-mono">{initiative.stat}</div>
+                  <div class="text-[#FFC600]/50 text-[9px] font-bold uppercase tracking-widest">{initiative.label}</div>
+                </div>
+              </div>
+              <h3 class="text-white font-black text-sm uppercase mb-3">{initiative.title}</h3>
+              <p class="text-gray-500 text-xs leading-relaxed">{initiative.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="/sustainability" class="btn-secondary px-10 py-4 text-sm">LEARN MORE ABOUT SUSTAINABILITY</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE WEYLAND DOCTRINE (Summary) -->
+    <section class="relative py-20 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="terminal">
+            <div class="terminal-content">
+              <div class="space-y-4 font-mono text-sm">
+                <div class="text-[#FFC600]">&gt; LOADING DOCTRINE.WY.CORE</div>
+                <div class="text-gray-600">========================================</div>
+                <div class="text-white">&gt; MISSION: EXTEND HUMANITY'S REACH</div>
+                <div class="text-white">&gt; VISION: A FUTURE WITHOUT LIMITS</div>
+                <div class="text-white">&gt; VALUES: INNOVATION | EXPLORATION | EXCELLENCE | INTEGRITY | HUMANITY | RESILIENCE | PROGRESS</div>
+                <div class="text-gray-600">========================================</div>
+                <div class="text-white">&gt; FOUNDING PRINCIPLE: "IF WE CAN, WE MUST."</div>
+                <div class="text-white">&gt; OPERATIONAL MANDATE: BUILD BETTER WORLDS.</div>
+                <div class="text-white">&gt; SCOPE: UNLIMITED.</div>
+                <div class="text-gray-600">========================================</div>
+                <div class="text-[#FFC600]">&gt; STATUS: <span class="status-active">ACTIVE ACROSS ALL TERRITORIES</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACK NAVIGATION -->
+    <section class="relative py-16 bg-black border-t-4 border-[#FFC600]">
+      <div class="hazard-stripes h-2 absolute top-0 left-0 right-0"></div>
+      <div class="container mx-auto px-6 text-center">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/about" class="btn-secondary px-10 py-4 text-sm">BACK TO OVERVIEW</a>
+          <a href="/about/global-presence" class="btn-primary px-10 py-4 text-sm">OUR GLOBAL PRESENCE</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+
+  .clip-corner-lg {
+    clip-path: polygon(16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 16px);
+  }
+
+  .value-card {
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+    transition: all 0.3s ease;
+  }
+
+  .value-card:hover {
+    border-color: #FFC600;
+    transform: translateX(4px);
+  }
+</style>

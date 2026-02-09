@@ -1,0 +1,279 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  title="Luna Colony"
+  description="Luna Colony -- Humanity's first permanent off-world settlement. Weyland-Yutani Off-World Corporate Headquarters, deep space transit hub, and manufacturing center. Population 850,000+."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden scanlines border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+
+      <div class="relative container mx-auto px-6 text-center pt-20 pb-24">
+        <div class="inline-block px-8 py-3 bg-[#FFC600] text-black font-black text-xs uppercase tracking-widest mb-8 clip-corner">
+          CLASS A -- MAJOR HUB
+        </div>
+
+        <h1 class="text-8xl md:text-[12rem] font-black text-white mb-4 leading-none uppercase">
+          <span class="text-[#FFC600] text-glow-yellow">LUNA</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-6"></div>
+
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wide font-mono">
+          HUMANITY'S FIRST OFF-WORLD SETTLEMENT
+        </p>
+      </div>
+
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Colony Data Bar -->
+    <section class="relative bg-[#0a0a0a] border-b-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-5 divide-x divide-[#1a1a1a]">
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">LOCATION</div>
+            <div class="text-sm font-black text-[#FFC600]">SEA OF TRANQUILITY</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">ESTABLISHED</div>
+            <div class="text-sm font-black text-[#FFC600]">2031</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">CLASSIFICATION</div>
+            <div class="text-sm font-black text-[#FFC600]">CLASS A -- MAJOR HUB</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">POPULATION</div>
+            <div class="text-sm font-black text-[#FFC600]">850,000+</div>
+          </div>
+          <div class="py-8 px-6 text-center">
+            <div class="text-xs font-mono text-gray-600 uppercase tracking-widest mb-1">STATUS</div>
+            <div class="text-sm font-black text-[#FFC600] status-active">OPERATIONAL</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-16 items-start">
+            <div>
+              <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+                COLONY OVERVIEW
+              </div>
+              <h2 class="text-4xl md:text-5xl font-black text-white mb-8">
+                THE GATEWAY BETWEEN <span class="text-[#FFC600] text-glow-yellow">EARTH</span> AND THE FRONTIER
+              </h2>
+              <div class="space-y-6 text-gray-400 font-mono text-sm leading-relaxed">
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> LUNA REPRESENTS THE FOUNDATIONAL ACHIEVEMENT OF HUMAN SPACE COLONIZATION. ESTABLISHED IN 2031 AS WEYLAND CORPORATION'S FIRST TERRAFORMING OPERATION, THE COLONY HAS GROWN FROM A MODEST RESEARCH OUTPOST INTO A THRIVING METROPOLIS OF OVER 850,000 PERMANENT RESIDENTS.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> SITUATED IN THE SEA OF TRANQUILITY ON EARTH'S MOON, LUNA SERVES AS WEYLAND-YUTANI'S OFF-WORLD CORPORATE HEADQUARTERS AND THE PRIMARY TRANSIT HUB FOR ALL DEEP SPACE OPERATIONS. EVERY COLONY SHIP, FREIGHT VESSEL, AND EXPLORATION CRAFT PASSES THROUGH LUNA'S ORBITAL INFRASTRUCTURE ON ITS WAY TO THE FRONTIER.
+                </p>
+                <p>
+                  <span class="text-[#FFC600] font-black">&gt;</span> THE COLONY'S CLIMATE-CONTROLLED DOME COMPLEXES SPAN OVER 200 SQUARE KILOMETERS, HOUSING RESIDENTIAL DISTRICTS, COMMERCIAL CENTERS, RESEARCH CAMPUSES, AND THE LARGEST SHIP CONSTRUCTION YARDS OUTSIDE OF EARTH ORBIT.
+                </p>
+              </div>
+            </div>
+
+            <div class="corp-card p-8">
+              <h3 class="text-xl font-black text-white mb-6 uppercase border-b-2 border-[#FFC600] pb-3">COLONY SPECIFICATIONS</h3>
+              <div class="space-y-4 text-sm font-mono">
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DESIGNATION</span>
+                  <span class="text-[#FFC600] font-bold">LUNA COLONY</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">BODY</span>
+                  <span class="text-[#FFC600] font-bold">EARTH'S MOON</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">REGION</span>
+                  <span class="text-[#FFC600] font-bold">SEA OF TRANQUILITY</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DIST. FROM EARTH</span>
+                  <span class="text-[#FFC600] font-bold">384,400 KM</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">FIRST OPERATIONS</span>
+                  <span class="text-[#FFC600] font-bold">2031</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">FULL COLONY STATUS</span>
+                  <span class="text-[#FFC600] font-bold">2039</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">DOME COVERAGE</span>
+                  <span class="text-[#FFC600] font-bold">200+ SQ KM</span>
+                </div>
+                <div class="flex justify-between border-b border-[#1a1a1a] pb-3">
+                  <span class="text-gray-500 uppercase">GRAVITY</span>
+                  <span class="text-[#FFC600] font-bold">0.166 G (AUGMENTED)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500 uppercase">ADMINISTRATOR</span>
+                  <span class="text-[#FFC600] font-bold">W-Y COLONIAL ADMIN</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Facilities -->
+    <section class="relative py-28 bg-black border-t-4 border-b-4 border-[#FFC600]">
+      <div class="hazard-stripes h-3 absolute top-0 left-0 right-0"></div>
+      <div class="industrial-grid absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6 pt-6">
+        <div class="text-center mb-16">
+          <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+            INFRASTRUCTURE
+          </div>
+          <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+            KEY <span class="text-[#FFC600] text-glow-yellow">FACILITIES</span>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">HQ</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">OFF-WORLD CORPORATE HQ</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              THE PRIMARY OFF-WORLD HEADQUARTERS OF WEYLAND-YUTANI CORPORATION. HOUSES EXECUTIVE OFFICES, STRATEGIC PLANNING, AND THE INTERSTELLAR OPERATIONS COMMAND CENTER. ALL DEEP SPACE OPERATIONS ARE COORDINATED FROM THIS FACILITY.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">SY</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">SHIP CONSTRUCTION YARDS</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              THE LARGEST SPACECRAFT MANUFACTURING COMPLEX OUTSIDE EARTH ORBIT. CAPABLE OF CONSTRUCTING VESSELS UP TO 1,500 METERS IN LENGTH. ORBITAL DRYDOCKS HANDLE ASSEMBLY, FITTING, AND COMMISSIONING OF ALL MAJOR VESSEL CLASSES.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">CR</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">DEEP SPACE COMM RELAY</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              THE CENTRAL NODE OF WEYLAND-YUTANI'S INTERSTELLAR COMMUNICATION NETWORK. FACILITATES REAL-TIME DATA TRANSMISSION ACROSS ALL 47 STAR SYSTEMS VIA QUANTUM-ENTANGLED RELAY ARRAYS AND FTL SIGNAL BOOSTING.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">RC</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">RESEARCH CAMPUSES</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              SEVEN DEDICATED RESEARCH CAMPUSES SPANNING MATERIALS SCIENCE, ZERO-G MANUFACTURING, PROPULSION ENGINEERING, CYBERNETICS, AND BIOLOGICAL SCIENCES. OVER 12,000 RESEARCHERS AND ENGINEERS WORK ON SITE.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">TH</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">TRANSIT HUB</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              ALL OUTBOUND COLONY SHIPS AND DEEP SPACE FREIGHT VESSELS STAGE FROM LUNA'S ORBITAL TRANSIT PLATFORMS. ANNUAL THROUGHPUT EXCEEDS 4,000 VESSEL DEPARTURES AND 500,000 PASSENGER TRANSITS.
+            </p>
+          </div>
+
+          <div class="corp-card p-8">
+            <div class="w-12 h-12 bg-[#FFC600] clip-corner flex items-center justify-center mb-4">
+              <span class="text-black font-black text-lg">MF</span>
+            </div>
+            <h3 class="text-xl font-black text-white mb-3 uppercase">MANUFACTURING DISTRICT</h3>
+            <p class="text-gray-500 font-mono text-xs leading-relaxed">
+              ZERO-GRAVITY AND LOW-GRAVITY MANUFACTURING FACILITIES PRODUCING ADVANCED ALLOYS, OPTICAL COMPONENTS, AND PHARMACEUTICAL COMPOUNDS IMPOSSIBLE TO FABRICATE IN STANDARD GRAVITY ENVIRONMENTS.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="hazard-stripes h-3 absolute bottom-0 left-0 right-0"></div>
+    </section>
+
+    <!-- Economic Output -->
+    <section class="relative py-28 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-10"></div>
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <div class="inline-block px-6 py-2 bg-[#FFC600] text-black font-black text-sm uppercase tracking-widest mb-6 clip-corner">
+              ECONOMY
+            </div>
+            <h2 class="text-5xl md:text-7xl font-black text-white mb-4">
+              ECONOMIC <span class="text-[#FFC600] text-glow-yellow">OUTPUT</span>
+            </h2>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">$4.2T</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">ANNUAL GDP</div>
+              <p class="text-gray-600 font-mono text-xs">LUNA'S ECONOMY RIVALS MANY EARTH NATIONS, DRIVEN BY SHIP MANUFACTURING, TRANSIT SERVICES, AND ADVANCED MATERIALS PRODUCTION.</p>
+            </div>
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">340K</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">EMPLOYED WORKFORCE</div>
+              <p class="text-gray-600 font-mono text-xs">FROM SHIPYARD TECHNICIANS TO CORPORATE EXECUTIVES, LUNA OFFERS EMPLOYMENT ACROSS EVERY SECTOR OF THE INTERSTELLAR ECONOMY.</p>
+            </div>
+            <div class="text-center p-8 border-2 border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors">
+              <div class="text-4xl font-black text-[#FFC600] text-glow-yellow mb-2">47</div>
+              <div class="text-xs font-mono text-gray-500 uppercase tracking-widest mb-4">TRADE ROUTES SERVED</div>
+              <p class="text-gray-600 font-mono text-xs">EVERY MAJOR INTERSTELLAR TRADE ROUTE ORIGINATES OR PASSES THROUGH LUNA'S TRANSIT INFRASTRUCTURE.</p>
+            </div>
+          </div>
+
+          <div class="terminal mt-16">
+            <div class="terminal-content">
+              <p class="text-[#FFC600] font-mono text-sm leading-relaxed">
+                &gt; LUNA IS MORE THAN A COLONY. IT IS THE GATEWAY BETWEEN EARTH AND EVERYTHING BEYOND. EVERY VESSEL THAT CARRIES COLONISTS TO NEW WORLDS, EVERY FREIGHT SHIPMENT THAT SUSTAINS THE FRONTIER, AND EVERY COMMUNICATION THAT CONNECTS OUR SPECIES ACROSS THE STARS PASSES THROUGH THIS SETTLEMENT. LUNA IS THE FOUNDATION UPON WHICH INTERSTELLAR CIVILIZATION IS BUILT.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="relative py-12 bg-[#0a0a0a] border-t-2 border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/colonies" class="btn-secondary">ALL COLONIES</a>
+          <a href="/fleet" class="btn-secondary">CORPORATE FLEET</a>
+          <a href="/careers" class="btn-primary">CAREERS ON LUNA</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>
