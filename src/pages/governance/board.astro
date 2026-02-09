@@ -1,0 +1,219 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const directors = [
+  {
+    name: "ALEXANDRA WEYLAND-RICHTER",
+    title: "Co-Chairman of the Board",
+    independent: false,
+    committees: ["Governance & Nominating"],
+    bio: "Alexandra Weyland-Richter has served as Co-Chairman since the 2099 merger. Granddaughter of Sir Peter Weyland, she previously served as Chairman of the pre-merger Weyland Corporation Board. Ms. Weyland-Richter holds degrees in astrophysics from Cambridge and business administration from INSEAD. She has been a director since 2088."
+  },
+  {
+    name: "HIDEO YUTANI",
+    title: "Co-Chairman of the Board",
+    independent: false,
+    committees: ["Colony Affairs"],
+    bio: "Hideo Yutani served as Chairman and CEO of Yutani Corporation for 22 years prior to the merger. Under his leadership, Yutani expanded from a Japanese electronics manufacturer into a global leader in biotechnology and advanced manufacturing. Mr. Yutani holds a degree in electrical engineering from the University of Tokyo and an MBA from Wharton. He has been a director since 2099."
+  },
+  {
+    name: "KARL BISHOP WEYLAND",
+    title: "Chief Executive Officer, Director",
+    independent: false,
+    committees: [],
+    bio: "Karl Bishop Weyland has served as CEO since the 2099 merger, having previously served as CEO of Weyland Corporation from 2092. Grandnephew of Sir Peter Weyland, he joined the Corporation in 2076 as a project engineer in the Terraforming Division. Mr. Weyland holds degrees in mechanical engineering from MIT and public policy from Harvard Kennedy School."
+  },
+  {
+    name: "TOMOKO SAKAI",
+    title: "Chief Financial Officer, Director",
+    independent: false,
+    committees: ["Audit"],
+    bio: "Tomoko Sakai has served as CFO since 2104, having previously served as Treasurer and Senior Vice President of Finance. Before joining the Corporation, Ms. Sakai was Managing Director at Goldman Sachs International. She holds a degree in economics from Waseda University and an MBA from Columbia Business School."
+  },
+  {
+    name: "DR. INGRID HALLSTROM",
+    title: "Independent Director",
+    independent: true,
+    committees: ["Audit (Chair)", "Governance & Nominating"],
+    bio: "Dr. Hallstrom is a former partner at Deloitte & Touche and served as Commissioner of the European Securities and Markets Authority from 2095 to 2103. She brings extensive expertise in financial regulation, audit oversight, and corporate risk management. Dr. Hallstrom holds a doctorate in accounting from the Stockholm School of Economics."
+  },
+  {
+    name: "JAMES ODUYA",
+    title: "Independent Director",
+    independent: true,
+    committees: ["Compensation & Talent (Chair)"],
+    bio: "Mr. Oduya is the former CEO of Borgia Industries, where he led the company through a decade of expansion in defense electronics. He currently serves on the boards of two other publicly traded companies. Mr. Oduya holds a degree in systems engineering from the University of Lagos and an MBA from London Business School."
+  },
+  {
+    name: "LADY CATHERINE ASHWORTH",
+    title: "Independent Director",
+    independent: true,
+    committees: ["Governance & Nominating (Chair)", "Colony Affairs"],
+    bio: "Lady Ashworth is a former British Ambassador to the United Nations and served as the UK's first Minister for Extraterrestrial Affairs from 2085 to 2094. She brings deep expertise in international governance, diplomacy, and regulatory frameworks. Lady Ashworth holds degrees from Oxford and the London School of Economics."
+  },
+  {
+    name: "PROF. YURI KANAMORI",
+    title: "Independent Director",
+    independent: true,
+    committees: ["Technology & Safety (Chair)"],
+    bio: "Prof. Kanamori is a theoretical physicist and the developer of the quantum fold propulsion framework. He served as Weyland Corporation's Chief Scientist from 2024 to 2060 and is Professor Emeritus of Physics at the CERN-Weyland Complex. Prof. Kanamori is a recipient of the Nobel Prize in Physics (2036) and the Copernicus Medal (2028)."
+  },
+  {
+    name: "DR. ELENA VOSS",
+    title: "Independent Director",
+    independent: true,
+    committees: ["Technology & Safety", "Audit"],
+    bio: "Dr. Voss is the former Director-General of the European Space Agency and a recognized authority on space policy and interstellar governance. She currently serves as Distinguished Fellow at the Brookings Institution. Dr. Voss holds a doctorate in aerospace engineering from TU Delft."
+  },
+  {
+    name: "GENERAL (RET.) MARCUS COLE",
+    title: "Independent Director",
+    independent: true,
+    committees: ["Technology & Safety", "Colony Affairs"],
+    bio: "General Cole served as Commandant of the United States Colonial Marine Corps from 2098 to 2108. His 40-year military career included command positions across 12 star systems. He brings critical expertise in security operations, logistics, and off-world operational readiness. General Cole holds a degree from West Point and a master's from the Naval War College."
+  },
+  {
+    name: "DR. AMARA OKONKWO",
+    title: "Independent Director",
+    independent: true,
+    committees: ["Compensation & Talent", "Colony Affairs (Chair)"],
+    bio: "Dr. Okonkwo served as President of the Weyland-Yutani Explorers Academy from 2068 to 2110, overseeing its expansion from a single campus to a five-campus institution. She is a recognized leader in STEM education and workforce development. Dr. Okonkwo holds a doctorate in education from Harvard and a degree in chemistry from the University of Ibadan."
+  },
+  {
+    name: "SATOSHI NAKAHARA",
+    title: "Independent Director",
+    independent: true,
+    committees: ["Audit", "Compensation & Talent"],
+    bio: "Mr. Nakahara is the former CEO of Sumitomo Heavy Industries and served as Chairman of the Japan Business Federation (Keidanren). He brings extensive experience in heavy manufacturing, industrial automation, and Asian market strategy. Mr. Nakahara holds a degree in mechanical engineering from Tohoku University."
+  },
+  {
+    name: "DR. MARIA SANTOS-DUMONT",
+    title: "Independent Director",
+    independent: true,
+    committees: ["Technology & Safety", "Governance & Nominating"],
+    bio: "Dr. Santos-Dumont is a physician-scientist and the former Surgeon General of the International Health Organization. She led the IHO's response to three off-world medical emergencies and established the framework for interstellar medical standards. She holds an MD from the University of Sao Paulo and a PhD in epidemiology from Johns Hopkins."
+  },
+  {
+    name: "RICHARD CHEN",
+    title: "Independent Director",
+    independent: true,
+    committees: ["Audit", "Compensation & Talent"],
+    bio: "Mr. Chen is the founder and former Managing Partner of Tranquility Ventures, one of the largest venture capital firms specializing in deep-space technology. He has been instrumental in funding over 200 technology startups. Mr. Chen holds a degree in computer science from Stanford and an MBA from Harvard Business School."
+  },
+];
+---
+
+<Layout
+  title="Board of Directors"
+  description="Meet the 14 directors of Weyland-Yutani Corporation's Board, responsible for overseeing the strategy and governance of the world's largest interstellar enterprise."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative py-20 border-b-4 border-[#FFC600] overflow-hidden">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+
+      <div class="relative container mx-auto px-6 text-center py-16">
+        <div class="inline-flex items-center gap-3 mb-8">
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.3em] font-mono">CORPORATE GOVERNANCE</span>
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+        </div>
+
+        <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-none uppercase mb-6">
+          BOARD OF <span class="text-[#FFC600] text-glow-yellow">DIRECTORS</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-8"></div>
+
+        <p class="text-lg text-gray-400 max-w-3xl mx-auto uppercase tracking-wider font-mono leading-relaxed">
+          14 DIRECTORS PROVIDING STRATEGIC OVERSIGHT AND GOVERNANCE
+        </p>
+      </div>
+
+      <div class="absolute bottom-0 left-0 right-0 hazard-stripes h-2"></div>
+    </section>
+
+    <!-- BOARD COMPOSITION -->
+    <section class="relative py-12 bg-[#0a0a0a] border-b border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center max-w-3xl mx-auto">
+          <div>
+            <div class="text-3xl font-black text-[#FFC600]">14</div>
+            <div class="text-xs text-gray-500 font-mono uppercase mt-1">TOTAL DIRECTORS</div>
+          </div>
+          <div>
+            <div class="text-3xl font-black text-[#FFC600]">10</div>
+            <div class="text-xs text-gray-500 font-mono uppercase mt-1">INDEPENDENT</div>
+          </div>
+          <div>
+            <div class="text-3xl font-black text-[#FFC600]">6</div>
+            <div class="text-xs text-gray-500 font-mono uppercase mt-1">NATIONALITIES</div>
+          </div>
+          <div>
+            <div class="text-3xl font-black text-[#FFC600]">5</div>
+            <div class="text-xs text-gray-500 font-mono uppercase mt-1">COMMITTEES</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIRECTORS -->
+    <section class="relative py-20 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="flex items-center gap-4 mb-12">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">DIRECTORS</span>
+          <div class="flex-1 h-px bg-[#1a1a1a]"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          {directors.map((director) => (
+            <div class="corp-card p-8">
+              <div class="flex items-start gap-6">
+                <div class="w-16 h-16 bg-[#FFC600]/10 border border-[#FFC600]/30 clip-corner flex items-center justify-center shrink-0">
+                  <span class="text-[#FFC600] font-black text-xl">{director.name.charAt(0)}{director.name.split(' ').pop()?.charAt(0)}</span>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-lg font-black text-white uppercase leading-tight">{director.name}</h3>
+                  <p class="text-xs text-[#FFC600] font-mono mt-1 mb-1">{director.title}</p>
+                  {director.independent && (
+                    <span class="text-[10px] font-mono text-gray-600 tracking-wider">INDEPENDENT</span>
+                  )}
+                </div>
+              </div>
+              <p class="text-sm text-gray-400 leading-relaxed mt-4">{director.bio}</p>
+              {director.committees.length > 0 && (
+                <div class="mt-4 flex flex-wrap gap-2">
+                  {director.committees.map((c) => (
+                    <span class="text-[10px] font-mono text-gray-500 tracking-wider bg-[#0a0a0a] border border-[#1a1a1a] px-2 py-1 clip-corner">{c}</span>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- BACK TO GOVERNANCE -->
+    <section class="relative py-12 bg-[#0a0a0a] border-t border-[#1a1a1a]">
+      <div class="container mx-auto px-6 text-center">
+        <a href="/governance" class="btn-secondary px-8 py-3 text-sm inline-block">BACK TO GOVERNANCE</a>
+        <a href="/governance/ethics" class="btn-primary px-8 py-3 text-sm inline-block ml-4">ETHICS & COMPLIANCE</a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

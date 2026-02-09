@@ -1,0 +1,178 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const committees = [
+  { name: "AUDIT COMMITTEE", chair: "Dr. Ingrid Hallstrom", members: 5, desc: "Oversees financial reporting, internal controls, risk management, and the independent audit function. Reviews the Corporation's financial statements and compliance with securities regulations." },
+  { name: "COMPENSATION AND TALENT COMMITTEE", chair: "James Oduya", members: 4, desc: "Determines executive compensation, oversees talent development programs, and reviews succession planning for senior leadership positions." },
+  { name: "GOVERNANCE AND NOMINATING COMMITTEE", chair: "Lady Catherine Ashworth", members: 4, desc: "Reviews and recommends governance practices, identifies and evaluates board candidates, and oversees director education and evaluation programs." },
+  { name: "TECHNOLOGY AND SAFETY COMMITTEE", chair: "Prof. Yuri Kanamori", members: 5, desc: "Provides oversight of the Corporation's technology strategy, research priorities, synthetic person operations, and safety protocols across all installations." },
+  { name: "COLONY AFFAIRS COMMITTEE", chair: "Hideo Yutani", members: 4, desc: "Oversees colony governance standards, resident welfare, terraforming operations compliance, and relationships with off-world regulatory bodies." },
+];
+---
+
+<Layout
+  title="Corporate Governance"
+  description="Weyland-Yutani Corporation's governance framework ensures accountability, transparency, and responsible stewardship across the world's largest interstellar enterprise."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative min-h-[55vh] flex items-center justify-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+      <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#FFC600] to-transparent"></div>
+
+      <div class="relative container mx-auto px-6 text-center py-24">
+        <div class="inline-flex items-center gap-3 mb-8">
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.3em] font-mono">CORPORATE LEADERSHIP</span>
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+        </div>
+
+        <h1 class="text-7xl md:text-9xl lg:text-[10rem] font-black text-white leading-none uppercase mb-6">
+          GOVER<span class="text-[#FFC600] text-glow-yellow">NANCE</span>
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-8"></div>
+
+        <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto uppercase tracking-wider font-mono leading-relaxed">
+          ACCOUNTABILITY, TRANSPARENCY, AND RESPONSIBLE STEWARDSHIP
+        </p>
+      </div>
+
+      <div class="absolute bottom-0 left-0 right-0 hazard-stripes h-2"></div>
+    </section>
+
+    <!-- GOVERNANCE OVERVIEW -->
+    <section class="relative py-20 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">OUR FRAMEWORK</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-4 mb-8 uppercase">GOVERNANCE PRINCIPLES</h2>
+
+          <div class="space-y-6 text-gray-400 text-base leading-relaxed">
+            <p>
+              Weyland-Yutani Corporation is governed by a Board of Directors that is committed to maintaining the highest standards of corporate governance. The Board believes that sound governance practices are essential to the Corporation's long-term success and to the responsible exercise of the extraordinary capabilities and influence that the Corporation commands.
+            </p>
+            <p>
+              The Corporation's governance framework is designed to ensure clear accountability, informed decision-making, effective risk management, and alignment between the interests of shareholders, employees, colony residents, and the broader communities in which we operate. Our governance practices meet or exceed the requirements of all applicable regulatory bodies, including the New York Stock Exchange, the Securities and Exchange Commission, and the Interstellar Commerce Commission.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6 mt-12">
+            <div class="p-6 border border-[#1a1a1a] clip-corner text-center">
+              <div class="text-3xl font-black text-[#FFC600]">14</div>
+              <div class="text-xs text-gray-500 font-mono uppercase mt-2">BOARD MEMBERS</div>
+            </div>
+            <div class="p-6 border border-[#1a1a1a] clip-corner text-center">
+              <div class="text-3xl font-black text-[#FFC600]">10</div>
+              <div class="text-xs text-gray-500 font-mono uppercase mt-2">INDEPENDENT DIRECTORS</div>
+            </div>
+            <div class="p-6 border border-[#1a1a1a] clip-corner text-center">
+              <div class="text-3xl font-black text-[#FFC600]">5</div>
+              <div class="text-xs text-gray-500 font-mono uppercase mt-2">BOARD COMMITTEES</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY GOVERNANCE LINKS -->
+    <section class="relative py-16 bg-[#0a0a0a] border-t border-b border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <a href="/governance/board" class="corp-card p-10 block group text-center">
+            <div class="w-16 h-16 bg-[#FFC600]/10 border border-[#FFC600]/30 clip-corner flex items-center justify-center mx-auto mb-6">
+              <span class="text-[#FFC600] font-black text-2xl">B</span>
+            </div>
+            <h3 class="text-2xl font-black text-white uppercase mb-3 group-hover:text-[#FFC600] transition-colors">BOARD OF DIRECTORS</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">Meet the 14 directors who oversee Weyland-Yutani's strategy, risk management, and corporate direction.</p>
+            <span class="inline-block mt-4 text-[#FFC600] text-xs font-bold uppercase tracking-wider">VIEW BOARD &rarr;</span>
+          </a>
+          <a href="/governance/ethics" class="corp-card p-10 block group text-center">
+            <div class="w-16 h-16 bg-[#FFC600]/10 border border-[#FFC600]/30 clip-corner flex items-center justify-center mx-auto mb-6">
+              <span class="text-[#FFC600] font-black text-2xl">E</span>
+            </div>
+            <h3 class="text-2xl font-black text-white uppercase mb-3 group-hover:text-[#FFC600] transition-colors">ETHICS & COMPLIANCE</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">Our code of conduct, ethical framework, and reporting mechanisms for maintaining corporate integrity.</p>
+            <span class="inline-block mt-4 text-[#FFC600] text-xs font-bold uppercase tracking-wider">VIEW ETHICS &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOARD COMMITTEES -->
+    <section class="relative py-20 bg-black">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="flex items-center gap-4 mb-12">
+            <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">BOARD COMMITTEES</span>
+            <div class="flex-1 h-px bg-[#1a1a1a]"></div>
+          </div>
+
+          <div class="space-y-6">
+            {committees.map((committee) => (
+              <div class="corp-card p-8">
+                <div class="flex flex-wrap items-center gap-4 mb-3">
+                  <h3 class="text-lg font-black text-white uppercase">{committee.name}</h3>
+                  <span class="text-[10px] font-mono text-gray-600 tracking-wider">{committee.members} MEMBERS</span>
+                </div>
+                <p class="text-xs text-[#FFC600] font-mono mb-3">CHAIR: {committee.chair}</p>
+                <p class="text-sm text-gray-400 leading-relaxed">{committee.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOVERNANCE DOCUMENTS -->
+    <section class="relative py-20 bg-[#0a0a0a] border-t border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">DOCUMENTS</span>
+          <h2 class="text-3xl font-black text-white mt-4 mb-8 uppercase">GOVERNANCE RESOURCES</h2>
+
+          <div class="grid md:grid-cols-2 gap-4">
+            <a href="#" class="flex items-center gap-4 p-4 bg-black border border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors group">
+              <span class="text-[#FFC600] text-xs">&#9632;</span>
+              <span class="text-sm text-gray-400 font-bold uppercase group-hover:text-[#FFC600] transition-colors">Corporate Charter</span>
+            </a>
+            <a href="#" class="flex items-center gap-4 p-4 bg-black border border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors group">
+              <span class="text-[#FFC600] text-xs">&#9632;</span>
+              <span class="text-sm text-gray-400 font-bold uppercase group-hover:text-[#FFC600] transition-colors">Board Committee Charters</span>
+            </a>
+            <a href="#" class="flex items-center gap-4 p-4 bg-black border border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors group">
+              <span class="text-[#FFC600] text-xs">&#9632;</span>
+              <span class="text-sm text-gray-400 font-bold uppercase group-hover:text-[#FFC600] transition-colors">Corporate Governance Guidelines</span>
+            </a>
+            <a href="/governance/ethics" class="flex items-center gap-4 p-4 bg-black border border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors group">
+              <span class="text-[#FFC600] text-xs">&#9632;</span>
+              <span class="text-sm text-gray-400 font-bold uppercase group-hover:text-[#FFC600] transition-colors">Code of Business Conduct</span>
+            </a>
+            <a href="#" class="flex items-center gap-4 p-4 bg-black border border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors group">
+              <span class="text-[#FFC600] text-xs">&#9632;</span>
+              <span class="text-sm text-gray-400 font-bold uppercase group-hover:text-[#FFC600] transition-colors">Annual Proxy Statement</span>
+            </a>
+            <a href="/legal/compliance" class="flex items-center gap-4 p-4 bg-black border border-[#1a1a1a] clip-corner hover:border-[#FFC600] transition-colors group">
+              <span class="text-[#FFC600] text-xs">&#9632;</span>
+              <span class="text-sm text-gray-400 font-bold uppercase group-hover:text-[#FFC600] transition-colors">Regulatory Compliance Overview</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>

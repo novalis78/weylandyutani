@@ -1,0 +1,224 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const principles = [
+  { name: "INTEGRITY", desc: "We conduct all business with honesty, transparency, and adherence to the highest ethical standards. We do not tolerate corruption, fraud, or deception in any form." },
+  { name: "RESPONSIBILITY", desc: "We accept responsibility for the impact of our operations on individuals, communities, and environments. We build better worlds by building responsibly." },
+  { name: "RESPECT", desc: "We treat every individual -- employee, colony resident, partner, and community member -- with dignity and respect, regardless of origin, role, or status." },
+  { name: "SAFETY", desc: "We prioritize the safety of our people, our colony residents, and the public above all commercial considerations. No objective justifies compromising safety." },
+  { name: "COMPLIANCE", desc: "We comply with all applicable laws and regulations in every jurisdiction in which we operate, and we hold ourselves to standards that exceed legal minimums." },
+  { name: "ACCOUNTABILITY", desc: "We maintain clear chains of accountability for every decision and every action. We report transparently and accept the consequences of our choices." },
+];
+
+const conductAreas = [
+  { title: "CONFLICTS OF INTEREST", desc: "Employees must avoid situations where personal interests conflict, or appear to conflict, with the interests of the Corporation. All potential conflicts must be disclosed to the Ethics Office and resolved before proceeding." },
+  { title: "FAIR DEALING", desc: "All business relationships must be conducted fairly and honestly. Employees must not take unfair advantage of customers, suppliers, competitors, or colleagues through manipulation, concealment, abuse of privileged information, misrepresentation, or any other unfair practice." },
+  { title: "CONFIDENTIAL INFORMATION", desc: "Employees must protect confidential and proprietary information belonging to the Corporation, its partners, and its clients. Unauthorized disclosure of confidential information, including classified research data, is a serious violation subject to disciplinary action and legal consequences." },
+  { title: "ANTI-CORRUPTION", desc: "The Corporation prohibits all forms of bribery, corruption, and improper payments. Employees, officers, and representatives must not offer, pay, solicit, or accept bribes or facilitation payments in any jurisdiction, including off-world installations." },
+  { title: "WORKPLACE CONDUCT", desc: "The Corporation is committed to maintaining a workplace free from harassment, discrimination, and intimidation. All employees are entitled to a safe, respectful, and inclusive work environment regardless of race, gender, national origin, age, religion, disability, or any other protected characteristic." },
+  { title: "ENVIRONMENTAL STEWARDSHIP", desc: "Employees must conduct operations in an environmentally responsible manner. This includes adherence to environmental regulations, minimization of waste and emissions, and responsible management of terraforming and atmospheric processing operations." },
+  { title: "POLITICAL ACTIVITIES", desc: "The Corporation does not make political contributions. Employees may engage in personal political activities on their own time, but must not represent personal political views as those of the Corporation." },
+  { title: "USE OF CORPORATE ASSETS", desc: "Corporate assets, including equipment, facilities, intellectual property, and data systems, must be used for legitimate business purposes. Personal use must be incidental and must not interfere with job performance or compromise Corporation resources." },
+];
+---
+
+<Layout
+  title="Ethics & Compliance"
+  description="Weyland-Yutani Corporation's code of conduct, ethical framework, and compliance programs ensuring integrity across all Earth-based and off-world operations."
+>
+  <Header />
+
+  <main class="bg-black pt-36">
+    <!-- HERO -->
+    <section class="relative min-h-[50vh] flex items-center justify-center overflow-hidden border-b-4 border-[#FFC600]">
+      <div class="industrial-grid absolute inset-0 opacity-20"></div>
+
+      <div class="relative container mx-auto px-6 text-center py-20">
+        <div class="inline-flex items-center gap-3 mb-8">
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.3em] font-mono">CORPORATE GOVERNANCE</span>
+          <div class="h-px w-16 bg-[#FFC600]"></div>
+        </div>
+
+        <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-white leading-none uppercase mb-6">
+          ETHICS <span class="text-[#FFC600] text-glow-yellow">&</span> COMPLIANCE
+        </h1>
+
+        <div class="h-1 w-48 bg-[#FFC600] mx-auto mb-8"></div>
+
+        <p class="text-lg text-gray-400 max-w-3xl mx-auto uppercase tracking-wider font-mono leading-relaxed">
+          OPERATING WITH INTEGRITY IS NOT A POLICY. IT IS WHO WE ARE.
+        </p>
+      </div>
+
+      <div class="absolute bottom-0 left-0 right-0 hazard-stripes h-2"></div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="relative py-20 bg-black">
+      <div class="industrial-grid-dense absolute inset-0 opacity-5"></div>
+
+      <div class="relative container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">OUR COMMITMENT</span>
+          <h2 class="text-4xl md:text-5xl font-black text-white mt-4 mb-8 uppercase">THE FOUNDATION OF TRUST</h2>
+
+          <div class="space-y-6 text-gray-400 text-base leading-relaxed">
+            <p>
+              Weyland-Yutani Corporation's extraordinary influence comes with an extraordinary obligation. The Corporation operates critical infrastructure across hundreds of worlds, employs half a million people, and provides essential services to tens of millions of colony residents. This responsibility demands that every action taken in the Corporation's name reflects the highest standards of ethical conduct.
+            </p>
+            <p>
+              The Corporation's Ethics and Compliance program is overseen by the Chief Compliance Officer, who reports directly to the Board of Directors' Governance and Nominating Committee. The program encompasses policy development, training, monitoring, investigation, and remediation across all business units and geographies, including off-world operations.
+            </p>
+          </div>
+
+          <blockquote class="border-l-4 border-[#FFC600] pl-6 py-2 mt-10">
+            <p class="text-[#FFC600] text-xl font-bold italic font-mono">"THE MEASURE OF A CORPORATION IS NOT WHAT IT CAN DO, BUT WHAT IT CHOOSES TO DO."</p>
+            <cite class="text-gray-500 text-sm font-mono mt-2 block not-italic">-- KARL BISHOP WEYLAND, CEO</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ETHICAL PRINCIPLES -->
+    <section class="relative py-20 bg-[#0a0a0a] border-t border-b border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="flex items-center gap-4 mb-12">
+            <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">ETHICAL FRAMEWORK</span>
+            <div class="flex-1 h-px bg-[#1a1a1a]"></div>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {principles.map((p) => (
+              <div class="corp-card p-6">
+                <h3 class="text-lg font-black text-[#FFC600] uppercase mb-3">{p.name}</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CODE OF CONDUCT -->
+    <section class="relative py-20 bg-black">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">CODE OF CONDUCT</span>
+          <h2 class="text-3xl md:text-4xl font-black text-white mt-4 mb-4 uppercase">CODE OF BUSINESS CONDUCT AND ETHICS</h2>
+          <p class="text-gray-500 text-sm font-mono mb-10">APPLIES TO ALL DIRECTORS, OFFICERS, EMPLOYEES, CONTRACTORS, AND SYNTHETIC PERSONNEL</p>
+
+          <div class="space-y-6">
+            {conductAreas.map((area) => (
+              <div class="p-6 bg-[#0a0a0a] border-l-2 border-[#FFC600]">
+                <h3 class="text-base font-black text-white uppercase mb-2">{area.title}</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">{area.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SYNTHETIC PERSON ETHICS -->
+    <section class="relative py-20 bg-[#0a0a0a] border-t border-b border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">SPECIAL PROVISIONS</span>
+          <h2 class="text-3xl font-black text-white mt-4 mb-8 uppercase">SYNTHETIC PERSON ETHICS FRAMEWORK</h2>
+
+          <div class="space-y-6 text-gray-400 text-base leading-relaxed">
+            <p>
+              Weyland-Yutani Corporation recognizes the unique ethical considerations arising from the development and deployment of synthetic persons. The Corporation maintains a dedicated Synthetic Ethics Board, composed of ethicists, legal scholars, cognitive scientists, and community representatives, that reviews all aspects of synthetic person design, programming, deployment, and decommissioning.
+            </p>
+            <p>
+              Key principles governing synthetic person operations include:
+            </p>
+            <ul class="space-y-3 ml-4">
+              <li class="flex items-start gap-3"><span class="text-[#FFC600] mt-1 text-xs">&#9632;</span> <strong class="text-white">Transparency:</strong> Synthetic persons are identified as synthetic in all professional interactions. Deception regarding synthetic status is prohibited.</li>
+              <li class="flex items-start gap-3"><span class="text-[#FFC600] mt-1 text-xs">&#9632;</span> <strong class="text-white">Behavioral Safety:</strong> All synthetic persons are programmed with foundational behavioral constraints that prioritize human safety above all other directives.</li>
+              <li class="flex items-start gap-3"><span class="text-[#FFC600] mt-1 text-xs">&#9632;</span> <strong class="text-white">Data Handling:</strong> Synthetic persons adhere to all data protection policies. Information collected during interactions is subject to the Corporation's Privacy Policy.</li>
+              <li class="flex items-start gap-3"><span class="text-[#FFC600] mt-1 text-xs">&#9632;</span> <strong class="text-white">Dignified Treatment:</strong> While synthetic persons are corporate assets, the Corporation requires that all personnel treat synthetic persons with professional respect.</li>
+              <li class="flex items-start gap-3"><span class="text-[#FFC600] mt-1 text-xs">&#9632;</span> <strong class="text-white">Regular Review:</strong> Cognitive and behavioral parameters are reviewed annually by the Synthetic Ethics Board to ensure continued alignment with ethical standards.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REPORTING MECHANISMS -->
+    <section class="relative py-20 bg-black">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">REPORTING</span>
+          <h2 class="text-3xl font-black text-white mt-4 mb-8 uppercase">REPORTING CONCERNS</h2>
+
+          <p class="text-gray-400 text-base leading-relaxed mb-8">
+            Every employee, contractor, and stakeholder has a responsibility to report suspected violations of law, regulation, or the Corporation's Code of Conduct. The Corporation provides multiple channels for reporting and guarantees protection against retaliation for good-faith reports.
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="corp-card p-8">
+              <h3 class="text-lg font-black text-[#FFC600] uppercase mb-4">ETHICS HOTLINE</h3>
+              <p class="text-sm text-gray-400 leading-relaxed mb-4">Available 24 hours a day, 7 days a week, across all time zones and jurisdictions, including off-world installations. Interpreters available in all major languages.</p>
+              <p class="text-white font-mono font-bold">+1-800-555-WYETH</p>
+              <p class="text-xs text-gray-500 font-mono mt-2">CONFIDENTIAL | ANONYMOUS OPTION AVAILABLE</p>
+            </div>
+            <div class="corp-card p-8">
+              <h3 class="text-lg font-black text-[#FFC600] uppercase mb-4">ONLINE REPORTING</h3>
+              <p class="text-sm text-gray-400 leading-relaxed mb-4">Secure, encrypted web portal for submitting reports. Available from any Corporation network terminal, personal device, or colony communications system.</p>
+              <p class="text-white font-mono font-bold">ethics.weylandyutani.com</p>
+              <p class="text-xs text-gray-500 font-mono mt-2">ENCRYPTED | ACCESSIBLE FROM ALL INSTALLATIONS</p>
+            </div>
+            <div class="corp-card p-8">
+              <h3 class="text-lg font-black text-[#FFC600] uppercase mb-4">CHIEF COMPLIANCE OFFICER</h3>
+              <p class="text-sm text-gray-400 leading-relaxed mb-4">Direct reports may be made to the Office of the Chief Compliance Officer via secure communication.</p>
+              <p class="text-white font-mono font-bold">compliance@weylandyutani.com</p>
+              <p class="text-xs text-gray-500 font-mono mt-2">DIRECT CHANNEL TO BOARD OVERSIGHT</p>
+            </div>
+            <div class="corp-card p-8">
+              <h3 class="text-lg font-black text-[#FFC600] uppercase mb-4">LOCAL ETHICS OFFICERS</h3>
+              <p class="text-sm text-gray-400 leading-relaxed mb-4">Every major facility and colony installation maintains a designated Ethics Officer who serves as a local point of contact for compliance concerns.</p>
+              <p class="text-white font-mono font-bold">240+ ETHICS OFFICERS GLOBALLY</p>
+              <p class="text-xs text-gray-500 font-mono mt-2">IN-PERSON | EVERY MAJOR INSTALLATION</p>
+            </div>
+          </div>
+
+          <div class="mt-10 p-6 bg-[#0a0a0a] border-2 border-[#FFC600] clip-corner">
+            <h3 class="text-base font-black text-[#FFC600] uppercase mb-2">NON-RETALIATION COMMITMENT</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Weyland-Yutani Corporation strictly prohibits retaliation against any individual who reports a concern in good faith or participates in an investigation. Retaliation in any form -- including termination, demotion, transfer, harassment, or any adverse employment action -- will be treated as a separate violation of the Code of Conduct and will result in disciplinary action up to and including termination.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINING -->
+    <section class="relative py-16 bg-[#0a0a0a] border-t border-[#1a1a1a]">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <span class="text-[#FFC600] text-xs font-black uppercase tracking-[0.2em] font-mono">EDUCATION</span>
+          <h2 class="text-3xl font-black text-white mt-4 mb-6 uppercase">COMPLIANCE TRAINING</h2>
+          <p class="text-gray-400 text-base leading-relaxed mb-4">
+            All Corporation personnel -- including directors, officers, employees, contractors, and synthetic persons -- are required to complete annual ethics and compliance training. The training program covers the Code of Conduct, anti-corruption policies, data protection requirements, safety protocols, and jurisdiction-specific regulatory obligations.
+          </p>
+          <p class="text-gray-400 text-base leading-relaxed">
+            Training completion rates are reported to the Board of Directors quarterly. The Corporation maintains a 99.7% annual completion rate across all personnel categories.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .clip-corner {
+    clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+  }
+</style>
